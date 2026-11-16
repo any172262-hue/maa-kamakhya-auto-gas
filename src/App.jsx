@@ -14,15 +14,11 @@ export default function App() {
       const hash = window.location.hash.toLowerCase().trim();
 
       // Match legal pages
-      if (pathname === '/privacy-policy' || hash === '#privacy-policy' || hash === '#/privacy-policy') {
+      if (pathname.endsWith('/privacy-policy') || hash === '#privacy-policy' || hash === '#/privacy-policy') {
         setCurrentPage('privacy');
-      } else if (pathname === '/terms-conditions' || hash === '#terms-conditions' || hash === '#/terms-conditions') {
+      } else if (pathname.endsWith('/terms-conditions') || hash === '#terms-conditions' || hash === '#/terms-conditions') {
         setCurrentPage('terms');
       } else {
-        // Any other route (including /404, unknown paths, etc.) cleanly defaults to home without any 404 page
-        if (pathname !== '/' && pathname !== '/index.html' && pathname !== '') {
-          window.history.replaceState(null, '', '/');
-        }
         if (hash === '#404' || hash === '#/404') {
           window.location.hash = '';
         }
@@ -47,9 +43,6 @@ export default function App() {
       window.location.hash = '#terms-conditions';
       setCurrentPage('terms');
     } else {
-      if (window.location.pathname !== '/' && window.location.pathname !== '') {
-        window.history.pushState(null, '', '/');
-      }
       window.location.hash = '';
       setCurrentPage('home');
       window.scrollTo({ top: 0, behavior: 'smooth' });
