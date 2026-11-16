@@ -31,7 +31,7 @@ export default function Compatibility() {
             <RevealAnimation delay={1}>
               <div className="system-diagram-card card-navy">
                 <img
-                  src="/images/cng-installation.webp"
+                  src={`${import.meta.env.BASE_URL}images/cng-installation.webp`}
                   alt="Complete CNG Installation in a Car Schematic Overview"
                   className="cng-diagram-image"
                   width="896"

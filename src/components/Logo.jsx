@@ -5,9 +5,11 @@ export default function Logo({
   className = '',
   alt = 'Maa Kamakhya Auto Gas'
 }) {
+  const logoSrc = `${import.meta.env.BASE_URL}images/maa-kamakhya-auto-gas-logo.png`;
+
   return (
     <img
-      src="/images/maa-kamakhya-auto-gas-logo.png"
+      src={logoSrc}
       alt={alt}
       className={`brand-logo ${className}`}
       style={{
