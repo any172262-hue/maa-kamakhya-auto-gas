@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- 1. Homepage -->
+  <url>
+    <loc>https://maakamakhyaautogas.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://maakamakhyaautogas.com/en/" />
+    <xhtml:link rel="alternate" hreflang="as" href="https://maakamakhyaautogas.com/as/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://maakamakhyaautogas.com/hi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maakamakhyaautogas.com/" />
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 2. CNG Services -->
+  <url>
+    <loc>https://maakamakhyaautogas.com/services/cng-services/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://maakamakhyaautogas.com/en/services/cng-services/" />
+    <xhtml:link rel="alternate" hreflang="as" href="https://maakamakhyaautogas.com/as/services/cng-services/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://maakamakhyaautogas.com/hi/services/cng-services/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maakamakhyaautogas.com/services/cng-services/" />
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 3. LPG Services -->
+  <url>
+    <loc>https://maakamakhyaautogas.com/services/lpg-services/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://maakamakhyaautogas.com/en/services/lpg-services/" />
+    <xhtml:link rel="alternate" hreflang="as" href="https://maakamakhyaautogas.com/as/services/lpg-services/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://maakamakhyaautogas.com/hi/services/lpg-services/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maakamakhyaautogas.com/services/lpg-services/" />
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 4. Auto Gas Filling Station -->
+  <url>
+    <loc>https://maakamakhyaautogas.com/services/auto-gas-filling/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://maakamakhyaautogas.com/en/services/auto-gas-filling/" />
+    <xhtml:link rel="alternate" hreflang="as" href="https://maakamakhyaautogas.com/as/services/auto-gas-filling/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://maakamakhyaautogas.com/hi/services/auto-gas-filling/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maakamakhyaautogas.com/services/auto-gas-filling/" />
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 5. Vehicle Gas Kit Installation -->
+  <url>
+    <loc>https://maakamakhyaautogas.com/services/gas-kit-installation/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://maakamakhyaautogas.com/en/services/gas-kit-installation/" />
+    <xhtml:link rel="alternate" hreflang="as" href="https://maakamakhyaautogas.com/as/services/gas-kit-installation/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://maakamakhyaautogas.com/hi/services/gas-kit-installation/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maakamakhyaautogas.com/services/gas-kit-installation/" />
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 6. Vehicle Gas Conversion -->
+  <url>
+    <loc>https://maakamakhyaautogas.com/services/vehicle-gas-conversion/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://maakamakhyaautogas.com/en/services/vehicle-gas-conversion/" />
+    <xhtml:link rel="alternate" hreflang="as" href="https://maakamakhyaautogas.com/as/services/vehicle-gas-conversion/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://maakamakhyaautogas.com/hi/services/vehicle-gas-conversion/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maakamakhyaautogas.com/services/vehicle-gas-conversion/" />
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 7. Gas Kit Repair and Maintenance -->
+  <url>
+    <loc>https://maakamakhyaautogas.com/services/gas-kit-repair-maintenance/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://maakamakhyaautogas.com/en/services/gas-kit-repair-maintenance/" />
+    <xhtml:link rel="alternate" hreflang="as" href="https://maakamakhyaautogas.com/as/services/gas-kit-repair-maintenance/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://maakamakhyaautogas.com/hi/services/gas-kit-repair-maintenance/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maakamakhyaautogas.com/services/gas-kit-repair-maintenance/" />
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 8. About Us -->
+  <url>
+    <loc>https://maakamakhyaautogas.com/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://maakamakhyaautogas.com/en/about/" />
+    <xhtml:link rel="alternate" hreflang="as" href="https://maakamakhyaautogas.com/as/about/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://maakamakhyaautogas.com/hi/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maakamakhyaautogas.com/about/" />
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 9. Contact Us -->
+  <url>
+    <loc>https://maakamakhyaautogas.com/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://maakamakhyaautogas.com/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="as" href="https://maakamakhyaautogas.com/as/contact/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://maakamakhyaautogas.com/hi/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maakamakhyaautogas.com/contact/" />
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 10. Privacy Policy -->
+  <url>
+    <loc>https://maakamakhyaautogas.com/privacy-policy/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- 11. Terms & Conditions -->
+  <url>
+    <loc>https://maakamakhyaautogas.com/terms-conditions/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>
