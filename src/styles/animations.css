@@ -1,0 +1,89 @@
+/* Clean, Subtle, Purposeful Animations */
+/* Strictly no infinite loops, no distracting cursor trails, no continuous bobbing */
+
+/* Simple Fade-in Transition */
+@keyframes fadeInSubtle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInSubtle 0.25s ease-out forwards;
+}
+
+/* Subtle Scroll Reveal Classes */
+.reveal-init {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+/* Above-the-fold Hero content is visible immediately to eliminate any blank page flash */
+#hero .reveal-init {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.reveal-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 {
+  transition-delay: 0.06s;
+}
+
+.reveal-delay-2 {
+  transition-delay: 0.12s;
+}
+
+.reveal-delay-3 {
+  transition-delay: 0.18s;
+}
+
+.reveal-delay-4 {
+  transition-delay: 0.24s;
+}
+
+/* Card Hover Elevation - Subtle and Purposeful */
+.card-hover-effect {
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-navy-border-hover);
+}
+
+/* Pulse Glow & Shimmer */
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 2px 8px rgba(255, 213, 42, 0.4);
+  }
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 4px 16px rgba(255, 213, 42, 0.7);
+  }
+}
+
+/* Accessibility: Full Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal-init {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

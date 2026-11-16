@@ -1,0 +1,102 @@
+:root {
+  /* ==========================================================
+     OFFICIAL BRAND PALETTE (Yellow + Light Blue Theme)
+     Requirement 1: Primary Palette Specifications
+     ========================================================== */
+  --color-primary-yellow: #FFD52A;
+  --color-soft-yellow: #FFF4B8;
+  --color-light-blue: #DFF2FF;
+  --color-sky-blue: #B8E3FF;
+  --color-primary-blue: #1456A0;
+  --color-deep-navy: #07152C;
+  --color-white: #FFFFFF;
+  --color-soft-white: #F7FBFF;
+
+  /* Accent & Interactive States */
+  --color-accent-yellow: #FFD52A;
+  --color-accent-yellow-hover: #FFE066;
+  --color-yellow-glow: rgba(255, 213, 42, 0.45);
+  --color-yellow-subtle: rgba(255, 213, 42, 0.18);
+
+  --color-blue-primary: #1456A0;
+  --color-blue-hover: #0E427E;
+  --color-blue-light: #DFF2FF;
+  --color-blue-sky: #B8E3FF;
+  --color-blue-glow: rgba(20, 86, 160, 0.25);
+  --color-blue-subtle: rgba(20, 86, 160, 0.08);
+
+  /* Surfaces & Cards (Crisp White with Soft Light Blue Borders) */
+  --color-card-bg: #FFFFFF;
+  --color-card-border: rgba(20, 86, 160, 0.14);
+  --color-card-border-hover: rgba(255, 213, 42, 0.65);
+  --color-navy-card: #FFFFFF;
+  --color-navy-card-hover: #F0F7FF;
+  --color-navy-border: rgba(20, 86, 160, 0.14);
+  --color-navy-border-hover: rgba(255, 213, 42, 0.5);
+
+  /* High-Contrast Typography for Light Backgrounds */
+  --color-text-main: #07152C;
+  --color-text-navy: #07152C;
+  --color-text-muted: #475569;
+  --color-muted-text: #475569;
+  --color-text-light: #64748B;
+  --color-dark-text: #07152C;
+
+  /* Verified Status Colors */
+  --color-success: #10B981;
+  --color-danger: #EF4444;
+
+  /* Typography */
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Typography Scale */
+  --text-xs: 0.75rem;    /* 12px */
+  --text-sm: 0.875rem;   /* 14px */
+  --text-base: 1rem;     /* 16px */
+  --text-lg: 1.125rem;   /* 18px */
+  --text-xl: 1.25rem;    /* 20px */
+  --text-2xl: 1.5rem;    /* 24px */
+  --text-3xl: 1.875rem;  /* 30px */
+  --text-4xl: 2.25rem;   /* 36px */
+  --text-5xl: 3rem;      /* 48px */
+  --text-6xl: 3.75rem;   /* 60px */
+
+  /* Spacing Scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* Border Radii - Restrained professional rectangular corners (Strict: No pill buttons) */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 10px;
+  --radius-full: 6px;
+
+  /* Box Shadows - Soft and clean for light theme */
+  --shadow-sm: 0 2px 8px rgba(7, 21, 44, 0.06);
+  --shadow-md: 0 8px 24px rgba(20, 86, 160, 0.08);
+  --shadow-lg: 0 16px 36px rgba(20, 86, 160, 0.12);
+  --shadow-xl: 0 24px 48px -12px rgba(7, 21, 44, 0.15);
+  --shadow-yellow-glow: 0 8px 25px rgba(255, 213, 42, 0.4);
+  --shadow-blue-glow: 0 8px 25px rgba(20, 86, 160, 0.25);
+
+  /* Transitions */
+  --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Max widths */
+  --container-max-width: 1240px;
+  --container-narrow: 980px;
+}

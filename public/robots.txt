@@ -1,0 +1,8 @@
+# robots.txt for Maa Kamakhya Auto Gas
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /private/
+Disallow: /*.json$
+
+Sitemap: https://maakamakhyaautogas.com/sitemap.xml
