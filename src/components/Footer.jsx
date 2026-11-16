@@ -85,6 +85,109 @@ export default function Footer({ onNavigateLegal }) {
                   {t('statutory.title', {}, 'Statutory Details')} & GST
                 </a>
               </li>
+              <li>
+                <a 
+                  href="#/about" 
+                  className="footer-nav-link"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (onNavigateLegal) onNavigateLegal('about');
+                  }}
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#/contact" 
+                  className="footer-nav-link"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (onNavigateLegal) onNavigateLegal('contact');
+                  }}
+                >
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Dedicated Auto Gas Services Column */}
+          <div className="footer-col">
+            <h4 className="footer-heading">Auto Gas Services</h4>
+            <ul className="footer-links-list">
+              <li>
+                <a 
+                  href="#/services/cng-services" 
+                  className="footer-nav-link"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (onNavigateLegal) onNavigateLegal('service-cng-services');
+                  }}
+                >
+                  CNG Services
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#/services/lpg-services" 
+                  className="footer-nav-link"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (onNavigateLegal) onNavigateLegal('service-lpg-services');
+                  }}
+                >
+                  LPG Services
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#/services/auto-gas-filling" 
+                  className="footer-nav-link"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (onNavigateLegal) onNavigateLegal('service-auto-gas-filling');
+                  }}
+                >
+                  Auto Gas Filling Station
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#/services/gas-kit-installation" 
+                  className="footer-nav-link"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (onNavigateLegal) onNavigateLegal('service-gas-kit-installation');
+                  }}
+                >
+                  Gas Kit Installation
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#/services/vehicle-gas-conversion" 
+                  className="footer-nav-link"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (onNavigateLegal) onNavigateLegal('service-vehicle-gas-conversion');
+                  }}
+                >
+                  Vehicle Gas Conversion
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#/services/gas-kit-repair-maintenance" 
+                  className="footer-nav-link"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (onNavigateLegal) onNavigateLegal('service-gas-kit-repair-maintenance');
+                  }}
+                >
+                  Gas Kit Repair & Maintenance
+                </a>
+              </li>
             </ul>
           </div>
 

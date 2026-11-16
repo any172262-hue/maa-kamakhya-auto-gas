@@ -36,12 +36,15 @@ export const en = {
     callNow: "Call 6913910337"
   },
   hero: {
-    badge: "CNG RETROFITMENT • MAA KAMAKHYA AUTO GAS",
+    badge: "CNG & LPG SERVICES • MAA KAMAKHYA AUTO GAS",
+    h1: "CNG, LPG and Auto Gas Services at Maa Kamakhya Auto Gas",
     titleLine1: "Switch to CNG.",
     titleLine2: "Save More.",
     titleHighlight: "Drive Smarter.",
-    description: "Explore a smarter fuel option for your compatible petrol car. Talk to Maa Kamakhya Auto Gas about vehicle compatibility, certified sequential installation, and estimated monthly running costs in Guwahati.",
+    description: "Welcome to Maa Kamakhya Auto Gas. We provide CNG and LPG-related automotive services, including auto gas filling, gas kit installation, vehicle gas conversion, and gas kit repair and maintenance. Explore our services and contact us to enquire about your vehicle's requirements.",
     ctaQuote: "Get a CNG quote",
+    ctaExplore: "Explore Our Services",
+    ctaContact: "Contact Us",
     ctaCall: "Call 6913910337",
     ctaDirections: "Get Directions",
     trustPill1: "CNG retrofitment",
@@ -288,6 +291,22 @@ export const en = {
     rightsReserved: "All rights reserved.",
     privacyPolicy: "Privacy Policy",
     termsConditions: "Terms & Conditions"
+  },
+  faq: {
+    tagline: "FREQUENTLY ASKED QUESTIONS",
+    title: "Everything You Need to Know About",
+    highlight: "Our Auto Gas Services.",
+    description: "Get transparent, clear answers to common questions about CNG, LPG, vehicle conversion, and our verified capabilities in Guwahati.",
+    q1: "What services does Maa Kamakhya Auto Gas provide?",
+    a1: "Maa Kamakhya Auto Gas provides CNG services, LPG services, auto gas filling, gas kit installation, vehicle gas conversion, and gas kit repair and maintenance.",
+    q2: "Does Maa Kamakhya Auto Gas provide gas kit installation?",
+    a2: "Yes. Gas kit installation is one of the services offered. Contact us to discuss your vehicle and installation requirements.",
+    q3: "Can I enquire about vehicle gas conversion?",
+    a3: "Yes. You can contact Maa Kamakhya Auto Gas to enquire about vehicle gas conversion and whether your vehicle is suitable.",
+    q4: "Does Maa Kamakhya Auto Gas provide gas kit repair and maintenance?",
+    a4: "Yes. Gas kit repair and maintenance are among the verified services. Contact us with details of your vehicle and the issue.",
+    q5: "How can I contact Maa Kamakhya Auto Gas?",
+    a5: "Use the contact details published on the website to enquire about services, availability, and other information."
   },
   legal: {
     backToHome: "Return to Homepage",

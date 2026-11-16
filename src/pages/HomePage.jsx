@@ -8,15 +8,16 @@ import Benefits from '../sections/Benefits';
 import SavingsCalculator from '../sections/SavingsCalculator';
 import Compatibility from '../sections/Compatibility';
 import Process from '../sections/Process';
+import HomepageFaq from '../sections/HomepageFaq';
 import CTA from '../sections/CTA';
 import WorkshopLocationMap from '../sections/WorkshopLocationMap';
 import Contact from '../sections/Contact';
 import { usePageMeta } from '../hooks/usePageMeta';
 
-export default function HomePage() {
+export default function HomePage({ onNavigate }) {
   usePageMeta({
-    title: "Maa Kamakhya Auto Gas | Premium CNG Retrofitment & Automotive Care: Guwahati, Assam",
-    description: "Guwahati's government-approved CNG retrofitment and automotive care center on NH 37, Pachim Boragaon, Garchuk. High-performance sequential conversion, certified cylinder hydro-testing, and expert diagnostics.",
+    title: "Maa Kamakhya Auto Gas | CNG, LPG and Auto Gas Services",
+    description: "Explore CNG and LPG services at Maa Kamakhya Auto Gas, including auto gas filling, gas kit installation, vehicle gas conversion, repair and maintenance.",
     canonical: "https://maakamakhyaautogas.com/"
   });
 
@@ -36,15 +37,16 @@ export default function HomePage() {
 
   return (
     <>
-      <Hero />
+      <Hero onNavigate={onNavigate} />
       <StatutoryDetails />
       <TrustIndicators />
       <WhyChooseUs />
-      <Services onSelectService={handleSelectService} />
+      <Services onSelectService={handleSelectService} onNavigate={onNavigate} />
       <Benefits />
       <SavingsCalculator onApplyEstimate={handleApplyEstimate} />
       <Compatibility />
       <Process />
+      <HomepageFaq />
       <CTA />
       <WorkshopLocationMap />
       <Contact prefilledQuestion={inquiryPrefill} />

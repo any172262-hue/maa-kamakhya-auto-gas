@@ -26,21 +26,19 @@ export default function Hero() {
             <RevealAnimation delay={1}>
               <div className="hero-badge-pill">
                 <Fuel size={15} className="text-yellow" />
-                <span>{t('hero.badge', {}, 'CNG RETROFITMENT • MAA KAMAKHYA AUTO GAS')}</span>
+                <span>{t('hero.badge', {}, 'CNG & LPG SERVICES • MAA KAMAKHYA AUTO GAS')}</span>
               </div>
             </RevealAnimation>
 
             <RevealAnimation delay={2}>
               <h1 className="hero-title">
-                {t('hero.titleLine1', {}, 'Switch to CNG.')}<br />
-                <span className="text-yellow text-glow">{t('hero.titleLine2', {}, 'Save More.')}</span><br />
-                {t('hero.titleHighlight', {}, 'Drive Smarter.')}
+                {t('hero.h1', {}, 'CNG, LPG and Auto Gas Services at Maa Kamakhya Auto Gas')}
               </h1>
             </RevealAnimation>
 
             <RevealAnimation delay={3}>
               <p className="hero-subtitle">
-                {t('hero.description', {}, 'Explore a smarter fuel option for your compatible petrol car. Talk to Maa Kamakhya Auto Gas about vehicle compatibility, certified sequential installation, and estimated monthly running costs in Guwahati.')}
+                {t('hero.description', {}, "Welcome to Maa Kamakhya Auto Gas. We provide CNG and LPG-related automotive services, including auto gas filling, gas kit installation, vehicle gas conversion, and gas kit repair and maintenance. Explore our services and contact us to enquire about your vehicle's requirements.")}
               </p>
             </RevealAnimation>
 
@@ -50,39 +48,37 @@ export default function Hero() {
                 <Button
                   variant="primary"
                   size="lg"
-                  href="#contact"
-                  onClick={handleScrollToContact}
+                  href="#services"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const servicesSection = document.querySelector('#services');
+                    if (servicesSection) {
+                      servicesSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
                   icon={ArrowRight}
                   iconPosition="right"
                 >
-                  {t('hero.ctaQuote', {}, 'Get a CNG quote')}
+                  {t('hero.ctaExplore', {}, 'Explore Our Services')}
                 </Button>
 
                 <Button
                   variant="secondary"
+                  size="lg"
+                  href="#contact"
+                  onClick={handleScrollToContact}
+                  icon={Phone}
+                >
+                  {t('hero.ctaContact', {}, 'Contact Us')}
+                </Button>
+
+                <Button
+                  variant="call"
                   size="lg"
                   href={siteConfig.phoneTel}
                   icon={Phone}
                 >
-                  {t('hero.ctaCall', {}, 'Call')} {siteConfig.phone}
-                </Button>
-
-                <Button
-                  variant="secondary"
-                  size="lg"
-                  href="#location"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    const locSection = document.querySelector('#location');
-                    if (locSection) {
-                      locSection.scrollIntoView({ behavior: 'smooth' });
-                    } else {
-                      window.open(siteConfig.mapUrl, '_blank', 'noopener,noreferrer');
-                    }
-                  }}
-                  icon={Navigation}
-                >
-                  {t('hero.ctaDirections', {}, 'Get Directions')}
+                  {t('common.call', {}, 'Call')}: {siteConfig.phone}
                 </Button>
               </div>
             </RevealAnimation>

@@ -4,7 +4,70 @@ import { useLanguage } from '../context/LanguageContext';
 import SectionHeading from '../components/SectionHeading';
 import ServiceCard from '../components/ServiceCard';
 import RevealAnimation from '../components/RevealAnimation';
-import { Sparkles, Filter, CheckCircle2, MessageCircle } from 'lucide-react';
+import { 
+  Sparkles, 
+  Filter, 
+  CheckCircle2, 
+  MessageCircle,
+  Gauge,
+  Flame,
+  Fuel,
+  Wrench,
+  Car,
+  Cog,
+  ArrowRight
+} from 'lucide-react';
+
+const coreSeoServices = [
+  {
+    id: "cng-services",
+    slug: "cng-services",
+    title: "CNG Services",
+    icon: Gauge,
+    desc: "Explore our CNG-related automotive services. Contact Maa Kamakhya Auto Gas to discuss your vehicle's CNG service requirements.",
+    linkText: "Explore our CNG services"
+  },
+  {
+    id: "lpg-services",
+    slug: "lpg-services",
+    title: "LPG Services",
+    icon: Flame,
+    desc: "Find LPG-related automotive services for your vehicle. Get in touch with our team to enquire about the available services.",
+    linkText: "Learn about LPG services"
+  },
+  {
+    id: "auto-gas-filling",
+    slug: "auto-gas-filling",
+    title: "Auto Gas Filling Station",
+    icon: Fuel,
+    desc: "Looking for auto gas filling services? Contact Maa Kamakhya Auto Gas for information about filling availability and operating hours.",
+    linkText: "View filling station details"
+  },
+  {
+    id: "gas-kit-installation",
+    slug: "gas-kit-installation",
+    title: "Gas Kit Installation",
+    icon: Wrench,
+    desc: "Enquire about gas kit installation for your vehicle. Contact us to discuss vehicle compatibility and installation requirements.",
+    linkText: "Enquire about gas kit installation"
+  },
+  {
+    id: "vehicle-gas-conversion",
+    slug: "vehicle-gas-conversion",
+    title: "Vehicle Gas Conversion",
+    icon: Car,
+    desc: "Interested in converting your vehicle to use gas? Contact Maa Kamakhya Auto Gas to enquire about available CNG and LPG conversion options and vehicle suitability.",
+    linkText: "View vehicle gas conversion"
+  },
+  {
+    id: "gas-kit-repair-maintenance",
+    slug: "gas-kit-repair-maintenance",
+    title: "Gas Kit Repair and Maintenance",
+    icon: Cog,
+    desc: "Enquire about gas kit repair and maintenance for your vehicle. Contact us to discuss the issue and available service options.",
+    linkText: "Explore repair and maintenance"
+  }
+];
 
 const categories = [
   "All Services",
@@ -16,7 +79,7 @@ const categories = [
   "Automobile Trade"
 ];
 
-export default function Services({ onSelectService }) {
+export default function Services({ onSelectService, onNavigate }) {
   const { t } = useLanguage();
   const [activeCategory, setActiveCategory] = useState("All Services");
   const [selectedTag, setSelectedTag] = useState(null);
@@ -32,17 +95,52 @@ export default function Services({ onSelectService }) {
     }
   };
 
+  const handleNavigateService = (slug) => {
+    if (onNavigate) {
+      onNavigate(`service-${slug}`);
+    } else {
+      window.location.hash = `#/services/${slug}`;
+    }
+  };
+
   return (
     <section id="services" className="section section-navy">
       <div className="container">
         <RevealAnimation>
           <SectionHeading
-            tagline={t('services.tagline', {}, 'OFFICIAL BUSINESS SERVICES & CAPABILITIES')}
-            title={t('services.title', {}, 'Complete CNG Engineering &')}
-            highlight={t('services.titleHighlight', {}, 'Automotive Solutions.')}
-            description={t('services.description', {}, 'Maa Kamakhya Auto Gas delivers certified sequential auto-gas conversions, authorized kit dealerships, high-pressure cylinder distribution, genuine spare parts, and comprehensive automotive mechanical care in Guwahati.')}
+            tagline={t('services.tagline', {}, 'CNG & LPG AUTOMOTIVE SERVICES')}
+            title={t('services.title', {}, 'CNG, LPG and Auto Gas Services at')}
+            highlight={t('services.titleHighlight', {}, 'Maa Kamakhya Auto Gas.')}
+            description={t('services.description', {}, 'Explore our core verified auto gas solutions in Guwahati, including sequential CNG and LPG retrofitment, auto gas filling assistance, certified conversion, genuine spare parts, and computerized maintenance.')}
           />
         </RevealAnimation>
+
+        {/* Core 6 Dedicated SEO Services Grid */}
+        <div className="core-seo-services-grid mb-12">
+          {coreSeoServices.map((srv, idx) => {
+            const IconCmp = srv.icon;
+            return (
+              <RevealAnimation key={srv.id} delay={idx + 1}>
+                <article className="card-navy card-hover-effect core-service-item">
+                  <div className="core-service-icon-wrap">
+                    <IconCmp size={24} className="text-yellow" />
+                  </div>
+                  <h3 className="core-service-title">{srv.title}</h3>
+                  <p className="core-service-desc">{srv.desc}</p>
+                  <button
+                    type="button"
+                    className="core-service-cta-btn"
+                    onClick={() => handleNavigateService(srv.slug)}
+                    aria-label={srv.linkText}
+                  >
+                    <span>{srv.linkText}</span>
+                    <ArrowRight size={15} />
+                  </button>
+                </article>
+              </RevealAnimation>
+            );
+          })}
+        </div>
 
         {/* 24 Verified Service Directory Badge Cloud */}
         <RevealAnimation delay={1}>

@@ -6,3 +6,4 @@ Disallow: /private/
 Disallow: /*.json$
 
 Sitemap: https://maakamakhyaautogas.com/sitemap.xml
+Sitemap: https://any172262-hue.github.io/maa-kamakhya-auto-gas/sitemap.xml
