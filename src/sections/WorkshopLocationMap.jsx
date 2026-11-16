@@ -1,6 +1,5 @@
 import React from 'react';
 import { 
-  MapPin, 
   Navigation, 
   Phone, 
   CheckCircle2, 
@@ -60,21 +59,9 @@ export default function WorkshopLocationMap() {
         </RevealAnimation>
 
         <div className="location-grid">
-          {/* Column 1: Interactive Google Maps Embed with Floating Info Dock */}
+          {/* Column 1: Interactive Google Maps Embed */}
           <RevealAnimation delay={1}>
             <div className="location-map-card card-navy">
-              {/* Map Header Status Dock */}
-              <div className="map-card-header">
-                <div className="map-header-status">
-                  <span className="brand-pulse-dot" />
-                  <span className="map-status-text">{t('common.hours', {}, 'Workshop Open • Mon to Sat: 9:00 AM to 7:30 PM')}</span>
-                </div>
-                <div className="map-landmark-badge">
-                  <MapPin size={13} className="text-yellow" />
-                  <span>NH 37, Garchuk, Guwahati</span>
-                </div>
-              </div>
-
               {/* Live Interactive Google Map Frame */}
               <div className="map-iframe-container">
                 <iframe

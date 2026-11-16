@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, MessageCircle, MapPin, Clock, ShieldCheck, Building2 } from 'lucide-react';
+import { Phone, MessageCircle, MapPin, Clock, Building2 } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
 import { navLinks } from '../data/navigation';
 import { useLanguage } from '../context/LanguageContext';
@@ -51,10 +51,6 @@ export default function Footer({ onNavigateLegal }) {
             <p className="footer-brand-desc">
               {t('footer.aboutDesc', {}, 'Guwahati\'s trusted destination for government-approved sequential CNG retrofitment, certified cylinder hydro-testing, and expert automotive engineering.')}
             </p>
-            <div className="footer-certification-badge">
-              <ShieldCheck size={18} className="text-yellow" />
-              <span>Govt. Approved & PESO Compliant Workshop</span>
-            </div>
             <div className="footer-legal-badge">
               <Building2 size={15} className="text-blue" />
               <span>Govt. Registered: <strong>{siteConfig.statutory.legalName}</strong></span>

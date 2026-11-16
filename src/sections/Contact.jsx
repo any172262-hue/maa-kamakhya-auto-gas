@@ -264,10 +264,6 @@ export default function Contact({ prefilledQuestion = "" }) {
                     <MessageCircle size={18} className="text-whatsapp flex-shrink-0" />
                     <span>{t('contact.tagline', {}, 'Direct WhatsApp Enquiry')}</span>
                   </div>
-                  <div className="form-status-indicator" title="Workshop team active">
-                    <span className="status-dot-pulse" aria-hidden="true"></span>
-                    <span className="status-text">{t('contact.fastResponse', {}, 'Fast Response')}</span>
-                  </div>
                 </div>
                 <p className="form-card-subtitle">
                   {t('contact.description', {}, 'Share your details for an instant quotation and CNG compatibility assessment.')}

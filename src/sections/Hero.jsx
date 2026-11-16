@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Navigation, ArrowRight, ShieldCheck, Fuel, MapPin, CheckCircle2 } from 'lucide-react';
+import { Phone, Navigation, ArrowRight, ShieldCheck, MapPin, CheckCircle2 } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
 import { useLanguage } from '../context/LanguageContext';
 import Button from '../components/Button';
@@ -24,26 +24,19 @@ export default function Hero() {
           {/* Left Column: Headline & Action Controls */}
           <div className="hero-text-content">
             <RevealAnimation delay={1}>
-              <div className="hero-badge-pill">
-                <Fuel size={15} className="text-yellow" />
-                <span>{t('hero.badge', {}, 'CNG & LPG SERVICES • MAA KAMAKHYA AUTO GAS')}</span>
-              </div>
-            </RevealAnimation>
-
-            <RevealAnimation delay={2}>
               <h1 className="hero-title">
                 {t('hero.h1', {}, 'CNG, LPG and Auto Gas Services at Maa Kamakhya Auto Gas')}
               </h1>
             </RevealAnimation>
 
-            <RevealAnimation delay={3}>
+            <RevealAnimation delay={2}>
               <p className="hero-subtitle">
                 {t('hero.description', {}, "Welcome to Maa Kamakhya Auto Gas. We provide CNG and LPG-related automotive services, including auto gas filling, gas kit installation, vehicle gas conversion, and gas kit repair and maintenance. Explore our services and contact us to enquire about your vehicle's requirements.")}
               </p>
             </RevealAnimation>
 
             {/* CTA Action Buttons */}
-            <RevealAnimation delay={4}>
+            <RevealAnimation delay={3}>
               <div className="hero-actions-group">
                 <Button
                   variant="primary"
@@ -80,28 +73,6 @@ export default function Hero() {
                 >
                   {t('common.call', {}, 'Call')}: {siteConfig.phone}
                 </Button>
-              </div>
-            </RevealAnimation>
-
-            {/* Quick Feature Badges Row */}
-            <RevealAnimation delay={4}>
-              <div className="hero-badges-row">
-                <div className="hero-feature-tag">
-                  <span className="dot-indicator"></span>
-                  <span>{t('hero.trustPill1', {}, 'CNG retrofitment')}</span>
-                </div>
-                <div className="hero-feature-tag">
-                  <span className="dot-indicator"></span>
-                  <span>{t('hero.trustPill2', {}, 'Private & commercial vehicles')}</span>
-                </div>
-                <div className="hero-feature-tag">
-                  <span className="dot-indicator"></span>
-                  <span>{t('hero.trustPill3', {}, 'English, Hindi & Assamese support')}</span>
-                </div>
-                <div className="hero-feature-tag">
-                  <span className="dot-indicator"></span>
-                  <span>{t('hero.trustPill4', {}, 'Vehicle compatibility check')}</span>
-                </div>
               </div>
             </RevealAnimation>
           </div>

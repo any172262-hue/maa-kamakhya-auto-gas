@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, MessageCircle, ArrowRight, Zap } from 'lucide-react';
+import { Phone, MessageCircle, ArrowRight } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
 import { useLanguage } from '../context/LanguageContext';
 import Button from '../components/Button';
@@ -22,10 +22,6 @@ export default function CTA() {
         <RevealAnimation>
           <div className="cta-banner-box">
             <div className="cta-content">
-              <div className="cta-badge">
-                <Zap size={16} className="text-yellow" />
-                <span>{t('cta.tagline', {}, 'LIMITED SLOTS AVAILABLE THIS WEEK')}</span>
-              </div>
               <h2 className="cta-title">
                 {t('cta.title', {}, 'Ready to cut your daily fuel bills by half?')}
               </h2>

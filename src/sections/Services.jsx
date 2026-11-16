@@ -5,8 +5,6 @@ import SectionHeading from '../components/SectionHeading';
 import ServiceCard from '../components/ServiceCard';
 import RevealAnimation from '../components/RevealAnimation';
 import { 
-  Sparkles, 
-  Filter, 
   CheckCircle2, 
   MessageCircle,
   Gauge,
@@ -117,14 +115,9 @@ export default function Services({ onSelectService, onNavigate }) {
 
         {/* Core 6 Dedicated SEO Services Grid */}
         <div className="core-seo-services-grid mb-12">
-          {coreSeoServices.map((srv, idx) => {
-            const IconCmp = srv.icon;
-            return (
-              <RevealAnimation key={srv.id} delay={idx + 1}>
-                <article className="card-navy card-hover-effect core-service-item">
-                  <div className="core-service-icon-wrap">
-                    <IconCmp size={24} className="text-yellow" />
-                  </div>
+          {coreSeoServices.map((srv, idx) => (
+            <RevealAnimation key={srv.id} delay={idx + 1}>
+              <article className="card-navy card-hover-effect core-service-item">
                   <h3 className="core-service-title">{srv.title}</h3>
                   <p className="core-service-desc">{srv.desc}</p>
                   <button
@@ -138,8 +131,7 @@ export default function Services({ onSelectService, onNavigate }) {
                   </button>
                 </article>
               </RevealAnimation>
-            );
-          })}
+            ))}
         </div>
 
         {/* 24 Verified Service Directory Badge Cloud */}
@@ -147,10 +139,6 @@ export default function Services({ onSelectService, onNavigate }) {
           <div className="verified-directory-card">
             <div className="verified-directory-header">
               <div className="verified-title-group">
-                <span className="badge-tag badge-tag-gold">
-                  <Sparkles size={14} className="text-yellow mr-1" />
-                  <span>24 Verified Trade Categories & Authorizations</span>
-                </span>
                 <h3 className="verified-heading">Official Business Service Directory</h3>
                 <p className="verified-subtext">
                   Direct government & trade business listing categories for Maa Kamakhya Auto Gas. Click any service tag to get an instant WhatsApp quote.
@@ -198,7 +186,6 @@ export default function Services({ onSelectService, onNavigate }) {
         {/* Category Filter Tabs */}
         <div className="services-filter-tabs" role="tablist" aria-label="Filter services by category">
           <div className="filter-label-group">
-            <Filter size={16} className="text-yellow" />
             <span className="filter-title">Filter by Category:</span>
           </div>
           <div className="filter-buttons-scroll">
