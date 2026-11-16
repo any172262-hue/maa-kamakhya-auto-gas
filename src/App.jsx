@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import { LanguageProvider } from './context/LanguageContext';
 import MainLayout from './layouts/MainLayout';
 import HomePage from './pages/HomePage';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import TermsConditions from './pages/TermsConditions';
+
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
+const TermsConditions = lazy(() => import('./pages/TermsConditions'));
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -52,8 +53,10 @@ export default function App() {
   return (
     <LanguageProvider>
       <MainLayout onNavigateLegal={navigateTo}>
-        {currentPage === 'privacy' && <PrivacyPolicy onBackToHome={() => navigateTo('home')} />}
-        {currentPage === 'terms' && <TermsConditions onBackToHome={() => navigateTo('home')} />}
+        <Suspense fallback={<div className="legal-loading-spinner" style={{ minHeight: '60vh' }} />}>
+          {currentPage === 'privacy' && <PrivacyPolicy onBackToHome={() => navigateTo('home')} />}
+          {currentPage === 'terms' && <TermsConditions onBackToHome={() => navigateTo('home')} />}
+        </Suspense>
         {currentPage === 'home' && <HomePage />}
       </MainLayout>
     </LanguageProvider>

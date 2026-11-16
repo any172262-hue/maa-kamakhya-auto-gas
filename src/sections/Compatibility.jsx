@@ -37,6 +37,8 @@ export default function Compatibility() {
                   width="896"
                   height="1200"
                   loading="lazy"
+                  decoding="async"
+                  style={{ aspectRatio: '896 / 1200' }}
                 />
                 <p className="system-diagram-note">
                   {t('compatibility.diagramNote', {}, 'Illustrative system overview. Component placement and specifications depend on the vehicle make and approved retrofitment kit.')}

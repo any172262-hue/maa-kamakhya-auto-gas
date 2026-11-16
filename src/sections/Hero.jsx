@@ -115,7 +115,7 @@ export default function Hero() {
             <RevealAnimation delay={2}>
               <div className="hero-brand-card card-navy">
                 <div className="hero-brand-emblem-wrap">
-                  <Logo height={110} className="hero-brand-emblem" />
+                  <Logo height={110} className="hero-brand-emblem" priority={true} />
                 </div>
 
                 <div className="hero-brand-header">

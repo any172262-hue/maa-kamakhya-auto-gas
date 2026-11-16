@@ -59,24 +59,47 @@ export default function Navbar({ onNavigateLegal, onOpenSearch }) {
 
   // Scroll listener for sticky navbar styling and active section detection (Scroll Spy)
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+    let ticking = false;
+    let lastScrolled = false;
+    let lastSection = 'hero';
+    const sectionIds = ['hero', 'statutory-details', 'benefits', 'services', 'calculator', 'compatibility', 'process', 'location', 'contact'];
+
+    const updateScrollState = () => {
+      const scrollY = window.scrollY;
+      const scrolled = scrollY > 20;
+      if (scrolled !== lastScrolled) {
+        lastScrolled = scrolled;
+        setIsScrolled(scrolled);
+      }
 
       // Scroll Spy detection
-      const sectionIds = ['hero', 'statutory-details', 'benefits', 'services', 'calculator', 'compatibility', 'process', 'location', 'contact'];
-      const scrollPosition = window.scrollY + 140;
-
+      const scrollPosition = scrollY + 140;
+      let matchedSection = 'hero';
       for (let i = sectionIds.length - 1; i >= 0; i--) {
         const el = document.getElementById(sectionIds[i]);
         if (el && el.offsetTop <= scrollPosition) {
-          setActiveSection(sectionIds[i]);
+          matchedSection = sectionIds[i];
           break;
         }
+      }
+
+      if (matchedSection !== lastSection) {
+        lastSection = matchedSection;
+        setActiveSection(matchedSection);
+      }
+
+      ticking = false;
+    };
+
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateScrollState);
+        ticking = true;
       }
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll();
+    updateScrollState();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -182,7 +205,7 @@ export default function Navbar({ onNavigateLegal, onOpenSearch }) {
           onClick={(e) => handleNavClick(e, '#hero')}
         >
           <div className="navbar-logo-frame">
-            <Logo height={44} className="navbar-brand-logo" />
+            <Logo height={44} className="navbar-brand-logo" priority={true} />
           </div>
           <div className="navbar-brand-text">
             <div className="brand-name-row">

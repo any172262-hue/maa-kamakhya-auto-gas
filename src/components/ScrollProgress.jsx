@@ -1,19 +1,29 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 export default function ScrollProgress() {
-  const [scrollProgress, setScrollProgress] = useState(0);
+  const barRef = useRef(null);
 
   useEffect(() => {
+    let ticking = false;
+
+    const updateProgress = () => {
+      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (scrollHeight > 0 && barRef.current) {
+        const ratio = Math.min(1, Math.max(0, window.scrollY / scrollHeight));
+        barRef.current.style.transform = `scaleX(${ratio})`;
+      }
+      ticking = false;
+    };
+
     const handleScroll = () => {
-      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
-      if (totalHeight > 0) {
-        const currentProgress = (window.scrollY / totalHeight) * 100;
-        setScrollProgress(Math.min(100, Math.max(0, currentProgress)));
+      if (!ticking) {
+        window.requestAnimationFrame(updateProgress);
+        ticking = true;
       }
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll();
+    updateProgress();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -22,13 +32,12 @@ export default function ScrollProgress() {
       className="scroll-progress-track"
       role="progressbar"
       aria-label="Page scroll progress"
-      aria-valuenow={Math.round(scrollProgress)}
       aria-valuemin="0"
       aria-valuemax="100"
     >
       <div 
+        ref={barRef}
         className="scroll-progress-fill"
-        style={{ width: `${scrollProgress}%` }}
       />
     </div>
   );
