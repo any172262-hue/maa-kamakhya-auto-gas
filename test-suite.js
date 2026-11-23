@@ -1,5 +1,10 @@
 import http from 'http';
 import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 import { calculateFuelCosts } from './src/utils/calculator.js';
 import { formatINR, formatDistance } from './src/utils/formatCurrency.js';
 import { siteConfig } from './src/data/siteConfig.js';
@@ -10,6 +15,7 @@ import { formatUtmForMessage } from './src/utils/utm.js';
 import { runCalculatorUnitTests } from './tests/unit/calculator.test.js';
 import { runFormatCurrencyUnitTests } from './tests/unit/formatCurrency.test.js';
 import { runLanguageTests } from './tests/unit/language.test.js';
+import { runWhatsAppUnitTests } from './tests/unit/whatsapp.test.js';
 import { runSiteConfigIntegrationTests } from './tests/integration/siteConfig.test.js';
 import { runNavigationIntegrationTests } from './tests/integration/navigation.test.js';
 import { runUserFlowE2ETests } from './tests/e2e/userFlow.test.js';
@@ -35,6 +41,7 @@ console.log('0. Executing Modular Tests (tests/unit, tests/integration, tests/e2
 runCalculatorUnitTests();
 runFormatCurrencyUnitTests();
 runLanguageTests();
+runWhatsAppUnitTests();
 runSiteConfigIntegrationTests();
 runNavigationIntegrationTests();
 runUserFlowE2ETests();
@@ -95,19 +102,20 @@ console.log('\n3. Testing Contact Configuration Integrity:');
 {
   assert(siteConfig.phone === '6913910337', `Phone number is authentic (6913910337)`);
   assert(siteConfig.phoneTel === 'tel:+916913910337', `Tel link format is valid (tel:+916913910337)`);
-  assert(siteConfig.whatsappNumber === '8822049075', `WhatsApp number is authentic (8822049075)`);
-  assert(siteConfig.whatsappUrl.includes('8822049075'), `WhatsApp link points to authentic number`);
+  assert(siteConfig.email === null, `Unsupplied business email is correctly set to null (no invented email)`);
+  assert(siteConfig.whatsappNumber === '6913910337', `WhatsApp number is authentic (6913910337)`);
+  assert(siteConfig.whatsappUrl.includes('6913910337'), `WhatsApp link points to authentic number`);
   assert(siteConfig.address.includes('Guwahati'), `Address includes Guwahati`);
   assert(siteConfig.languages.length === 3, `Supports 3 languages: English, Hindi, Assamese`);
   assert(siteConfig.name === 'Maa Kamakhya Auto Gas', `Brand Name is 'Maa Kamakhya Auto Gas'`);
   
-  // Business Statutory Details Verification
+  // Business Confirmed Details Verification
   assert(siteConfig.statutory.legalName === 'Maa Kamakhya Auto Gas', `Legal Name matches 'Maa Kamakhya Auto Gas'`);
-  assert(siteConfig.statutory.yearOfEstablishment === '2022', `Year of Establishment matches '2022'`);
-  assert(siteConfig.statutory.noOfEmployee === 'Less than 10', `No of Employee matches 'Less than 10'`);
-  assert(siteConfig.statutory.turnOver.includes('51 Lakh'), `Turn Over matches '51 Lakh to 1 Crore'`);
-  assert(siteConfig.statutory.gstin === '18**********1ZS', `GSTIN matches '18**********1ZS'`);
-  assert(siteConfig.statutory.modeOfPayment.includes('EMI Financing'), `Payment mode includes EMI, Cards, UPI, Cash`);
+  assert(siteConfig.statutory.address.includes('NH 37, Pachim Boragaon'), `Address matches confirmed NH 37 location`);
+  assert(siteConfig.statutory.fillingFuel === 'CNG only', `Filling station fuel confirmed as 'CNG only'`);
+  assert(siteConfig.verifiedDetails.operatingHours === 'Not provided', `Operating hours correctly flagged as 'Not provided'`);
+  assert(!siteConfig.statutory.gstin, `Zero fabricated GSTIN in statutory config`);
+  assert(!siteConfig.statutory.yearOfEstablishment, `Zero unverified establishment year in statutory config`);
 }
 
 // 4. NAVIGATION LINKS INTEGRITY
@@ -170,7 +178,7 @@ console.log('\n6. Testing Search Index, UTM Tracker & Form Validation:');
   // Indian Phone validation logic tests (^[6-9]\d{9}$)
   const phoneRegex = /^[6-9]\d{9}$/;
   assert(phoneRegex.test('6913910337'), `Validates 6913910337 as true`);
-  assert(phoneRegex.test('8822049075'), `Validates 8822049075 as true`);
+  assert(phoneRegex.test('6913910337'), `Validates 6913910337 as true`);
   assert(phoneRegex.test('9876543210'), `Validates 9876543210 as true`);
   assert(phoneRegex.test('6001234567'), `Validates 6001234567 as true`);
   assert(!phoneRegex.test('5551234567'), `Rejects phone starting with 5 (Invalid in India)`);
@@ -231,6 +239,124 @@ async function runHttpChecks() {
     // 7. SEO METADATA & 404 RESILIENCE
     console.log('\n7. Testing SEO Metadata & 404 Resilience:');
     assert(fs.existsSync('./index.html'), 'HTML document verified on disk');
+  }
+
+  // 8. TECHNICAL SEO, SITEMAP, ROBOTS & STRUCTURED DATA TESTS
+  console.log('\n8. Testing Technical SEO, Sitemap, Robots.txt & Structured Data Integrity:');
+  {
+    // Sitemap validation
+    assert(fs.existsSync('./public/sitemap.xml'), 'Sitemap XML exists in public folder');
+    const sitemapContent = fs.readFileSync('./public/sitemap.xml', 'utf8');
+    const canonicalDomain = 'https://any172262-hue.github.io/maa-kamakhya-auto-gas/';
+    assert(sitemapContent.includes(canonicalDomain), 'Sitemap specifies the official GitHub Pages project domain');
+    assert(!sitemapContent.includes('maakamakhyaautogas.com'), 'Sitemap contains zero obsolete unhosted domain URLs');
+    assert(!sitemapContent.includes('hreflang="as"'), 'Sitemap contains zero dead alternate language URLs');
+    
+    const expectedRoutes = [
+      '',
+      'services/cng-services/',
+      'services/lpg-services/',
+      'services/auto-gas-filling/',
+      'services/gas-kit-installation/',
+      'services/vehicle-gas-conversion/',
+      'services/gas-kit-repair-maintenance/',
+      'about/',
+      'contact/',
+      'privacy-policy/',
+      'terms-conditions/'
+    ];
+    expectedRoutes.forEach(r => {
+      assert(sitemapContent.includes(`<loc>${canonicalDomain}${r}</loc>`), `Sitemap includes indexable route: ${canonicalDomain}${r}`);
+    });
+
+    // Robots.txt validation
+    assert(fs.existsSync('./public/robots.txt'), 'robots.txt exists in public directory');
+    const robotsContent = fs.readFileSync('./public/robots.txt', 'utf8');
+    assert(robotsContent.includes('Allow: /'), 'robots.txt permits crawling of site content');
+    assert(robotsContent.includes(`Sitemap: ${canonicalDomain}sitemap.xml`), 'robots.txt points to correct live sitemap.xml');
+    assert(!robotsContent.includes('maakamakhyaautogas.com'), 'robots.txt contains zero obsolete unhosted sitemap directives');
+
+    // Dist generation checks (if dist exists)
+    if (fs.existsSync('./dist')) {
+      assert(fs.existsSync('./dist/index.html'), 'Production build dist/index.html exists');
+      assert(fs.existsSync('./dist/404.html'), 'Production build dist/404.html fallback exists');
+      
+      const distIndex = fs.readFileSync('./dist/index.html', 'utf8');
+      assert(distIndex.includes(canonicalDomain), 'Production index.html contains correct canonical link');
+      assert(distIndex.includes('og:title') && distIndex.includes('twitter:card'), 'Production index.html contains Open Graph and Twitter Card tags');
+      assert(!distIndex.includes('./images/'), 'Production index.html does not contain broken relative ./images/ paths');
+
+      const expectedSubpages = [
+        'services/cng-services/index.html',
+        'services/lpg-services/index.html',
+        'services/auto-gas-filling/index.html',
+        'services/gas-kit-installation/index.html',
+        'services/vehicle-gas-conversion/index.html',
+        'services/gas-kit-repair-maintenance/index.html',
+        'about/index.html',
+        'contact/index.html',
+        'privacy-policy/index.html',
+        'terms-conditions/index.html'
+      ];
+
+      expectedSubpages.forEach(sub => {
+        const fullPath = `./dist/${sub}`;
+        assert(fs.existsSync(fullPath), `Pre-rendered static crawlable file exists: ${sub}`);
+        if (fs.existsSync(fullPath)) {
+          const content = fs.readFileSync(fullPath, 'utf8');
+          assert(content.includes('<h1'), `${sub} contains pre-rendered <h1> heading`);
+          assert(content.includes('<link rel="canonical"'), `${sub} contains canonical link`);
+          assert(content.includes('type="application/ld+json"'), `${sub} contains structured JSON-LD`);
+          
+          // Test JSON-LD parse
+          const jsonLdMatch = content.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
+          assert(jsonLdMatch && jsonLdMatch[1], `${sub} has valid JSON-LD script block`);
+          if (jsonLdMatch && jsonLdMatch[1]) {
+            try {
+              const parsed = JSON.parse(jsonLdMatch[1]);
+              assert(parsed['@context'] === 'https://schema.org', `${sub} structured data has valid schema.org context`);
+            } catch (e) {
+              assert(false, `${sub} JSON-LD parsing failed: ${e.message}`);
+            }
+          }
+        }
+      });
+    }
+
+    // 9. Testing Google Search Spam Policies Compliance
+    console.log('\n9. Testing Google Search Spam Policies Compliance:');
+    
+    // Check absence of fake review/rating schema abuse
+    const indexHtml = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
+    assert(!indexHtml.includes('aggregateRating'), 'Zero fake aggregateRating schema in index.html (Anti-Spam)');
+    assert(!indexHtml.includes('ratingValue'), 'Zero fake ratingValue in index.html (Anti-Spam)');
+    
+    // Check absence of hidden text hacks in CSS
+    const compCss = fs.readFileSync(path.join(__dirname, 'src', 'styles', 'components.css'), 'utf8');
+    assert(!compCss.includes('text-indent: -9999px'), 'Zero off-screen text-indent hacks in CSS (Anti-Spam)');
+    assert(!compCss.includes('font-size: 0px'), 'Zero zero-sized font keyword hacks in CSS (Anti-Spam)');
+
+    // Check compliance documentation
+    const spamDocExists = fs.existsSync(path.join(__dirname, 'docs', 'GOOGLE_SPAM_POLICY_COMPLIANCE.md'));
+    assert(spamDocExists, 'docs/GOOGLE_SPAM_POLICY_COMPLIANCE.md exists and is complete');
+
+    // 10. Testing Confirmed Local SEO Content Plan Compliance
+    console.log('\n10. Testing Confirmed Local SEO Content Plan Compliance:');
+    const localSeoDocExists = fs.existsSync(path.join(__dirname, 'docs', 'LOCAL_SEO_CONTENT_PLAN.md'));
+    assert(localSeoDocExists, 'docs/LOCAL_SEO_CONTENT_PLAN.md exists and is complete');
+
+    // Verify Homepage metadata
+    assert(indexHtml.includes('CNG &amp; LPG Services in Guwahati | Maa Kamakhya Auto Gas') || indexHtml.includes('CNG & LPG Services in Guwahati | Maa Kamakhya Auto Gas'), 'Homepage title matches confirmed Local SEO specification');
+    assert(indexHtml.includes('Maa Kamakhya Auto Gas offers CNG and LPG services, CNG filling, gas kit installation'), 'Homepage meta description matches confirmed Local SEO specification');
+
+    // Verify Filling Station CNG-only safeguards
+    const fillingHtmlPath = path.join(__dirname, 'dist', 'services', 'auto-gas-filling', 'index.html');
+    if (fs.existsSync(fillingHtmlPath)) {
+      const fillingContent = fs.readFileSync(fillingHtmlPath, 'utf8');
+      assert(fillingContent.includes('CNG Filling Station in Guwahati'), 'Filling station has confirmed H1');
+      assert(fillingContent.includes('Fuel Available at Filling Station: CNG') || fillingContent.includes('Fuel available at the filling station: CNG'), 'Filling station explicitly states CNG fuel availability');
+      assert(fillingContent.includes('We do not provide LPG filling at this station') || fillingContent.includes('LPG filling is not available'), 'Strict safeguard: Zero LPG filling claim at filling station');
+    }
   }
 
   console.log('\n====================================================');

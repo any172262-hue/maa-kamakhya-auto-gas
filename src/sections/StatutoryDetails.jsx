@@ -1,13 +1,13 @@
 import React from 'react';
 import { 
   Building2, 
-  Calendar, 
-  Users, 
-  TrendingUp, 
-  ShieldCheck, 
-  CreditCard,
+  MapPin, 
+  Fuel, 
+  Clock, 
+  Wrench, 
+  AlertCircle,
   CheckCircle2,
-  Lock
+  Phone
 } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
 import { useLanguage } from '../context/LanguageContext';
@@ -16,46 +16,46 @@ import RevealAnimation from '../components/RevealAnimation';
 
 export default function StatutoryDetails() {
   const { t } = useLanguage();
-  const { statutory } = siteConfig;
+  const { verifiedDetails } = siteConfig;
 
   const detailsList = [
     {
-      label: t('statutory.legalName', {}, 'Legal Name'),
-      value: statutory.legalName,
+      label: t('statutory.legalName', {}, 'Business Name'),
+      value: verifiedDetails.businessName,
       icon: Building2,
-      subtext: t('statutory.legalNameSub', {}, 'Government-approved CNG retrofitment workshop')
+      subtext: t('statutory.legalNameSub', {}, 'Confirmed business identity in Guwahati')
     },
     {
-      label: t('statutory.estYear', {}, 'Year of Establishment'),
-      value: statutory.yearOfEstablishment,
-      icon: Calendar,
-      subtext: t('statutory.estYearSub', {}, 'Serving Northeast India since 2022')
+      label: t('statutory.address', {}, 'Public Address'),
+      value: verifiedDetails.publicAddress,
+      icon: MapPin,
+      subtext: t('statutory.addressSub', {}, 'NH 37 highway frontage, Pachim Boragaon, Garchuk')
     },
     {
-      label: t('statutory.employees', {}, 'No of Employee'),
-      value: statutory.noOfEmployee,
-      icon: Users,
-      subtext: t('statutory.employeesSub', {}, 'Certified technical specialists')
+      label: t('statutory.district', {}, 'District & State'),
+      value: verifiedDetails.district,
+      icon: MapPin,
+      badge: t('statutory.verifiedBadge', {}, 'Confirmed'),
+      subtext: t('statutory.districtSub', {}, 'Kamrup Metropolitan, Assam, India (PIN: 781035)')
     },
     {
-      label: t('statutory.turnover', {}, 'Turn Over'),
-      value: statutory.turnOver,
-      icon: TrendingUp,
-      subtext: t('statutory.turnoverSub', {}, 'Annual verified operating capacity')
+      label: t('statutory.fuelAvailability', {}, 'Station Fuel Availability'),
+      value: verifiedDetails.fillingStationFuel,
+      icon: Fuel,
+      badge: t('statutory.cngOnlyBadge', {}, 'CNG Only'),
+      subtext: t('statutory.fuelSub', {}, 'CNG is available at the filling station. LPG filling is not available.')
     },
     {
-      label: t('statutory.gstin', {}, 'GSTIN'),
-      value: statutory.gstin,
-      icon: ShieldCheck,
-      badge: t('statutory.verifiedBadge', {}, 'Assam Regd.'),
-      subtext: t('statutory.gstinSub', {}, 'Registered taxpayer in Assam (Code 18)')
+      label: t('statutory.hours', {}, 'Operating Hours'),
+      value: t('statutory.hoursValue', {}, 'Not Provided'),
+      icon: Clock,
+      subtext: t('statutory.hoursSub', {}, 'Operating hours are not published. Please contact before visiting.')
     },
     {
-      label: t('statutory.paymentMode', {}, 'Mode of Payment'),
-      value: statutory.modeOfPayment,
-      icon: CreditCard,
-      subtext: t('statutory.paymentModeSub', {}, 'Flexible financing & instant payments'),
-      isPayment: true
+      label: t('statutory.services', {}, 'Confirmed Services'),
+      value: t('statutory.servicesCount', {}, '6 Core Services'),
+      icon: Wrench,
+      subtext: t('statutory.servicesSub', {}, 'CNG, LPG, Filling, Installation, Conversion, Repair')
     }
   ];
 
@@ -64,10 +64,10 @@ export default function StatutoryDetails() {
       <div className="container">
         <RevealAnimation>
           <SectionHeading
-            tagline={t('statutory.tagline', {}, 'OFFICIAL REGISTRATION & COMPLIANCE')}
-            title={t('statutory.title', {}, 'Business Statutory')}
-            highlight={t('statutory.titleHighlight', {}, 'Details.')}
-            description={t('statutory.description', {}, 'Complete statutory verification, legal registration details, and flexible payment options ensuring complete transparency and peace of mind.')}
+            tagline={t('statutory.tagline', {}, 'CONFIRMED BUSINESS INFORMATION')}
+            title={t('statutory.title', {}, 'Verified Business Details &')}
+            highlight={t('statutory.titleHighlight', {}, 'Location Information.')}
+            description={t('statutory.description', {}, 'Accurate, evidence-backed information for Maa Kamakhya Auto Gas in Guwahati. Unverified claims, unconfirmed opening hours, and third-party ratings are strictly excluded.')}
           />
         </RevealAnimation>
 
@@ -78,7 +78,7 @@ export default function StatutoryDetails() {
               <RevealAnimation 
                 key={item.label} 
                 delay={(index % 3) + 1}
-                className={`statutory-card-col ${item.isPayment ? 'statutory-card-wide' : ''}`}
+                className="statutory-card-col"
               >
                 <div className="card-navy card-hover-effect statutory-card">
                   <div className="statutory-card-top">
@@ -94,33 +94,22 @@ export default function StatutoryDetails() {
                   </div>
 
                   <div className="statutory-label">{item.label}</div>
-                  <div className="statutory-value">{item.value}</div>
+                  <div className="statutory-value" style={{ fontSize: '1.05rem', lineHeight: '1.4' }}>{item.value}</div>
                   <p className="statutory-subtext">{item.subtext}</p>
-
-                  {item.isPayment && (
-                    <div className="statutory-payment-chips">
-                      {statutory.paymentMethodsList.map((method) => (
-                        <span key={method} className="payment-chip">
-                          <CheckCircle2 size={12} className="text-blue" />
-                          <span>{method}</span>
-                        </span>
-                      ))}
-                    </div>
-                  )}
                 </div>
               </RevealAnimation>
             );
           })}
         </div>
 
-        {/* Assurance Box */}
+        {/* Owner Verification Notice Bar */}
         <RevealAnimation delay={2}>
-          <div className="statutory-assurance-bar card-navy">
+          <div className="statutory-assurance-bar card-navy" style={{ borderColor: 'rgba(234, 179, 8, 0.4)' }}>
             <div className="assurance-icon-box">
-              <Lock size={18} className="text-yellow" />
+              <AlertCircle size={18} className="text-yellow" />
             </div>
             <div className="assurance-text">
-              <strong>100% Statutory & Tax Invoiced:</strong> Every conversion, hydro-testing service, and cylinder replacement is accompanied by an authorized tax invoice, fitment compliance certificate, and legal warranty documentation under <strong>{statutory.legalName}</strong>.
+              <strong>Owner Verification Notice:</strong> Published phone numbers (+91 {siteConfig.phone} / WhatsApp +91 {siteConfig.whatsappNumber}) are pending business-owner confirmation. Operating hours are not published online. Please confirm service availability and timings before visiting our NH 37 location.
             </div>
           </div>
         </RevealAnimation>

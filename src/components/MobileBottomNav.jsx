@@ -81,7 +81,6 @@ export default function MobileBottomNav({ onNavigateLegal }) {
         >
           <div className="tab-calc-bubble">
             <Calculator size={19} className="tab-icon-calc text-yellow" />
-            <span className="tab-badge-tiny">55%</span>
           </div>
           <span className="tab-label font-bold text-yellow">{t('nav.calculator', {}, 'Calculator')}</span>
         </button>

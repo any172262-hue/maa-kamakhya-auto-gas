@@ -22,7 +22,7 @@ export default function Logo({
         height={finalHeight}
         loading={priority ? 'eager' : 'lazy'}
         decoding={priority ? 'sync' : 'async'}
-        fetchPriority={priority ? 'high' : 'auto'}
+        fetchpriority={priority ? 'high' : 'auto'}
         className={`brand-logo ${className}`}
         style={{
           display: 'block',

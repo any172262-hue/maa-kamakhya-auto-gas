@@ -4,15 +4,9 @@ import {
   MessageCircle, 
   Menu, 
   X, 
-  Search, 
-  ShieldCheck, 
-  Wrench, 
-  Calculator, 
-  Car, 
+  Search,
   ChevronRight, 
   Clock, 
-  Sparkles, 
-  MapPin,
   Globe
 } from 'lucide-react';
 import { navLinks } from '../data/navigation';
@@ -21,15 +15,6 @@ import { useLanguage } from '../context/LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
 import Button from './Button';
 import Logo from './Logo';
-
-const navIconMap = {
-  'Benefits': ShieldCheck,
-  'Services': Wrench,
-  'Savings Calculator': Calculator,
-  'Compatibility': Car,
-  'How It Works': Sparkles,
-  'Contact': MapPin
-};
 
 export default function Navbar({ onNavigateLegal, onOpenSearch }) {
   const { t } = useLanguage();
@@ -214,7 +199,7 @@ export default function Navbar({ onNavigateLegal, onOpenSearch }) {
             </div>
             <div className="brand-meta-row">
               <span className="brand-pulse-dot" />
-              <span className="brand-meta-text">{t('hero.badge', {}, 'Govt. Approved CNG Center • Guwahati')}</span>
+              <span className="brand-meta-text">{t('hero.badge', {}, 'CNG & Auto Gas Workshop • Guwahati')}</span>
             </div>
           </div>
         </a>
@@ -291,15 +276,6 @@ export default function Navbar({ onNavigateLegal, onOpenSearch }) {
 
         {/* Mobile Header Buttons */}
         <div className="nav-mobile-buttons">
-          <a
-            href={siteConfig.phoneTel}
-            className="nav-mobile-icon-btn nav-mobile-call-btn"
-            aria-label={`Call workshop at ${siteConfig.phone}`}
-            title="Call workshop"
-          >
-            <Phone size={17} className="text-yellow" />
-          </a>
-
           <button
             type="button"
             className="nav-mobile-icon-btn nav-mobile-search-btn"
@@ -332,12 +308,11 @@ export default function Navbar({ onNavigateLegal, onOpenSearch }) {
                 <Logo height={42} className="mobile-drawer-logo" />
                 <div className="mobile-drawer-titles">
                   <div className="drawer-title-bold">MAA KAMAKHYA AUTO GAS</div>
-                  <div className="drawer-title-sub">Govt. Approved CNG Center • NH 37, Garchuk, Guwahati</div>
+                  <div className="drawer-title-sub">Auto Gas Workshop • NH 37, Garchuk, Guwahati</div>
                 </div>
               </div>
               <div className="mobile-drawer-verified-tag">
-                <ShieldCheck size={13} className="text-yellow" />
-                <span>GST Registered: State Code 18</span>
+                <span>NH 37, Pachim Boragaon, Garchuk</span>
               </div>
             </div>
 
@@ -355,12 +330,11 @@ export default function Navbar({ onNavigateLegal, onOpenSearch }) {
               <span className="search-hint-pill">{t('nav.search', {}, 'Search')}</span>
             </button>
 
-            {/* App Nav Tiles with Category Icons and Chevron */}
+            {/* App Nav Tiles with Chevron */}
             <div className="mobile-nav-tiles">
               {navLinks.map((link, idx) => {
                 const linkSectionId = link.href.replace('#', '');
                 const isActive = activeSection === linkSectionId;
-                const IconComponent = navIconMap[link.name] || ChevronRight;
                 const linkDisplay = getNavLinkName(link, false);
 
                 return (
@@ -371,12 +345,8 @@ export default function Navbar({ onNavigateLegal, onOpenSearch }) {
                     onClick={(e) => handleNavClick(e, link.href)}
                     style={{ animationDelay: `${(idx + 1) * 0.04}s` }}
                   >
-                    <div className="tile-icon-bubble">
-                      <IconComponent size={18} className={isActive ? 'text-yellow' : 'text-blue'} />
-                    </div>
                     <div className="tile-label-wrap">
                       <span className="tile-name">{linkDisplay}</span>
-                      {link.name === 'Savings Calculator' && <span className="tile-badge-save">{t('calculator.badge', {}, 'Save up to 55%')}</span>}
                       {link.name === 'Services' && <span className="tile-badge-count">{t('services.filterAll', {}, 'All Services')}</span>}
                     </div>
                     <ChevronRight size={16} className="tile-arrow" />
@@ -421,7 +391,7 @@ export default function Navbar({ onNavigateLegal, onOpenSearch }) {
 
             <div className="mobile-drawer-timing">
               <Clock size={13} className="text-yellow flex-shrink-0" />
-              <span>{t('common.hours', {}, 'Workshop Hours: Mon - Sat: 9:00 AM - 7:30 PM')}</span>
+              <span>{t('common.hours', {}, 'NH 37, Garchuk, Guwahati | Enquire for Timings')}</span>
             </div>
           </div>
         </div>

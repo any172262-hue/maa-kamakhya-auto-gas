@@ -22,7 +22,7 @@ The project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html
 - **One-Click Calculation-to-Quote Transfer:** Interactive button transferring live calculated savings into the WhatsApp quotation form note with smooth auto-scroll.
 - **Annotated CNG Installation System Schematic:** Detailed cutaway visualization illustrating underbody high-pressure piping, rear-mounted cylinder, engine bay reducer, injector rail, changeover switch, and sequential ECU.
 - **Vehicle Compatibility Matrix:** Interactive brand tabs for Maruti Suzuki, Hyundai, Tata Motors, Honda, and Toyota displaying engine CC, tank capacities, and RTO endorsement status.
-- **Structured WhatsApp Quotation Engine:** Multi-field validation form serializing customer vehicle specifications and contact details into formatted `https://wa.me/918822049075` deep links.
+- **Structured WhatsApp Quotation Engine:** Multi-field validation form serializing customer vehicle specifications and contact details into formatted `https://wa.me/916913910337` deep links.
 - **Sticky Navbar with Scrollspy:** Fixed header with blurred backdrop (`backdrop-filter: blur(12px)`), 80px scroll-margin compensation, and real-time active link highlight.
 - **Floating WhatsApp Action Trigger:** Persistent pulsing button linking directly to workshop consultation.
 - **Automated Verification Harness:** 42/42 passing automated tests in `test-suite.js` covering math precision, formatting, configuration integrity, and E2E conversion simulations.
@@ -30,7 +30,7 @@ The project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html
 ### Changed
 - Replaced legacy 6 generic services with the official 24 verified business listing categories and 8 structured automotive service modules per verified trade registrations.
 - Relocated Business Statutory Details to the top of the page (Top 2nd position) per user design specification.
-- Updated all contact channels to official verified numbers: Phone `6913910337`, WhatsApp `8822049075`.
+- Updated all contact channels to official verified numbers: Phone `6913910337`, WhatsApp `69139 10337`.
 - Updated physical location to: `Shop No. 7, Opposite Nezon Steel, Near Kumar Resorts, NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035, Assam`.
 
 ---

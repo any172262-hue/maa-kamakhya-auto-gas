@@ -23,10 +23,10 @@ export default function CTA() {
           <div className="cta-banner-box">
             <div className="cta-content">
               <h2 className="cta-title">
-                {t('cta.title', {}, 'Ready to cut your daily fuel bills by half?')}
+                {t('cta.title', {}, 'Ready to explore auto gas for your vehicle?')}
               </h2>
               <p className="cta-desc">
-                {t('cta.description', {}, 'Book your pre-fitment engine diagnostic and get a transparent price quote with government-approved warranty and RTO endorsement support in Guwahati.')}
+                {t('cta.description', {}, 'Contact our workshop on NH 37 in Garchuk, Guwahati to enquire about gas kit suitability, auto gas filling, or maintenance support for your vehicle.')}
               </p>
 
               <div className="cta-buttons-row">

@@ -22,7 +22,7 @@ All agents, subagents, and human contributors working within this workspace MUST
    - **Payment Modes:** `EMI Financing, Visa / Master Card / Rupay, UPI, Net Banking, Cash`
    - **Physical Address:** `Shop No. 7, Opposite Nezon Steel, Near Kumar Resorts, NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035, Assam`
    - **Voice Hotline:** `6913910337` (`+91 69139 10337`)
-   - **WhatsApp Business:** `8822049075` (`+91 88220 49075`)
+   - **WhatsApp Business:** `69139 10337` (`+91 69139 10337`)
 3. **Yellow + Blue Aesthetic Integrity:** Preserve the premium automotive styling. Avoid generic green or mismatched palette choices.
 4. **Factual Integrity:** Do not invent fake customer testimonials, unverified mechanical claims, or false certifications. Mark any unverified or pending detail as `TBD`.
 

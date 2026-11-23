@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Navigation, ArrowRight, ShieldCheck, MapPin, CheckCircle2 } from 'lucide-react';
+import { Phone, Navigation, ArrowRight } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
 import { useLanguage } from '../context/LanguageContext';
 import Button from '../components/Button';
@@ -56,13 +56,25 @@ export default function Hero() {
                 </Button>
 
                 <Button
-                  variant="secondary"
+                  variant="contact-workshop"
                   size="lg"
                   href="#contact"
-                  onClick={handleScrollToContact}
-                  icon={Phone}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const contactSection = document.querySelector('#contact');
+                    if (contactSection) {
+                      contactSection.scrollIntoView({ behavior: 'smooth' });
+                      const nameInput = document.querySelector('#fullName-input') || contactSection.querySelector('input[name="fullName"]');
+                      if (nameInput) {
+                        setTimeout(() => nameInput.focus({ preventScroll: true }), 400);
+                      }
+                    } else if (onNavigate) {
+                      onNavigate('contact');
+                    }
+                  }}
+                  ariaLabel="Contact Workshop - Open Enquiry Form"
                 >
-                  {t('hero.ctaContact', {}, 'Contact Us')}
+                  {t('hero.ctaContact', {}, 'Contact Workshop')}
                 </Button>
 
                 <Button
@@ -71,7 +83,7 @@ export default function Hero() {
                   href={siteConfig.phoneTel}
                   icon={Phone}
                 >
-                  {t('common.call', {}, 'Call')}: {siteConfig.phone}
+                  {t('common.call', {}, 'Call')}: {siteConfig.phoneFormatted}
                 </Button>
               </div>
             </RevealAnimation>
@@ -87,31 +99,28 @@ export default function Hero() {
 
                 <div className="hero-brand-header">
                   <h3 className="hero-brand-title">MAA KAMAKHYA AUTO GAS</h3>
-                  <p className="hero-brand-subtitle">{t('hero.officialCenter', {}, 'Govt. Approved CNG Center • Guwahati, Assam')}</p>
+                  <p className="hero-brand-subtitle">{t('hero.officialCenter', {}, 'Auto Gas Workshop & Station • Guwahati, Assam')}</p>
                 </div>
 
                 <div className="hero-brand-highlights">
                   <div className="hero-highlight-item">
-                    <MapPin size={16} className="text-yellow flex-shrink-0" />
                     <div>
                       <span className="font-semibold text-white">{t('hero.addressShort', {}, 'NH 37, Pachim Boragaon')}</span>
-                      <span className="text-xs text-muted block">Opposite Nezon Steel, Garchuk</span>
+                      <span className="text-xs text-muted block">Garchuk, Guwahati - 781035</span>
                     </div>
                   </div>
 
                   <div className="hero-highlight-item">
-                    <ShieldCheck size={16} className="text-yellow flex-shrink-0" />
                     <div>
-                      <span className="font-semibold text-white">Government Homologated</span>
-                      <span className="text-xs text-muted block">Certified Sequential CNG Retrofitment</span>
+                      <span className="font-semibold text-white">CNG & LPG Solutions</span>
+                      <span className="text-xs text-muted block">Installation, Conversion & Maintenance</span>
                     </div>
                   </div>
 
                   <div className="hero-highlight-item">
-                    <CheckCircle2 size={16} className="text-yellow flex-shrink-0" />
                     <div>
-                      <span className="font-semibold text-white">{t('hero.hotline', {}, 'Official Hotline & WhatsApp')}</span>
-                      <span className="text-xs text-muted block">+91 69139 10337 • +91 88220 49075</span>
+                      <span className="font-semibold text-white">{t('hero.hotline', {}, 'Customer Enquiries')}</span>
+                      <span className="text-xs text-muted block">+91 69139 10337</span>
                     </div>
                   </div>
                 </div>

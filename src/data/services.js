@@ -32,12 +32,12 @@ export const servicesData = [
   {
     id: "cng-sequential-installation",
     title: "CNG Sequential Kit Installation Services",
-    shortDesc: "Government-approved sequential multi-point injection conversion for 4-wheelers and commercial cars with dedicated 32-bit microprocessors and high-speed gas injector rails.",
+    shortDesc: "Sequential multi-point gas injection conversion for 4-wheelers and commercial cars with dedicated microprocessors and gas injector rails.",
     features: [
-      "Government-approved sequential OBD-II systems",
+      "Modern sequential OBD-II systems",
       "Four-wheeler & passenger car conversions",
-      "Dedicated high-speed gas injector rail for peak pickup",
-      "Smooth automatic fuel switchover with zero engine lag"
+      "Dedicated high-speed gas injector rail for smooth pickup",
+      "Smooth automatic fuel switchover with steady idling"
     ],
     highlight: "Core Specialization",
     category: "Installation Services",
@@ -51,14 +51,14 @@ export const servicesData = [
   {
     id: "cng-kit-distribution",
     title: "CNG Conversion Kit & Sequential Kit Distribution",
-    shortDesc: "Authorized regional wholesale distributor and dealership of certified sequential autogas conversion systems for automotive workshops, dealers, and fleet owners.",
+    shortDesc: "Authorized regional wholesale distributor and dealership of sequential autogas conversion systems for automotive workshops, dealers, and fleet owners.",
     features: [
-      "Authorized dealership of Italian & homologated kits",
+      "Authorized dealership of sequential kits",
       "Wholesale supply network for regional garages across Assam",
-      "Complete kit packages: 32-bit ECU, reducer & wiring harness",
-      "Factory manufacturer warranty and technical calibration support"
+      "Complete kit packages: ECU, reducer & wiring harness",
+      "Technical calibration and support"
     ],
-    highlight: "Authorized Distributor",
+    highlight: "Regional Distributor",
     category: "Dealers & Distribution",
     tags: [
       "CNG Sequential Injection Kit Distributors",
@@ -70,14 +70,14 @@ export const servicesData = [
   {
     id: "cng-cylinder-distribution",
     title: "CNG Gas Cylinder Distribution & Wholesaling",
-    shortDesc: "Certified regional supply of PESO-approved seamless alloy steel CNG gas cylinders in bulk wholesale and retail with complete compliance documentation.",
+    shortDesc: "Regional supply of seamless alloy steel CNG gas cylinders in bulk wholesale and retail.",
     features: [
-      "PESO & BIS approved seamless alloy steel cylinders",
-      "60 Litre (12kg) & 65 Litre (14kg) high-capacity sizes",
-      "Hydrostatically tested up to 340 bar burst pressure tolerance",
-      "Heavy-duty crash-tested mounting cradles & integrated safety valves"
+      "Standard seamless alloy steel cylinders",
+      "60 Litre (12kg) & 65 Litre (14kg) capacity sizes",
+      "High-pressure tolerance testing specifications",
+      "Heavy-duty mounting cradles & integrated safety valves"
     ],
-    highlight: "PESO Certified",
+    highlight: "Alloy Steel Cylinders",
     category: "Cylinders & Hardware",
     tags: [
       "CNG Gas Cylinder Distributors",
@@ -87,14 +87,14 @@ export const servicesData = [
   {
     id: "cng-repair-maintenance",
     title: "CNG Conversion Kit Repair & Automobile Services",
-    shortDesc: "Expert computerized diagnostic troubleshooting, periodic kit servicing, ultrasonic injector cleaning, reducer pressure tuning, and multi-point gas leak audits.",
+    shortDesc: "Automotive troubleshooting, periodic kit servicing, injector cleaning, reducer pressure tuning, and multi-point gas leak audits.",
     features: [
-      "Computerized OBD-II diagnostic scanning & lambda tuning",
-      "Ultrasonic cleaning & recalibration of gas injector nozzles",
+      "Diagnostic scanning & fuel system tuning",
+      "Cleaning & recalibration of gas injector nozzles",
       "Pressure reducer diaphragm tension inspection & tuning",
       "Multi-point electronic gas sniff tests & leak audits"
     ],
-    highlight: "Certified Care",
+    highlight: "Automotive Care",
     category: "Repair & Maintenance",
     tags: [
       "CNG Conversion Kit Repair & Services",
@@ -106,12 +106,12 @@ export const servicesData = [
     title: "CNG Spare Parts & Automotive Tooling Dealership",
     shortDesc: "Wholesale and retail dealership of authentic auto-gas replacement spare parts, solenoid valves, pressure reducers, filters, and professional workshop tooling.",
     features: [
-      "100% genuine OEM sequential kit replacement spares",
-      "Specialized automotive retrofitment & diagnostic tooling",
+      "Genuine replacement parts and components",
+      "Specialized automotive retrofitment & tooling",
       "Low-pressure vapor & high-pressure gas filter replacements",
       "Emulator units, temperature sensors & automotive wiring looms"
     ],
-    highlight: "Genuine OEM Spares",
+    highlight: "Quality Spares",
     category: "Spare Parts & Tooling",
     tags: [
       "CNG Conversion Kit Spare Part Dealers",
@@ -123,9 +123,9 @@ export const servicesData = [
   {
     id: "lpg-kit-installation",
     title: "LPG Conversion Kit Installation Services",
-    shortDesc: "Government-compliant automotive LPG conversion kit installation and multi-valve autogas servicing for compatible four-wheelers and commercial vehicles.",
+    shortDesc: "Automotive LPG conversion kit installation and multi-valve autogas servicing for compatible four-wheelers and commercial vehicles.",
     features: [
-      "Certified automotive LPG multi-valve safety systems",
+      "Automotive LPG multi-valve safety systems",
       "Toroidal (donut) & cylindrical autogas tank options",
       "Precision vaporizer & gas-phase filtration integration",
       "Dual-fuel dashboard changeover switchgear with fuel gauge"
@@ -145,9 +145,9 @@ export const servicesData = [
       "Verified passenger vehicle sales & dealership",
       "Commercial fleet supply & wholesale vehicle procurement",
       "Import & export facilitation for automotive components",
-      "Flexible financing options including EMI support"
+      "Customer enquiry support"
     ],
-    highlight: "Authorized Network",
+    highlight: "Automotive Network",
     category: "Automobile Trade",
     tags: [
       "Automobile Distributors",
@@ -161,14 +161,14 @@ export const servicesData = [
   {
     id: "maruti-alto-specialist",
     title: "Car Dealership: Maruti Suzuki Alto 800 Specialist",
-    shortDesc: "Dedicated vehicle dealership specializing in Maruti Suzuki Alto 800 models with factory-calibrated CNG fitments for ultra-low running costs and high mileage.",
+    shortDesc: "Dedicated vehicle dealership specializing in Maruti Suzuki Alto 800 models with calibrated CNG fitments for lower running costs and good mileage.",
     features: [
       "Tailored fitment for Maruti Suzuki Alto 800 engines",
       "Optimized compact cylinder fit preserving usable luggage boot space",
-      "Maximizes fuel efficiency up to 32+ km/kg on CNG",
-      "Immediate vehicle delivery with complete Assam RTO paperwork"
+      "High fuel efficiency on CNG for daily driving",
+      "Assistance with standard vehicle handover procedures"
     ],
-    highlight: "Alto 800 Specialist",
+    highlight: "Alto 800 Fitment",
     category: "Automobile Trade",
     tags: [
       "Car Dealers-Maruti Suzuki Alto 800",
@@ -181,20 +181,20 @@ export const servicesData = [
 export const benefitsData = [
   {
     id: "fuel-savings",
-    title: "Up to 55% Fuel Savings",
-    description: "Compare running costs: CNG delivers significantly higher fuel economy per kilogram compared to costly petrol, paying for the installation within months.",
+    title: "Economical Running Costs",
+    description: "Compare running costs: CNG delivers significantly higher fuel economy per kilogram compared to petrol, reducing daily running expenses.",
     icon: "IndianRupee"
   },
   {
     id: "clean-mobility",
     title: "Cleaner Mobility Choice",
-    description: "CNG produces up to 70% fewer carbon monoxide emissions and virtually zero particulate matter, making it an eco-friendly choice for Northeast India.",
+    description: "CNG produces lower carbon monoxide emissions and virtually zero particulate matter, making it an eco-friendly choice for Northeast India.",
     icon: "Leaf"
   },
   {
     id: "certified-retrofitment",
-    title: "Certified Professional Fitment",
-    description: "Our certified technicians follow strict AIS-028 and PESO safety standards with fire-retardant conduit sleeves and seamless underbody steel piping.",
+    title: "Professional Fitment Standards",
+    description: "Our technicians follow established automotive safety guidelines with protective conduit sleeves and secure underbody steel piping.",
     icon: "Wrench"
   },
   {
@@ -205,14 +205,14 @@ export const benefitsData = [
   },
   {
     id: "warranty",
-    title: "Comprehensive Warranty",
-    description: "Every sequential conversion is backed by an up to 2-year warranty on electronic control units and key gas system components.",
+    title: "Installation & System Support",
+    description: "Every sequential conversion is backed by dedicated workshop assistance and support for key gas system components.",
     icon: "ShieldCheck"
   },
   {
     id: "engine-life",
-    title: "Extended Engine Cleanliness",
-    description: "Gaseous CNG burns cleanly without leaving carbon deposits on spark plugs or diluting crankcase engine oil, preserving engine longevity.",
+    title: "Clean Burning Characteristics",
+    description: "Gaseous CNG burns cleanly without leaving heavy carbon deposits on spark plugs or diluting crankcase engine oil.",
     icon: "Cpu"
   }
 ];
@@ -260,28 +260,28 @@ export const vehicleCompatibilityData = {
 export const installationSteps = [
   {
     step: "01",
-    title: "Comprehensive Pre-Fitment Diagnostic",
-    description: "Our certified master technicians inspect your car's engine compression, spark ignition system, throttle body, and OBD-II sensors to confirm optimal readiness."
+    title: "Pre-Fitment Engine Inspection",
+    description: "Our experienced automotive technicians inspect your car's engine condition, spark ignition system, throttle body, and sensors to confirm compatibility."
   },
   {
     step: "02",
-    title: "Approved Sequential Kit Selection",
-    description: "We match the exact government-homologated sequential CNG system suited to your engine's horsepower, cylinder displacement, and electronic fuel injection logic."
+    title: "Sequential Kit Matching",
+    description: "We select the suitable sequential CNG system matched to your engine's horsepower, cylinder displacement, and fuel injection layout."
   },
   {
     step: "03",
-    title: "Precision Mechanical & Electrical Installation",
-    description: "Underbody seamless steel piping with protective rubber grommets, rear trunk cylinder mounting with heavy-duty cradle brackets, and sealed flame-retardant wiring."
+    title: "Mechanical & Electrical Installation",
+    description: "Underbody steel piping with protective rubber grommets, boot cylinder mounting with dedicated cradle brackets, and clean wiring looms."
   },
   {
     step: "04",
-    title: "Live Road Tuning & High-Pressure Leak Test",
-    description: "Dynamic software calibration under live driving load conditions in Guwahati followed by multi-point electronic gas sniff tests and soapy bubble leak checks."
+    title: "System Tuning & Leak Inspection",
+    description: "Software calibration under driving load conditions in Guwahati followed by multi-point electronic gas sniff tests and soapy bubble leak checks."
   },
   {
     step: "05",
-    title: "Certification & RTO Handover",
-    description: "We issue your official fitment certificate, hydro-test documentation, warranty card, and guide you through the Assam RTO endorsement update."
+    title: "Documentation & Handover",
+    description: "We issue your service documentation, maintenance guidelines, and explain vehicle registration endorsement steps."
   }
 ];
 

@@ -110,9 +110,9 @@ To be the authoritative digital standard for automotive CNG retrofitment in Nort
 | **FR-010** | Vehicle Compatibility | Interactive tabbed vehicle browser across 5 major automotive brands. | Tab navigation for Maruti, Hyundai, Tata, Honda, Toyota; displays compatible models, engine sizes, and tank capacities. | P1 |
 | **FR-011** | 5-Step Process | Step-by-step engineering installation workflow from diagnostics to road handover. | 5 numbered cards: 1. Computer Diagnostics, 2. Precision Mount, 3. ECU Calibration, 4. Safety Leak Audit, 5. RTO Paperwork. | P2 |
 | **FR-012** | Promotional CTA | High-impact conversion banner with instant quote trigger. | Navy/Gold high-contrast card with direct booking button linking to form or WhatsApp. | P1 |
-| **FR-013** | WhatsApp Form | Multi-field quotation form with client-side validation and WhatsApp deep-link serialization. | Validates Name (min 2 chars), Phone (10 digits), Brand, Model, Year, Vehicle Use; constructs structured WhatsApp URL targeting `8822049075`. | P0 |
+| **FR-013** | WhatsApp Form | Multi-field quotation form with client-side validation and WhatsApp deep-link serialization. | Validates Name (min 2 chars), Phone (10 digits), Brand, Model, Year, Vehicle Use; constructs structured WhatsApp URL targeting `69139 10337`. | P0 |
 | **FR-014** | Contact & Location | Workshop contact cards, business hours, and interactive Google Map. | Displays Address: Near Raj Energy Station, Garchuk, Guwahati - 781034; Phone: 6913910337; Hours: Mon-Sat 9AM-7:30PM; embedded responsive map. | P0 |
-| **FR-015** | Floating WhatsApp | Persistent floating circular action button at bottom-right corner. | Fixed position `bottom: 24px; right: 24px; z-index: 999`; pulsing ripple animation; click opens `https://wa.me/918822049075`. | P0 |
+| **FR-015** | Floating WhatsApp | Persistent floating circular action button at bottom-right corner. | Fixed position `bottom: 24px; right: 24px; z-index: 999`; pulsing ripple animation; click opens `https://wa.me/916913910337`. | P0 |
 
 ---
 
@@ -173,13 +173,13 @@ To be the authoritative digital standard for automotive CNG retrofitment in Nort
 **Acceptance Criteria:**
 - Form fields include Name, Mobile Number, Car Brand, Car Model, Manufacturing Year, and Usage Type.
 - Submitting with invalid fields displays inline error messages and focuses the first invalid input.
-- Valid submission encodes the payload into a structured WhatsApp message and opens `https://wa.me/918822049075?text=...` in a new tab.
+- Valid submission encodes the payload into a structured WhatsApp message and opens `https://wa.me/916913910337?text=...` in a new tab.
 
 ---
 
 ## 10. Business Rules & Operational Constraints
 1. **Brand Exclusivity Rule:** The brand name is strictly **Maa Kamakhya Auto Gas**. No prior or obsolete business names may appear anywhere in user-facing UI, documentation, or code comments.
-2. **Contact Consistency Rule:** The verified phone number for voice calls is `6913910337` (`+91 69139 10337`). The dedicated WhatsApp number is `8822049075` (`+91 88220 49075`). These must remain consistent across all CTA buttons.
+2. **Contact Consistency Rule:** The verified phone number for voice calls is `6913910337` (`+91 69139 10337`). The dedicated WhatsApp number is `69139 10337` (`+91 69139 10337`). These must remain consistent across all CTA buttons.
 3. **Statutory Truthfulness Rule:** All statutory information (GSTIN, Turnover, Year of Establishment) is sourced from verified business documentation and must not be altered. Unknown fields must be marked as TBD.
 4. **Fuel Tariff Defaults:** Fuel price defaults must reflect prevailing Guwahati tariffs (Petrol: ₹107.00/L, CNG: ₹91.00/kg) with realistic average fuel economy baselines (Petrol: 15 km/L, CNG: 27 km/kg).
 5. **No Speculative Data Rule:** Never fabricate vehicle certifications, fake customer testimonials, or unverified technical claims.

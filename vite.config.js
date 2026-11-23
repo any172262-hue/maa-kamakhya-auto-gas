@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/maa-kamakhya-auto-gas/' : '/',
+export default defineConfig(({ command, mode }) => ({
+  base: command === 'build' || mode === 'production' || process.env.NODE_ENV === 'production' ? '/maa-kamakhya-auto-gas/' : '/',
   plugins: [react()],
   server: {
     port: 5173,
@@ -20,4 +20,4 @@ export default defineConfig({
       }
     }
   }
-});
+}));

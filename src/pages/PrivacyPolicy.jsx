@@ -10,7 +10,7 @@ export default function PrivacyPolicy({ onBackToHome }) {
   usePageMeta({
     title: "Privacy Policy | Maa Kamakhya Auto Gas, Guwahati",
     description: "Official Privacy Policy for Maa Kamakhya Auto Gas in Guwahati, Assam. Details our data privacy standards, enquiry processing, and user rights.",
-    canonical: "https://maakamakhyaautogas.com/#privacy-policy"
+    canonical: "https://any172262-hue.github.io/maa-kamakhya-auto-gas/privacy-policy/"
   });
 
   useEffect(() => {
@@ -123,7 +123,6 @@ export default function PrivacyPolicy({ onBackToHome }) {
           <h2>6. Business Contact Details</h2>
           <div className="legal-contact-box">
             <p><strong>Business Name:</strong> {siteConfig.legalName}</p>
-            <p><strong>GSTIN:</strong> {siteConfig.statutory.gstin} (Assam Tax Registration Code 18)</p>
             <p><strong>Physical Address:</strong> {siteConfig.address}</p>
             <p><strong>Phone Hotline:</strong> +91 {siteConfig.phone}</p>
             <p><strong>WhatsApp Support:</strong> +91 {siteConfig.whatsappNumber}</p>

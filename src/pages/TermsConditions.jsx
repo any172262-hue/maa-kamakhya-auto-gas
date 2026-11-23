@@ -10,7 +10,7 @@ export default function TermsConditions({ onBackToHome }) {
   usePageMeta({
     title: "Terms & Conditions | Maa Kamakhya Auto Gas, Guwahati",
     description: "Official Terms & Conditions for Maa Kamakhya Auto Gas website in Guwahati, Assam. Details service terms, fuel savings estimate disclaimers, and warranty policies.",
-    canonical: "https://maakamakhyaautogas.com/#terms-conditions"
+    canonical: "https://any172262-hue.github.io/maa-kamakhya-auto-gas/terms-conditions/"
   });
 
   useEffect(() => {

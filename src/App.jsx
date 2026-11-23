@@ -33,15 +33,15 @@ export default function App() {
         setCurrentPage('service-gas-kit-repair-maintenance');
       }
       // 2. Legal Pages
-      else if (pathname.endsWith('/privacy-policy') || hash === '#privacy-policy' || hash === '#/privacy-policy') {
+      else if (pathname.endsWith('/privacy-policy') || pathname.endsWith('/privacy-policy/') || hash === '#privacy-policy' || hash === '#/privacy-policy') {
         setCurrentPage('privacy');
-      } else if (pathname.endsWith('/terms-conditions') || hash === '#terms-conditions' || hash === '#/terms-conditions') {
+      } else if (pathname.endsWith('/terms-conditions') || pathname.endsWith('/terms-conditions/') || hash === '#terms-conditions' || hash === '#/terms-conditions') {
         setCurrentPage('terms');
       }
       // 3. About & Contact Dedicated Views
       else if (pathname.endsWith('/about') || pathname.endsWith('/about/') || hash === '#about' || hash === '#/about') {
         setCurrentPage('about');
-      } else if (pathname.endsWith('/contact-page') || hash === '#/contact' || hash === '#contact-page') {
+      } else if (pathname.endsWith('/contact') || pathname.endsWith('/contact/') || pathname.endsWith('/contact-page') || hash === '#/contact' || hash === '#contact-page') {
         setCurrentPage('contact');
       } else {
         if (hash === '#404' || hash === '#/404') {
@@ -61,26 +61,30 @@ export default function App() {
   }, []);
 
   const navigateTo = (pageName) => {
-    if (pageName === 'privacy') {
-      window.location.hash = '#privacy-policy';
-      setCurrentPage('privacy');
-    } else if (pageName === 'terms') {
-      window.location.hash = '#terms-conditions';
-      setCurrentPage('terms');
-    } else if (pageName === 'about') {
-      window.location.hash = '#/about';
-      setCurrentPage('about');
-    } else if (pageName === 'contact') {
-      window.location.hash = '#/contact';
-      setCurrentPage('contact');
-    } else if (pageName.startsWith('service-')) {
+    const base = import.meta.env.BASE_URL || '/';
+    const cleanBase = base.endsWith('/') ? base : base + '/';
+
+    let targetPath = cleanBase;
+    if (pageName === 'privacy') targetPath = `${cleanBase}privacy-policy/`;
+    else if (pageName === 'terms') targetPath = `${cleanBase}terms-conditions/`;
+    else if (pageName === 'about') targetPath = `${cleanBase}about/`;
+    else if (pageName === 'contact') targetPath = `${cleanBase}contact/`;
+    else if (pageName.startsWith('service-')) {
       const slug = pageName.replace('service-', '');
-      window.location.hash = `#/services/${slug}`;
-      setCurrentPage(pageName);
+      targetPath = `${cleanBase}services/${slug}/`;
+    }
+
+    if (window.location.pathname !== targetPath) {
+      try {
+        window.history.pushState(null, '', targetPath);
+      } catch {
+        window.location.hash = targetPath.replace(cleanBase, '#/');
+      }
     } else {
       window.location.hash = '';
-      setCurrentPage('home');
     }
+
+    setCurrentPage(pageName);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 

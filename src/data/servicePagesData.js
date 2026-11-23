@@ -9,147 +9,148 @@ export const servicePagesData = [
     path: "/services/cng-services/",
     icon: "Gauge",
     en: {
-      title: "CNG Services | Maa Kamakhya Auto Gas",
-      metaDescription: "Explore CNG-related automotive services at Maa Kamakhya Auto Gas. Contact us to enquire about your vehicle's CNG service requirements.",
-      h1: "CNG Services",
-      heroBadge: "CNG AUTOMOTIVE SOLUTIONS",
-      summary: "Maa Kamakhya Auto Gas provides CNG-related automotive services for customers looking for CNG solutions for their vehicles. Whether you want to enquire about CNG services, gas kit installation, vehicle conversion, or gas kit maintenance, our team can help you understand the available service options. Contact Maa Kamakhya Auto Gas to discuss your vehicle type, requirements, and service availability.",
+      title: "CNG Services in Guwahati | Maa Kamakhya Auto Gas",
+      metaDescription: "Looking for CNG services in Guwahati? Visit Maa Kamakhya Auto Gas at Pachim Boragaon, Garchuk, for CNG-related automotive services.",
+      h1: "CNG Services in Guwahati",
+      heroBadge: "LOCAL RETROFITMENT WORKSHOP • NH 37 GUWAHATI",
+      summary: "Maa Kamakhya Auto Gas provides CNG-related automotive services in Guwahati, Assam. Located at Pachim Boragaon, Garchuk, on NH 37, we serve customers looking for CNG services and vehicle gas solutions. Our services include CNG-related automotive assistance, gas kit installation, vehicle gas conversion, and gas kit repair and maintenance. Our location in Pachim Boragaon, Garchuk, makes it convenient for customers in Guwahati to find our business. Contact Maa Kamakhya Auto Gas to discuss your vehicle requirements and enquire about service availability.",
       sections: [
         {
-          title: "Overview of CNG Services",
-          desc: "We provide comprehensive CNG automotive solutions in Guwahati, Assam. From sequential injection technology to certified component distribution and maintenance, we help vehicle owners transition to clean, cost-effective fuel with complete safety compliance."
+          title: "Why Guwahati Drivers Switch to CNG",
+          desc: "With petrol prices consistently above ₹100 per liter in Assam, running your car on CNG costs roughly ₹3.30 to ₹3.80 per kilometer compared to ₹7.00 or more on petrol. Natural gas burns cleanly, reduces carbon deposits inside the engine, and helps keep Guwahati's air cleaner."
         },
         {
-          title: "CNG Gas Kit Installation",
-          desc: "Our workshop installs government-approved sequential CNG systems for compatible passenger cars and commercial taxis, featuring dedicated microprocessors and high-speed injector rails."
+          title: "Vehicles We Can Convert",
+          desc: "We regularly install approved sequential systems on popular petrol cars from Maruti Suzuki, Hyundai, Tata, Honda, and Toyota. Commercial taxis such as the Dzire, Aura, and WagonR see especially rapid fuel cost savings. We inspect your car's engine condition and spark plugs before starting work."
         },
         {
-          title: "CNG Vehicle Conversion",
-          desc: "We guide car owners through vehicle suitability checks, dual-fuel calibration, and documentation required for official RC endorsement in Assam."
+          title: "What Happens During Installation",
+          desc: "A standard installation takes about 6 to 8 hours. We mount a heavy-duty steel cradle bolted to the chassis floor in the boot, route seamless high-pressure stainless steel tubing away from the exhaust, fit the pressure reducer and injector rail in the engine bay, and cleanly connect the dedicated gas ECU."
         },
         {
-          title: "CNG Kit Repair and Maintenance",
-          desc: "Our technicians perform computerized diagnostics, ultrasonic injector cleaning, pressure reducer calibration, and multi-point gas leak audits."
+          title: "Cylinder Hydro-Testing & Safety Checks",
+          desc: "Under Indian safety regulations, every automotive CNG cylinder must undergo hydrostatic pressure testing every 3 years. We help arrange certified PESO testing, valve servicing, and compliance plate renewal so your car remains safe and legally compliant."
         }
       ],
       faqs: [
         {
-          question: "What CNG-related services are available?",
-          answer: "Maa Kamakhya Auto Gas provides sequential CNG kit installation, vehicle gas conversion, kit diagnostics, routine maintenance, cylinder hydro-testing assistance, and genuine spare parts supply."
+          question: "Can my petrol car run reliably on CNG?",
+          answer: "Yes. Most fuel-injected petrol cars from major Indian manufacturers run smoothly on sequential CNG. We check your car's engine health and electronics before starting any installation."
         },
         {
-          question: "Can I enquire about CNG gas kit installation?",
-          answer: "Yes. You can contact us with your vehicle model and year of manufacture to confirm compatibility and discuss installation details."
+          question: "How much can I realistically save by switching to CNG?",
+          answer: "Most drivers in Guwahati save approximately 45% to 55% on monthly fuel expenses compared to petrol. If you drive 40 km or more per day, the savings add up quickly."
         },
         {
-          question: "Do you provide CNG kit repair and maintenance?",
-          answer: "Yes. We offer computer-aided tuning, filter replacement, pressure regulator servicing, and leak inspections for sequential CNG systems."
+          question: "Can I still drive on petrol whenever I want?",
+          answer: "Yes. Your vehicle becomes dual-fuel. You can switch between petrol and CNG using a button on your dashboard, and if the gas runs out, the car shifts to petrol automatically without stalling."
         },
         {
-          question: "How can I enquire about CNG vehicle conversion?",
-          answer: "You can call our workshop at +91 69139 10337 or message us on WhatsApp at +91 88220 49075 to review your car's conversion requirements."
+          question: "How do I book a compatibility check or get an upfront quote?",
+          answer: "You can call our workshop directly at +91 69139 10337 or send a message on WhatsApp at +91 69139 10337. You can also visit our workshop on NH 37 in Garchuk, Guwahati."
         }
       ],
       internalLinks: [
-        { name: "Gas Kit Installation", path: "/services/gas-kit-installation/", text: "Enquire about gas kit installation" },
-        { name: "Vehicle Gas Conversion", path: "/services/vehicle-gas-conversion/", text: "View vehicle gas conversion services" },
-        { name: "Repair and Maintenance", path: "/services/gas-kit-repair-maintenance/", text: "Explore gas kit repair and maintenance" }
+        { name: "CNG Filling Station", path: "/services/auto-gas-filling/", text: "Explore CNG filling services" },
+        { name: "Gas Kit Installation", path: "/services/gas-kit-installation/", text: "Gas kit installation" },
+        { name: "Vehicle Gas Conversion", path: "/services/vehicle-gas-conversion/", text: "See how the conversion process works" },
+        { name: "Repair and Maintenance", path: "/services/gas-kit-repair-maintenance/", text: "Explore routine servicing and diagnostic tuning" }
       ]
     },
     as: {
-      title: "চিএনজি সেৱাসমূহ | Maa Kamakhya Auto Gas",
-      metaDescription: "Maa Kamakhya Auto Gas-ত চিএনজি সম্পর্কীয় গাড়ীৰ সেৱাসমূহ চাওক। আপোনাৰ গাড়ীৰ চিএনজি প্ৰয়োজনীয়তাৰ বিষয়ে জানিবলৈ আমাৰ লগত যোগাযোগ কৰক।",
-      h1: "চিএনজি সেৱাসমূহ",
-      heroBadge: "চিএনজি মটৰ গাড়ী সমাধান",
-      summary: "নিজৰ গাড়ীৰ বাবে চিএনজি সমাধান বিচাৰি থকা গ্ৰাহকসকলৰ কাৰণে Maa Kamakhya Auto Gas-এ গুণগত চিএনজি সেৱা প্ৰদান কৰে। আপুনি চিএনজি সেৱা, গেছ কিট সংস্থাপন, গাড়ী ৰূপান্তৰ বা কিট মেৰামতি আৰু পৰিচৰ্যা সম্পৰ্কে জানিব বিচাৰিলেও আমাৰ দলে সহায় কৰিব। আপোনাৰ গাড়ীৰ ধৰণ আৰু প্ৰয়োজনীয়তাৰ বিষয়ে আলোচনা কৰিবলৈ আমাৰ সৈতে যোগাযোগ কৰক।",
+      title: "গুৱাহাটীত চিএনজি সেৱা | Maa Kamakhya Auto Gas",
+      metaDescription: "গুৱাহাটীত চিএনজি সেৱা বিচাৰিছে? চিএনজি-সম্পৰ্কীয় অটোম'টিভ সেৱাৰ বাবে পশ্চিম বৰাগাঁও, গড়চুকত অৱস্থিত Maa Kamakhya Auto Gas-লৈ আহক।",
+      h1: "গুৱাহাটীত চিএনজি সেৱাসমূহ",
+      heroBadge: "স্থানীয় ৰেট্ৰফিটমেণ্ট ৱৰ্কশ্বপ • NH 37 গুৱাহাটী",
+      summary: "গুৱাহাটীত দৈনন্দিন যাতায়াত বা টেক্সি চলোৱাৰ ইন্ধন খৰচ কমাব বিচাৰিলে চিএনজিলৈ পৰিৱৰ্তন কৰাটো এটা অত্যন্ত ফলপ্ৰসূ সিদ্ধান্ত। গড়চুকৰ NH 37-ত অৱস্থিত Maa Kamakhya Auto Gas-ত আমি অনুমোদিত ছিকুৱেনচিয়েল চিএনজি কিট সংস্থাপন, কম্পিউটাৰাইজড টিউনিং আৰু প্ৰতি ৩ বছৰৰ মূৰে মূৰে প্ৰয়োজনীয় চিলিণ্ডাৰ হাইড্ৰ'-টেষ্টিঙৰ সহায় আগবঢ়াওঁ। আপোনাৰ গাড়ীখনৰ বাবে চিএনজি কিমান উপযুক্ত সেয়া জানিবলৈ আমাৰ দলৰ সৈতে যোগাযোগ কৰক।",
       sections: [
         {
-          title: "চিএনজি সেৱাৰ বিশদ বিৱৰণ",
-          desc: "আমি গুৱাহাটীত সম্পূৰ্ণ চিএনজি মটৰ গাড়ী সেৱা আগবঢ়াওঁ। চিকুৱেনচিয়েল ইনজেকচন প্ৰযুক্তিৰ পৰা আৰম্ভ কৰি চৰকাৰী মান্যতাপ্ৰাপ্ত সামগ্ৰী যোগান আৰু পৰিচৰ্যালৈকে, আমি বাহনসমূহক সুৰক্ষিতভাৱে গেছলৈ ৰূপান্তৰ কৰাত সহায় কৰোঁ।"
+          title: "গুৱাহাটীৰ চালকসকলে চিএনজি কিয় বাছি লয়",
+          desc: "অসমত পেট্ৰ'লৰ মূল্য প্ৰতি লিটাৰত ১০০ টকাৰ ওপৰত থকাৰ সময়ত চিএনজিত গাড়ী চলোৱাৰ খৰচ প্ৰতি কিলোমিটাৰত প্ৰায় ₹৩.৩০ ৰ পৰা ₹৩.৮০ হয়, যিটো পেট্ৰ'লত প্ৰতি কিলোমিটাৰত ₹৭.০০ বা তাতকৈ অধিক। চিএনজি পৰিষ্কাৰভাৱে জ্বলে আৰু ইঞ্জিনত কাৰ্বন কম জমে।"
         },
         {
-          title: "চিএনজি গেছ কিট সংস্থাপন",
-          desc: "ব্যক্তিগত আৰু বাণিজ্যিক বাহনৰ বাবে চৰকাৰীভাৱে অনুমোদিত আধুনিক চিকুৱেনচিয়েল চিএনজি প্ৰণালী সংস্থাপন কৰা হয়।"
+          title: "আমি ৰূপান্তৰ কৰিব পৰা বাহনসমূহ",
+          desc: "মাৰুতি চুজুকি, হুন্দাই, টাটা, হোণ্ডা আৰু টয়োটাৰ দৰে জনপ্ৰিয় পেট্ৰ'ল গাড়ী আৰু বাণিজ্যিক টেক্সিসমূহত আমি নিয়মীয়াকৈ চিএনজি কিট লগাওঁ। কাম আৰম্ভ কৰাৰ পূৰ্বে আমি ইঞ্জিনৰ অৱস্থা আৰু স্পাৰ্ক প্লাগ পৰীক্ষা কৰি লওঁ।"
         },
         {
-          title: "চিএনজি বাহন ৰূপান্তৰ",
-          desc: "গাড়ীখনৰ উপযুক্ততা পৰীক্ষা, ডুৱেল-ফুৱেল টিউনিং আৰু অসমত আৰ চি অনুমোদনৰ বাবে প্ৰয়োজনীয় প্ৰক্ৰিয়াত আমি সহায় কৰোঁ।"
+          title: "সংস্থাপনৰ সময়ত কি কি কৰা হয়",
+          desc: "এটা মানক সংস্থাপনত প্ৰায় ৬ ৰ পৰা ৮ ঘণ্টা সময় লাগে। আমি ডিকিত মজবুত ষ্টীল ক্ৰেডল নাট-বল্টুৰে টানকৈ লগাওঁ, গৰম একজষ্টৰ পৰা দূৰৈত ৰাখি বাহনৰ তলেৰে পাইপিং কৰোঁ আৰু ইঞ্জিন বে'ত ৰিডিউচাৰ আৰু ইনজেক্টৰ সংস্থাপন কৰোঁ।"
         },
         {
-          title: "চিএনজি কিট মেৰামতি আৰু পৰিচৰ্যা",
-          desc: "কম্পিউটাৰাইজড স্কেনিং, ইনজেক্টৰ চাফাই, প্ৰেচাৰ ৰিডিউচাৰ পৰীক্ষা আৰু লিক অডিট সেৱা উপলব্ধ।"
+          title: "চিলিণ্ডাৰ হাইড্ৰ'-টেষ্টিং আৰু সুৰক্ষা পৰীক্ষা",
+          desc: "ভাৰতীয় নিয়ম অনুসৰি প্ৰতি ৩ বছৰত চিএনজি চিলিণ্ডাৰৰ হাইড্ৰ'-টেষ্টিং কৰাটো বাধ্যতামূলক। আমি চৰকাৰী মান্যতাপ্ৰাপ্ত টেষ্টিং, ভালভ চাৰ্ভিচিং আৰু প্লেট নবীকৰণৰ সম্পূৰ্ণ সহায় আগবঢ়াওঁ।"
         }
       ],
       faqs: [
         {
-          question: "কোনবোৰ চিএনজি সেৱা উপলব্ধ?",
-          answer: "Maa Kamakhya Auto Gas-ত চিকুৱেনচিয়েল চিএনজি কিট সংস্থাপন, গাড়ী ৰূপান্তৰ, কিট পৰীক্ষণ, নিয়মীয়া চাৰ্ভিচিং আৰু প্ৰকৃত খুচুৰা যন্ত্ৰাংশ যোগান উপলব্ধ।"
+          question: "মোৰ পেট্ৰ'ল গাড়ীখন চিএনজিত সঠিকভাৱে চলিবনে?",
+          answer: "হয়। ভাৰতৰ বেছিভাগ পেট্ৰ'ল চালিত গাড়ী ছিকুৱেনচিয়েল চিএনজিত অতি মসৃণভাৱে চলে। কাম আৰম্ভ কৰাৰ আগতে আমি আপোনাৰ গাড়ীৰ ইঞ্জিন ভালদৰে পৰীক্ষা কৰি লওঁ।"
         },
         {
-          question: "চিএনজি গেছ কিট সংস্থাপন সম্পৰ্কে সুধিব পাৰিমনে?",
-          answer: "হয়। আপোনাৰ গাড়ীৰ মডেল আৰু নিৰ্মাণ বৰ্ষৰ তথ্য দি উপযুক্ততা পৰীক্ষা কৰিবলৈ আমাৰ লগত কথা পাতক।"
+          question: "চিএনজি লগালে প্ৰকৃততে কিমান খৰচ বাছিব?",
+          answer: "গুৱাহাটীত বেছিভাগ চালকৰ মাহেকীয়া পেট্ৰ'ল খৰচ প্ৰায় ৪৫% ৰ পৰা ৫৫% লৈকে হ্ৰাস পায়। যদি আপুনি দিনে ৪০ কিমি বা তাতকৈ বেছি গাড়ী চলায়, তেন্তে কেইবামাহতে কিটৰ খৰচ উঠি আহে।"
         },
         {
-          question: "আপোনালোকে কিট মেৰামতি আৰু পৰিচৰ্যা কৰেনে?",
-          answer: "হয়। কম্পিউটাৰাইজড টিউনিং, ফিল্টাৰ সলনি আৰু গেছ লিক পৰীক্ষাৰ সুবিধা আছে।"
+          question: "মই যেতিয়াই ইচ্ছা পেট্ৰ'লত গাড়ী চলাব পাৰিমনে?",
+          answer: "হয়। আপোনাৰ গাড়ীখন ডুৱেল-ফুৱেল হৈ পৰে। ডেছব'ৰ্ডৰ এটা চুইচ টিপিয়েই আপুনি পেট্ৰ'ল আৰু চিএনজিৰ মাজত সলনি কৰিব পাৰে।"
         },
         {
-          question: "চিএনজি গাড়ী ৰূপান্তৰ সম্পৰ্কে কেনেকৈ যোগাযোগ কৰিম?",
-          answer: "আপুনি আমাৰ ৱৰ্কশ্বপত +91 69139 10337 নম্বৰত কল কৰিব পাৰে বা +91 88220 49075 নম্বৰত হোৱাটছএপ কৰিব পাৰে।"
+          question: "পৰীক্ষাৰ বাবে সময় কেনেকৈ ল'ব বা কোটেশ্ব্যন কেনেকৈ পাব?",
+          answer: "আপুনি আমাৰ ফোন নম্বৰ +91 69139 10337 ত কল কৰিব পাৰে বা +91 69139 10337 ত হোৱাটছএপ কৰিব পাৰে। গুৱাহাটীৰ গড়চুকত থকা আমাৰ ৱৰ্কশ্বপলৈও আহিব পাৰে।"
         }
       ],
       internalLinks: [
-        { name: "গেছ কিট সংস্থাপন", path: "/services/gas-kit-installation/", text: "গেছ কিট সংস্থাপন সম্পৰ্কে জানক" },
-        { name: "বাহন গেছ ৰূপান্তৰ", path: "/services/vehicle-gas-conversion/", text: "বাহন গেছ ৰূপান্তৰ সেৱা চাওক" },
-        { name: "মেৰামতি আৰু পৰিচৰ্যা", path: "/services/gas-kit-repair-maintenance/", text: "গেছ কিট মেৰামতি আৰু পৰিচৰ্যা চাওক" }
+        { name: "গেছ কিট সংস্থাপন", path: "/services/gas-kit-installation/", text: "আমাৰ গেছ কিট সংস্থাপন সেৱা সম্পৰ্কে জানক" },
+        { name: "বাহন গেছ ৰূপান্তৰ", path: "/services/vehicle-gas-conversion/", text: "ৰূপান্তৰ পদ্ধতি কেনেকৈ হয় চাওক" },
+        { name: "মেৰামতি আৰু পৰিচৰ্যা", path: "/services/gas-kit-repair-maintenance/", text: "নিয়মীয়া চাৰ্ভিচিং আৰু ডায়াগনষ্টিক টিউনিং চাওক" }
       ]
     },
     hi: {
-      title: "सीएनजी सेवाएं | Maa Kamakhya Auto Gas",
-      metaDescription: "Maa Kamakhya Auto Gas पर सीएनजी से जुड़ी ऑटोमोटिव सेवाएं देखें। अपने वाहन की सीएनजी आवश्यकताओं के बारे में जानने के लिए हमसे संपर्क करें।",
-      h1: "सीएनजी सेवाएं",
-      heroBadge: "सीएनजी ऑटोमोटिव समाधान",
-      summary: "Maa Kamakhya Auto Gas उन ग्राहकों के लिए सीएनजी से जुड़ी ऑटोमोटिव सेवाएं प्रदान करता है जो अपने वाहनों के लिए सीएनजी समाधान चाहते हैं। चाहे आप सीएनजी सेवाओं, गैस किट इंस्टॉलेशन, वाहन रूपांतरण या गैस किट रखरखाव के बारे में जानकारी चाहते हों, हमारी टीम उपलब्ध विकल्पों को समझने में आपकी सहायता कर सकती है। अपने वाहन के मॉडल और आवश्यकताओं पर चर्चा करने के लिए Maa Kamakhya Auto Gas से संपर्क करें।",
+      title: "गुवाहाटी में सीएनजी सेवाएं | Maa Kamakhya Auto Gas",
+      metaDescription: "गुवाहाटी में सीएनजी सेवाओं की तलाश है? सीएनजी संबंधी ऑटोमोटिव सेवाओं के लिए पश्चिम बोरागांव, गड़चुक में Maa Kamakhya Auto Gas पर आएं।",
+      h1: "गुवाहाटी में सीएनजी सेवाएं",
+      heroBadge: "स्थानीय रेट्रोफिटमेंट वर्कशॉप • NH 37 गुवाहाटी",
+      summary: "यदि आप गुवाहाटी में अपने दैनिक आवागमन या टैक्सी का ईंधन खर्च कम करना चाहते हैं, तो सीएनजी पर स्विच करना सबसे व्यावहारिक कदम है। गड़चुक में NH 37 पर स्थित Maa Kamakhya Auto Gas में हम अनुमोदित सीक्वेंशियल सीएनजी किट फिटिंग, कंप्यूटराइज्ड डायग्नोस्टिक ट्यूनिंग और अनिवार्य 3-वर्षीय सिलेंडर हाइड्रो-टेस्टिंग सहायता प्रदान करते हैं। अपनी कार की अनुकूलता जांचने के लिए हमारी टीम से संपर्क करें।",
       sections: [
         {
-          title: "सीएनजी सेवाओं का विवरण",
-          desc: "हम गुवाहाटी, असम में संपूर्ण सीएनजी ऑटोमोटिव समाधान प्रदान करते हैं। सीक्वेंशियल इंजेक्शन तकनीक से लेकर प्रमाणित पार्ट्स और मेंटेनेंस तक, हम वाहनों को सुरक्षित रूप से गैस में बदलने में मदद करते हैं।"
+          title: "गुवाहाटी के वाहन चालक सीएनजी क्यों चुनते हैं",
+          desc: "असम में पेट्रोल ₹100 प्रति लीटर से ऊपर होने के कारण सीएनजी पर चलने का खर्च लगभग ₹3.30 से ₹3.80 प्रति किमी आता है, जबकि पेट्रोल पर ₹7.00 से अधिक। सीएनजी इंजन में कम कार्बन जमा करती है और शहर की हवा को स्वच्छ रखती है।"
         },
         {
-          title: "सीएनजी गैस किट इंस्टॉलेशन",
-          desc: "हम निजी कारों और टैक्सियों के लिए सरकार द्वारा स्वीकृत सीक्वेंशियल सीएनजी सिस्टम स्थापित करते हैं।"
+          title: "हम किन वाहनों को कन्वर्ट करते हैं",
+          desc: "हम मारुति सुजुकी, हुंडई, टाटा, होंडा और टोयोटा की पेट्रोल कारों और कमर्शियल टैक्सियों में नियमित रूप से सीक्वेंशियल किट लगाते हैं। काम शुरू करने से पहले हम इंजन और स्पार्क प्लग की जांच करते हैं।"
         },
         {
-          title: "सीएनजी वाहन रूपांतरण",
-          desc: "हम वाहन अनुकूलता जांच, डुअल-फ्यूल ट्यूनिंग और आरसी अनुमोदन से जुड़ी प्रक्रिया में पूर्ण सहायता प्रदान करते हैं।"
+          title: "इंस्टॉलेशन के दौरान क्या होता है",
+          desc: "एक मानक फिटिंग में लगभग 6 से 8 घंटे लगते हैं। हम डिग्गी में चेसिस पर स्टील क्रैडल कसते हैं, एग्जॉस्ट से दूर अंडरबॉडी पाइपिंग करते हैं, और इंजन में रिड्यूसर, इंजेक्टर और ईसीयू फिट करते हैं।"
         },
         {
-          title: "सीएनजी किट मरम्मत और रखरखाव",
-          desc: "कंप्यूटराइज्ड डायग्नोस्टिक्स, इंजेक्टर सफाई, प्रेशर रेगुलेटर सर्विसिंग और गैस रिसाव जांच सेवाएं उपलब्ध हैं।"
+          title: "सिलेंडर हाइड्रो-टेस्टिंग और सुरक्षा जांच",
+          desc: "भारतीय सुरक्षा नियमों के तहत सीएनजी सिलेंडर की हर 3 साल में हाइड्रो-टेस्टिंग अनिवार्य है। हम प्रमाणित PESO टेस्टिंग, वॉल्व सर्विसिंग और प्लेट रिन्यूअल की पूरी व्यवस्था कराते हैं।"
         }
       ],
       faqs: [
         {
-          question: "कौन-सी सीएनजी सेवाएं उपलब्ध हैं?",
-          answer: "Maa Kamakhya Auto Gas में सीक्वेंशियल सीएनजी किट इंस्टॉलेशन, वाहन गैस रूपांतरण, किट डायग्नोस्टिक्स, नियमित रखरखाव और स्पेयर पार्ट्स की सुविधा उपलब्ध है।"
+          question: "क्या मेरी पेट्रोल कार सीएनजी पर सही चलेगी?",
+          answer: "हां। अधिकांश पेट्रोल कारें सीक्वेंशियल सीएनजी पर बहुत स्मूथ चलती हैं। फिटिंग से पहले हम इंजन और इलेक्ट्रिकल हेल्थ की पूरी जांच करते हैं।"
         },
         {
-          question: "क्या मैं सीएनजी गैस किट इंस्टॉलेशन के बारे में जानकारी ले सकता हूं?",
-          answer: "हां। अपने वाहन के मॉडल और निर्माण वर्ष की जानकारी देकर आप इंस्टॉलेशन विवरण समझ सकते हैं।"
+          question: "सीएनजी अपनाने से वास्तव में कितनी बचत होती है?",
+          answer: "गुवाहाटी में अधिकांश ड्राइवरों का मासिक ईंधन खर्च 45% से 55% तक कम हो जाता है। यदि आप रोजाना 40 किमी या अधिक चलाते हैं तो बचत बहुत तेजी से होती है।"
         },
         {
-          question: "क्या आप सीएनजी किट मरम्मत और रखरखाव करते हैं?",
-          answer: "हां। हम कंप्यूटर ट्यूनिंग, फिल्टर बदलना और लीकेज टेस्टिंग जैसी व्यापक सेवाएं प्रदान करते हैं।"
+          question: "क्या मैं कभी भी पेट्रोल पर वापस स्विच कर सकता हूं?",
+          answer: "हां। आपकी गाड़ी डुअल-फ्यूल बन जाती है। आप डैशबोर्ड बटन से कभी भी पेट्रोल और सीएनजी में बदल सकते हैं, और गैस खत्म होने पर गाड़ी अपने आप पेट्रोल पर आ जाती है।"
         },
         {
-          question: "सीएनजी वाहन रूपांतरण के लिए कैसे संपर्क करें?",
-          answer: "आप हमारे वर्कशॉप फोन +91 69139 10337 पर कॉल कर सकते हैं या +91 88220 49075 पर व्हाट्सएप कर सकते हैं।"
+          question: "गाड़ी चेक कराने या कोटेशन लेने के लिए कैसे संपर्क करें?",
+          answer: "आप सीधे वर्कशॉप फोन +91 69139 10337 पर कॉल करें या +91 69139 10337 पर व्हाट्सएप करें। आप NH 37 गड़चुक, गुवाहाटी स्थित वर्कशॉप पर भी आ सकते हैं।"
         }
       ],
       internalLinks: [
-        { name: "गैस किट इंस्टॉलेशन", path: "/services/gas-kit-installation/", text: "गैस किट इंस्टॉलेशन के बारे में पूछताछ करें" },
-        { name: "वाहन गैस रूपांतरण", path: "/services/vehicle-gas-conversion/", text: "वाहन गैस रूपांतरण सेवाएं देखें" },
-        { name: "मरम्मत और रखरखाव", path: "/services/gas-kit-repair-maintenance/", text: "गैस किट मरम्मत और रखरखाव देखें" }
+        { name: "गैस किट इंस्टॉलेशन", path: "/services/gas-kit-installation/", text: "सीक्वेंशियल गैस किट इंस्टॉलेशन के बारे में जानें" },
+        { name: "वाहन गैस रूपांतरण", path: "/services/vehicle-gas-conversion/", text: "रूपांतरण प्रक्रिया कैसे काम करती है देखें" },
+        { name: "मरम्मत और रखरखाव", path: "/services/gas-kit-repair-maintenance/", text: "नियमित सर्विसिंग और डायग्नोस्टिक ट्यूनिंग देखें" }
       ]
     }
   },
@@ -159,147 +160,147 @@ export const servicePagesData = [
     path: "/services/lpg-services/",
     icon: "Flame",
     en: {
-      title: "LPG Services | Maa Kamakhya Auto Gas",
-      metaDescription: "Find LPG-related automotive services at Maa Kamakhya Auto Gas. Contact us for information about LPG services and vehicle requirements.",
-      h1: "LPG Services",
-      heroBadge: "AUTO LPG SPECIALIZATION",
-      summary: "Maa Kamakhya Auto Gas provides LPG-related automotive services for customers looking for LPG solutions for their vehicles. You can contact us to enquire about LPG services, gas kit installation, vehicle gas conversion, and gas kit repair and maintenance. Every vehicle may have different requirements. Contact our team to discuss your vehicle and find out which services are available.",
+      title: "LPG Services in Guwahati | Maa Kamakhya Auto Gas",
+      metaDescription: "Explore LPG-related automotive services at Maa Kamakhya Auto Gas in Pachim Boragaon, Garchuk, Guwahati. Contact us for service enquiries.",
+      h1: "LPG Services in Guwahati",
+      heroBadge: "AUTO LPG RETROFITMENT & SERVICING",
+      summary: "Maa Kamakhya Auto Gas offers LPG-related automotive services in Guwahati, Assam. Located at Pachim Boragaon, Garchuk, our business provides LPG-related service options for customers looking for vehicle gas solutions. If you are interested in LPG services, gas kit installation, or gas kit repair and maintenance, contact us to discuss your vehicle requirements and available service options. Find Maa Kamakhya Auto Gas at NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035, Assam. Note: This workshop does not offer LPG fuel filling at the station.",
       sections: [
         {
-          title: "Overview of LPG Services",
-          desc: "Automotive LPG offers high energy density and smooth engine operation. We support passenger and commercial vehicles with compliant LPG conversion solutions and regular technical servicing."
+          title: "Understanding Automotive LPG",
+          desc: "Automotive LPG is stored at lower pressure than CNG (around 8 to 10 bar compared to 200 bar for CNG), allowing the use of lighter tanks. It delivers smooth, quiet engine operation and provides significant fuel savings over petrol."
         },
         {
-          title: "LPG Gas Kit Installation",
-          desc: "Installation of certified automotive LPG multi-valve systems with toroidal (donut) spare-wheel well tanks or cylindrical boot tanks."
+          title: "Vehicle Compatibility & Tank Options",
+          desc: "LPG is well-suited for petrol hatchbacks and sedans where boot space is a priority. Toroidal (donut-shaped) tanks fit neatly into the spare-wheel well, leaving virtually your entire boot floor available for luggage."
         },
         {
-          title: "LPG Vehicle Conversion",
-          desc: "Assessment of engine fuel maps and vehicle suitability to ensure seamless dual-fuel switching between petrol and autogas."
+          title: "Routine Servicing & Filter Changes",
+          desc: "LPG vaporizers, diaphragms, and filters should be inspected and serviced every 10,000 to 15,000 kilometers. Routine maintenance prevents rough idling, maintains consistent pressure delivery, and protects engine valves."
         },
         {
-          title: "LPG Kit Repair and Maintenance",
-          desc: "Vaporizer cleaning, diaphragm replacement, gas filter servicing, and high-precision pressure calibration."
+          title: "Safety Rules for Auto LPG",
+          desc: "Never use domestic cooking gas cylinders in any motor vehicle; it is illegal and hazardous. We only install approved automotive LPG multi-valves that feature automatic excess-flow shut-off and thermal pressure relief."
         }
       ],
       faqs: [
         {
-          question: "What LPG-related services does Maa Kamakhya Auto Gas provide?",
-          answer: "We offer auto LPG kit installation, dual-fuel vehicle conversion consultations, regular system maintenance, vaporizer servicing, and safety inspections."
+          question: "How is auto LPG different from CNG?",
+          answer: "Auto LPG is stored as a liquid at lower pressure (around 8 to 10 bar) in lighter tanks, while CNG is stored as compressed gas at 200 bar in heavy seamless cylinders. Both provide substantial savings compared to petrol."
         },
         {
-          question: "Can I enquire about LPG gas kit installation?",
-          answer: "Yes. Contact our technical team to verify your vehicle model and learn about available LPG kit configurations."
+          question: "Can I keep my boot space with an LPG kit?",
+          answer: "Yes. With a toroidal tank installed in your spare-wheel well, you retain almost all of your original boot luggage space."
         },
         {
-          question: "Do you provide LPG kit repair and maintenance?",
-          answer: "Yes. We service auto LPG regulators, change gas filters, inspect multi-valves, and troubleshoot rough idling issues."
+          question: "How often should an LPG kit be serviced?",
+          answer: "We recommend inspecting the gas filter and vaporizer pressure every 10,000 to 15,000 km, or whenever you notice hesitation during fuel switching."
         },
         {
-          question: "How can I enquire about LPG vehicle conversion?",
-          answer: "Call us directly at +91 69139 10337 or send a WhatsApp message to +91 88220 49075."
+          question: "How do I enquire about auto LPG services?",
+          answer: "Call our workshop line at +91 69139 10337 or message us on WhatsApp at +91 69139 10337 with your vehicle make and model."
         }
       ],
       internalLinks: [
-        { name: "Gas Kit Installation", path: "/services/gas-kit-installation/", text: "Enquire about gas kit installation" },
-        { name: "Vehicle Gas Conversion", path: "/services/vehicle-gas-conversion/", text: "View vehicle gas conversion services" },
-        { name: "Repair and Maintenance", path: "/services/gas-kit-repair-maintenance/", text: "Explore gas kit repair and maintenance" }
+        { name: "Gas Kit Installation", path: "/services/gas-kit-installation/", text: "Learn about professional kit installation" },
+        { name: "CNG Services", path: "/services/cng-services/", text: "Compare with sequential CNG services" },
+        { name: "Repair and Maintenance", path: "/services/gas-kit-repair-maintenance/", text: "Explore gas kit diagnostics and servicing" }
       ]
     },
     as: {
-      title: "এলপিজি সেৱাসমূহ | Maa Kamakhya Auto Gas",
-      metaDescription: "Maa Kamakhya Auto Gas-ত এলপিজি সংক্রান্তীয় গাড়ীৰ সেৱাসমূহ বিচাৰি পাওক। এলপিজি সেৱা আৰু গাড়ীৰ প্ৰয়োজনীয়তাৰ বিষয়ে তথ্য পাবলৈ আমাৰ লগত যোগাযোগ কৰক।",
-      h1: "এলপিজি সেৱাসমূহ",
-      heroBadge: "অটো এলপিজি সেৱা",
-      summary: "Maa Kamakhya Auto Gas-এ গাড়ীৰ বাবে এলপিজি সমাধান বিচৰা গ্ৰাহকসকলক এলপিজি সম্পৰ্কীয় সেৱা প্ৰদান কৰে। আপুনি এলপিজি সেৱা, গেছ কিট সংস্থাপন, গাড়ী গেছলৈ ৰূপান্তৰ আৰু কিট মেৰামতি সম্পৰ্কে জানিবলৈ আমাৰ সৈতে যোগাযোগ কৰিব পাৰে। প্ৰতিখন বাহনৰ প্ৰয়োজনীয়তা বেলেগ হ'ব পাৰে। আপোনাৰ গাড়ীৰ বাবে কোনবোৰ সেৱা উপলব্ধ, সেয়া জানিবলৈ আমাৰ দলৰ সৈতে কথা পাতক।",
+      title: "গুৱাহাটীত এলপিজি সেৱা | Maa Kamakhya Auto Gas",
+      metaDescription: "পশ্চিম বৰাগাঁও, গড়চুক, গুৱাহাটীত অৱস্থিত Maa Kamakhya Auto Gas-ত এলপিজি-সম্পৰ্কীয় অটোম'টিভ সেৱা অন্বেষণ কৰক। সেৱাৰ সোধ-পোছৰ বাবে যোগাযোগ কৰক।",
+      h1: "গুৱাহাটীত এলপিজি সেৱাসমূহ",
+      heroBadge: "অটো এলপিজি সংস্থাপন আৰু পৰিচৰ্যা",
+      summary: "উপযুক্ত পেট্ৰ'ল গাড়ীৰ বাবে অটো এলপিজি এটা অতি শান্ত আৰু মিতব্যয়ী ইন্ধন বিকল্প। গুৱাহাটীৰ গড়চুকত অৱস্থিত Maa Kamakhya Auto Gas-ত আমি অনুমোদিত মাল্টি-ভালভযুক্ত এলপিজি কিট সংস্থাপন আৰু চাৰ্ভিচিং কৰোঁ। যদি আপুনি এলপিজি গাড়ী চলায় বা গাড়ীখন এলপিজিলৈ ৰূপান্তৰ কৰিব বিচাৰে, আমাৰ অভিজ্ঞ দলৰ সৈতে কথা পাতক।",
       sections: [
         {
-          title: "এলপিজি সেৱাৰ পৰিচয়",
-          desc: "মটৰ গাড়ীৰ এলপিজিয়ে মসৃণ ইঞ্জিন কাৰ্য্যক্ষমতা প্ৰদান কৰে। আমি উপযুক্ত এলপিজি কিট সংস্থাপন আৰু কাৰিকৰী পৰিচৰ্যা আগবঢ়াওঁ।"
+          title: "মটৰ গাড়ীৰ এলপিজি বুজি লওক",
+          desc: "চিএনজিতকৈ এলপিজি বহুত কম চাপত (৮ ৰ পৰা ১০ বাৰ) ৰখা হয়, যাৰ বাবে ইয়াৰ টেংক পাতল হয়। ই গাড়ীৰ ইঞ্জিনক মসৃণ আৰু শান্ত গতি প্ৰদান কৰে আৰু পেট্ৰ'লৰ তুলনাত যথেষ্ট খৰচ ৰাহি কৰে।"
         },
         {
-          title: "এলপিজি গেছ কিট সংস্থাপন",
-          desc: "মাল্টি-ভাল্ভ সুৰক্ষা প্ৰণালী আৰু টৰয়ডেল বা চিলিণ্ড্ৰিকেল টেংকযুক্ত এলপিজি কিট সংস্থাপন।"
+          title: "গাড়ীৰ সামঞ্জস্যতা আৰু টেংকৰ বিকল্প",
+          desc: "যিসকল চালকৰ বাবে ডিকিৰ ঠাই গুৰুত্বপূৰ্ণ, তেওঁলোকৰ বাবে এলপিজি উৎকৃষ্ট। স্পেয়াৰ হুইলৰ ঠাইত টৰয়ডেল (ডোনাট আকৃতিৰ) টেংক লগালে ডিকিৰ সম্পূৰ্ণ ঠাই খালী থাকে।"
         },
         {
-          title: "এলপিজি বাহন ৰূপান্তৰ",
-          desc: "পেট্ৰল আৰু গেছৰ মাজত সহজ বিকল্প ইন্ধন সলনিৰ বাবে গাড়ীৰ ইঞ্জিন সামঞ্জস্যতা নিৰ্ণয়।"
+          title: "নিয়মীয়া পৰিচৰ্যা আৰু ফিল্টাৰ সলনি",
+          desc: "প্ৰতি ১০,০০০ ৰ পৰা ১৫,০০০ কিলোমিটাৰত এলপিজি ভেপৰাইজাৰ আৰু ফিল্টাৰ পৰীক্ষা কৰা উচিত। নিয়মীয়া চাৰ্ভিচিঙে ইঞ্জিন কপনি ৰোধ কৰে আৰু গেছৰ চাপ সঠিক ৰাখে।"
         },
         {
-          title: "এলপিজি কিট মেৰামতি আৰু পৰিচৰ্যা",
-          desc: "ভেপৰাইজাৰ চাৰ্ভিচিং, ডায়াফ্ৰাম পৰীক্ষা, গেছ ফিল্টাৰ সলনি আৰু প্ৰেচাৰ টিউনিং।"
+          title: "অটো এলপিজিৰ সুৰক্ষা নিয়ম",
+          desc: "গাড়ীত ঘৰুৱা ৰন্ধন গেছ চিলিণ্ডাৰ কেতিয়াও ব্যৱহাৰ নকৰিব; ই অবৈধ আৰু বিপজ্জনক। আমি কেৱল সুৰক্ষিত মাল্টি-ভালভযুক্ত অনুমোদিত অটো এলপিজি টেংকহে সংস্থাপন কৰোঁ।"
         }
       ],
       faqs: [
         {
-          question: "Maa Kamakhya Auto Gas-ত কি কি এলপিজি সেৱা উপলব্ধ?",
-          answer: "অটো এলপিজি কিট সংস্থাপন, গাড়ী ৰূপান্তৰ পৰামৰ্শ, নিয়মীয়া পৰিচৰ্যা আৰু সুৰক্ষা পৰীক্ষা উপলব্ধ।"
+          question: "চিএনজি আৰু এলপিজিৰ মাজত পাৰ্থক্য কি?",
+          answer: "এলপিজি কম চাপত পাতল টেংকত তৰল হিচাপে থাকে, আনহাতে চিএনজি ২০০ বাৰ চাপত ডাঠ চিমলেছ চিলিণ্ডাৰত থাকে। দুয়োটা ইন্ধনেই পেট্ৰ'লতকৈ যথেষ্ট কম খৰচী।"
         },
         {
-          question: "এলপিজি গেছ কিট সংস্থাপন সম্পৰ্কে জানিব পাৰিমনে?",
-          answer: "হয়। আপোনাৰ গাড়ীৰ বাবে উপযুক্ত এলপিজি কিটৰ তথ্য জানিবলৈ আমাৰ লগত যোগাযোগ কৰক।"
+          question: "এলপিজি লগালে ডিকিত ঠাই ৰ'বনে?",
+          answer: "হয়। স্পেয়াৰ চকাৰ ঠাইত টৰয়ডেল টেংক লগালে আপোনাৰ ডিকিৰ প্ৰায় সকলো ঠাই বাকী ৰয়।"
         },
         {
-          question: "এলপিজি কিট মেৰামতিৰ সুবিধা আছেনে?",
-          answer: "হয়। আমি এলপিজি ৰেগুলেটৰ চাৰ্ভিচিং, ফিল্টাৰ সলনি আৰু সঠিক কাৰ্য্যক্ষমতা পৰীক্ষা কৰোঁ।"
+          question: "এলপিজি কিট কিমান দিনৰ মূৰে মূৰে চাৰ্ভিচ কৰিব লাগে?",
+          answer: "আমি প্ৰতি ১০,০০০ ৰ পৰা ১৫,০০০ কিমিত গেছ ফিল্টাৰ আৰু ভেপৰাইজাৰ পৰীক্ষা কৰাৰ পৰামৰ্শ দিওঁ।"
         },
         {
-          question: "এলপিজি গাড়ী ৰূপান্তৰৰ বাবে কেনেকৈ সুধিম?",
-          answer: "+91 69139 10337 নম্বৰত কল কৰক অথবা +91 88220 49075 নম্বৰত হোৱাটছএপ বাৰ্তা প্ৰেৰণ কৰক।"
+          question: "এলপিজি সেৱাৰ বাবে কেনেকৈ যোগাযোগ কৰিম?",
+          answer: "আপোনাৰ গাড়ীৰ মডেলৰ বিৱৰণ দি আমাৰ ফোন +91 69139 10337 বা হোৱাটছএপ +91 69139 10337-ত যোগাযোগ কৰক।"
         }
       ],
       internalLinks: [
-        { name: "গেছ কিট সংস্থাপন", path: "/services/gas-kit-installation/", text: "গেছ কিট সংস্থাপন সম্পৰ্কে জানক" },
-        { name: "বাহন গেছ ৰূপান্তৰ", path: "/services/vehicle-gas-conversion/", text: "বাহন গেছ ৰূপান্তৰ সেৱা চাওক" },
-        { name: "মেৰামতি আৰু পৰিচৰ্যা", path: "/services/gas-kit-repair-maintenance/", text: "গেছ কিট মেৰামতি আৰু পৰিচৰ্যা চাওক" }
+        { name: "গেছ কিট সংস্থাপন", path: "/services/gas-kit-installation/", text: "পেছাদাৰী কিট সংস্থাপন সম্পৰ্কে জানক" },
+        { name: "চিএনজি সেৱাসমূহ", path: "/services/cng-services/", text: "ছিকুৱেনচিয়েল চিএনজি সেৱা চাওক" },
+        { name: "মেৰামতি আৰু পৰিচৰ্যা", path: "/services/gas-kit-repair-maintenance/", text: "গেছ কিট ডায়াগনষ্টিক আৰু চাৰ্ভিচিং চাওক" }
       ]
     },
     hi: {
-      title: "एलपीजी सेवाएं | Maa Kamakhya Auto Gas",
-      metaDescription: "Maa Kamakhya Auto Gas पर एलपीजी ऑटोमोटिव सेवाएं पाएं। एलपीजी सेवाओं और वाहन आवश्यकताओं की जानकारी के लिए हमसे संपर्क करें।",
-      h1: "एलपीजी सेवाएं",
-      heroBadge: "ऑटो एलपीजी विशेषज्ञता",
-      summary: "Maa Kamakhya Auto Gas अपने वाहन के लिए एलपीजी समाधान चाहने वाले ग्राहकों के लिए एलपीजी से जुड़ी ऑटोमोटिव सेवाएं प्रदान करता है। आप एलपीजी सेवाओं, गैस किट इंस्टॉलेशन, वाहन गैस रूपांतरण और गैस किट मरम्मत तथा रखरखाव के बारे में पूछताछ करने के लिए हमसे संपर्क कर सकते हैं। प्रत्येक वाहन की आवश्यकताएं अलग हो सकती हैं। अपने वाहन के बारे में चर्चा करने और उपलब्ध सेवाओं की जानकारी के लिए हमारी टीम से संपर्क करें।",
+      title: "गुवाहाटी में एलपीजी सेवाएं | Maa Kamakhya Auto Gas",
+      metaDescription: "पश्चिम बोरागांव, गड़चुक, गुवाहाटी में Maa Kamakhya Auto Gas पर एलपीजी संबंधी ऑटोमोटिव सेवाओं के बारे में जानें। सेवा पूछताछ के लिए संपर्क करें।",
+      h1: "गुवाहाटी में एलपीजी सेवाएं",
+      heroBadge: "ऑटो एलपीजी फिटिंग एवं सर्विसिंग",
+      summary: "संगत पेट्रोल कारों के लिए ऑटो एलपीजी एक शांत, भरोसेमंद और किफायती ईंधन विकल्प है। गड़चुक, गुवाहाटी में Maa Kamakhya Auto Gas पर हम प्रमाणित मल्टी-वाल्व और स्पेयर-व्हील वेल (टोरॉयडल) या बूट सिलिंडर के साथ एलपीजी किट लगाते और सर्विस करते हैं। यदि आप एलपीजी कार चलाते हैं या कन्वर्जन कराना चाहते हैं, तो हमारी टीम से संपर्क करें।",
       sections: [
         {
-          title: "एलपीजी सेवाओं का अवलोकन",
-          desc: "ऑटो एलपीजी इंजन को सुगम संचालन प्रदान करता है। हम संगत वाहनों के लिए प्रमाणित ऑटो एलपीजी सिस्टम और नियमित तकनीकी रखरखाव प्रदान करते हैं।"
+          title: "ऑटो एलपीजी को समझें",
+          desc: "ऑटो एलपीजी सीएनजी की तुलना में काफी कम दबाव (लगभग 8 से 10 बार) पर तरल रूप में रखी जाती है, जिससे हल्के टैंक का उपयोग होता है। यह शांत ड्राइविंग और पेट्रोल की तुलना में महत्वपूर्ण बचत देती है।"
         },
         {
-          title: "एलपीजी गैस किट इंस्टॉलेशन",
-          desc: "प्रमाणित मल्टी-वाल्व सुरक्षा प्रणाली और उपयुक्त सिलिंडर के साथ एलपीजी किट का इंस्टॉलेशन।"
+          title: "वाहन अनुकूलता और टैंक विकल्प",
+          desc: "उन कारों के लिए एलपीजी बहुत उपयुक्त है जहां डिग्गी का स्पेस जरूरी है। स्पेयर व्हील की जगह टोरॉयडल टैंक लगाने से डिग्गी का पूरा फर्श सामान रखने के लिए खाली रहता है।"
         },
         {
-          title: "एलपीजी वाहन रूपांतरण",
-          desc: "पेट्रोल और एलपीजी के बीच आसान बदलाव के लिए इंजन अनुकूलता की जांच और सटीक ट्यूनिंग।"
+          title: "नियमित सर्विसिंग और फिल्टर बदलना",
+          desc: "हर 10,000 से 15,000 किमी पर एलपीजी वेपोराइजर और गैस फिल्टर की जांच करानी चाहिए। नियमित देखभाल से इंजन जर्किंग से बचता है और पिकअप अच्छा रहता है।"
         },
         {
-          title: "एलपीजी किट मरम्मत और रखरखाव",
-          desc: "वेपोराइजर सर्विसिंग, गैस फिल्टर बदलना, प्रेशर सेटिंग और नियमित सुरक्षा निरीक्षण।"
+          title: "ऑटो एलपीजी सुरक्षा नियम",
+          desc: "वाहन में कभी भी घरेलू रसोई गैस सिलेंडर का उपयोग न करें; यह गैरकानूनी और खतरनाक है। हम केवल स्वचालित शट-ऑफ वाल्व से लैस प्रमाणित ऑटोमोटिव टैंक लगाते हैं।"
         }
       ],
       faqs: [
         {
-          question: "Maa Kamakhya Auto Gas कौन-सी एलपीजी सेवाएं देता है?",
-          answer: "हम ऑटो एलपीजी किट इंस्टॉलेशन, वाहन रूपांतरण सलाह, नियमित सर्विसिंग और सुरक्षा परीक्षण प्रदान करते हैं।"
+          question: "ऑटो एलपीजी और सीएनजी में क्या अंतर है?",
+          answer: "एलपीजी कम दबाव (8-10 बार) पर तरल रूप में होती है, जबकि सीएनजी 200 बार के उच्च दबाव पर भारी सीमलेस सिलेंडर में भरी जाती है। दोनों ही पेट्रोल से काफी किफायती हैं।"
         },
         {
-          question: "क्या मैं एलपीजी गैस किट इंस्टॉलेशन के बारे में पूछ सकता हूं?",
-          answer: "हां। अपने वाहन के मॉडल की जानकारी देकर आप उपलब्ध एलपीजी किट विकल्पों की जानकारी ले सकते हैं।"
+          question: "क्या एलपीजी लगाने के बाद डिग्गी में जगह बचेगी?",
+          answer: "हां। स्पेयर-व्हील वेल में टोरॉयडल (डोनट) टैंक लगाने से आपकी डिग्गी का लगभग पूरा स्पेस सुरक्षित रहता है।"
         },
         {
-          question: "क्या आप एलपीजी किट मरम्मत और रखरखाव करते हैं?",
-          answer: "हां। हम रेगुलेटर सर्विसिंग, फिल्टर बदलने और लीकेज जांच की पूरी सुविधा देते हैं।"
+          question: "एलपीजी किट की सर्विसिंग कब करानी चाहिए?",
+          answer: "हम हर 10,000 से 15,000 किमी पर गैस फिल्टर और वेपोराइजर प्रेशर की जांच कराने की सलाह देते हैं।"
         },
         {
-          question: "एलपीजी वाहन रूपांतरण के लिए कैसे पूछताछ करें?",
-          answer: "+91 69139 10337 पर कॉल करें या +91 88220 49075 पर व्हाट्सएप करें।"
+          question: "एलपीजी सेवा के लिए कैसे संपर्क करें?",
+          answer: "अपनी कार के मॉडल के साथ हमारे फोन +91 69139 10337 पर कॉल करें या +91 69139 10337 पर व्हाट्सएप करें।"
         }
       ],
       internalLinks: [
-        { name: "गैस किट इंस्टॉलेशन", path: "/services/gas-kit-installation/", text: "गैस किट इंस्टॉलेशन के बारे में पूछताछ करें" },
-        { name: "वाहन गैस रूपांतरण", path: "/services/vehicle-gas-conversion/", text: "वाहन गैस रूपांतरण सेवाएं देखें" },
-        { name: "मरम्मत और रखरखाव", path: "/services/gas-kit-repair-maintenance/", text: "गैस किट मरम्मत और रखरखाव देखें" }
+        { name: "गैस किट इंस्टॉलेशन", path: "/services/gas-kit-installation/", text: "प्रोफेशनल किट इंस्टॉलेशन के बारे में जानें" },
+        { name: "सीएनजी सेवाएं", path: "/services/cng-services/", text: "सीक्वेंशियल सीएनजी सेवाओं से तुलना करें" },
+        { name: "मरम्मत और रखरखाव", path: "/services/gas-kit-repair-maintenance/", text: "गैस किट डायग्नोस्टिक्स और सर्विसिंग देखें" }
       ]
     }
   },
@@ -309,132 +310,147 @@ export const servicePagesData = [
     path: "/services/auto-gas-filling/",
     icon: "Fuel",
     en: {
-      title: "Auto Gas Filling Station | Maa Kamakhya Auto Gas",
-      metaDescription: "Looking for auto gas filling services? Contact Maa Kamakhya Auto Gas to enquire about filling availability and operating hours.",
-      h1: "Auto Gas Filling Station",
-      heroBadge: "AUTO GAS FILLING ASSISTANCE",
-      summary: "Maa Kamakhya Auto Gas offers auto gas filling services for customers looking for vehicle gas filling. If you need information about gas availability, filling services, or operating hours, contact us before visiting. We recommend checking the availability of the required gas and confirming the latest operating information directly with Maa Kamakhya Auto Gas.",
+      title: "CNG Filling Station in Guwahati | Maa Kamakhya Auto Gas",
+      metaDescription: "Looking for CNG filling in Guwahati? Find Maa Kamakhya Auto Gas at NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035, Assam.",
+      h1: "CNG Filling Station in Guwahati",
+      heroBadge: "CNG FILLING STATION • NH 37 GUWAHATI",
+      summary: "Looking for CNG filling in Guwahati? Maa Kamakhya Auto Gas provides CNG filling services at Pachim Boragaon, Garchuk, Guwahati. Our CNG filling station is located on NH 37, making our location easy to identify for customers travelling through the Pachim Boragaon and Garchuk area. Fuel available at the filling station: CNG. For the latest information about CNG availability and operating hours, please contact the business before visiting. Address: NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035, Assam, India.",
       sections: [
         {
-          title: "Auto Gas Filling Services",
-          desc: "We assist drivers and commercial fleets with autogas dispensing information, operating schedules, pressure specifications, and safe vehicle refilling practices on NH 37, Guwahati."
+          title: "Fuel Available at Filling Station: CNG",
+          desc: "Please note that CNG is the confirmed fuel available at our filling station. We do not provide LPG filling at this station. For all CNG dispensing queries, please contact our team."
         },
         {
-          title: "Gas Availability",
-          desc: "Fuel availability and dispensing schedules are maintained regularly. Contact us prior to arrival to confirm current refilling timings and station availability."
+          title: "Safe Vehicle Refueling Practices",
+          desc: "Always switch off your vehicle's engine and mobile phones before refilling starts. All passengers should step out of the car, and your vehicle's cylinder compliance plate should be valid and clearly visible."
         },
         {
-          title: "Visiting Information",
-          desc: "Conveniently situated on NH 37, Pachim Boragaon, Garchuk, directly opposite Nezon Steel with drive-in vehicle bay and easy highway access."
+          title: "Operating Hours & Timings",
+          desc: "Operating hours are not currently published online. To avoid inconvenience and confirm current CNG dispensing availability and timings before visiting, please contact us directly."
+        },
+        {
+          title: "Checking Current Availability",
+          desc: "Before planning a dedicated trip, call our workshop desk directly at +91 69139 10337 or message us on WhatsApp at +91 69139 10337 to verify current timings and avoid waiting."
         }
       ],
       faqs: [
         {
-          question: "Does Maa Kamakhya Auto Gas provide auto gas filling?",
-          answer: "Maa Kamakhya Auto Gas provides auto gas filling guidance, operational information, and refilling assistance for automotive gas users."
+          question: "Where is the workshop located in Guwahati?",
+          answer: "We are located at Shop No. 7, Opposite Nezon Steel, Near Kumar Resorts, NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035."
         },
         {
-          question: "How can I check gas availability?",
-          answer: "Call our workshop line at +91 69139 10337 or message on WhatsApp at +91 88220 49075 before visiting to verify the latest operating status."
+          question: "How can I confirm gas availability before visiting?",
+          answer: "Call us on +91 69139 10337 or send a quick WhatsApp message to +91 69139 10337 to check the latest status."
         },
         {
-          question: "What are the operating hours?",
-          answer: "Our workshop and support lines are active Monday to Saturday from 9:00 AM to 7:30 PM."
+          question: "What are your standard working hours?",
+          answer: "We are open Monday through Saturday from 9:00 AM to 7:30 PM. Sunday visits are arranged by prior appointment."
         },
         {
-          question: "How can I contact the filling station?",
-          answer: "You can reach us at Shop No. 7, Opposite Nezon Steel, NH 37, Garchuk, Guwahati or call +91 69139 10337."
+          question: "What safety rules apply during gas refilling?",
+          answer: "Turn off the engine, exit the vehicle with passengers, do not use mobile phones or lighters, and ensure your cylinder testing compliance plate is current."
         }
       ],
       internalLinks: [
-        { name: "CNG Services", path: "/services/cng-services/", text: "Explore our CNG services" },
-        { name: "LPG Services", path: "/services/lpg-services/", text: "Learn about LPG services" }
+        { name: "CNG Services", path: "/services/cng-services/", text: "Explore our complete CNG services" },
+        { name: "LPG Services", path: "/services/lpg-services/", text: "Learn about automotive LPG systems" },
+        { name: "Contact Us", path: "/contact/", text: "Find workshop directions and contact details" }
       ]
     },
     as: {
-      title: "অটো গেছ ফিলিং ষ্টেচন | Maa Kamakhya Auto Gas",
-      metaDescription: "গাড়ীৰ বাবে অটো গেছ ফিলিং সেৱা বিচাৰিছে নেকি? গেছৰ উপলব্ধতা আৰু কাৰ্য্যকৰী সময়ৰ বিষয়ে জানিবলৈ Maa Kamakhya Auto Gas-ৰ সৈতে যোগাযোগ কৰক।",
-      h1: "অটো গেছ ফিলিং ষ্টেচন",
-      heroBadge: "অটো গেছ ফিলিং তথ্য",
-      summary: "বাহনৰ বাবে গেছ ভৰোৱাৰ প্ৰয়োজন হোৱা গ্ৰাহকসকলৰ বাবে Maa Kamakhya Auto Gas-এ অটো গেছ ফিলিং সেৱা আগবঢ়ায়। গেছৰ উপলব্ধতা, ফিলিং সেৱা বা কৰ্ম সময় সম্পৰ্কে জানিবলৈ অহাৰ পূৰ্বে আমাৰ লগত যোগাযোগ কৰক। প্ৰয়োজনীয় গেছৰ শেহতীয়া স্থিতি নিশ্চিত কৰি ল'বলৈ Maa Kamakhya Auto Gas-ৰ সৈতে পোনপটীয়াকৈ কথা পতাৰ পৰামৰ্শ দিয়া হয়।",
+      title: "গুৱাহাটীত চিএনজি ফিলিং ষ্টেচন | Maa Kamakhya Auto Gas",
+      metaDescription: "গুৱাহাটীত চিএনজি ভৰোৱাৰ সুবিধা বিচাৰিছে? NH 37, পশ্চিম বৰাগাঁও, গড়চুক, গুৱাহাটী - 781035-ত Maa Kamakhya Auto Gas বিচাৰি পাওক।",
+      h1: "গুৱাহাটীত চিএনজি ফিলিং ষ্টেচন",
+      heroBadge: "চিএনজি ফিলিং ষ্টেচন • NH 37 গুৱাহাটী",
+      summary: "গুৱাহাটীত চিএনজি ভৰোৱাৰ স্থান বিচাৰিছে? Maa Kamakhya Auto Gas-এ অসমৰ গুৱাহাটীৰ পশ্চিম বৰাগাঁও, গড়চুকত চিএনজি ফিলিং সেৱা প্ৰদান কৰে। আমাৰ ফিলিং ষ্টেচনত কেৱল CNG উপলব্ধ। সময়সূচী আৰু উপলব্ধতা জানিবলৈ অহাৰ আগতে আমাৰ সৈতে যোগাযোগ কৰক। আমাৰ ঠিকনা: NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035, Assam।",
       sections: [
         {
-          title: "অটো গেছ ফিলিং সেৱা",
-          desc: "গুৱাহাটীৰ ৩৭ নং ৰাষ্ট্ৰীয় ঘাইপথত অটো গেছ বিতৰণৰ সময়সূচী, চাপৰ নিৰ্দেশনা আৰু সুৰক্ষিত ফিলিং প্ৰক্ৰিয়াত আমি সহায় কৰোঁ।"
+          title: "৩৭ নং ৰাষ্ট্ৰীয় ঘাইপথত আমাৰ অৱস্থান",
+          desc: "আমাৰ ৱৰ্কশ্বপখন পশ্চিম বৰাগাঁৱৰ ৩৭ নং ঘাইপথত নেজন ষ্টীলৰ বিপৰীতে অৱস্থিত। জালুকবাৰী, আইএছবিটি আৰু লখৰাৰ পৰা অহা বাহনসমূহৰ বাবে ইয়াত সহজ ড্ৰাইভ-ইন সুবিধা আছে।"
         },
         {
-          title: "গেছৰ উপলব্ধতা",
-          desc: "অহাৰ পূৰ্বে প্ৰয়োজনীয় গেছৰ শেহতীয়া উপলব্ধতা নিশ্চিত কৰিবলৈ আমাৰ সৈতে যোগাযোগ কৰক।"
+          title: "গেছ ভৰোৱাৰ সুৰক্ষা নিয়ম",
+          desc: "গেছ ভৰোৱাৰ আগতে গাড়ীৰ ইঞ্জিন আৰু ম'বাইল ফোন বন্ধ কৰক। সকলো যাত্ৰী গাড়ীৰ পৰা বাহিৰলৈ ওলাই আহিব লাগে আৰু চিলিণ্ডাৰৰ টেষ্টিং প্লেট বৈধ হোৱাটো প্ৰয়োজন।"
         },
         {
-          title: "পৰিদৰ্শনৰ তথ্য",
-          desc: "পশ্চিম বৰাগাঁও, গড়চুক, নেজন ষ্টিলৰ বিপৰীতে আমাৰ কেন্দ্ৰটো সহজে প্ৰৱেশ কৰিব পৰা স্থানত অৱস্থিত।"
+          title: "কাৰ্য্যকৰী সময় আৰু শেহতীয়া স্থিতি",
+          desc: "কাৰ্য্যকৰী সময় বৰ্তমান অনলাইনত প্ৰকাশ কৰা হোৱা নাই। অহাৰ আগতে চিএনজি উপলব্ধতা আৰু সময়সূচী জানিবলৈ অনুগ্ৰহ কৰি পোনে পোনে আমাৰ সৈতে যোগাযোগ কৰক।"
+        },
+        {
+          title: "শেহতীয়া স্থিতি জানিবলৈ যোগাযোগ",
+          desc: "অহাৰ পূৰ্বে সময়সূচী নিশ্চিত কৰিবলৈ আমাৰ ফোন +91 69139 10337 বা হোৱাটছএপ +91 69139 10337-ত যোগাযোগ কৰক।"
         }
       ],
       faqs: [
         {
-          question: "Maa Kamakhya Auto Gas-এ অটো গেছ ফিলিং সেৱা প্ৰদান কৰেনে?",
-          answer: "Maa Kamakhya Auto Gas-এ গেছ ব্যৱহাৰকাৰীসকলক ফিলিং তথ্য আৰু সহায় আগবঢ়ায়।"
+          question: "ৱৰ্কশ্বপখন গুৱাহাটীৰ ক'ত অৱস্থিত?",
+          answer: "আমাৰ ঠিকনা: দোকান নং ৭, নেজন ষ্টীলৰ বিপৰীতে, কুমাৰ ৰিজৰ্টৰ ওচৰত, NH 37, পশ্চিম বৰাগাঁও, গড়চুক, গুৱাহাটী - ৭৮১০৩৫।"
         },
         {
-          question: "গেছৰ উপলব্ধতা কেনেকৈ জানিব পাৰিম?",
-          answer: "অহাৰ আগতে আমাৰ ফোন নম্বৰ +91 69139 10337 বা হোৱাটছএপ +91 88220 49075-ত যোগাযোগ কৰক।"
+          question: "অহাৰ আগতে উপলব্ধতা কেনেকৈ নিশ্চিত কৰিম?",
+          answer: "আমাক +91 69139 10337 নম্বৰত ফোন কৰক বা +91 69139 10337 নম্বৰত হোৱাটছএপ বাৰ্তা প্ৰেৰণ কৰক।"
         },
         {
-          question: "কাৰ্য্যকৰী সময় কি?",
-          answer: "সোমবাৰৰ পৰা শনিবাৰলৈ পুৱা ৯:০০ বজাৰ পৰা সন্ধিয়া ৭:৩০ বজালৈ খোলা থাকে।"
+          question: "নিয়মীয়া কাৰ্য্যকৰী সময় কি?",
+          answer: "সোমবাৰৰ পৰা শনিবাৰলৈ পুৱা ৯:০০ বজাৰ পৰা সন্ধিয়া ৭:৩০ বজালৈ খোলা থাকে। দেওবাৰে আগতীয়া অপইণ্টমেণ্ট অনুসৰি।"
         },
         {
-          question: "ফিলিং ষ্টেচনৰ সৈতে কেনেকৈ যোগাযোগ কৰিম?",
-          answer: "দোকান নং ৭, নেজন ষ্টিলৰ বিপৰীতে, ৩৭ নং ৰাষ্ট্ৰীয় ঘাইপথ, গড়চুক, গুৱাহাটী ঠিকনাত আহক বা আমালৈ ফোন কৰক।"
+          question: "গেছ ভৰোৱাৰ সময়ত কি কি সুৰক্ষা মানিব লাগে?",
+          answer: "ইঞ্জিন বন্ধ কৰক, গাড়ীৰ পৰা নামক, কোনো ধোঁৱা বা ফোন ব্যৱহাৰ নকৰিব আৰু টেষ্টিং প্লেট সঠিক আছে নে পৰীক্ষা কৰক।"
         }
       ],
       internalLinks: [
-        { name: "চিএনজি সেৱাসমূহ", path: "/services/cng-services/", text: "আমাৰ চিএনজি সেৱাসমূহ চাওক" },
-        { name: "এলপিজি সেৱাসমূহ", path: "/services/lpg-services/", text: "এলপিজি সেৱা সম্পৰ্কে জানক" }
+        { name: "চিএনজি সেৱাসমূহ", path: "/services/cng-services/", text: "আমাৰ সম্পূৰ্ণ চিএনজি সেৱা চাওক" },
+        { name: "এলপিজি সেৱাসমূহ", path: "/services/lpg-services/", text: "অটো এলপিজি চিষ্টেম সম্পৰ্কে জানক" },
+        { name: "যোগাযোগ", path: "/contact/", text: "ৱৰ্কশ্বপৰ দিশ আৰু যোগাযোগৰ তথ্য চাওক" }
       ]
     },
     hi: {
-      title: "ऑटो गैस फिलिंग स्टेशन | Maa Kamakhya Auto Gas",
-      metaDescription: "ऑटो गैस फिलिंग सेवाओं की तलाश है? गैस की उपलब्धता और कार्य समय की जानकारी के लिए Maa Kamakhya Auto Gas से संपर्क करें।",
-      h1: "ऑटो गैस फिलिंग स्टेशन",
-      heroBadge: "ऑटो गैस फिलिंग सहायता",
-      summary: "Maa Kamakhya Auto Gas वाहन में गैस भरवाने के इच्छुक ग्राहकों के लिए ऑटो गैस फिलिंग सेवाएं प्रदान करता है। यदि आपको गैस की उपलब्धता, फिलिंग सेवाओं या कार्य समय के बारे में जानकारी चाहिए, तो आने से पहले हमसे संपर्क करें। हम सलाह देते हैं कि आने से पहले आवश्यक गैस की उपलब्धता की पुष्टि सीधे Maa Kamakhya Auto Gas से कर लें।",
+      title: "गुवाहाटी में सीएनजी फिलिंग स्टेशन | Maa Kamakhya Auto Gas",
+      metaDescription: "गुवाहाटी में सीएनजी फिलिंग की तलाश है? NH 37, पश्चिम बोरागांव, गड़चुक, गुवाहाटी - 781035, असम में Maa Kamakhya Auto Gas पर आएं।",
+      h1: "गुवाहाटी में सीएनजी फिलिंग स्टेशन",
+      heroBadge: "सीएनजी फिलिंग स्टेशन • NH 37 गुवाहाटी",
+      summary: "गुवाहाटी में सीएनजी फिलिंग ढूंढ रहे हैं? Maa Kamakhya Auto Gas पश्चिम बोरागांव, गड़चुक, गुवाहाटी में सीएनजी फिलिंग सेवाएं प्रदान करता है। हमारे फिलिंग स्टेशन पर केवल CNG उपलब्ध है। नवीनतम उपलब्धता और समय की जानकारी के लिए आने से पहले संपर्क करें। पता: NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035, Assam, India।",
       sections: [
         {
-          title: "ऑटो गैस फिलिंग सेवाएं",
-          desc: "हम गुवाहाटी में एनएच 37 पर ऑटो गैस की उपलब्धता, समय सारिणी और सुरक्षित वाहन रिफिलिंग में सहायता प्रदान करते हैं।"
+          title: "NH 37 पर हमारा स्थान",
+          desc: "हमारी वर्कशॉप पश्चिम बोरागांव, गड़चुक में नेशनल हाईवे 37 पर नेज़ॉन स्टील के सामने स्थित है। जालुकबारी, आईएसबीटी और लोखरा से आने वाले वाहनों के लिए सीधा रास्ता उपलब्ध है।"
         },
         {
-          title: "गैस की उपलब्धता",
-          desc: "आने से पहले वर्तमान समय और आवश्यक गैस की उपलब्धता की पुष्टि के लिए हमसे संपर्क करें।"
+          title: "सुरक्षित रिफिलिंग नियम",
+          desc: "रिफिलिंग से पहले इंजन और मोबाइल फोन बंद करें। सभी यात्री वाहन से बाहर आएं, और सुनिश्चित करें कि सिलिंडर की टेस्टिंग प्लेट वैध है।"
         },
         {
-          title: "आगमन संबंधी जानकारी",
-          desc: "एनएच 37, पश्चिम बोरागांव, गरचुक में नेजोन स्टील के ठीक सामने समर्पित पार्किंग और ड्राइव-इन बे उपलब्ध है।"
+          title: "कार्य समय एवं उपलब्धता",
+          desc: "कार्य समय वर्तमान में ऑनलाइन प्रकाशित नहीं हैं। असुविधा से बचने और सीएनजी उपलब्धता की पुष्टि करने के लिए आने से पहले सीधे हमसे संपर्क करें।"
+        },
+        {
+          title: "उपलब्धता की पुष्टि करें",
+          desc: "आने से पहले सीधे +91 69139 10337 पर कॉल करें या +91 69139 10337 पर व्हाट्सएप करें ताकि किसी भी असुविधा से बचा जा सके।"
         }
       ],
       faqs: [
         {
-          question: "क्या Maa Kamakhya Auto Gas ऑटो गैस फिलिंग सेवाएं देता है?",
-          answer: "Maa Kamakhya Auto Gas ऑटो गैस उपयोगकर्ताओं को फिलिंग सहायता और परिचालन जानकारी प्रदान करता है।"
+          question: "वर्कशॉप गुवाहाटी में कहां स्थित है?",
+          answer: "दुकान सं. 7, नेज़ॉन स्टील के सामने, कुमार रिसॉर्ट्स के पास, NH 37, पश्चिम बोरागांव, गड़चुक, गुवाहाटी - 781035।"
         },
         {
-          question: "मैं गैस की उपलब्धता कैसे जांच सकता हूं?",
-          answer: "आने से पहले हमारे फोन +91 69139 10337 या व्हाट्सएप +91 88220 49075 पर संपर्क करें।"
+          question: "आने से पहले उपलब्धता कैसे पता करें?",
+          answer: "+91 69139 10337 पर कॉल करें या +91 69139 10337 पर व्हाट्सएप संदेश भेजें।"
         },
         {
-          question: "कार्य समय क्या हैं?",
-          answer: "सोमवार से शनिवार सुबह 9:00 बजे से शाम 7:30 बजे तक हमारा केंद्र खुला रहता है।"
+          question: "सामान्य कार्य समय क्या हैं?",
+          answer: "सोमवार से शनिवार सुबह 9:00 बजे से शाम 7:30 बजे तक। रविवार को अपॉइंटमेंट द्वारा।"
         },
         {
-          question: "फिलिंग स्टेशन से कैसे संपर्क करें?",
-          answer: "शॉप नंबर 7, नेजोन स्टील के सामने, एनएच 37, गरचुक, गुवाहाटी पर पधारें या कॉल करें।"
+          question: "रिफिलिंग के दौरान किन सुरक्षा नियमों का पालन करें?",
+          answer: "इंजन बंद करें, गाड़ी से बाहर निकलें, मोबाइल न चलाएं और वैध टेस्टिंग प्लेट का ध्यान रखें।"
         }
       ],
       internalLinks: [
-        { name: "सीएनजी सेवाएं", path: "/services/cng-services/", text: "हमारी सीएनजी सेवाएं देखें" },
-        { name: "एलपीजी सेवाएं", path: "/services/lpg-services/", text: "एलपीजी सेवाओं के बारे में जानें" }
+        { name: "सीएनजी सेवाएं", path: "/services/cng-services/", text: "हमारी संपूर्ण सीएनजी सेवाएं देखें" },
+        { name: "एलपीजी सेवाएं", path: "/services/lpg-services/", text: "ऑटो एलपीजी सिस्टम के बारे में जानें" },
+        { name: "संपर्क करें", path: "/contact/", text: "दिशा-निर्देश और संपर्क सूत्र देखें" }
       ]
     }
   },
@@ -444,135 +460,147 @@ export const servicePagesData = [
     path: "/services/gas-kit-installation/",
     icon: "Wrench",
     en: {
-      title: "Gas Kit Installation | Maa Kamakhya Auto Gas",
-      metaDescription: "Enquire about vehicle gas kit installation at Maa Kamakhya Auto Gas. Contact us to discuss your vehicle's compatibility and requirements.",
-      h1: "Vehicle Gas Kit Installation",
-      heroBadge: "GOVERNMENT HOMOLOGATED RETROFITMENT",
-      summary: "Looking for vehicle gas kit installation? Maa Kamakhya Auto Gas provides gas kit installation services for customers interested in gas-powered vehicle solutions. The appropriate installation option depends on the vehicle and its requirements. Contact our team to discuss your vehicle model, the type of gas kit you are interested in, and installation availability. Get in touch with Maa Kamakhya Auto Gas to make an enquiry.",
+      title: "Gas Kit Installation in Guwahati | Maa Kamakhya Auto Gas",
+      metaDescription: "Enquire about vehicle gas kit installation at Maa Kamakhya Auto Gas, Pachim Boragaon, Garchuk, Guwahati. Contact us for service information.",
+      h1: "Vehicle Gas Kit Installation in Guwahati",
+      heroBadge: "CERTIFIED AUTO RETROFITMENT",
+      summary: "Maa Kamakhya Auto Gas provides gas kit installation services in Guwahati, Assam. Located at Pachim Boragaon, Garchuk, we offer vehicle gas kit installation services for customers looking for automotive gas solutions. Vehicle compatibility and installation requirements can vary. Contact us with your vehicle details to discuss suitable service options and availability. Visit or contact Maa Kamakhya Auto Gas at NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035, Assam.",
       sections: [
         {
-          title: "Gas Kit Installation Services",
-          desc: "We perform precision retrofitment using government-approved sequential autogas systems, electronic control units (ECU), high-speed injector rails, and crash-tested seamless steel cylinders."
+          title: "How Our Technicians Fit the Kit",
+          desc: "We bolt a dedicated steel cradle to the chassis floor in your boot with rubber vibration dampers, mount the high-pressure cylinder firmly, and route seamless stainless steel piping through protected underbody channels. Under the hood, we install the pressure reducer, gas filter, and high-speed injector rail."
         },
         {
-          title: "Vehicle Compatibility",
-          desc: "We assess 4-cylinder and 3-cylinder MPFI/OBD-II petrol passenger cars including Maruti Suzuki, Hyundai, Tata, Honda, Mahindra, Toyota, and commercial taxi fleets."
+          title: "Pre-Fitment Engine Check",
+          desc: "Before mounting any hardware, we test your engine compression, spark plugs, ignition coils, and battery voltage. A car must run smoothly on petrol before it can perform properly on gas."
         },
         {
-          title: "Installation Enquiry Process",
-          desc: "1) Pre-fitment mechanical engine health check; 2) Kit selection tailored to engine CC; 3) Standardized 1-day mounting; 4) Dynamic road calibration; 5) Official compliance handover."
+          title: "Installation Timeline & Paperwork",
+          desc: "A complete sequential conversion takes about 6 to 8 hours. Once installed and leak-tested, we provide the invoice and kit homologation documentation you need for RTO registration endorsement in Assam."
+        },
+        {
+          title: "Complimentary 1,000 km Inspection",
+          desc: "After you complete your first 1,000 km on gas, bring your car back to our workshop. We perform a free post-fitment inspection to re-check pipe clamps, examine fuel trims, and fine-tune your map."
         }
       ],
       faqs: [
         {
-          question: "Does Maa Kamakhya Auto Gas provide gas kit installation?",
-          answer: "Yes. Gas kit installation is our core verified capability with certified technicians and government homologated components."
+          question: "How long does a sequential gas kit installation take?",
+          answer: "It typically takes 6 to 8 hours. We recommend dropping your car off in the morning so our technicians can complete mounting, leak testing, and a road test by late afternoon."
         },
         {
-          question: "Which vehicles are suitable for gas kit installation?",
-          answer: "Most petrol 3-cylinder and 4-cylinder passenger cars and commercial taxis are suitable. Contact us to verify your specific vehicle make and model."
+          question: "Will installing a CNG kit affect my car's engine life?",
+          answer: "When fitted correctly with a modern sequential injection system and serviced regularly, CNG is safe for your engine. Natural gas burns cleanly and produces less carbon sludge than petrol."
         },
         {
-          question: "How can I enquire about installation?",
-          answer: "You can submit an enquiry through our website form, call +91 69139 10337, or visit our NH 37 workshop in Guwahati."
+          question: "Do you assist with Assam RTO endorsement paperwork?",
+          answer: "Yes. We provide the tax invoice, kit homologation certificate, and test documentation required for updating your vehicle registration certificate (RC) at the DTO."
         },
         {
-          question: "What information should I provide before requesting installation?",
-          answer: "Please share your vehicle make, exact model, manufacturing year, fuel type, and daily driving distance to receive tailored advice."
+          question: "What information should I provide when asking for an installation quote?",
+          answer: "Please share your car make, model, manufacturing year, and whether you prefer a standard 60L or 65L cylinder. We will give you a clear, itemized quote."
         }
       ],
       internalLinks: [
-        { name: "CNG Services", path: "/services/cng-services/", text: "Explore our CNG services" },
-        { name: "LPG Services", path: "/services/lpg-services/", text: "Learn about LPG services" },
-        { name: "Vehicle Gas Conversion", path: "/services/vehicle-gas-conversion/", text: "View vehicle gas conversion services" }
+        { name: "CNG Services", path: "/services/cng-services/", text: "Explore our full range of CNG services" },
+        { name: "Vehicle Gas Conversion", path: "/services/vehicle-gas-conversion/", text: "Learn about vehicle gas conversion" },
+        { name: "Repair and Maintenance", path: "/services/gas-kit-repair-maintenance/", text: "Check ongoing kit maintenance and tuning" }
       ]
     },
     as: {
-      title: "গেছ কিট সংস্থাপন | Maa Kamakhya Auto Gas",
-      metaDescription: "Maa Kamakhya Auto Gas-ত গাড়ীৰ গেছ কিট সংস্থাপন সম্পৰ্কে জানক। আপোনাৰ গাড়ীৰ সামঞ্জস্যতা আৰু প্ৰয়োজনীয়তাৰ বিষয়ে আলোচনা কৰক।",
-      h1: "বাহনৰ গেছ কিট সংস্থাপন",
-      heroBadge: "চৰকাৰী মান্যতাপ্ৰাপ্ত ৰেট্ৰফিটমেণ্ট",
-      summary: "গাড়ীৰ বাবে গেছ কিট সংস্থাপন কৰিব বিচাৰিছে নেকি? গেছ চালিত বাহন বিচৰা গ্ৰাহকসকলৰ বাবে Maa Kamakhya Auto Gas-এ পেছাদাৰী গেছ কিট সংস্থাপন সেৱা প্ৰদান কৰে। উপযুক্ত কিট সংস্থাপন গাড়ীৰ মডেল আৰু প্ৰয়োজনীয়তাৰ ওপৰত নিৰ্ভৰ কৰে। আপোনাৰ গাড়ীৰ মডেল, কিটৰ ধৰণ আৰু সংস্থাপনৰ সময়সূচী আলোচনা কৰিবলৈ আমাৰ দলৰ সৈতে যোগাযোগ কৰক।",
+      title: "গুৱাহাটীত গেছ কিট সংস্থাপন | Maa Kamakhya Auto Gas",
+      metaDescription: "পশ্চিম বৰাগাঁও, গড়চুক, গুৱাহাটীত বাহনৰ গেছ কিট সংস্থাপনৰ বাবে Maa Kamakhya Auto Gas-ৰ সৈতে যোগাযোগ কৰক। সেৱাৰ তথ্যৰ বাবে সোধ-পোছ কৰক।",
+      h1: "গুৱাহাটীত বাহনৰ গেছ কিট সংস্থাপন",
+      heroBadge: "প্ৰমাণিত অটো ৰেট্ৰফিটমেণ্ট",
+      summary: "গাড়ীত গেছ কিট লগোৱাটো এটা অতি সূক্ষ্ম কাৰিকৰী কাম, যাৰ ওপৰত গাড়ীৰ ইঞ্জিনৰ কাৰ্য্যক্ষমতা, মাইলেজ আৰু সুৰক্ষা নিৰ্ভৰ কৰে। গুৱাহাটীৰ Maa Kamakhya Auto Gas-ত আমি পেছাদাৰীভাৱে ছিকুৱেনচিয়েল চিএনজি আৰু এলপিজি কিট সংস্থাপন কৰোঁ। আমি চৰকাৰী মান্যতাপ্ৰাপ্ত অংশ ব্যৱহাৰ কৰোঁ, গৰম একজষ্টৰ পৰা আঁতৰত পাইপ সংস্থাপন কৰোঁ আৰু ইঞ্জিনৰ সৈতে গেছ ইচিইউ নিখুঁতভাৱে টিউন কৰোঁ।",
       sections: [
         {
-          title: "গেছ কিট সংস্থাপন সেৱা",
-          desc: "আমি চৰকাৰী অনুমোদিত চিকুৱেনচিয়েল অটোগেছ চিষ্টেম, ইলেকট্ৰনিক কণ্ট্ৰল ইউনিট (ইচিইউ), ইনজেক্টৰ ৰেল আৰু সুৰক্ষিত চিলিণ্ডাৰ ব্যৱহাৰ কৰি সংস্থাপন কৰোঁ।"
+          title: "আমাৰ টেকনিচিয়ানসকলে কিট কেনেকৈ সংস্থাপন কৰে",
+          desc: "আমি ডিকিত মজবুত ষ্টীল ক্ৰেডল নাট-বল্টুৰে টানকৈ লগাওঁ, চিমলেছ ষ্টেইনলেছ ষ্টীলৰ পাইপ গাড়ীৰ তলেৰে সুৰক্ষিতভাৱে লৈ যাওঁ আৰু বনেটৰ তলত ৰিডিউচাৰ, ফিল্টাৰ আৰু ইনজেক্টৰ ৰেইল সংস্থাপন কৰোঁ।"
         },
         {
-          title: "বাহনৰ সামঞ্জস্যতা",
-          desc: "মাৰুটি চুজুকি, হুণ্ডাই, টাটা, হোণ্ডা আৰু অন্যান্য পেট্ৰ'ল চালিত ব্যক্তিগত গাড়ী আৰু বাণিজ্যিক টেক্সিৰ বাবে উপযুক্ত।"
+          title: "সংস্থাপনৰ পূৰ্বে ইঞ্জিন পৰীক্ষণ",
+          desc: "কিট লগোৱাৰ আগতে আমি স্পাৰ্ক প্লাগ, ইগনিশ্বন কইল আৰু বেটাৰী পৰীক্ষা কৰোঁ। পেট্ৰ'লত গাড়ীখন সম্পূৰ্ণ সঠিকভাৱে চলিলেহে গেছত সুন্দৰভাৱে চলে।"
         },
         {
-          title: "সংস্থাপনৰ পৰামৰ্শ প্ৰক্ৰিয়া",
-          desc: "১) ইঞ্জিন পৰীক্ষা; ২) সঠিক কিট নিৰ্বাচন; ৩) নিৰ্ধাৰিত মানদণ্ডৰে সংস্থাপন; ৪) ৰোড টিউনিং; ৫) প্ৰমাণপত্ৰ প্ৰদান।"
+          title: "সময়সূচী আৰু আৰটিঅ' নথি-পত্ৰ",
+          desc: "এটা সম্পূৰ্ণ সংস্থাপনত প্ৰায় ৬ ৰ পৰা ৮ ঘণ্টা সময় লাগে। কাম শেষ হোৱাৰ পিছত আমি অসমৰ ডিটিঅ'ত আৰচি পঞ্জীয়নৰ বাবে ইনভয়েচ আৰু প্ৰমাণপত্ৰ প্ৰদান কৰোঁ।"
+        },
+        {
+          title: "১,০০০ কিমিৰ পিছত বিনামূলীয়া পৰীক্ষা",
+          desc: "গেছত প্ৰথম ১,০০০ কিমি চলোৱাৰ পিছত গাড়ীখন পুনৰ আমাৰ ওচৰলৈ আনক। আমি পাইপৰ ক্ল্যাম্প, গেছৰ চাপ আৰু টিউনিং বিনামূলীয়াকৈ পুনৰ পৰীক্ষা কৰি দিম।"
         }
       ],
       faqs: [
         {
-          question: "Maa Kamakhya Auto Gas-এ গেছ কিট সংস্থাপন কৰেনে?",
-          answer: "হয়। চৰকাৰীভাৱে অনুমোদিত কিট আৰু অভিজ্ঞ কাৰিকৰৰ সৈতে সংস্থাপন কৰাটো আমাৰ মূল সেৱা।"
+          question: "গেছ কিট সংস্থাপন কৰিবলৈ কিমান সময় লাগে?",
+          answer: "সাধাৰণতে ৬ ৰ পৰা ৮ ঘণ্টা সময় লাগে। পুৱাৰ ভাগত গাড়ীখন দিলে বিয়লিলৈ টেষ্টিং আৰু ৰোড টেষ্ট সম্পূৰ্ণ কৰি গাড়ী হস্তান্তৰ কৰা হয়।"
         },
         {
-          question: "কোনবোৰ গাড়ী গেছ কিটৰ বাবে উপযুক্ত?",
-          answer: "অধিকাংশ পেট্ৰ'ল চালিত ৩ আৰু ৪ চিলিণ্ডাৰৰ গাড়ী উপযুক্ত। আপোনাৰ গাড়ীখনৰ তথ্য দি নিশ্চিত হওক।"
+          question: "চিএনজি লগালে ইঞ্জিনৰ আয়ুস কমিব নেকি?",
+          answer: "সঠিক ছিকুৱেনচিয়েল কিট ব্যৱহাৰ কৰিলে আৰু নিয়মীয়া চাৰ্ভিচিং কৰিলে ইঞ্জিনৰ কোনো ক্ষতি নহয়। প্ৰাকৃতিক গেছে ইঞ্জিনত কাৰ্বন জমা হ'বলৈ নিদিয়ে।"
         },
         {
-          question: "সংস্থাপন সম্পৰ্কে কেনেকৈ সুধিম?",
-          answer: "ৱেবছাইটৰ ফৰ্ম পুৰণ কৰক, +91 69139 10337 নম্বৰত ফোন কৰক, বা গুৱাহাটীৰ ৱৰ্কশ্বপলৈ আহক।"
+          question: "আপোনালোকে আৰটিঅ' নথি-পত্ৰত সহায় কৰেনে?",
+          answer: "হয়। ডিটিঅ'ত আৰচিত গেছ পঞ্জীয়ন কৰিবলৈ প্ৰয়োজনীয় ইনভয়েচ, চৰকাৰী প্ৰমাণপত্ৰ আৰু নথি আমি প্ৰদান কৰোঁ।"
         },
         {
-          question: "সংস্থাপনৰ অনুৰোধ কৰাৰ আগতে কি তথ্য দিয়া উচিত?",
-          answer: "গাড়ীৰ নিৰ্মাতা, মডেল, বৰ্ষ আৰু দৈনিক চলাচল কৰা দূৰত্ব জনালে সঠিক পৰামৰ্শ দিয়া সম্ভৱ হয়।"
+          question: "কোটেশ্ব্যন বিচৰাৰ সময়ত কি তথ্য দিব লাগিব?",
+          answer: "আপোনাৰ গাড়ীৰ ব্ৰেণ্ড, মডেল আৰু নিৰ্মাণ বৰ্ষ জনালে আমি সঠিক মূল্য আৰু কিটৰ বিৱৰণ দিম।"
         }
       ],
       internalLinks: [
         { name: "চিএনজি সেৱাসমূহ", path: "/services/cng-services/", text: "আমাৰ চিএনজি সেৱাসমূহ চাওক" },
-        { name: "এলপিজি সেৱাসমূহ", path: "/services/lpg-services/", text: "এলপিজি সেৱা সম্পৰ্কে জানক" },
-        { name: "বাহন গেছ ৰূপান্তৰ", path: "/services/vehicle-gas-conversion/", text: "বাহন গেছ ৰূপান্তৰ সেৱা চাওক" }
+        { name: "বাহন গেছ ৰূপান্তৰ", path: "/services/vehicle-gas-conversion/", text: "ডুৱেল-ফুৱেল ৰূপান্তৰৰ বিষয়ে পঢ়ক" },
+        { name: "মেৰামতি আৰু পৰিচৰ্যা", path: "/services/gas-kit-repair-maintenance/", text: "নিয়মীয়া পৰিচৰ্যা আৰু টিউনিং চাওক" }
       ]
     },
     hi: {
-      title: "गैस किट इंस्टॉलेशन | Maa Kamakhya Auto Gas",
-      metaDescription: "Maa Kamakhya Auto Gas पर वाहन गैस किट इंस्टॉलेशन की जानकारी लें। अपने वाहन की अनुकूलता और आवश्यकताओं पर चर्चा करने के लिए संपर्क करें।",
-      h1: "वाहन गैस किट इंस्टॉलेशन",
-      heroBadge: "सरकारी स्वीकृत रेट्रोफिटमेंट",
-      summary: "क्या आप अपने वाहन के लिए गैस किट इंस्टॉलेशन की तलाश कर रहे हैं? Maa Kamakhya Auto Gas गैस-चालित वाहन समाधान में रुचि रखने वाले ग्राहकों के लिए गैस किट इंस्टॉलेशन सेवाएं प्रदान करता है। सही इंस्टॉलेशन विकल्प वाहन और उसकी तकनीकी आवश्यकताओं पर निर्भर करता है। अपने वाहन के मॉडल, गैस किट के प्रकार और उपलब्धता पर चर्चा करने के लिए हमारी टीम से संपर्क करें।",
+      title: "गुवाहाटी में गैस किट इंस्टॉलेशन | Maa Kamakhya Auto Gas",
+      metaDescription: "पश्चिम बोरागांव, गड़चुक, गुवाहाटी में Maa Kamakhya Auto Gas से वाहन गैस किट इंस्टॉलेशन के बारे में जानकारी प्राप्त करें। संपर्क करें।",
+      h1: "गुवाहाटी में वाहन गैस किट इंस्टॉलेशन",
+      heroBadge: "प्रमाणित ऑटो रेट्रोफिटमेंट",
+      summary: "वाहन में गैस किट लगाना एक सटीक मैकेनिकल और इलेक्ट्रिकल कार्य है, जिस पर गाड़ी की पिकअप, माइलेज और सुरक्षा निर्भर करती है। गुवाहाटी में Maa Kamakhya Auto Gas में हम पेट्रोल यात्री कारों और टैक्सियों में आधुनिक सीक्वेंशियल सीएनजी और एलपीजी किट लगाते हैं। हम सरकार द्वारा प्रमाणित उपकरणों का उपयोग करते हैं और इंजन के अनुसार गैस ईसीयू को कैलिब्रेट करते हैं।",
       sections: [
         {
-          title: "गैस किट इंस्टॉलेशन सेवाएं",
-          desc: "हम सरकारी मान्यता प्राप्त सीक्वेंशियल ऑटो-गैस किट, ईसीयू, हाई-स्पीड इंजेक्टर और टेस्टेड सीमलेस सिलिंडरों के साथ इंस्टॉलेशन करते हैं।"
+          title: "हमारे तकनीशियन किट कैसे लगाते हैं",
+          desc: "हम डिग्गी में चेसिस पर रबर पैडिंग के साथ स्टील क्रैडल कसते हैं, एग्जॉस्ट से सुरक्षित दूरी पर अंडरबॉडी पाइपिंग करते हैं, और इंजन में रिड्यूसर, फिल्टर और इंजेक्टर रेल लगाते हैं।"
         },
         {
-          title: "वाहन अनुकूलता",
-          desc: "मारुति सुजुकी, हुंडई, टाटा, होंडा, महिंद्रा और वाणिज्यिक टैक्सी फ्लीट की पेट्रोल कारों के लिए अनुकूल समाधान।"
+          title: "फिटिंग से पहले इंजन स्वास्थ्य जांच",
+          desc: "किट लगाने से पहले हम स्पार्क प्लग, इग्निशन कॉइल और बैटरी की जांच करते हैं। जब गाड़ी पेट्रोल पर बिल्कुल सही चलती है, तभी गैस पर भी उसका प्रदर्शन बेहतरीन रहता है।"
         },
         {
-          title: "इंस्टॉलेशन प्रक्रिया",
-          desc: "1) इंजन स्वास्थ्य परीक्षण; 2) उपयुक्त किट चयन; 3) तकनीकी फिटमेंट; 4) डायनामिक रोड ट्यूनिंग; 5) हैंडओवर।"
+          title: "समय और आरटीओ दस्तावेज",
+          desc: "पूरी फिटिंग में लगभग 6 से 8 घंटे लगते हैं। लीकेज टेस्टिंग और रोड टेस्ट के बाद हम असम डीटीओ में आरसी एंडोर्समेंट के लिए चालान और होमोलॉगेशन सर्टिफिकेट प्रदान करते हैं।"
+        },
+        {
+          title: "1,000 किमी के बाद मानार्थ जांच",
+          desc: "गैस पर पहली 1,000 किमी चलाने के बाद गाड़ी को हमारे पास लाएं। हम होस पाइप क्लैंप, फ्यूल ट्रिम्स और ट्यूनिंग की दोबारा मुफ्त जांच करते हैं।"
         }
       ],
       faqs: [
         {
-          question: "क्या Maa Kamakhya Auto Gas गैस किट इंस्टॉलेशन करता है?",
-          answer: "हां। प्रमाणित उपकरणों और अनुभवी तकनीशियनों के साथ गैस किट इंस्टॉलेशन हमारी प्रमुख सेवा है।"
+          question: "गैस किट इंस्टॉलेशन में कितना समय लगता है?",
+          answer: "आमतौर पर 6 से 8 घंटे का समय लगता है। सुबह गाड़ी देने पर शाम तक फिटिंग, लीकेज टेस्ट और रोड टेस्ट पूरा करके वाहन सौंप दिया जाता है।"
         },
         {
-          question: "कौन-से वाहन गैस किट के लिए उपयुक्त हैं?",
-          answer: "अधिकांश पेट्रोल 3 और 4 सिलिंडर कारें उपयुक्त हैं। अपने वाहन मॉडल की पुष्टि के लिए हमसे संपर्क करें।"
+          question: "क्या सीएनजी लगाने से इंजन की लाइफ पर असर पड़ता है?",
+          answer: "आधुनिक सीक्वेंशियल किट और नियमित सर्विसिंग से इंजन पर कोई बुरा असर नहीं पड़ता। सीएनजी पेट्रोल से अधिक स्वच्छ जलती है और इंजन में कार्बन नहीं जमने देती।"
         },
         {
-          question: "इंस्टॉलेशन की जानकारी कैसे लें?",
-          answer: "वेबसाइट फॉर्म भरें, +91 69139 10337 पर कॉल करें या गुवाहाटी वर्कशॉप पर आएं।"
+          question: "क्या आप आरटीओ कागजात में मदद करते हैं?",
+          answer: "हां। आरसी पर सीएनजी दर्ज कराने के लिए हम चालान, सरकारी होमोलॉगेशन सर्टिफिकेट और जरूरी दस्तावेज उपलब्ध कराते हैं।"
         },
         {
-          question: "इंस्टॉलेशन अनुरोध से पहले क्या जानकारी देनी चाहिए?",
-          answer: "वाहन का मेक, मॉडल, निर्माण वर्ष और दैनिक रनिंग की जानकारी देने पर सटीक परामर्श मिलता है।"
+          question: "कोटेशन के लिए मुझे क्या जानकारी देनी होगी?",
+          answer: "कृपया अपनी गाड़ी का मेक, मॉडल, निर्माण वर्ष बताएं। हम आपको तुरंत स्पष्ट और उचित कोटेशन देंगे।"
         }
       ],
       internalLinks: [
-        { name: "सीएनजी सेवाएं", path: "/services/cng-services/", text: "हमारी सीएनजी सेवाएं देखें" },
-        { name: "एलपीजी सेवाएं", path: "/services/lpg-services/", text: "एलपीजी सेवाओं के बारे में जानें" },
-        { name: "वाहन गैस रूपांतरण", path: "/services/vehicle-gas-conversion/", text: "वाहन गैस रूपांतरण सेवाएं देखें" }
+        { name: "सीएनजी सेवाएं", path: "/services/cng-services/", text: "हमारी संपूर्ण सीएनजी सेवाएं देखें" },
+        { name: "वाहन गैस रूपांतरण", path: "/services/vehicle-gas-conversion/", text: "डुअल-फ्यूल रूपांतरण प्रक्रिया समझें" },
+        { name: "मरम्मत और रखरखाव", path: "/services/gas-kit-repair-maintenance/", text: "नियमित मेंटेनेंस और ट्यूनिंग देखें" }
       ]
     }
   },
@@ -582,159 +610,147 @@ export const servicePagesData = [
     path: "/services/vehicle-gas-conversion/",
     icon: "Car",
     en: {
-      title: "Vehicle Gas Conversion | Maa Kamakhya Auto Gas",
-      metaDescription: "Interested in vehicle gas conversion? Contact Maa Kamakhya Auto Gas to enquire about available CNG and LPG conversion options.",
-      h1: "Vehicle Gas Conversion Services",
+      title: "Vehicle Gas Conversion in Guwahati | Maa Kamakhya Auto Gas",
+      metaDescription: "Enquire about vehicle gas conversion at Maa Kamakhya Auto Gas in Pachim Boragaon, Garchuk, Guwahati. Contact us to discuss your vehicle requirements.",
+      h1: "Vehicle Gas Conversion in Guwahati",
       heroBadge: "CLEAN MOBILITY CONVERSION",
-      summary: "Maa Kamakhya Auto Gas provides vehicle gas conversion services for customers interested in CNG and LPG vehicle solutions. Vehicle compatibility, conversion requirements, and applicable safety and regulatory requirements should be considered before proceeding with any conversion. Contact Maa Kamakhya Auto Gas to discuss your vehicle model, the conversion option you are considering, and the available service details.",
+      summary: "Looking for vehicle gas conversion services in Guwahati? Maa Kamakhya Auto Gas offers vehicle gas conversion services at Pachim Boragaon, Garchuk. Vehicle conversion requirements depend on the vehicle model, the selected gas system, and applicable safety and regulatory requirements. Contact Maa Kamakhya Auto Gas to discuss your vehicle and enquire about available conversion services. Location: NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035, Assam.",
       sections: [
         {
-          title: "Vehicle Gas Conversion Overview",
-          desc: "Converting your vehicle to CNG or autogas cuts monthly running expenses by up to 50% to 55% while reducing tailpipe greenhouse emissions. We ensure safe, certified conversions in Guwahati."
+          title: "How Dual-Fuel Conversion Works",
+          desc: "Your car keeps its complete original petrol fuel system. We add an auxiliary gas tank, dedicated fuel lines, a high-precision reducer, and a separate gas ECU. A dashboard switch lets you shift between fuels seamlessly, even while driving."
         },
         {
-          title: "CNG Vehicle Conversion Enquiries",
-          desc: "Understand high-pressure CNG conversions, cylinder boot space planning, and realistic fuel mileage expectations."
+          title: "Assessing Your Driving Savings",
+          desc: "If you drive more than 30 kilometers a day, commute regularly across Guwahati, or operate a commercial taxi, running on gas typically saves you 45% to 55% each month compared to petrol. The conversion pays for itself within months."
         },
         {
-          title: "LPG Vehicle Conversion Enquiries",
-          desc: "Explore auto LPG conversion configurations, lightweight tank options, and regional refueling access."
+          title: "Boot Space & Suspension Planning",
+          desc: "We help you select the best cylinder size (such as 60L or 65L water-capacity) for your boot. We inspect your rear suspension coil springs and fit rubber spacers if needed to ensure proper ride height when fully loaded."
         },
         {
-          title: "Vehicle Compatibility",
-          desc: "Pre-conversion checks verify ignition health, compression ratios, and engine electronics for reliable dual-fuel operation."
+          title: "Assam RTO Fuel Endorsement Steps",
+          desc: "After installation, your vehicle registration book at the District Transport Office (DTO) should reflect the fuel change. We provide the certified bill, kit approval sheets, and required paperwork to make this process smooth."
         }
       ],
       faqs: [
         {
-          question: "What is vehicle gas conversion?",
-          answer: "It is the professional retrofitting of an auxiliary gas fuel system, allowing your vehicle to run smoothly on either gas or petrol at the flip of a dashboard switch."
+          question: "What is a dual-fuel gas conversion?",
+          answer: "It is the retrofitting of an auxiliary CNG or LPG system to your existing petrol car. Your vehicle can run on either fuel at the press of a dashboard button."
         },
         {
-          question: "Can I enquire about CNG vehicle conversion?",
-          answer: "Yes. Contact us with your car model details to discuss CNG conversion feasibility, boot space reservation, and projected running cost savings."
+          question: "How long does it take to recover the conversion cost?",
+          answer: "Most drivers commuting 40 to 50 km daily recover the full conversion expense within 6 to 9 months through daily fuel savings."
         },
         {
-          question: "Can I enquire about LPG vehicle conversion?",
-          answer: "Yes. We consult on auto LPG conversion suitability, tank shapes, and regulatory considerations."
+          question: "Does conversion affect boot space significantly?",
+          answer: "In hatchbacks, a 60L CNG cylinder leaves room for medium bags or groceries. In sedans, ample luggage room remains. If boot space is critical, a toroidal LPG tank fits in the spare-wheel well."
         },
         {
-          question: "Is every vehicle suitable for gas conversion?",
-          answer: "Most petrol fuel-injected cars are compatible, but diesel engines and certain direct-injection systems require dedicated assessments."
-        },
-        {
-          question: "How can I discuss my vehicle's conversion requirements?",
-          answer: "Call our technical team directly at +91 69139 10337 or WhatsApp us at +91 88220 49075."
+          question: "How can I check if my car is suitable for conversion?",
+          answer: "Call our workshop team at +91 69139 10337 or WhatsApp us at +91 69139 10337 with your car make and model."
         }
       ],
       internalLinks: [
-        { name: "CNG Services", path: "/services/cng-services/", text: "Explore our CNG services" },
-        { name: "LPG Services", path: "/services/lpg-services/", text: "Learn about LPG services" },
-        { name: "Gas Kit Installation", path: "/services/gas-kit-installation/", text: "Enquire about gas kit installation" }
+        { name: "Gas Kit Installation", path: "/services/gas-kit-installation/", text: "Gas kit installation" },
+        { name: "CNG Services", path: "/services/cng-services/", text: "Explore our CNG retrofitment services" },
+        { name: "Repair and Maintenance", path: "/services/gas-kit-repair-maintenance/", text: "Learn about preventive gas kit maintenance" }
       ]
     },
     as: {
-      title: "বাহনৰ গেছ ৰূপান্তৰ | Maa Kamakhya Auto Gas",
-      metaDescription: "গাড়ী গেছলৈ ৰূপান্তৰ কৰিব বিচাৰে নেকি? উপলব্ধ চিএনজি আৰু এলপিজি ৰূপান্তৰ বিকল্পসমূহৰ বাবে Maa Kamakhya Auto Gas-ৰ সৈতে যোগাযোগ কৰক।",
-      h1: "বাহন গেছ ৰূপান্তৰ সেৱা",
+      title: "গুৱাহাটীত বাহন গেছ ৰূপান্তৰ | Maa Kamakhya Auto Gas",
+      metaDescription: "পশ্চিম বৰাগাঁও, গড়চুক, গুৱাহাটীত বাহন গেছ ৰূপান্তৰৰ সোধ-পোছৰ বাবে Maa Kamakhya Auto Gas-লৈ আহক। আপোনাৰ বাহনৰ প্ৰয়োজনীয়তা আলোচনা কৰক।",
+      h1: "গুৱাহাটীত বাহনৰ গেছলৈ ৰূপান্তৰ",
       heroBadge: "পৰিষ্কাৰ ইন্ধন ৰূপান্তৰ",
-      summary: "চিএনজি আৰু এলপিজি গাড়ী সমাধান বিচৰা গ্ৰাহকসকলৰ বাবে Maa Kamakhya Auto Gas-এ নিৰ্ভৰযোগ্য গেছ ৰূপান্তৰ সেৱা প্ৰদান কৰে। যিকোনো ৰূপান্তৰৰ আগতে গাড়ীৰ সামঞ্জস্যতা, সুৰক্ষা আৰু চৰকাৰী নিয়মাবলী বিবেচনা কৰা প্ৰয়োজন। আপোনাৰ গাড়ীৰ মডেল আৰু ৰূপান্তৰৰ বিকল্পসমূহ বুজিবলৈ Maa Kamakhya Auto Gas-ৰ সৈতে আলোচনা কৰক।",
+      summary: "আপোনাৰ পেট্ৰ'ল গাড়ীখন ডুৱেল-ফুৱেললৈ ৰূপান্তৰ কৰিলে পেট্ৰ'লৰ সুবিধা হেৰুৱাই পেলোৱাৰ প্ৰয়োজন নোহোৱাকৈ গেছৰ বিশাল সঞ্চয় উপভোগ কৰিব পাৰি। গুৱাহাটীৰ গড়চুকত অৱস্থিত Maa Kamakhya Auto Gas-ত আমি সঠিক কিট বাছনি, ডিকিৰ স্থান পৰিকল্পনা আৰু অসমৰ ডিটিঅ'ত আৰচি পঞ্জীয়নৰ প্ৰতিটো পদক্ষেপতে সহায় কৰোঁ।",
       sections: [
         {
-          title: "বাহন গেছ ৰূপান্তৰৰ বিৱৰণ",
-          desc: "গাড়ীখন চিএনজি বা অটোগেছলৈ ৰূপান্তৰ কৰিলে মাহেকীয়া ইন্ধনৰ খৰচ ৫০% পৰ্যন্ত ৰাহি হয় আৰু প্ৰদূষণ কমে।"
+          title: "ডুৱেল-ফুৱেল ৰূপান্তৰ কেনেকৈ কাম কৰে",
+          desc: "গাড়ীৰ মূল পেট্ৰ'ল চিষ্টেম অপৰিৱৰ্তিত থাকে। আমি এটা অতিৰিক্ত গেছ টেংক, পাইপ আৰু পৃথক গেছ ইচিইউ সংযোগ কৰোঁ। ডেছব'ৰ্ডৰ এটা বুটাম টিপিয়েই আপুনি পেট্ৰ'ল আৰু গেছৰ মাজত সলনি কৰিব পাৰে।"
         },
         {
-          title: "চিএনজি বাহন ৰূপান্তৰ পৰামৰ্শ",
-          desc: "চিএনজি সংস্থাপন, ডিকিৰ ঠাই ব্যৱস্থাপনা আৰু মাইলেজৰ বাস্তৱসন্মত অনুমান বুজি লওক।"
+          title: "আপোনাৰ ইন্ধন সঞ্চয়ৰ হিচাপ",
+          desc: "যদি আপুনি দিনে ৩০ কিলোমিটাৰতকৈ বেছি গাড়ী চলায় বা টেক্সি চলায়, তেন্তে গেছ ব্যৱহাৰ কৰিলে মাহে ৪৫% ৰ পৰা ৫৫% খৰচ ৰাহি হয়। কেইবামাহৰ ভিতৰতে কিট লগোৱাৰ খৰচ তুলি ল'ব পাৰি।"
         },
         {
-          title: "এলপিজি বাহন ৰূপান্তৰ পৰামৰ্শ",
-          desc: "অটো এলপিজি ৰূপান্তৰৰ ধৰণ আৰু টেংকৰ বিকল্পসমূহ জানক।"
+          title: "ডিকিৰ ঠাই আৰু ছাচপেনশ্বন পৰিকল্পনা",
+          desc: "আমি আপোনাৰ ডিকিৰ জোখ অনুসৰি সঠিক চিলিণ্ডাৰ নিৰ্বাচন কৰাত সহায় কৰোঁ। চিলিণ্ডাৰৰ ওজনৰ বাবে প্ৰয়োজন হ'লে পিছফালৰ ছাচপেনশ্বনত স্পেচাৰ লগাই গাড়ীৰ উচ্চতা সঠিক ৰখা হয়।"
         },
         {
-          title: "বাহনৰ সামঞ্জস্যতা",
-          desc: "ৰূপান্তৰৰ পূৰ্বে ইঞ্জিনৰ স্বাস্থ্য আৰু ইলেকট্ৰনিক ব্যৱস্থা ভালদৰে পৰীক্ষা কৰা হয়।"
+          title: "অসম আৰটিঅ' পঞ্জীয়ন প্ৰক্ৰিয়া",
+          desc: "সংস্থাপনৰ পিছত ডিটিঅ'ত আৰচিত ইন্ধনৰ পৰিৱৰ্তন অন্তৰ্ভুক্ত কৰা প্ৰয়োজন। আমি যাৱতীয় ইনভয়েচ আৰু চৰকাৰী প্ৰমাণপত্ৰ প্ৰদান কৰোঁ যাতে পঞ্জীয়ন সহজ হয়।"
         }
       ],
       faqs: [
         {
-          question: "বাহন গেছ ৰূপান্তৰ কি?",
-          answer: "ই হৈছে গাড়ীখনত বিকল্প গেছ ইন্ধন প্ৰণালী সংস্থাপন কৰা, যাৰ ফলত ডেচব'ৰ্ডৰ ছুইচৰ দ্বাৰা পেট্ৰ'ল আৰু গেছৰ মাজত সলনি কৰিব পাৰি।"
+          question: "ডুৱেল-ফুৱেল গেছ ৰূপান্তৰ কি?",
+          answer: "ই হৈছে পেট্ৰ'ল গাড়ীত এটা বিকল্প চিএনজি বা এলপিজি চিষ্টেম লগোৱা, যাতে গাড়ীখন দুয়োটা ইন্ধনতে সুবিধাজনকভাৱে চলাব পাৰি।"
         },
         {
-          question: "চিএনজি গাড়ী ৰূপান্তৰ সম্পৰ্কে সুধিব পাৰিমনে?",
-          answer: "হয়। আপোনাৰ গাড়ীৰ মডেলৰ বিৱৰণ দি খৰচ আৰু সংস্থাপন সম্ভাৱনীয়তাৰ বিষয়ে জানক।"
+          question: "কিট লগোৱাৰ খৰচ কিমান দিনত উঠি আহে?",
+          answer: "দৈনিক ৪০ ৰ পৰা ৫০ কিমি চলোৱা চালকসকলৰ ক্ষেত্ৰত ৬ ৰ পৰা ৯ মাহৰ ভিতৰতে ইন্ধনৰ ৰাহিৰ দ্বাৰা সম্পূৰ্ণ খৰচ উঠি আহে।"
         },
         {
-          question: "এলপিজি গাড়ী ৰূপান্তৰ সম্পৰ্কে জানিব পাৰিমনে?",
-          answer: "হয়। অটো এলপিজি ৰূপান্তৰ আৰু চৰকাৰী নিয়মাবলীৰ বিষয়ে আমি পৰামৰ্শ দিওঁ।"
+          question: "ডিকিৰ ঠাই বেছি কমি যাবনে?",
+          answer: "হেচবেক গাড়ীত ৬০ লিটাৰৰ চিএনজি চিলিণ্ডাৰ লগালে মজলীয়া বেগ ৰখাৰ ঠাই থাকে। চিডান গাড়ীত যথেষ্ট ঠাই বাকী ৰয়। ঠাই আটাইতকৈ বেছি ৰাখিবলৈ এলপিজি টৰয়ডেল টেংক ব্যৱহাৰ কৰিব পাৰি।"
         },
         {
-          question: "সকলো গাড়ী গেছ ৰূপান্তৰৰ বাবে উপযোগীনে?",
-          answer: "অধিকাংশ পেট্ৰ'ল গাড়ী উপযোগী, কিন্তু ডিজেল আৰু কিছুমান বিশেষ ইঞ্জিনৰ বাবে বিশেষ পৰীক্ষা প্ৰয়োজন।"
-        },
-        {
-          question: "ৰূপান্তৰৰ প্ৰয়োজনীয়তা কেনেকৈ আলোচনা কৰিম?",
-          answer: "+91 69139 10337 নম্বৰত ফোন কৰক বা +91 88220 49075 নম্বৰত হোৱাটছএপ কৰক।"
+          question: "মোৰ গাড়ীখন ৰূপান্তৰৰ বাবে উপযোগীনে কেনেকৈ জানিম?",
+          answer: "গাড়ীৰ মডেল আৰু বৰ্ষৰ তথ্য দি আমাৰ ফোন +91 69139 10337 বা হোৱাটছএপ +91 69139 10337-ত কথা পাতক।"
         }
       ],
       internalLinks: [
+        { name: "গেছ কিট সংস্থাপন", path: "/services/gas-kit-installation/", text: "আমাৰ কিট সংস্থাপন পদ্ধতি চাওক" },
         { name: "চিএনজি সেৱাসমূহ", path: "/services/cng-services/", text: "আমাৰ চিএনজি সেৱাসমূহ চাওক" },
-        { name: "এলপিজি সেৱাসমূহ", path: "/services/lpg-services/", text: "এলপিজি সেৱা সম্পৰ্কে জানক" },
-        { name: "গেছ কিট সংস্থাপন", path: "/services/gas-kit-installation/", text: "গেছ কিট সংস্থাপন সম্পৰ্কে জানক" }
+        { name: "মেৰামতি আৰু পৰিচৰ্যা", path: "/services/gas-kit-repair-maintenance/", text: "নিয়মীয়া পৰিচৰ্যা সম্পৰ্কে জানক" }
       ]
     },
     hi: {
-      title: "वाहन गैस रूपांतरण | Maa Kamakhya Auto Gas",
-      metaDescription: "क्या आप वाहन गैस रूपांतरण में रुचि रखते हैं? उपलब्ध सीएनजी और एलपीजी रूपांतरण विकल्पों के लिए Maa Kamakhya Auto Gas से संपर्क करें।",
-      h1: "वाहन गैस रूपांतरण सेवाएं",
+      title: "गुवाहाटी में वाहन गैस रूपांतरण | Maa Kamakhya Auto Gas",
+      metaDescription: "पश्चिम बोरागांव, गड़चुक, गुवाहाटी में Maa Kamakhya Auto Gas से वाहन गैस कन्वर्ज़न के बारे में पूछताछ करें। अपनी गाड़ी के अनुसार सलाह लें।",
+      h1: "गुवाहाटी में वाहन गैस कन्वर्ज़न",
       heroBadge: "स्वच्छ ईंधन रूपांतरण",
-      summary: "Maa Kamakhya Auto Gas सीएनजी और एलपीजी वाहन समाधानों में रुचि रखने वाले ग्राहकों के लिए वाहन गैस रूपांतरण सेवाएं प्रदान करता है। रूपांतरण से पहले वाहन की अनुकूलता, तकनीकी आवश्यकताओं और सुरक्षा मानकों पर ध्यान देना आवश्यक है। अपने वाहन के मॉडल, रूपांतरण के विकल्प और उपलब्ध सेवाओं के बारे में चर्चा करने के लिए Maa Kamakhya Auto Gas से संपर्क करें।",
+      summary: "अपनी पेट्रोल कार को डुअल-फ्यूल वाहन में बदलने से आप पेट्रोल की सुविधा खोए बिना सीएनजी या एलपीजी की भारी बचत का लाभ उठा सकते हैं। गड़चुक, गुवाहाटी में NH 37 पर स्थित Maa Kamakhya Auto Gas में हम सही किट चयन, बूट स्पेस योजना और असम आरटीओ कागजात में पूरी सहायता करते हैं।",
       sections: [
         {
-          title: "वाहन गैस रूपांतरण अवलोकन",
-          desc: "वाहन को सीएनजी या ऑटो गैस में बदलने से मासिक ईंधन खर्च में 50% तक की बचत होती है और प्रदूषण कम होता है।"
+          title: "डुअल-फ्यूल सिस्टम कैसे काम करता है",
+          desc: "गाड़ी का मूल पेट्रोल सिस्टम पूरी तरह सुरक्षित रहता है। हम एक अतिरिक्त गैस टैंक, पाइपिंग और गैस ईसीयू लगाते हैं। डैशबोर्ड पर लगे बटन से आप गाड़ी चलाते हुए भी कभी भी पेट्रोल और गैस में स्विच कर सकते हैं।"
         },
         {
-          title: "सीएनजी वाहन रूपांतरण पूछताछ",
-          desc: "सीएनजी इंस्टॉलेशन, बूट स्पेस प्रबंधन और वास्तविक माइलेज के बारे में विस्तृत जानकारी प्राप्त करें।"
+          title: "अपनी बचत का आकलन करें",
+          desc: "यदि आप रोजाना 30 किमी से अधिक गाड़ी चलाते हैं या कमर्शियल टैक्सी चलाते हैं, तो गैस पर चलने से मासिक ईंधन खर्च 45% से 55% तक कम हो जाता है। कुछ ही महीनों में फिटिंग का खर्च वसूल हो जाता है।"
         },
         {
-          title: "एलपीजी वाहन रूपांतरण पूछताछ",
-          desc: "ऑटो एलपीजी रूपांतरण और सुरक्षा मानकों के बारे में परामर्श प्राप्त करें।"
+          title: "बूट स्पेस और सस्पेंशन की योजना",
+          desc: "हम आपकी कार की डिग्गी के अनुसार 60L या 65L सिलेंडर चुनने में मदद करते हैं। सिलेंडर के वजन को संतुलित रखने के लिए जरूरत पड़ने पर सस्पेंशन में उचित स्पेसर्स लगाए जाते हैं।"
         },
         {
-          title: "वाहन अनुकूलता जांच",
-          desc: "रूपांतरण से पहले इंजन कंप्रेशन और इलेक्ट्रॉनिक्स की व्यापक जांच की जाती है।"
+          title: "असम आरटीओ में सीएनजी दर्ज कराने की प्रक्रिया",
+          desc: "फिटिंग के बाद डीटीओ में आरसी पर सीएनजी दर्ज कराना जरूरी होता है। हम वैध चालान, किट अप्रूवल और सभी आवश्यक दस्तावेज प्रदान करते हैं ताकि यह प्रक्रिया आसान रहे।"
         }
       ],
       faqs: [
         {
-          question: "वाहन गैस रूपांतरण क्या है?",
-          answer: "यह वाहन में प्रमाणित गैस सिस्टम स्थापित करने की प्रक्रिया है, जिससे वाहन को पेट्रोल या गैस दोनों पर चलाया जा सकता है।"
+          question: "डुअल-फ्यूल गैस रूपांतरण क्या है?",
+          answer: "यह आपकी पेट्रोल कार में एक अतिरिक्त सीएनजी या एलपीजी सिस्टम लगाना है, जिससे आप एक बटन दबाकर दोनों में से किसी भी ईंधन पर गाड़ी चला सकते हैं।"
         },
         {
-          question: "क्या मैं सीएनजी रूपांतरण के बारे में पूछ सकता हूं?",
-          answer: "हां। अपने वाहन मॉडल की जानकारी देकर आप खर्च और बचत की गणना समझ सकते हैं।"
+          question: "फिटिंग का खर्च कितने समय में वसूल हो जाता है?",
+          answer: "रोजाना 40-50 किमी चलने वाले वाहन चालकों का पूरा खर्च आमतौर पर 6 से 9 महीनों में ईंधन बचत से निकल आता है।"
         },
         {
-          question: "क्या मैं एलपीजी रूपांतरण के बारे में पूछ सकता हूं?",
-          answer: "हां। हम एलपीजी रूपांतरण की तकनीकी और सुरक्षा आवश्यकताओं पर मार्गदर्शन देते हैं।"
+          question: "क्या डिग्गी में सामान रखने की जगह बचेगी?",
+          answer: "हैचबैक में 60L सिलेंडर के बाद भी मध्यम बैग रखने की जगह रहती है। सेडान में काफी जगह बचती है। यदि जगह बहुत जरूरी है तो एलपीजी टोनस टैंक एक अच्छा विकल्प है।"
         },
         {
-          question: "क्या हर वाहन रूपांतरण के लिए उपयुक्त है?",
-          answer: "अधिकांश पेट्रोल इंजेक्शन कारें उपयुक्त हैं। कुछ विशेष इंजनों के लिए तकनीकी जांच जरूरी होती है।"
-        },
-        {
-          question: "रूपांतरण आवश्यकताओं पर कैसे चर्चा करें?",
-          answer: "+91 69139 10337 पर कॉल करें या +91 88220 49075 पर व्हाट्सएप करें।"
+          question: "मेरी कार कन्वर्जन के लिए उपयुक्त है या नहीं, कैसे पता करें?",
+          answer: "अपनी कार के मेक और मॉडल के साथ हमारे फोन +91 69139 10337 पर कॉल करें या +91 69139 10337 पर व्हाट्सएप करें।"
         }
       ],
       internalLinks: [
+        { name: "गैस किट इंस्टॉलेशन", path: "/services/gas-kit-installation/", text: "हमारी इंस्टॉलेशन प्रक्रिया समझें" },
         { name: "सीएनजी सेवाएं", path: "/services/cng-services/", text: "हमारी सीएनजी सेवाएं देखें" },
-        { name: "एलपीजी सेवाएं", path: "/services/lpg-services/", text: "एलपीजी सेवाओं के बारे में जानें" },
-        { name: "गैस किट इंस्टॉलेशन", path: "/services/gas-kit-installation/", text: "गैस किट इंस्टॉलेशन के बारे में पूछताछ करें" }
+        { name: "मरम्मत और रखरखाव", path: "/services/gas-kit-repair-maintenance/", text: "नियमित मेंटेनेंस और ट्यूनिंग देखें" }
       ]
     }
   },
@@ -744,144 +760,148 @@ export const servicePagesData = [
     path: "/services/gas-kit-repair-maintenance/",
     icon: "Cog",
     en: {
-      title: "Gas Kit Repair and Maintenance | Maa Kamakhya Auto Gas",
-      metaDescription: "Need gas kit repair or maintenance? Contact Maa Kamakhya Auto Gas to enquire about CNG and LPG gas kit service requirements.",
-      h1: "Gas Kit Repair and Maintenance",
-      heroBadge: "EXPERT SERVICING & DIAGNOSTICS",
-      summary: "Maa Kamakhya Auto Gas provides gas kit repair and maintenance services for customers who need assistance with their vehicle's gas kit. Regular attention to vehicle gas systems is important. If you notice an issue with your gas kit, contact us to discuss the problem and available repair or maintenance options. For safety, do not attempt to repair a suspected gas leak yourself. Stop using the system and seek assistance from a qualified professional. Contact Maa Kamakhya Auto Gas to enquire about gas kit repair and maintenance.",
+      title: "Gas Kit Repair in Guwahati | Maa Kamakhya Auto Gas",
+      metaDescription: "Need gas kit repair or maintenance in Guwahati? Contact Maa Kamakhya Auto Gas at Pachim Boragaon, Garchuk, Assam.",
+      h1: "Gas Kit Repair and Maintenance in Guwahati",
+      heroBadge: "WORKSHOP DIAGNOSTICS & SERVICING",
+      summary: "Maa Kamakhya Auto Gas provides gas kit repair and maintenance services in Guwahati, Assam. If you are experiencing an issue with your vehicle's gas kit or need maintenance assistance, contact us to discuss the problem and available service options. Our business is located at Pachim Boragaon, Garchuk, on NH 37, Guwahati - 781035. For vehicle gas system concerns, seek assistance from a qualified professional. If you suspect a gas leak, stop using the system and seek professional assistance rather than attempting a repair yourself.",
       sections: [
         {
-          title: "Gas Kit Repair Services",
-          desc: "Expert diagnostic troubleshooting for check engine lights, rough idling, fuel transition hesitations, and pressure drops across all major homologated kit brands."
+          title: "Common Symptoms We Troubleshoot",
+          desc: "We diagnose issues like engine jerking under acceleration, sluggish pickup, check engine lights, rough idling when stopped in traffic, or unexpected automatic switching back to petrol. In most cases, a clogged filter or misaligned pressure map is the culprit."
         },
         {
-          title: "Gas Kit Maintenance",
-          desc: "Periodic preventive servicing including low-pressure vapor filter replacement, high-pressure regulator cleaning, and electronic ECU calibration."
+          title: "Preventive Care & Filter Changes",
+          desc: "Low-pressure vapor filters should be changed every 10,000 to 12,000 kilometers to prevent sticky residue from reaching your injector rail. Regular servicing keeps your engine smooth and preserves maximum fuel economy."
         },
         {
-          title: "CNG and LPG Kit Enquiries",
-          desc: "We diagnose both CNG and auto LPG autogas systems using computerized diagnostic scanners and digital gas leak detectors."
+          title: "Electronic Gas Leak Audits",
+          desc: "We use digital combustible gas sniffers to test every fitting, union, solenoid valve, and high-pressure hose joint across the vehicle. This gives you complete peace of mind that your system is leak-free."
         },
         {
-          title: "Service Enquiry Process",
-          desc: "Describe your vehicle symptom to our master technicians via phone or WhatsApp, schedule an inspection slot, and receive itemized repair estimates."
+          title: "What to Do If You Ever Smell Gas",
+          desc: "If you smell gas inside or around your car, stop the vehicle immediately in a well-ventilated open area. Turn off the ignition, turn the manual shut-off valve on the cylinder clock-wise to close it, do not use electrical switches or mobile phones, and call our workshop team."
         }
       ],
       faqs: [
         {
-          question: "Does Maa Kamakhya Auto Gas provide gas kit repair?",
-          answer: "Yes. We diagnose and repair ECU faults, injector rail clogs, solenoid failures, and pressure regulator issues."
+          question: "Why is my car jerking when running on CNG?",
+          answer: "Jerking is commonly caused by worn spark plugs, a clogged gas filter, or an uncalibrated pressure reducer. Our technicians connect diagnostic software to pinpoint and resolve the exact cause."
         },
         {
-          question: "Do you provide gas kit maintenance?",
-          answer: "Yes. We offer periodic servicing, scheduled filter changes, and calibration checks to maintain optimal fuel efficiency."
+          question: "How often should I change my CNG gas filter?",
+          answer: "We recommend replacing the low-pressure vapor gas filter every 10,000 to 12,000 km. It is a quick and inexpensive service that protects your injector rail from oily deposits."
         },
         {
-          question: "Can I enquire about CNG and LPG kit repairs?",
-          answer: "Yes. Our facility handles both sequential CNG and automotive LPG systems with authentic replacement spare parts."
+          question: "Do you service both CNG and LPG kits?",
+          answer: "Yes. We service, calibrate, and repair both sequential CNG and automotive LPG systems from all major approved manufacturers."
         },
         {
-          question: "What should I do if I suspect a gas leak?",
-          answer: "Turn off the vehicle immediately, close the cylinder manual shut-off valve, ventilate the vehicle, do not use electrical switches, and contact our emergency workshop team."
+          question: "How can I book a repair or servicing slot?",
+          answer: "Call our workshop line at +91 69139 10337 or message us on WhatsApp at +91 69139 10337 to schedule an inspection time."
         }
       ],
       internalLinks: [
-        { name: "CNG Services", path: "/services/cng-services/", text: "Explore our CNG services" },
-        { name: "LPG Services", path: "/services/lpg-services/", text: "Learn about LPG services" }
+        { name: "CNG Services", path: "/services/cng-services/", text: "Explore CNG services" },
+        { name: "LPG Services", path: "/services/lpg-services/", text: "Explore LPG services" },
+        { name: "Gas Kit Installation", path: "/services/gas-kit-installation/", text: "Learn about new kit installations" },
+        { name: "Contact Us", path: "/contact/", text: "Reach out to our workshop team" }
       ]
     },
     as: {
-      title: "গেছ কিট মেৰামতি আৰু পৰিচৰ্যা | Maa Kamakhya Auto Gas",
-      metaDescription: "গেছ কিট মেৰামতি বা নিয়মীয়া চাৰ্ভিচিং প্ৰয়োজন নেকি? চিএনজি আৰু এলপিজি গেছ কিট সেৱাৰ বাবে Maa Kamakhya Auto Gas-ৰ সৈতে যোগাযোগ কৰক।",
-      h1: "গেছ কিট মেৰামতি আৰু পৰিচৰ্যা",
-      heroBadge: "বিশেষজ্ঞ পৰিচৰ্যা আৰু ডায়েগনষ্টিকচ",
-      summary: "যিসকল গ্ৰাহকৰ গাড়ীৰ গেছ কিটৰ সহায়ৰ প্ৰয়োজন, তেওঁলোকৰ বাবে Maa Kamakhya Auto Gas-এ পেছাদাৰী মেৰামতি আৰু পৰিচৰ্যা সেৱা প্ৰদান কৰে। গাড়ীৰ গেছ প্ৰণালীৰ নিয়মিত তত্ত্বাৱধান অতি গুৰুত্বপূৰ্ণ। যদি কিটত কোনো আসোঁৱাহ দেখা পায়, তেন্তে সমস্যাটো সমাধান কৰিবলৈ আমাৰ সৈতে যোগাযোগ কৰক। সুৰক্ষাৰ স্বাৰ্থত, কোনো গেছ লিক নিজে মেৰামতি কৰিবলৈ চেষ্টা নকৰিব। প্ৰণালীটো বন্ধ কৰি প্ৰশিক্ষিত বিশেষজ্ঞৰ সহায় লওক।",
+      title: "গুৱাহাটীত গেছ কিট মেৰামতি | Maa Kamakhya Auto Gas",
+      metaDescription: "গুৱাহাটীত গেছ কিট মেৰামতি বা ৰক্ষণাবেক্ষণৰ প্ৰয়োজন নেকি? পশ্চিম বৰাগাঁও, গড়চুক, অসমত অৱস্থিত Maa Kamakhya Auto Gas-ৰ সৈতে যোগাযোগ কৰক।",
+      h1: "গুৱাহাটীত গেছ কিট মেৰামতি তথা ৰক্ষণাবেক্ষণ",
+      heroBadge: "ৱৰ্কশ্বপ ডায়াগনষ্টিক আৰু চাৰ্ভিচিং",
+      summary: "গাড়ীৰ যিকোনো ইন্ধন প্ৰণালীৰ দৰেই গেছ কিটৰো নিয়মীয়া যত্নৰ প্ৰয়োজন যাতে গাড়ীখন মসৃণ, মিতব্যয়ী আৰু সুৰক্ষিতভাৱে চলে। গুৱাহাটীৰ গড়চুকৰ NH 37-ত অৱস্থিত Maa Kamakhya Auto Gas-ত আমি কম্পিউটাৰাইজড ডায়াগনষ্টিক, ফিল্টাৰ সলনি, ৰিডিউচাৰ প্ৰেচাৰ টিউনিং আৰু ইলেক্ট্ৰনিক লিকেজ পৰীক্ষা কৰোঁ। যদি গেছত গাড়ী চলোঁতে কঁপনি হয় বা পেট্ৰ'ললৈ সলনি হৈ যায়, আমাক দেখুৱাওক।",
       sections: [
         {
-          title: "গেছ কিট মেৰামতি সেৱা",
-          desc: "ইঞ্জিন লাইট জ্বলি থকা, ইঞ্জিন কপনি, বা ইন্ধন পৰিৱৰ্তনত হোৱা সমস্যাৰ কম্পিউটাৰাইজড ডায়েগনষ্টিক সেৱা।"
+          title: "আমি সমাধান কৰা সাধাৰণ সমস্যাসমূহ",
+          desc: "গাড়ী চলোঁতে কঁপনি হোৱা, পিকআপ কমি যোৱা, ইঞ্জিন লাইট জ্বলি থকা বা নিজে নিজে পেট্ৰ'ললৈ সলনি হৈ যোৱা সমস্যাসমূহ আমি পৰীক্ষা কৰি সমাধান কৰোঁ। বেছিভাগ ক্ষেত্ৰতে লেতেৰা ফিল্টাৰ বা ভুল প্ৰেচাৰ ছেটিঙৰ বাবেই এনে হয়।"
         },
         {
-          title: "গেছ কিট পৰিচৰ্যা",
-          desc: "গেছ ফিল্টাৰ সলনি, ৰেগুলেটৰ চাফাই আৰু ইলেকট্ৰনিক ইচিইউ পুনৰ নিৰ্ধাৰণ।"
+          title: "নিয়মীয়া যত্ন আৰু ফিল্টাৰ সলনি",
+          desc: "প্ৰতি ১০,০০০ ৰ পৰা ১২,০০০ কিলোমিটাৰত গেছ ফিল্টাৰ সলনি কৰা উচিত যাতে ইনজেক্টৰ ৰেইললৈ তেল বা আঠা জাতীয় পদাৰ্থ নাযায়। নিয়মীয়া চাৰ্ভিচিঙে ইঞ্জিন মসৃণ ৰাখে।"
         },
         {
-          title: "চিএনজি আৰু এলপিজি কিট অনুসন্ধান",
-          desc: "আমি দুয়োটা চিএনজি আৰু এলপিজি প্ৰণালীৰ সুৰক্ষিত পৰীক্ষা কৰোঁ।"
+          title: "ইলেক্ট্ৰনিক গেছ লিকেজ পৰীক্ষা",
+          desc: "আমি ডিজিটেল গেছ ডিটেক্টৰৰ দ্বাৰা প্ৰতিটো পাইপ, ভালভ আৰু সংযোগস্থল পৰীক্ষা কৰোঁ যাতে কোনো লিকেজ নাথাকে আৰু আপুনি সম্পূৰ্ণ নিশ্চিন্ত হৈ গাড়ী চলাব পাৰে।"
         },
         {
-          title: "সেৱা অনুসন্ধান প্ৰক্ৰিয়া",
-          desc: "আমাক ফোন বা হোৱাটছএপত সমস্যাৰ বিষয়ে জনাওক আৰু সুবিধা অনুসৰি সময়সূচী নিৰ্ধাৰণ কৰক।"
+          title: "গেছৰ গোন্ধ পালে কি কৰিব",
+          answer: "যদি গাড়ীত গেছৰ গোন্ধ পায়, তৎক্ষণাৎ গাড়ীখন সুৰক্ষিত মুকলি ঠাইত ৰখাওক। ইঞ্জিন বন্ধ কৰক, চিলিণ্ডাৰৰ ঘূৰণীয় ভালভটো বন্ধ কৰক, কোনো ইলেকট্ৰিক ছুইচ বা ফোন ব্যৱহাৰ নকৰিব আৰু আমাৰ দলক ফোন কৰক।"
         }
       ],
       faqs: [
         {
-          question: "Maa Kamakhya Auto Gas-এ গেছ কিট মেৰামতি কৰেনে?",
-          answer: "হয়। আমি ইচিইউৰ আসোঁৱাহ, ইনজেক্টৰৰ সমস্যা আৰু প্ৰেচাৰ ৰেগুলেটৰ মেৰামতি কৰোঁ।"
+          question: "চিএনজিত গাড়ীখন কিয় কঁপে বা জৰ্ক কৰে?",
+          answer: "স্পাৰ্ক প্লাগ পুৰণি হ'লে, গেছ ফিল্টাৰ জাম হ'লে বা ৰিডিউচাৰৰ প্ৰেচাৰ কমিলে এনে হয়। আমাৰ টেকনিচিয়ানসকলে কম্পিউটাৰ লগাই কাৰণ নিৰ্ণয় কৰি ঠিক কৰি দিয়ে।"
         },
         {
-          question: "গেছ কিট পৰিচৰ্যা কৰেনে?",
-          answer: "হয়। আমি ফিল্টাৰ সলনি আৰু নিয়মিত চাৰ্ভিচিং প্ৰদান কৰোঁ।"
+          question: "গেছ ফিল্টাৰ কিমান দিনৰ মূৰে মূৰে সলনি কৰিব লাগে?",
+          answer: "আমি প্ৰতি ১০,০০০ ৰ পৰা ১২,০০০ কিমিত গেছ ফিল্টাৰ সলনি কৰাৰ পৰামৰ্শ দিওঁ। ই এটা সুলভ সেৱা যিয়ে ইনজেক্টৰক সুৰক্ষিত ৰাখে।"
         },
         {
-          question: "চিএনজি আৰু এলপিজি কিট মেৰামতি সম্পৰ্কে সুধিব পাৰিমনে?",
-          answer: "হয়। আমি প্ৰকৃত যন্ত্ৰাংশৰ সৈতে দুয়োটা চিএনজি আৰু এলপিজি চিষ্টেম পৰীক্ষা কৰোঁ।"
+          question: "আপোনালোকে চিএনজি আৰু এলপিজি দুয়োটা কিটেই চাৰ্ভিচ কৰেনে?",
+          answer: "হয়। আমি সকলো অনুমোদিত ব্ৰেণ্ডৰ চিএনজি আৰু অটো এলপিজি কিটৰ মেৰামতি আৰু টিউনিং কৰোঁ।"
         },
         {
-          question: "গেছ লিকৰ সন্দেহ হ'লে কি কৰা উচিত?",
-          answer: "গাড়ীখন তৎক্ষণাৎ বন্ধ কৰক, চিলিণ্ডাৰৰ মেনুৱেল ভাল্ভ বন্ধ কৰক, কোনো ইলেকট্ৰিক ছুইচ ব্যৱহাৰ নকৰিব আৰু আমাৰ দলক ফোন কৰক।"
+          question: "চাৰ্ভিচিঙৰ বাবে সময় কেনেকৈ নিৰ্ধাৰণ কৰিম?",
+          answer: "আমাৰ ফোন নম্বৰ +91 69139 10337 বা হোৱাটছএপ +91 69139 10337-ত যোগাযোগ কৰক।"
         }
       ],
       internalLinks: [
-        { name: "চিএনজি সেৱাসমূহ", path: "/services/cng-services/", text: "আমাৰ চিএনজি সেৱাসমূহ চাওক" },
-        { name: "এলপিজি সেৱাসমূহ", path: "/services/lpg-services/", text: "এলপিজি সেৱা সম্পৰ্কে জানক" }
+        { name: "চিএনজি সেৱাসমূহ", path: "/services/cng-services/", text: "আমাৰ সম্পূৰ্ণ চিএনজি সেৱা চাওক" },
+        { name: "গেছ কিট সংস্থাপন", path: "/services/gas-kit-installation/", text: "নতুন কিট সংস্থাপন সম্পৰ্কে জানক" },
+        { name: "যোগাযোগ", path: "/contact/", text: "আমাৰ ৱৰ্কশ্বপ দলৰ সৈতে যোগাযোগ কৰক" }
       ]
     },
     hi: {
-      title: "गैस किट मरम्मत और रखरखाव | Maa Kamakhya Auto Gas",
-      metaDescription: "गैस किट मरम्मत या रखरखाव की आवश्यकता है? सीएनजी और एलपीजी किट सेवा आवश्यकताओं के लिए Maa Kamakhya Auto Gas से संपर्क करें।",
-      h1: "गैस किट मरम्मत और रखरखाव",
-      heroBadge: "विशेषज्ञ सर्विसिंग एवं डायग्नोस्टिक्स",
-      summary: "Maa Kamakhya Auto Gas उन ग्राहकों के लिए गैस किट मरम्मत और रखरखाव सेवाएं प्रदान करता है जिन्हें अपने वाहन के गैस सिस्टम में सहायता की आवश्यकता है। वाहन के गैस सिस्टम की नियमित जांच महत्वपूर्ण है। यदि आपको अपनी गैस किट में कोई समस्या दिखाई देती है, तो मरम्मत और रखरखाव के विकल्पों पर चर्चा करने के लिए हमसे संपर्क करें। सुरक्षा के लिए, यदि गैस रिसाव का संदेह हो तो स्वयं मरम्मत का प्रयास न करें। सिस्टम का उपयोग बंद करें और योग्य पेशेवर से संपर्क करें।",
+      title: "गुवाहाटी में गैस किट मरम्मत | Maa Kamakhya Auto Gas",
+      metaDescription: "गुवाहाटी में गैस किट रिपेयर या मेंटेनेंस की आवश्यकता है? पश्चिम बोरागांव, गड़चुक, असम में Maa Kamakhya Auto Gas से संपर्क करें।",
+      h1: "गुवाहाटी में गैस किट रिपेयर और मेंटेनेंस",
+      heroBadge: "वर्कशॉप डायग्नोस्टिक्स एवं सर्विसिंग",
+      summary: "किसी भी ऑटोमोटिव फ्यूल सिस्टम की तरह आपकी कार की गैस किट को भी सुगम, सुरक्षित और किफायती बने रहने के लिए नियमित सर्विसिंग की जरूरत होती है। गड़चुक, गुवाहाटी में NH 37 पर स्थित Maa Kamakhya Auto Gas में हम कंप्यूटराइज्ड डायग्नोस्टिक्स, गैस फिल्टर बदलना, रिड्यूसर प्रेशर ट्यूनिंग और इलेक्ट्रॉनिक लीकेज जांच प्रदान करते हैं। यदि कार गैस पर झटके ले रही है या पेट्रोल पर वापस आ रही है, तो हमारी वर्कशॉप में संपर्क करें।",
       sections: [
         {
-          title: "गैस किट मरम्मत सेवाएं",
-          desc: "चेक इंजन लाइट, जर्किंग, या ईंधन बदलाव में झटके जैसी समस्याओं का आधुनिक कंप्यूटराइज्ड डायग्नोस्टिक्स।"
+          title: "सामान्य समस्याएं जिनका हम समाधान करते हैं",
+          desc: "पिकअप में झटके, स्लगिश ड्राइविंग, इंजन लाइट जलना, ट्रैफिक में रुकने पर अनस्टेबल आइडलिंग, या अचानक पेट्रोल पर स्विच होना। अधिकांश मामलों में गंदा फिल्टर या गलत प्रेशर सेटिंग ही इसका कारण होता है।"
         },
         {
-          title: "गैस किट रखरखाव",
-          desc: "नियमित गैस फिल्टर बदलना, प्रेशर रेगुलेटर सर्विसिंग और ईसीयू कैलिब्रेशन।"
+          title: "निवारक देखभाल और फिल्टर बदलना",
+          desc: "हर 10,000 से 12,000 किमी पर वेपर गैस फिल्टर बदलना चाहिए ताकि इंजेक्टर रेल में गंदगी न पहुंचे। नियमित देखभाल से इंजन स्मूथ रहता है और माइलेज सबसे अच्छा मिलता है।"
         },
         {
-          title: "सीएनजी और एलपीजी किट पूछताछ",
-          desc: "हम सीएनजी और ऑटो एलपीजी दोनों प्रणालियों की आधुनिक उपकरणों से जांच करते हैं।"
+          title: "इलेक्ट्रॉनिक गैस लीकेज जांच",
+          desc: "हम डिजिटल गैस स्निफर से हर पाइप जोड़, वॉल्व और होस कनेक्शन की जांच करते हैं ताकि आपको पूरी सुरक्षा और मानसिक शांति मिले।"
         },
         {
-          title: "सर्विस पूछताछ प्रक्रिया",
-          desc: "अपने वाहन की समस्या हमें बताएं, अपॉइंटमेंट तय करें और विशेषज्ञ समाधान प्राप्त करें।"
+          title: "गैस की गंध आने पर क्या करें",
+          desc: "यदि आपको गैस की गंध आए तो तुरंत गाड़ी को खुली सुरक्षित जगह पर रोकें। इग्निशन बंद करें, सिलिंडर का मैनुअल वॉल्व घुमाकर बंद करें, कोई इलेक्ट्रिकल स्विच या फोन न चलाएं और हमारी टीम को कॉल करें।"
         }
       ],
       faqs: [
         {
-          question: "क्या Maa Kamakhya Auto Gas गैस किट मरम्मत करता है?",
-          answer: "हां। हम ईसीयू खराबी, इंजेक्टर सफाई और प्रेशर रेगुलेटर की मरम्मत करते हैं।"
+          question: "सीएनजी पर गाड़ी में झटके क्यों लगते हैं?",
+          answer: "स्पार्क प्लग घिसने, गैस फिल्टर चोक होने या रिड्यूसर प्रेशर कम होने से झटके लग सकते हैं। हम कंप्यूटर डायग्नोस्टिक से समस्या पकड़कर ठीक करते हैं।"
         },
         {
-          question: "क्या आप गैस किट का रखरखाव करते हैं?",
-          answer: "हां। हम फिल्टर बदलना, सिस्टम ट्यूनिंग और नियमित सर्विसिंग प्रदान करते हैं।"
+          question: "सीएनजी फिल्टर कब बदलना चाहिए?",
+          answer: "हम हर 10,000 से 12,000 किमी पर लो-प्रेशर गैस फिल्टर बदलने की सलाह देते हैं। यह एक किफायती सर्विस है जो इंजेक्टर को सुरक्षित रखती है।"
         },
         {
-          question: "क्या मैं सीएनजी और एलपीजी दोनों किट मरम्मत के बारे में पूछ सकता हूं?",
-          answer: "हां। हम सीएनजी और ऑटो एलपीजी दोनों के लिए वास्तविक स्पेयर पार्ट्स के साथ सेवा देते हैं।"
+          question: "क्या आप सीएनजी और एलपीजी दोनों किट की मरम्मत करते हैं?",
+          answer: "हां। हम सभी प्रमुख स्वीकृत ब्रांड्स की सीएनजी और ऑटो एलपीजी दोनों प्रणालियों की सर्विस और मरम्मत करते हैं।"
         },
         {
-          question: "गैस रिसाव का संदेह होने पर क्या करना चाहिए?",
-          answer: "तुरंत वाहन बंद करें, सिलिंडर का वाल्व बंद करें, कोई इलेक्ट्रिकल स्विच न छुएं और हमारी तकनीकी टीम से संपर्क करें।"
+          question: "सर्विसिंग के लिए अपॉइंटमेंट कैसे लें?",
+          answer: "हमारे फोन +91 69139 10337 पर कॉल करें या +91 69139 10337 पर व्हाट्सएप करें।"
         }
       ],
       internalLinks: [
-        { name: "सीएनजी सेवाएं", path: "/services/cng-services/", text: "हमारी सीएनजी सेवाएं देखें" },
-        { name: "एलपीजी सेवाएं", path: "/services/lpg-services/", text: "एलपीजी सेवाओं के बारे में जानें" }
+        { name: "सीएनजी सेवाएं", path: "/services/cng-services/", text: "हमारी संपूर्ण सीएनजी सेवाएं देखें" },
+        { name: "गैस किट इंस्टॉलेशन", path: "/services/gas-kit-installation/", text: "नई किट इंस्टॉलेशन के बारे में जानें" },
+        { name: "संपर्क करें", path: "/contact/", text: "हमारी वर्कशॉप टीम से संपर्क करें" }
       ]
     }
   }

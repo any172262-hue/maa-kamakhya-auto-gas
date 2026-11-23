@@ -62,7 +62,7 @@ Integration tests in `tests/integration/` verify the harmonious interaction of a
 
 ### 4.1 Site Configuration Integrity (`tests/integration/siteConfig.test.js`)
 - **Brand Consistency:** Ensures `siteConfig.name` and `siteConfig.legalName` strictly equal `"Maa Kamakhya Auto Gas"`.
-- **Contact Integrity:** Ensures phone is `"6913910337"` and WhatsApp is `"8822049075"`.
+- **Contact Integrity:** Ensures phone is `"6913910337"` and WhatsApp is `"69139 10337"`.
 - **Statutory Integrity:** Ensures GSTIN starts with Assam state code `"18"`, year of establishment is `"2022"`, and payment modes include EMI Financing, UPI, Cards, Net Banking, and Cash.
 - **Physical Address:** Confirms workshop location is `"Shop No. 7, Opposite Nezon Steel, Near Kumar Resorts, NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035, Assam"`.
 
@@ -81,7 +81,7 @@ Simulates the critical conversion funnel:
 5. Contact form receives serialized pre-fill data.
 6. User enters Name: "Rajesh Sarma", Mobile: "9864012345", Brand: "Maruti Suzuki", Model: "Swift VXi", Year: "2021", Usage: "Private".
 7. Form validation passes.
-8. Output WhatsApp URL is generated and verified against target: `https://wa.me/918822049075?text=...`.
+8. Output WhatsApp URL is generated and verified against target: `https://wa.me/916913910337?text=...`.
 9. The resulting payload contains correctly encoded vehicle details and contact information.
 
 ---
@@ -147,7 +147,7 @@ Simulates the critical conversion funnel:
 | **TC-006** | Calculator Transfer | On `#calculator` | Click "Apply Estimate to WhatsApp Enquiry" | Smooth scroll to `#contact`; inquiry note prefilled with estimated monthly travel and savings. | PASS |
 | **TC-007** | Brand Tabs | On `#compatibility` | Click "Hyundai" tab | Active tab switches; Hyundai models (i10 Nios, Aura, i20, Creta) display immediately. | PASS |
 | **TC-008** | Form Validation | On `#contact` | Leave mobile empty and click submit | Validation alert appears: "Please enter a valid 10-digit mobile number"; field highlighted. | PASS |
-| **TC-009** | Form Submission | Valid inputs entered | Click "Send enquiry on WhatsApp" | Generates sanitized WhatsApp link; opens `wa.me/918822049075` with formatted specs. | PASS |
+| **TC-009** | Form Submission | Valid inputs entered | Click "Send enquiry on WhatsApp" | Generates sanitized WhatsApp link; opens `wa.me/916913910337` with formatted specs. | PASS |
 | **TC-010** | Floating Action | Scroll to page bottom | Click floating WhatsApp button | Launches WhatsApp chat in new browser tab. | PASS |
 | **TC-011** | Brand Audit | Entire project | Search for old brand references | Zero instances found across code, assets, metadata, and docs. | PASS |
 | **TC-012** | Reduced Motion | OS motion reduced | Navigate page and scroll | Animations instantly display end states without slide/fade delays. | PASS |

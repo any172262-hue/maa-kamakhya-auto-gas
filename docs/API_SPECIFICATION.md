@@ -30,7 +30,7 @@
 The application constructs dynamically encoded URLs compliant with WhatsApp Web and mobile application protocols.
 
 - **Base Endpoint:** `https://wa.me/`
-- **Target Recipient Number:** `918822049075` (Verified official WhatsApp business number of Maa Kamakhya Auto Gas)
+- **Target Recipient Number:** `916913910337` (Verified official WhatsApp business number of Maa Kamakhya Auto Gas)
 - **HTTP Method:** `GET`
 - **Parameter:** `text` (URI-encoded UTF-8 string)
 
@@ -66,7 +66,7 @@ Please share recommended kit options, warranty, and installation timeline.
 
 #### Encoding Implementation:
 ```javascript
-const targetUrl = `https://wa.me/918822049075?text=${encodeURIComponent(formattedText)}`;
+const targetUrl = `https://wa.me/916913910337?text=${encodeURIComponent(formattedText)}`;
 window.open(targetUrl, '_blank', 'noopener,noreferrer');
 ```
 

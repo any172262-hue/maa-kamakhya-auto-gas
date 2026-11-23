@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, ShieldCheck, Zap, ThumbsUp } from 'lucide-react';
+import { Fuel, MapPin, Wrench, ShieldCheck } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import RevealAnimation from '../components/RevealAnimation';
 
@@ -8,28 +8,28 @@ export default function TrustIndicators() {
 
   const metrics = [
     {
-      value: t('trust.metric1Value', {}, '1,500+'),
-      label: t('trust.metric1Label', {}, 'Kits Retrofitted'),
-      suffix: t('trust.metric1Sub', {}, 'Across Assam & Northeast'),
-      icon: Award
+      value: t('trust.metric1Value', {}, 'CNG & LPG'),
+      label: t('trust.metric1Label', {}, 'Dual-Fuel Solutions'),
+      suffix: t('trust.metric1Sub', {}, 'Automotive Gas Systems'),
+      icon: Fuel
     },
     {
-      value: t('trust.metric2Value', {}, 'Up to 55%'),
-      label: t('trust.metric2Label', {}, 'Fuel Cost Reduction'),
-      suffix: t('trust.metric2Sub', {}, 'Compared to Petrol'),
-      icon: Zap
-    },
-    {
-      value: t('trust.metric3Value', {}, '100% Legal'),
-      label: t('trust.metric3Label', {}, 'Govt. Approved Retrofitment'),
-      suffix: t('trust.metric3Sub', {}, 'Homologated Components'),
+      value: t('trust.metric2Value', {}, 'CNG Only'),
+      label: t('trust.metric2Label', {}, 'Filling Station Fuel'),
+      suffix: t('trust.metric2Sub', {}, 'NH 37 Dispensing Point'),
       icon: ShieldCheck
     },
     {
-      value: t('trust.metric4Value', {}, '3 Years'),
-      label: t('trust.metric4Label', {}, 'Warranty & Hydro-Testing'),
-      suffix: t('trust.metric4Sub', {}, 'Certified Guarantee'),
-      icon: ThumbsUp
+      value: t('trust.metric3Value', {}, '6 Services'),
+      label: t('trust.metric3Label', {}, 'Confirmed Offerings'),
+      suffix: t('trust.metric3Sub', {}, 'Installation, Conversion, Repair'),
+      icon: Wrench
+    },
+    {
+      value: t('trust.metric4Value', {}, 'Guwahati'),
+      label: t('trust.metric4Label', {}, 'Kamrup Metropolitan'),
+      suffix: t('trust.metric4Sub', {}, 'Pachim Boragaon, Garchuk'),
+      icon: MapPin
     }
   ];
 

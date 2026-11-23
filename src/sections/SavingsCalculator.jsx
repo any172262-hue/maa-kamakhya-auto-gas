@@ -63,7 +63,6 @@ export default function SavingsCalculator({ onApplyEstimate }) {
             <div className="calc-inputs-card">
               <div className="calc-card-header">
                 <div className="calc-header-title">
-                  <span className="calc-header-icon" aria-hidden="true">📝</span>
                   <h3>{t('calculator.drivingParams', {}, 'Driving Parameters')}</h3>
                 </div>
                 <button

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, MessageCircle, MapPin, Clock, Building2 } from 'lucide-react';
+import { Phone, MessageCircle, MapPin, Clock, Mail } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
 import { navLinks } from '../data/navigation';
 import { useLanguage } from '../context/LanguageContext';
@@ -49,12 +49,8 @@ export default function Footer({ onNavigateLegal }) {
               <Logo height={65} className="footer-logo-img" />
             </a>
             <p className="footer-brand-desc">
-              {t('footer.aboutDesc', {}, 'Guwahati\'s trusted destination for government-approved sequential CNG retrofitment, certified cylinder hydro-testing, and expert automotive engineering.')}
+              {t('footer.aboutDesc', {}, 'Auto gas workshop and filling station in Guwahati providing CNG and LPG services, gas kit installation, vehicle gas conversion, and gas kit repair and maintenance.')}
             </p>
-            <div className="footer-legal-badge">
-              <Building2 size={15} className="text-blue" />
-              <span>Govt. Registered: <strong>{siteConfig.statutory.legalName}</strong></span>
-            </div>
           </div>
 
           {/* Quick Navigation Links */}
@@ -78,7 +74,7 @@ export default function Footer({ onNavigateLegal }) {
                   className="footer-nav-link text-yellow"
                   onClick={(e) => handleLinkClick(e, '#statutory-details')}
                 >
-                  {t('statutory.title', {}, 'Statutory Details')} & GST
+                  {t('statutory.title', {}, 'Business Information')}
                 </a>
               </li>
               <li>
@@ -212,6 +208,14 @@ export default function Footer({ onNavigateLegal }) {
                   WhatsApp: +91 {siteConfig.whatsappNumber}
                 </a>
               </li>
+              {siteConfig.email && (
+                <li className="footer-contact-item">
+                  <Mail size={18} className="text-yellow footer-icon" />
+                  <a href={`mailto:${siteConfig.email}`} className="footer-link-active">
+                    {siteConfig.email}
+                  </a>
+                </li>
+              )}
               <li className="footer-contact-item">
                 <Clock size={18} className="text-muted footer-icon" />
                 <span>{t('common.hours', {}, siteConfig.hours)}</span>
@@ -219,20 +223,19 @@ export default function Footer({ onNavigateLegal }) {
             </ul>
           </div>
 
-          {/* Payment & Regional Support */}
+          {/* Services & Regional Support */}
           <div className="footer-col">
-            <h4 className="footer-heading">{t('footer.acceptedPayments', {}, 'Accepted Payments')}</h4>
+            <h4 className="footer-heading">{t('footer.acceptedPayments', {}, 'Services')}</h4>
             <p className="footer-muted-text">
-              {t('footer.paymentDesc', {}, 'We accept all major secure payment channels including zero-cost EMI financing:')}
+              {t('footer.paymentDesc', {}, 'CNG & LPG automotive solutions and auto gas filling station in Guwahati:')}
             </p>
             <div className="footer-payment-badges">
-              <span className="payment-mini-tag">UPI</span>
-              <span className="payment-mini-tag">Visa</span>
-              <span className="payment-mini-tag">MasterCard</span>
-              <span className="payment-mini-tag">RuPay</span>
-              <span className="payment-mini-tag">Net Banking</span>
-              <span className="payment-mini-tag">EMI</span>
-              <span className="payment-mini-tag">Cash</span>
+              <span className="payment-mini-tag">CNG Services</span>
+              <span className="payment-mini-tag">LPG Services</span>
+              <span className="payment-mini-tag">CNG Filling</span>
+              <span className="payment-mini-tag">Kit Installation</span>
+              <span className="payment-mini-tag">Conversion</span>
+              <span className="payment-mini-tag">Maintenance</span>
             </div>
 
             <h4 className="footer-heading footer-subheading-spacing">{t('footer.regionalSupport', {}, 'Regional Support')}</h4>
@@ -255,7 +258,7 @@ export default function Footer({ onNavigateLegal }) {
         {/* Legal Disclaimer Box */}
         <div className="footer-disclaimer-box">
           <p>
-            <strong>Statutory Compliance & Disclaimer:</strong> {t('footer.disclaimerText', {}, `Operated by ${siteConfig.statutory.legalName} (Established ${siteConfig.statutory.yearOfEstablishment}, GSTIN: ${siteConfig.statutory.gstin}). Fuel cost comparisons and savings figures displayed on this website are illustrative estimates based on user-entered mileage, local fuel retail tariffs, and standard test cycles. Actual vehicle fuel economy varies with traffic conditions, driving style, AC usage, and payload. All retrofitment components are sourced from government-homologated manufacturers.`)}
+            <strong>{t('footer.disclaimerHeading', {}, 'Business Information & Disclaimer:')}</strong> {t('footer.disclaimerText', {}, `Operated by ${siteConfig.name} at ${siteConfig.address}. Fuel cost comparisons and savings figures displayed on this website are illustrative estimates based on user-entered mileage, local fuel retail tariffs, and standard test cycles. Actual vehicle fuel economy varies with traffic conditions, driving style, AC usage, and payload.`)}
           </p>
         </div>
 
@@ -290,7 +293,7 @@ export default function Footer({ onNavigateLegal }) {
             </a>
           </div>
           <p className="footer-credits">
-            GSTIN: {siteConfig.statutory.gstin} • Established {siteConfig.statutory.yearOfEstablishment}
+            {siteConfig.address}
           </p>
         </div>
       </div>

@@ -18,7 +18,7 @@
 > The current production release of the **Maa Kamakhya Auto Gas** web platform operates as a **100% client-side, zero-database Single Page Application (SPA)**.
 >
 > - **Savings Calculations:** Executed entirely within the client's browser runtime using pure mathematical functions (`src/utils/calculator.js`). No calculation data is transmitted to or stored on any server.
-> - **Quotation & Inquiries:** Handled through direct URL serialization into the official **WhatsApp Business API** (`https://wa.me/918822049075`), establishing instant peer-to-peer customer communication without collecting or storing Personally Identifiable Information (PII) on a web server.
+> - **Quotation & Inquiries:** Handled through direct URL serialization into the official **WhatsApp Business API** (`https://wa.me/916913910337`), establishing instant peer-to-peer customer communication without collecting or storing Personally Identifiable Information (PII) on a web server.
 > - **Operational Benefits:** Zero database hosting expenses, zero database maintenance overhead, zero risk of server-side data leaks, and absolute immunity to SQL injection vulnerabilities.
 
 ---

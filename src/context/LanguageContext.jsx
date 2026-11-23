@@ -37,6 +37,11 @@ export const LanguageProvider = ({ children }) => {
     if (typeof document !== "undefined") {
       document.documentElement.lang = language;
       document.documentElement.dir = "ltr";
+      const localeMeta = document.querySelector('meta[property="og:locale"]');
+      if (localeMeta) {
+        const localeMap = { en: 'en_IN', hi: 'hi_IN', as: 'as_IN' };
+        localeMeta.setAttribute('content', localeMap[language] || 'en_IN');
+      }
     }
   }, [language]);
 
@@ -108,6 +113,7 @@ export const LanguageProvider = ({ children }) => {
   const value = useMemo(
     () => ({
       language,
+      currentLanguage: language,
       setLanguage,
       t,
       languages: SUPPORTED_LANGUAGES,

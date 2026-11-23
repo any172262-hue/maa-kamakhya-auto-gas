@@ -35,17 +35,18 @@ const iconMap = {
 };
 
 export default function ServiceDetailPage({ serviceSlug, onNavigate, onSelectService }) {
-  const { currentLanguage, t } = useLanguage();
+  const { language, currentLanguage, t } = useLanguage();
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
+  const activeLang = language || currentLanguage || 'en';
   const serviceData = getServicePageData(serviceSlug);
-  const langKey = (currentLanguage === 'as' || currentLanguage === 'hi') ? currentLanguage : 'en';
+  const langKey = (activeLang === 'as' || activeLang === 'hi') ? activeLang : 'en';
   const content = serviceData ? serviceData[langKey] : null;
 
   usePageMeta({
     title: content ? content.title : 'Services | Maa Kamakhya Auto Gas',
     description: content ? content.metaDescription : 'Automotive CNG and LPG services at Maa Kamakhya Auto Gas, NH 37 Guwahati.',
-    canonical: `https://maakamakhyaautogas.com/services/${serviceSlug}/`
+    canonical: `https://any172262-hue.github.io/maa-kamakhya-auto-gas/services/${serviceSlug}/`
   });
 
   if (!serviceData || !content) {

@@ -16,7 +16,7 @@ A comprehensive, evidence-based security audit and hardening review was conducte
 - **Backend / Server-Side APIs:** **None.** (No Node.js, Express, Fastify, or custom API server present).
 - **Database Layer:** **None.** (No PostgreSQL, MySQL, MongoDB, SQLite, or ORM present).
 - **Authentication / Admin Infrastructure:** **None.** (No user registration, passwords, session tokens, or privileged admin panels present).
-- **Enquiry / Lead Handoff Workflow:** Pure client-side validation followed by an explicit user confirmation modal, preparing a pre-formatted message for dispatch via the verified business WhatsApp URL (`https://wa.me/918822049075`).
+- **Enquiry / Lead Handoff Workflow:** Pure client-side validation followed by an explicit user confirmation modal, preparing a pre-formatted message for dispatch via the verified business WhatsApp URL (`https://wa.me/916913910337`).
 
 Because this application operates as a static client-side application with no persistent server or database, standard server-side vulnerability classes (such as SQL injection, server command injection, session fixation, privilege escalation, and broken object-level authorization) are structurally absent by architectural design.
 

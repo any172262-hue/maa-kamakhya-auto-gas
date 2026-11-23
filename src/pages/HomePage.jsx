@@ -9,16 +9,15 @@ import SavingsCalculator from '../sections/SavingsCalculator';
 import Compatibility from '../sections/Compatibility';
 import Process from '../sections/Process';
 import HomepageFaq from '../sections/HomepageFaq';
-import CTA from '../sections/CTA';
 import WorkshopLocationMap from '../sections/WorkshopLocationMap';
 import Contact from '../sections/Contact';
 import { usePageMeta } from '../hooks/usePageMeta';
 
 export default function HomePage({ onNavigate }) {
   usePageMeta({
-    title: "Maa Kamakhya Auto Gas | CNG, LPG and Auto Gas Services",
-    description: "Explore CNG and LPG services at Maa Kamakhya Auto Gas, including auto gas filling, gas kit installation, vehicle gas conversion, repair and maintenance.",
-    canonical: "https://maakamakhyaautogas.com/"
+    title: "CNG & LPG Services in Guwahati | Maa Kamakhya Auto Gas",
+    description: "Maa Kamakhya Auto Gas offers CNG and LPG services, CNG filling, gas kit installation, vehicle gas conversion, repair and maintenance in Guwahati, Assam.",
+    canonical: "https://any172262-hue.github.io/maa-kamakhya-auto-gas/"
   });
 
   const [inquiryPrefill, setInquiryPrefill] = useState('');
@@ -47,7 +46,6 @@ export default function HomePage({ onNavigate }) {
       <Compatibility />
       <Process />
       <HomepageFaq />
-      <CTA />
       <WorkshopLocationMap />
       <Contact prefilledQuestion={inquiryPrefill} />
     </>

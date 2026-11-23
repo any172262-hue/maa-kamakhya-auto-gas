@@ -78,7 +78,7 @@ flowchart LR
 ### Milestone 8: WhatsApp Quotation Engine & Location Details
 - [x] Build `src/services/whatsappService.js` for structured message formatting and URL encoding.
 - [x] Implement `Contact.jsx` quotation form with client-side input validation (Name, Phone, Brand, Model, Year, Usage).
-- [x] Connect submit handler to launch `https://wa.me/918822049075` with formatted query payload.
+- [x] Connect submit handler to launch `https://wa.me/916913910337` with formatted query payload.
 - [x] Integrate workshop contact cards, business hours (`Mon-Sat 9:00 AM – 7:30 PM`), and interactive Google Maps embed for Garchuk location.
 - [x] Implement `Footer.jsx` with full brand summary, quick links, legal statutory statement, and copyright.
 
@@ -140,7 +140,7 @@ flowchart LR
 |---|---|---|---|
 | **Branding Integrity** | Ensure "Maa Kamakhya Auto Gas" is used exclusively with zero legacy names. | Automated regex codebase search | Verified |
 | **Phone Link Integrity** | Verify `tel:+916913910337` dials official voice line. | Protocol check in browser / unit test | Verified |
-| **WhatsApp Target** | Verify `wa.me/918822049075` initiates chat with correct payload. | Deep link serialization test | Verified |
+| **WhatsApp Target** | Verify `wa.me/916913910337` initiates chat with correct payload. | Deep link serialization test | Verified |
 | **Statutory Display** | Verify GSTIN `18**********1ZS` and 2022 establishment prominently visible. | DOM inspection & integration test | Verified |
 | **Calculator Accuracy** | Verify 5,000 km default yields exact ₹18,815 monthly savings. | Pure unit test assertion | Verified |
 | **Production Build** | Run `npm run build` and ensure clean output in `dist/`. | Vite production build compilation | Verified |

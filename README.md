@@ -175,7 +175,7 @@ All business and statutory information is centralized in [src/data/siteConfig.js
 - **GSTIN:** `18**********1ZS` (State Code: 18 - Assam)
 - **Payment Modes Accepted:** `EMI Financing, Visa / Master Card / Rupay, UPI, Net Banking, Cash`
 - **Phone (Calling):** `6913910337` (`tel:+916913910337`)
-- **WhatsApp (Inquiries):** `8822049075` (`https://wa.me/918822049075`)
+- **WhatsApp (Inquiries):** `69139 10337` (`https://wa.me/916913910337`)
 - **Physical Workshop Address:** `Shop No. 7, Opposite Nezon Steel, Near Kumar Resorts, NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035, Assam`
 - **Operating Hours:** `Monday to Saturday: 9:00 AM to 7:30 PM | Sunday: On Appointment`
 - **Languages Supported:** `English, Hindi, Assamese`
@@ -210,7 +210,7 @@ Projected Annual Saving = Estimated Monthly Saving × 12
 - [x] Calculator handles invalid, negative, or zero inputs gracefully without NaN errors.
 - [x] "Apply Estimate to WhatsApp Inquiry" pre-fills the inquiry form and scrolls smoothly.
 - [x] Direct phone link (`tel:+916913910337`) triggers dialer on mobile.
-- [x] WhatsApp buttons open `wa.me/918822049075` with encoded inquiry message.
+- [x] WhatsApp buttons open `wa.me/916913910337` with encoded inquiry message.
 - [x] Complete CNG system overview schematic loads crisply.
 - [x] Brand compatibility tabs toggle models dynamically.
 - [x] Zero console errors during development and production build.

@@ -30,7 +30,7 @@ export function runUserFlowE2ETests() {
 
   const url = buildWhatsAppInquiryUrl(sampleLead);
 
-  if (!url.startsWith('https://wa.me/918822049075')) {
+  if (!url.startsWith('https://wa.me/916913910337')) {
     throw new Error(`Invalid WhatsApp destination URL: ${url}`);
   }
   if (!url.includes('Pranab%20Das') || !url.includes('Swift%20VXi')) {

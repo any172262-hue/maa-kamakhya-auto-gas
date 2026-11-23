@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, MessageCircle, MapPin, Navigation, CheckCircle, AlertCircle, ShieldCheck, RefreshCw } from 'lucide-react';
+import { Phone, MessageCircle, MapPin, Navigation, CheckCircle, ShieldCheck, RefreshCw, Mail, Copy, Check, Globe } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
 import { servicesData } from '../data/services';
 import { useLanguage } from '../context/LanguageContext';
 import SectionHeading from '../components/SectionHeading';
 import RevealAnimation from '../components/RevealAnimation';
 import ConfirmationModal from '../components/ConfirmationModal';
-import { buildWhatsAppMessage } from '../utils/whatsapp';
+import { buildWhatsAppMessage, buildWhatsAppUrl, buildWhatsAppWebUrl } from '../utils/whatsapp';
 import { getUtmParams } from '../utils/utm';
 
 export default function Contact({ prefilledQuestion = "" }) {
@@ -23,9 +23,12 @@ export default function Contact({ prefilledQuestion = "" }) {
   const [touched, setTouched] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [handoffState, setHandoffState] = useState(null); // 'prepared' | 'error' | null
+  const [handoffState, setHandoffState] = useState(null); // 'prepared' | null
   const [utmParams, setUtmParams] = useState({});
   const [lastWhatsAppUrl, setLastWhatsAppUrl] = useState('');
+  const [lastWhatsAppWebUrl, setLastWhatsAppWebUrl] = useState('');
+  const [lastMessageText, setLastMessageText] = useState('');
+  const [copiedMessage, setCopiedMessage] = useState(false);
 
   // Capture UTM parameters on mount
   useEffect(() => {
@@ -141,29 +144,43 @@ export default function Contact({ prefilledQuestion = "" }) {
     }, 150);
   };
 
-  const handleConfirmHandoff = () => {
-    setIsSubmitting(true);
-
+  const handleCopyMessage = async (textToCopy) => {
     try {
-      const messageText = buildWhatsAppMessage(formData, utmData);
-      const encodedMessage = encodeURIComponent(messageText);
-      const targetUrl = `https://wa.me/91${siteConfig.whatsappNumber}?text=${encodedMessage}`;
-      setLastWhatsAppUrl(targetUrl);
-
-      // Open WhatsApp chat in new window
-      const win = window.open(targetUrl, '_blank', 'noopener,noreferrer');
-      setIsModalOpen(false);
-      setIsSubmitting(false);
-
-      if (win) {
-        setHandoffState('prepared');
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(textToCopy);
       } else {
-        setHandoffState('prepared');
+        const textarea = document.createElement('textarea');
+        textarea.value = textToCopy;
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
       }
-    } catch (err) {
+      setCopiedMessage(true);
+      setTimeout(() => setCopiedMessage(false), 2500);
+    } catch (e) {
+      console.warn('Clipboard write failed:', e);
+    }
+  };
+
+  const handleConfirmHandoff = () => {
+    try {
+      const messageText = buildWhatsAppMessage(formData);
+      const targetUrl = buildWhatsAppUrl(formData);
+      const webUrl = buildWhatsAppWebUrl(formData);
+      setLastMessageText(messageText);
+      setLastWhatsAppUrl(targetUrl);
+      setLastWhatsAppWebUrl(webUrl);
       setIsModalOpen(false);
       setIsSubmitting(false);
-      setHandoffState('error');
+      setHandoffState('prepared');
+    } catch (err) {
+      console.error('Error preparing WhatsApp message:', err);
+      setIsModalOpen(false);
+      setIsSubmitting(false);
+      setHandoffState('prepared');
     }
   };
 
@@ -214,6 +231,21 @@ export default function Contact({ prefilledQuestion = "" }) {
                 </div>
               </div>
 
+              {siteConfig.email && (
+                <div className="contact-item-group">
+                  <div className="contact-icon-bubble">
+                    <Mail size={22} className="text-yellow" />
+                  </div>
+                  <div>
+                    <div className="contact-label-small">Email enquiries</div>
+                    <a href={`mailto:${siteConfig.email}`} className="contact-value-main">
+                      {siteConfig.email}
+                    </a>
+                    <p className="contact-meta-desc">Direct business email</p>
+                  </div>
+                </div>
+              )}
+
               <div className="contact-item-group">
                 <div className="contact-icon-bubble">
                   <MapPin size={22} className="text-yellow" />
@@ -245,11 +277,11 @@ export default function Contact({ prefilledQuestion = "" }) {
                 </p>
               </div>
 
-              {/* Statutory Assurance Note */}
+              {/* Business Location & Service Note */}
               <div className="statutory-assurance-card">
                 <ShieldCheck size={20} className="text-yellow flex-shrink-0" />
                 <p className="text-xs text-muted">
-                  Operated by <strong>{siteConfig.statutory.legalName}</strong> (GSTIN: {siteConfig.statutory.gstin}). Government-approved retrofitter on NH 37, Garchuk, Guwahati.
+                  Operated by <strong>{siteConfig.name}</strong> on NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035, Assam.
                 </p>
               </div>
             </div>
@@ -435,6 +467,19 @@ export default function Contact({ prefilledQuestion = "" }) {
                     <p className="handoff-disclaimer text-xs text-muted">
                       Note: Your enquiry is only received by our team once you press Send inside WhatsApp.
                     </p>
+
+                    {/* Direct Fallback Link for Mobile and Popup-blocked Browsers */}
+                    <div className="handoff-trouble-card">
+                      <a
+                        href={lastWhatsAppUrl || 'https://wa.me/916913910337'}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="handoff-trouble-link"
+                      >
+                        Having trouble opening WhatsApp? Tap here to continue.
+                      </a>
+                    </div>
+
                     <div className="handoff-actions-row">
                       {lastWhatsAppUrl && (
                         <a
@@ -447,22 +492,36 @@ export default function Contact({ prefilledQuestion = "" }) {
                           <span>Reopen WhatsApp Chat</span>
                         </a>
                       )}
+
+                      {lastWhatsAppWebUrl && (
+                        <a
+                          href={lastWhatsAppWebUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn btn-secondary btn-sm"
+                          title="Open WhatsApp Web in desktop browser"
+                        >
+                          <Globe size={14} />
+                          <span>WhatsApp Web</span>
+                        </a>
+                      )}
+
+                      {lastMessageText && (
+                        <button
+                          type="button"
+                          onClick={() => handleCopyMessage(lastMessageText)}
+                          className="btn btn-secondary btn-sm"
+                          title="Copy formatted enquiry message to clipboard"
+                        >
+                          {copiedMessage ? <Check size={14} className="text-success" /> : <Copy size={14} />}
+                          <span>{copiedMessage ? 'Copied to Clipboard!' : 'Copy Message'}</span>
+                        </button>
+                      )}
+
                       <a href={siteConfig.phoneTel} className="btn btn-secondary btn-sm">
                         <Phone size={14} />
-                        <span>{t('common.call', {}, 'Call')}: {siteConfig.phone}</span>
+                        <span>{t('common.call', {}, 'Call')}: {siteConfig.phoneFormatted}</span>
                       </a>
-                    </div>
-                  </div>
-                )}
-
-                {handoffState === 'error' && (
-                  <div className="handoff-status-banner handoff-error-banner animate-fade-in" role="alert">
-                    <AlertCircle size={20} className="text-danger flex-shrink-0" />
-                    <div>
-                      <h4 className="handoff-title text-danger">Could not open WhatsApp automatically</h4>
-                      <p className="handoff-body">
-                        Please call our workshop directly at <a href={siteConfig.phoneTel} className="text-yellow font-bold">{siteConfig.phoneFormatted}</a> or message +91 {siteConfig.whatsappNumber}.
-                      </p>
                     </div>
                   </div>
                 )}

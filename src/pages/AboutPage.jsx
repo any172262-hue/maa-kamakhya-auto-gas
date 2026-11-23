@@ -24,26 +24,26 @@ export default function AboutPage({ onNavigate }) {
 
   usePageMeta({
     title: "About Us | Maa Kamakhya Auto Gas: Guwahati, Assam",
-    description: "Learn about Maa Kamakhya Auto Gas, Guwahati's leading government-approved CNG and LPG retrofitment center on NH 37, Pachim Boragaon, Garchuk. Established in 2022.",
-    canonical: "https://maakamakhyaautogas.com/about/"
+    description: "Learn about Maa Kamakhya Auto Gas, a trusted local workshop on NH 37 in Garchuk, Guwahati providing CNG retrofitment, maintenance, and cylinder hydro-testing.",
+    canonical: "https://any172262-hue.github.io/maa-kamakhya-auto-gas/about/"
   });
 
   const coreValues = [
     {
-      title: "Government Homologated Safety",
-      desc: "Every CNG and LPG retrofitment is performed using government-approved sequential injection systems compliant with Indian automotive safety norms."
+      title: "Sequential Gas Equipment",
+      desc: "We install sequential gas injection systems matched to your vehicle model and engine configuration."
     },
     {
-      title: "Transparent Customer Care",
-      desc: "Itemized upfront estimates, zero hidden costs, realistic fuel savings calculations, and flexible payment modes including no-cost EMI financing."
+      title: "Transparent Advice & Estimates",
+      desc: "Clear upfront quotes, practical fuel estimates based on your vehicle, and straightforward guidance."
     },
     {
-      title: "Certified Engineering Standards",
-      desc: "Our workshop follows standardized calibration protocols, high-pressure leak audits, and manufacturer-recommended torque specifications."
+      title: "Safe Installation Practices",
+      desc: "High-pressure steel fuel lines routed securely, solid chassis-mounted cylinder cradles, and electronic leak tests."
     },
     {
-      title: "Authentic Parts & Hardware",
-      desc: "Authorized wholesale and retail distribution of genuine OEM autogas spares, reducers, injector rails, and PESO-certified cylinders."
+      title: "Genuine Parts & Maintenance",
+      desc: "Authentic replacement reducers, high-speed injector rails, vapor filters, and routine system inspections."
     }
   ];
 
@@ -72,7 +72,7 @@ export default function AboutPage({ onNavigate }) {
           <div className="service-hero-content">
             <div className="service-hero-badge">
               <Building2 size={16} className="text-yellow" />
-              <span>ESTABLISHED 2022 • GUWAHATI, ASSAM</span>
+              <span>AUTO GAS WORKSHOP • GUWAHATI, ASSAM</span>
             </div>
 
             <h1 className="service-hero-title">
@@ -80,7 +80,7 @@ export default function AboutPage({ onNavigate }) {
             </h1>
 
             <p className="service-hero-lead">
-              Guwahati's trusted destination for government-approved sequential CNG retrofitment, autogas conversion, certified cylinder hydro-testing assistance, and expert automotive diagnostics on NH 37.
+              A local automotive gas service workshop on NH 37 in Garchuk, Guwahati providing CNG and LPG services, auto gas filling (CNG only), gas kit installation, vehicle conversion, and maintenance support.
             </p>
 
             <div className="service-hero-actions">
@@ -123,28 +123,28 @@ export default function AboutPage({ onNavigate }) {
           <div className="about-overview-grid">
             <RevealAnimation delay={1}>
               <div className="card-navy card-hover-effect p-8">
-                <span className="badge-tag badge-tag-gold mb-4 inline-block">OUR HERITAGE & MISSION</span>
+                <span className="badge-tag badge-tag-gold mb-4 inline-block">OUR WORKSHOP PROFILE</span>
                 <h2 className="text-2xl font-bold text-navy mb-4">
-                  Engineering Clean, Smarter & Cost-Effective Mobility
+                  Automotive Gas Services in Guwahati
                 </h2>
                 <p className="text-muted text-sm leading-relaxed mb-4">
-                  Established in 2022, <strong>Maa Kamakhya Auto Gas</strong> was founded to meet the growing demand for safe, reliable, and compliant auto-gas solutions across Guwahati and Assam. Located strategically along the NH 37 highway frontage at Pachim Boragaon, Garchuk, our workshop provides direct drive-in bays for passenger cars, commercial cabs, and regional delivery fleets.
+                  <strong>Maa Kamakhya Auto Gas</strong> offers car owners and commercial drivers in Guwahati dedicated automotive gas services. Located on NH 37 at Pachim Boragaon in Garchuk, our facility is easily accessible from ISBT, Jalukbari, and Lokhra.
                 </p>
                 <p className="text-muted text-sm leading-relaxed mb-4">
-                  We specialize in converting conventional petrol vehicles to dual-fuel CNG and LPG systems, reducing vehicle fuel bills by up to 50% to 55% while maintaining peak engine performance and highway pickup.
+                  We provide CNG and LPG services, gas kit installation, vehicle gas conversion, repair and maintenance, and operate an auto gas filling station (CNG only) at our Guwahati location.
                 </p>
                 <div className="about-stats-row">
                   <div className="stat-box">
-                    <span className="stat-val font-black text-2xl text-blue">2022</span>
-                    <span className="stat-lbl text-xs text-muted block">Year Established</span>
+                    <span className="stat-val font-black text-2xl text-blue">CNG & LPG</span>
+                    <span className="stat-lbl text-xs text-muted block">Fuel Solutions</span>
                   </div>
                   <div className="stat-box">
-                    <span className="stat-val font-black text-2xl text-yellow">100%</span>
-                    <span className="stat-lbl text-xs text-muted block">Govt Homologated</span>
+                    <span className="stat-val font-black text-2xl text-yellow">CNG Only</span>
+                    <span className="stat-lbl text-xs text-muted block">Station Fuel</span>
                   </div>
                   <div className="stat-box">
-                    <span className="stat-val font-black text-2xl text-blue">24</span>
-                    <span className="stat-lbl text-xs text-muted block">Trade Authorizations</span>
+                    <span className="stat-val font-black text-2xl text-blue">6</span>
+                    <span className="stat-lbl text-xs text-muted block">Core Services</span>
                   </div>
                 </div>
               </div>
@@ -152,28 +152,32 @@ export default function AboutPage({ onNavigate }) {
 
             <RevealAnimation delay={2}>
               <div className="card-navy p-8">
-                <span className="badge-tag badge-tag-blue mb-4 inline-block">STATUTORY & LEGAL COMPLIANCE</span>
-                <h3 className="text-xl font-bold text-navy mb-4">Official Business Verification</h3>
+                <span className="badge-tag badge-tag-blue mb-4 inline-block">CONFIRMED BUSINESS INFORMATION</span>
+                <h3 className="text-xl font-bold text-navy mb-4">Verified Business Profile</h3>
                 <div className="about-compliance-list">
                   <div className="compliance-row">
-                    <span className="text-muted text-xs">Legal Business Name:</span>
+                    <span className="text-muted text-xs">Business Name:</span>
                     <span className="font-semibold text-navy text-sm block">Maa Kamakhya Auto Gas</span>
                   </div>
                   <div className="compliance-row">
-                    <span className="text-muted text-xs">GSTIN:</span>
-                    <span className="font-semibold text-navy text-sm block">18**********1ZS</span>
+                    <span className="text-muted text-xs">Public Address:</span>
+                    <span className="font-semibold text-navy text-sm block">NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035, Assam, India</span>
                   </div>
                   <div className="compliance-row">
-                    <span className="text-muted text-xs">Annual Turnover:</span>
-                    <span className="font-semibold text-navy text-sm block">51 Lakh to 1 Crore</span>
+                    <span className="text-muted text-xs">District & State:</span>
+                    <span className="font-semibold text-navy text-sm block">Kamrup Metropolitan, Assam</span>
                   </div>
                   <div className="compliance-row">
-                    <span className="text-muted text-xs">Team Size:</span>
-                    <span className="font-semibold text-navy text-sm block">Less than 10 Dedicated Technicians</span>
+                    <span className="text-muted text-xs">Filling Station Fuel:</span>
+                    <span className="font-semibold text-navy text-sm block">CNG only</span>
                   </div>
                   <div className="compliance-row">
-                    <span className="text-muted text-xs">Registered Facility Address:</span>
-                    <span className="font-semibold text-navy text-sm block">Shop No. 7, Opposite Nezon Steel, NH 37, Garchuk, Guwahati - 781035</span>
+                    <span className="text-muted text-xs">Operating Hours:</span>
+                    <span className="font-semibold text-navy text-sm block">Not provided (contact workshop)</span>
+                  </div>
+                  <div className="compliance-row">
+                    <span className="text-muted text-xs">Contact Notice:</span>
+                    <span className="font-semibold text-navy text-sm block">Contact details pending owner verification</span>
                   </div>
                 </div>
               </div>

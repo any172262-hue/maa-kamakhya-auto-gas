@@ -60,10 +60,10 @@ export default function Benefits() {
       <div className="container">
         <RevealAnimation>
           <SectionHeading
-            tagline={t('benefits.tagline', {}, 'KEY ADVANTAGES')}
-            title={t('benefits.title', {}, 'Why Smart Drivers in Guwahati')}
-            highlight={t('benefits.titleHighlight', {}, 'Choose CNG.')}
-            description={t('benefits.description', {}, 'Experience unmatched savings, environmental responsibility, and seamless highway performance with our high-precision sequential conversion technology.')}
+            tagline={t('benefits.tagline', {}, 'WHAT YOU GAIN')}
+            title={t('benefits.title', {}, 'Real Benefits You Will Notice')}
+            highlight={t('benefits.titleHighlight', {}, 'Every Day.')}
+            description={t('benefits.description', {}, 'Here is what you can expect when you run your car on a properly installed sequential auto gas system.')}
           />
         </RevealAnimation>
 

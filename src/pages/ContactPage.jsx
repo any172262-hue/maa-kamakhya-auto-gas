@@ -6,7 +6,8 @@ import {
   MessageCircle, 
   Clock, 
   ShieldCheck, 
-  ArrowLeft 
+  ArrowLeft,
+  Mail
 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { usePageMeta } from '../hooks/usePageMeta';
@@ -20,8 +21,8 @@ export default function ContactPage({ onNavigate }) {
 
   usePageMeta({
     title: "Contact Us | Maa Kamakhya Auto Gas: NH 37 Guwahati",
-    description: "Contact Maa Kamakhya Auto Gas on NH 37, Pachim Boragaon, Garchuk, Guwahati for certified sequential CNG and LPG retrofitment, diagnostics, and quote inquiries.",
-    canonical: "https://maakamakhyaautogas.com/contact/"
+    description: "Contact Maa Kamakhya Auto Gas on NH 37, Pachim Boragaon, Garchuk, Guwahati for CNG and LPG services, gas kit installation, conversion, and repair inquiries.",
+    canonical: "https://any172262-hue.github.io/maa-kamakhya-auto-gas/contact/"
   });
 
   return (
@@ -57,7 +58,7 @@ export default function ContactPage({ onNavigate }) {
             </h1>
 
             <p className="service-hero-lead">
-              Reach our expert automotive technicians for CNG and LPG conversion inquiries, vehicle compatibility assessments, cylinder hydro-testing scheduling, and immediate quotes.
+              Contact Maa Kamakhya Auto Gas for enquiries regarding CNG and LPG services, auto gas filling (CNG only), gas kit installation, vehicle gas conversion, and maintenance support in Guwahati.
             </p>
 
             <div className="service-hero-actions">
@@ -80,6 +81,17 @@ export default function ContactPage({ onNavigate }) {
               >
                 Call: +91 {siteConfig.phone}
               </Button>
+
+              {siteConfig.email && (
+                <Button
+                  variant="secondary"
+                  size="lg"
+                  href={`mailto:${siteConfig.email}`}
+                  icon={Mail}
+                >
+                  Email Us
+                </Button>
+              )}
 
               <Button
                 variant="secondary"

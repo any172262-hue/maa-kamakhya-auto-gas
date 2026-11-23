@@ -64,14 +64,14 @@ export const searchableItems = [
     keywords: `step ${step.step} ${step.title} ${step.description} process workflow installation calibration testing`.toLowerCase()
   })),
 
-  // 7. Statutory & Business Details
+  // 7. Confirmed Business Details
   {
-    id: 'statutory-gst',
-    title: 'Statutory Verification & GST Details',
-    category: 'Verified Business Record',
-    description: `Operated by ${siteConfig.statutory.legalName}. Established ${siteConfig.statutory.yearOfEstablishment}, GSTIN: ${siteConfig.statutory.gstin}, State Code 18 Assam.`,
+    id: 'confirmed-business-details',
+    title: 'Confirmed Business Information',
+    category: 'Business Profile',
+    description: `Operated by ${siteConfig.name} at ${siteConfig.address}. Offering CNG and LPG services in Guwahati.`,
     href: '#statutory-details',
-    keywords: `gst gstin statutory registration business turnover legal tax verification assam 18`
+    keywords: 'business profile address location boragaon garchuk guwahati assam confirmed services'
   },
 
   // 8. Contact & Workshop Location

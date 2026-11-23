@@ -38,12 +38,12 @@ export default function WorkshopLocationMap() {
   ];
 
   const workshopFeatures = [
-    "Prime Highway Frontage on NH 37",
-    "Direct Opposite Nezon Steel Landmark",
-    "Dedicated Drive-in Retrofitment Bay",
-    "Certified Cylinder Hydro-Testing Assistance",
-    "Ample Customer Parking for Cars & Taxis",
-    "Computerized Sequential Kit Diagnostics"
+    "Location on NH 37, Pachim Boragaon",
+    "Near Garchuk intersection, Guwahati",
+    "Auto Gas Filling Station (CNG Only)",
+    "CNG & LPG Automotive Services",
+    "Gas Kit Installation & Conversion",
+    "Gas Kit Repair & Maintenance"
   ];
 
   return (
@@ -82,13 +82,13 @@ export default function WorkshopLocationMap() {
                 <div className="map-address-block">
                   <div className="map-address-line">
                     <strong className="text-white">{siteConfig.name}</strong>
-                    <span className="map-tag-sub">Shop No. 7</span>
+                    <span className="map-tag-sub">Guwahati</span>
                   </div>
                   <div className="map-address-sub text-muted text-xs">
                     {siteConfig.address}
                   </div>
                   <div className="map-coords-badge text-xs">
-                    <span>GPS Coordinates: 26°07'12.1"N 91°41'47.5"E (26.120013, 91.696526)</span>
+                    <span>Location: NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035</span>
                   </div>
                 </div>
 
@@ -137,12 +137,12 @@ export default function WorkshopLocationMap() {
                   <div className="showcase-brand-details">
                     <h4 className="showcase-brand-title text-white font-bold">{siteConfig.name}</h4>
                     <p className="showcase-brand-address text-xs text-muted">
-                      Shop No. 7, Opposite Nezon Steel, Near Kumar Resorts, NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035, Assam
+                      {siteConfig.address}
                     </p>
                     <div className="showcase-meta-pills">
-                      <span className="showcase-pill">NH 37 Frontage</span>
-                      <span className="showcase-pill">Opposite Nezon Steel</span>
-                      <span className="showcase-pill">Near Kumar Resorts</span>
+                      <span className="showcase-pill">NH 37</span>
+                      <span className="showcase-pill">Pachim Boragaon</span>
+                      <span className="showcase-pill">Garchuk, Guwahati</span>
                     </div>
                   </div>
                 </div>

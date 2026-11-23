@@ -11,7 +11,7 @@ export default function WhyChooseUs() {
     {
       icon: IndianRupee,
       title: t('why.card1Title', {}, 'Potential fuel savings'),
-      description: t('why.card1Desc', {}, 'Compare your vehicle\'s estimated petrol and CNG running costs before deciding. Reduce daily commuting expenses by more than half.')
+      description: t('why.card1Desc', {}, 'Compare your vehicle\'s estimated petrol and CNG running costs before deciding. Reduce daily commuting expenses with economical auto gas.')
     },
     {
       icon: Leaf,
@@ -20,8 +20,8 @@ export default function WhyChooseUs() {
     },
     {
       icon: Wrench,
-      title: t('why.card3Title', {}, 'Professional retrofitment'),
-      description: t('why.card3Desc', {}, 'Get certified guidance on compatible systems, government-approved installation requirements, leak-proof piping, and dedicated after-installation care.')
+      title: t('why.card3Title', {}, 'Dedicated retrofitment care'),
+      description: t('why.card3Desc', {}, 'Get guidance on compatible systems, standard installation requirements, secure piping, and dedicated after-installation care.')
     }
   ];
 
