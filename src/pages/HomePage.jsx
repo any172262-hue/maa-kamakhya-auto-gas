@@ -6,7 +6,6 @@ import Services from '../sections/Services';
 import WhyChooseUs from '../sections/WhyChooseUs';
 import Benefits from '../sections/Benefits';
 import SavingsCalculator from '../sections/SavingsCalculator';
-import Compatibility from '../sections/Compatibility';
 import Process from '../sections/Process';
 import HomepageFaq from '../sections/HomepageFaq';
 import WorkshopLocationMap from '../sections/WorkshopLocationMap';
@@ -43,7 +42,6 @@ export default function HomePage({ onNavigate }) {
       <Services onSelectService={handleSelectService} onNavigate={onNavigate} />
       <Benefits />
       <SavingsCalculator onApplyEstimate={handleApplyEstimate} />
-      <Compatibility />
       <Process />
       <HomepageFaq />
       <WorkshopLocationMap />

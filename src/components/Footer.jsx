@@ -28,8 +28,6 @@ export default function Footer({ onNavigateLegal }) {
         return t('nav.services', {}, link.name);
       case '#calculator':
         return t('nav.calculator', {}, link.name);
-      case '#compatibility':
-        return t('nav.compatibility', {}, link.name);
       case '#process':
         return t('nav.process', {}, link.name);
       case '#contact':

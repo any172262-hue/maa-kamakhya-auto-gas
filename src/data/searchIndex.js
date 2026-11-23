@@ -40,7 +40,7 @@ export const searchableItems = [
     title: `${b.name} CNG Compatibility`,
     category: 'Vehicle Compatibility',
     description: `Certified sequential CNG kit compatibility for ${b.name} models: ${(b.popularModels || []).join(', ')}.`,
-    href: '#compatibility',
+    href: '#services',
     keywords: `${b.name} ${(b.popularModels || []).join(' ')} compatibility conversion kit car four wheeler sedan hatchback`.toLowerCase()
   })),
 

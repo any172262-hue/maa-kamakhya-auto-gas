@@ -9,7 +9,7 @@ export default function MobileBottomNav({ onNavigateLegal }) {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sectionIds = ['hero', 'services', 'calculator', 'compatibility', 'process', 'contact'];
+      const sectionIds = ['hero', 'services', 'calculator', 'process', 'contact'];
       const scrollPosition = window.scrollY + 180;
 
       for (let i = sectionIds.length - 1; i >= 0; i--) {

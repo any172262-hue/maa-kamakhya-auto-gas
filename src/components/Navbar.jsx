@@ -31,8 +31,6 @@ export default function Navbar({ onNavigateLegal, onOpenSearch }) {
         return t('nav.services', {}, link.name);
       case '#calculator':
         return isShort && link.shortName ? t('nav.calculator', {}, link.shortName) : t('nav.calculator', {}, link.name);
-      case '#compatibility':
-        return t('nav.compatibility', {}, link.name);
       case '#process':
         return isShort && link.shortName ? t('nav.process', {}, link.shortName) : t('nav.process', {}, link.name);
       case '#contact':
@@ -47,7 +45,7 @@ export default function Navbar({ onNavigateLegal, onOpenSearch }) {
     let ticking = false;
     let lastScrolled = false;
     let lastSection = 'hero';
-    const sectionIds = ['hero', 'statutory-details', 'benefits', 'services', 'calculator', 'compatibility', 'process', 'location', 'contact'];
+    const sectionIds = ['hero', 'statutory-details', 'benefits', 'services', 'calculator', 'process', 'location', 'contact'];
 
     const updateScrollState = () => {
       const scrollY = window.scrollY;
