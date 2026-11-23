@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Hero from '../sections/Hero';
-import StatutoryDetails from '../sections/StatutoryDetails';
 import TrustIndicators from '../sections/TrustIndicators';
 import Services from '../sections/Services';
 import WhyChooseUs from '../sections/WhyChooseUs';
@@ -37,7 +36,6 @@ export default function HomePage({ onNavigate }) {
   return (
     <>
       <Hero onNavigate={onNavigate} />
-      <StatutoryDetails />
       <TrustIndicators />
       <WhyChooseUs />
       <Services onSelectService={handleSelectService} onNavigate={onNavigate} />

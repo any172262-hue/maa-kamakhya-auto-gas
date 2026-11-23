@@ -70,7 +70,7 @@ export const searchableItems = [
     title: 'Confirmed Business Information',
     category: 'Business Profile',
     description: `Operated by ${siteConfig.name} at ${siteConfig.address}. Offering CNG and LPG services in Guwahati.`,
-    href: '#statutory-details',
+    href: '#/about',
     keywords: 'business profile address location boragaon garchuk guwahati assam confirmed services'
   },
 

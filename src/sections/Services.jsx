@@ -114,7 +114,7 @@ export default function Services({ onSelectService, onNavigate }) {
         </RevealAnimation>
 
         {/* Core 6 Dedicated SEO Services Grid */}
-        <div className="core-seo-services-grid mb-12">
+        <div className="core-seo-services-grid">
           {coreSeoServices.map((srv, idx) => (
             <RevealAnimation key={srv.id} delay={idx + 1}>
               <article className="card-navy card-hover-effect core-service-item">
@@ -133,6 +133,9 @@ export default function Services({ onSelectService, onNavigate }) {
               </RevealAnimation>
             ))}
         </div>
+
+        {/* Generous Spacing Separation */}
+        <div className="services-section-spacer" aria-hidden="true" />
 
         {/* 24 Verified Service Directory Badge Cloud */}
         <RevealAnimation delay={1}>

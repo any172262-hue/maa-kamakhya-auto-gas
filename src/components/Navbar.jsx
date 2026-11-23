@@ -45,7 +45,7 @@ export default function Navbar({ onNavigateLegal, onOpenSearch }) {
     let ticking = false;
     let lastScrolled = false;
     let lastSection = 'hero';
-    const sectionIds = ['hero', 'statutory-details', 'benefits', 'services', 'calculator', 'process', 'location', 'contact'];
+    const sectionIds = ['hero', 'benefits', 'services', 'calculator', 'process', 'location', 'contact'];
 
     const updateScrollState = () => {
       const scrollY = window.scrollY;

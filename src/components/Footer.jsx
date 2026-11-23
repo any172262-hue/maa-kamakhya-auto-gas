@@ -68,15 +68,6 @@ export default function Footer({ onNavigateLegal }) {
               ))}
               <li>
                 <a 
-                  href="#statutory-details" 
-                  className="footer-nav-link text-yellow"
-                  onClick={(e) => handleLinkClick(e, '#statutory-details')}
-                >
-                  {t('statutory.title', {}, 'Business Information')}
-                </a>
-              </li>
-              <li>
-                <a 
                   href="#/about" 
                   className="footer-nav-link"
                   onClick={(e) => {

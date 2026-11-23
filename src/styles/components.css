@@ -1810,6 +1810,7 @@
   border: 1px solid rgba(20, 86, 160, 0.16);
   border-radius: var(--radius-xl);
   padding: clamp(1.5rem, 3.5vw, 2.5rem);
+  margin-top: clamp(2.5rem, 4vw, 3.5rem);
   margin-bottom: var(--space-10);
   box-shadow: 0 10px 30px rgba(20, 86, 160, 0.08);
   position: relative;
@@ -5004,6 +5005,12 @@ textarea:focus-visible {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: var(--space-6);
   margin-top: var(--space-6);
+  margin-bottom: clamp(2.5rem, 4vw, 3.5rem);
+}
+
+.services-section-spacer {
+  height: clamp(1.5rem, 3vw, 2.5rem);
+  width: 100%;
 }
 
 .core-service-item {
