@@ -7,6 +7,7 @@ import WhyChooseUs from '../sections/WhyChooseUs';
 import Benefits from '../sections/Benefits';
 import SavingsCalculator from '../sections/SavingsCalculator';
 import Process from '../sections/Process';
+import CustomerReviews from '../sections/CustomerReviews';
 import HomepageFaq from '../sections/HomepageFaq';
 import WorkshopLocationMap from '../sections/WorkshopLocationMap';
 import Contact from '../sections/Contact';
@@ -43,6 +44,7 @@ export default function HomePage({ onNavigate }) {
       <Benefits />
       <SavingsCalculator onApplyEstimate={handleApplyEstimate} />
       <Process />
+      <CustomerReviews />
       <HomepageFaq />
       <WorkshopLocationMap />
       <Contact prefilledQuestion={inquiryPrefill} />

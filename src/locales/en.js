@@ -309,6 +309,28 @@ export const en = {
     q5: "How do I book an appointment or get an upfront quote?",
     a5: "You can call our workshop directly at +91 69139 10337 or send a message on WhatsApp at +91 69139 10337. You are also welcome to visit us on NH 37 in Garchuk, Guwahati."
   },
+  reviews: {
+    tagline: "CUSTOMER EXPERIENCES & FEEDBACK",
+    title: "Customer Ratings &",
+    titleHighlight: "Reviews.",
+    description: "Genuine feedback from car owners who visited our NH 37 Garchuk workshop for CNG & LPG installations, maintenance, and testing.",
+    emptyTitle: "Be the first to share your experience with Maa Kamakhya Auto Gas.",
+    emptyDesc: "We believe in 100% genuine feedback without fabricated ratings. All submitted customer reviews are individually verified by our workshop team.",
+    writeReview: "Write a Review",
+    googleReview: "Review on Google Maps",
+    basedOn: "Based on {count} verified review(s)",
+    verifiedCustomer: "Verified Customer",
+    modalTitle: "Share Your Feedback",
+    modalSubtitle: "Your genuine review helps car owners in Guwahati make informed auto gas decisions.",
+    yourRating: "Your Rating",
+    nameLabel: "Your Name",
+    serviceLabel: "Service Received",
+    experienceLabel: "Your Review / Experience",
+    privacyConsent: "Your review and name will appear publicly once approved. Contact details are never requested or published.",
+    successTitle: "Review Submitted for Moderation",
+    moderationNote: "To ensure authentic feedback and prevent spam, all customer reviews are approved by our workshop team before appearing on the site.",
+    submitReview: "Submit Review"
+  },
   legal: {
     backToHome: "Return to Homepage",
     privacyTitle: "Privacy Policy",

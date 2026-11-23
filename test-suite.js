@@ -18,6 +18,7 @@ import { runLanguageTests } from './tests/unit/language.test.js';
 import { runWhatsAppUnitTests } from './tests/unit/whatsapp.test.js';
 import { runSiteConfigIntegrationTests } from './tests/integration/siteConfig.test.js';
 import { runNavigationIntegrationTests } from './tests/integration/navigation.test.js';
+import { runReviewsUnitTests } from './tests/unit/reviews.test.js';
 import { runUserFlowE2ETests } from './tests/e2e/userFlow.test.js';
 
 let passedTests = 0;
@@ -43,6 +44,7 @@ runFormatCurrencyUnitTests();
 runLanguageTests();
 runWhatsAppUnitTests();
 runSiteConfigIntegrationTests();
+runReviewsUnitTests();
 runNavigationIntegrationTests();
 runUserFlowE2ETests();
 console.log('');
