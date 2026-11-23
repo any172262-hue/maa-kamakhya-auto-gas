@@ -1,0 +1,5 @@
+# robots.txt for Maa Kamakhya Auto Gas
+User-agent: *
+Allow: /
+
+Sitemap: https://any172262-hue.github.io/maa-kamakhya-auto-gas/sitemap.xml
