@@ -26,6 +26,7 @@ export default function Logo({
         className={`brand-logo ${className}`}
         style={{
           display: 'block',
+          margin: '0 auto',
           height: typeof height === 'number' ? `${height}px` : height,
           width: finalWidth ? `${finalWidth}px` : 'auto',
           aspectRatio: '523 / 477',

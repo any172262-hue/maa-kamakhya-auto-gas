@@ -3794,10 +3794,30 @@
   }
 }
 
+.footer-brand-logo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 .footer-logo-img {
   height: 48px;
   width: auto;
   margin-bottom: var(--space-4);
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .footer-col-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-brand-logo {
+    justify-content: center;
+    margin: 0 auto;
+  }
 }
 
 .footer-brand-desc {
