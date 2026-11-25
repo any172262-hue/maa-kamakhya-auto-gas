@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { ArrowLeft, FileText, AlertCircle, CheckCircle, Scale, ShieldAlert } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
 import { usePageMeta } from '../hooks/usePageMeta';
 import { useLanguage } from '../context/LanguageContext';
@@ -31,10 +31,6 @@ export default function TermsConditions({ onBackToHome }) {
       </div>
 
       <header className="legal-header">
-        <div className="legal-badge">
-          <FileText size={16} className="text-yellow" />
-          <span>Terms &amp; Conditions</span>
-        </div>
         <h1 className="legal-title">{t('legal.termsTitle', {}, 'Terms & Conditions')}</h1>
         <p className="legal-meta">
           Business: <strong>{siteConfig.legalName}</strong> | {t('legal.lastUpdated', {}, 'Last Updated: November 2026')} | Status: Draft for owner review

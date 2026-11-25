@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { ArrowLeft, Shield, Lock, FileText, Mail, Phone, MapPin } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
 import { usePageMeta } from '../hooks/usePageMeta';
 import { useLanguage } from '../context/LanguageContext';
@@ -31,10 +31,6 @@ export default function PrivacyPolicy({ onBackToHome }) {
       </div>
 
       <header className="legal-header">
-        <div className="legal-badge">
-          <Shield size={16} className="text-yellow" />
-          <span>Privacy Policy</span>
-        </div>
         <h1 className="legal-title">{t('legal.privacyTitle', {}, 'Privacy Policy')}</h1>
         <p className="legal-meta">
           Business: <strong>{siteConfig.legalName}</strong> | {t('legal.lastUpdated', {}, 'Last Updated: November 2026')} | Status: Draft for owner review
