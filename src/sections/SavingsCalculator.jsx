@@ -2,8 +2,7 @@ import React from 'react';
 import { 
   ArrowRight, 
   RotateCcw, 
-  TrendingUp, 
-  CheckCircle2
+  TrendingUp
 } from 'lucide-react';
 import { useSavingsCalculator } from '../hooks/useSavingsCalculator';
 import { formatINR, formatDistance } from '../utils/formatCurrency';
@@ -218,8 +217,7 @@ export default function SavingsCalculator({ onApplyEstimate }) {
 
               {/* Default Rates Footnote */}
               <div className="calc-default-note">
-                <CheckCircle2 size={15} className="calc-check-icon" />
-                <span>{t('calculator.defaultRatesNote', {}, 'Default rates based on current fuel retail tariffs in Guwahati, Assam.')}</span>
+                <span>{t('calculator.defaultRatesNote', {}, 'Default values use sample Guwahati fuel prices. Adjust the numbers above to match your vehicle.')}</span>
               </div>
             </div>
           </RevealAnimation>
