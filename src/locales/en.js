@@ -261,18 +261,18 @@ export const en = {
   },
   modal: {
     title: "Review Your Enquiry",
-    subtitle: "Check your details before we open WhatsApp",
+    subtitle: "Please check your details before continuing to WhatsApp.",
     fieldFullName: "Full Name:",
     fieldMobile: "Mobile Number:",
-    fieldService: "Service:",
-    fieldVehicle: "Vehicle Model:",
-    fieldMessage: "Message:",
-    notProvided: "Not mentioned",
+    fieldService: "Service Needed:",
+    fieldVehicle: "Vehicle Model / Make:",
+    fieldMessage: "Additional Message:",
+    notProvided: "Not provided",
     verifiedNote: "Your message will open directly in chat with Maa Kamakhya Auto Gas (+91 69139 10337).",
     holdToCancel: "Hold to Cancel",
     cancelling: "Cancelling...",
     cancelled: "Cancelled",
-    sendWhatsApp: "Open in WhatsApp"
+    sendWhatsApp: "Confirm & Continue to WhatsApp"
   },
   search: {
     title: "Search Our Website",

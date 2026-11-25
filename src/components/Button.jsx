@@ -32,10 +32,18 @@ export default function Button({
     return (
       <a
         href={href}
-        className={combinedClasses}
+        className={`${combinedClasses} ${disabled ? 'disabled' : ''}`.trim()}
         target={target}
         rel={target === '_blank' ? (rel || 'noopener noreferrer') : rel}
+        onClick={(e) => {
+          if (disabled) {
+            e.preventDefault();
+            return;
+          }
+          if (onClick) onClick(e);
+        }}
         aria-label={ariaLabel}
+        aria-disabled={disabled ? 'true' : undefined}
         {...rest}
       >
         {content}

@@ -12,6 +12,7 @@ export default function ConfirmationModal({
   onConfirm,
   onEdit,
   onCancel,
+  onHoldCancel,
   isSubmitting
 }) {
   const { t } = useLanguage();
@@ -39,8 +40,19 @@ export default function ConfirmationModal({
 
   if (!isOpen || !formData) return null;
 
-  const fullMessageText = buildWhatsAppMessage(formData);
-  const whatsAppUrl = buildWhatsAppUrl(formData);
+  const normalizedData = {
+    ...formData,
+    fullName: (formData.fullName || formData.name || '').trim(),
+    phone: (formData.phone || '').trim(),
+    serviceType: (formData.serviceType || formData.service || '').trim(),
+    vehicleModel: (formData.vehicleModel || formData.carModel || '').trim(),
+    message: (formData.message || '').trim()
+  };
+
+  const fullMessageText = buildWhatsAppMessage(normalizedData);
+  const whatsAppUrl = buildWhatsAppUrl(normalizedData);
+  const displayVehicle = normalizedData.vehicleModel || t('modal.notProvided', {}, 'Not provided');
+  const displayMessage = normalizedData.message || 'No additional message';
 
   const handleCopyModalMessage = async () => {
     try {
@@ -58,8 +70,8 @@ export default function ConfirmationModal({
       }
       setModalCopied(true);
       setTimeout(() => setModalCopied(false), 2500);
-    } catch (e) {
-      console.warn('Modal copy failed:', e);
+    } catch {
+      // Clipboard unsupported
     }
   };
 
@@ -91,34 +103,34 @@ export default function ConfirmationModal({
         </h3>
 
         <p className="confirm-modal-notice">
-          {t('modal.subtitle', {}, 'Check your details before we open WhatsApp')}
+          {t('modal.subtitle', {}, 'Please check your details before continuing to WhatsApp.')}
         </p>
 
         {/* Review Summary Box */}
         <div className="enquiry-summary-box">
           <div className="summary-field-row">
             <span className="summary-label">{t('modal.fieldFullName', {}, 'Full Name:')}</span>
-            <span className="summary-value text-white font-bold">{formData.fullName || formData.name}</span>
+            <span className="summary-value text-white font-bold">{normalizedData.fullName}</span>
           </div>
 
           <div className="summary-field-row">
             <span className="summary-label">{t('modal.fieldMobile', {}, 'Mobile Number:')}</span>
             <span className="summary-value text-yellow font-bold">
-              {formData.phone ? (formData.phone.startsWith('+') ? formData.phone : `+91 ${formData.phone}`) : ''}
+              {normalizedData.phone ? (normalizedData.phone.startsWith('+') ? normalizedData.phone : `+91 ${normalizedData.phone}`) : ''}
             </span>
           </div>
 
           <div className="summary-field-row">
-            <span className="summary-label">{t('modal.fieldService', {}, 'Service:')}</span>
-            <span className="summary-value text-white">{formData.serviceType || formData.service}</span>
+            <span className="summary-label">{t('modal.fieldService', {}, 'Service Needed:')}</span>
+            <span className="summary-value text-white">{normalizedData.serviceType}</span>
           </div>
 
-          {(formData.vehicleModel || formData.carModel) && (
-            <div className="summary-field-row">
-              <span className="summary-label">{t('modal.fieldVehicle', {}, 'Vehicle Model:')}</span>
-              <span className="summary-value text-white">{(formData.vehicleModel || formData.carModel).trim()}</span>
-            </div>
-          )}
+          <div className="summary-field-row">
+            <span className="summary-label">{t('modal.fieldVehicle', {}, 'Vehicle Model / Make:')}</span>
+            <span className={`summary-value ${normalizedData.vehicleModel ? 'text-white' : 'text-muted'}`}>
+              {displayVehicle}
+            </span>
+          </div>
 
           {(formData.vehicleType || formData.vehicleUse) && (
             <div className="summary-field-row">
@@ -134,12 +146,12 @@ export default function ConfirmationModal({
             </div>
           )}
 
-          {formData.message && formData.message.trim() && (
-            <div className="summary-field-row summary-field-column">
-              <span className="summary-label">{t('modal.fieldMessage', {}, 'Additional Message:')}</span>
-              <p className="summary-message-block">{formData.message.trim()}</p>
-            </div>
-          )}
+          <div className="summary-field-row summary-field-column">
+            <span className="summary-label">{t('modal.fieldMessage', {}, 'Additional Message:')}</span>
+            <p className={`summary-message-block ${!normalizedData.message ? 'summary-message-empty' : ''}`}>
+              {displayMessage}
+            </p>
+          </div>
 
           {utmData && (utmData.utm_source || utmData.utm_campaign) && (
             <div className="summary-field-row summary-utm-row">
@@ -175,25 +187,16 @@ export default function ConfirmationModal({
 
         <div className="confirm-modal-reminder">
           <span>
-            {t('modal.verifiedNote', {}, 'Your message will open directly in chat with Maa Kamakhya Auto Gas (+91 69139 10337).')}
+            {t('modal.verifiedNote', {}, 'Your message will open directly in chat with Maa Kamakhya Auto Gas (+91 69139 10337). Please press Send inside WhatsApp to deliver your enquiry.')}
           </span>
         </div>
 
-        {/* Action Controls - Native HTTPS WhatsApp link avoids popup-blockers and launches native mobile app directly */}
+        {/* Action Controls: [ Cancel ] [ Edit Details ] [ Confirm & Continue to WhatsApp ] */}
         <div className="confirm-modal-actions">
-          <Button
-            variant="whatsapp"
-            size="lg"
-            href={whatsAppUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={onConfirm}
-            icon={MessageCircle}
+          <HoldToCancelButton
+            onCancel={onHoldCancel || onCancel}
             disabled={isSubmitting}
-            className="w-full sm-auto"
-          >
-            {isSubmitting ? t('common.loading', {}, 'Preparing WhatsApp...') : t('modal.sendWhatsApp', {}, 'Open in WhatsApp')}
-          </Button>
+          />
 
           <Button
             variant="secondary"
@@ -205,10 +208,19 @@ export default function ConfirmationModal({
             Edit Details
           </Button>
 
-          <HoldToCancelButton
-            onCancel={onCancel}
+          <Button
+            variant="whatsapp"
+            size="lg"
+            href={whatsAppUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={onConfirm}
+            icon={MessageCircle}
             disabled={isSubmitting}
-          />
+            className="confirm-whatsapp-action-btn"
+          >
+            {isSubmitting ? t('common.loading', {}, 'Preparing WhatsApp...') : t('modal.sendWhatsApp', {}, 'Confirm & Continue to WhatsApp')}
+          </Button>
         </div>
       </div>
     </div>

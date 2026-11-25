@@ -11,16 +11,21 @@ export function useSavingsCalculator(initialValues = {}) {
 
   const results = useMemo(() => {
     return calculateFuelCosts({
-      distance,
-      petrolPrice,
-      cngPrice,
-      petrolMileage,
-      cngMileage
+      distance: Number(distance) || 0,
+      petrolPrice: Number(petrolPrice) || 0,
+      cngPrice: Number(cngPrice) || 0,
+      petrolMileage: Number(petrolMileage) || 1,
+      cngMileage: Number(cngMileage) || 1
     });
   }, [distance, petrolPrice, cngPrice, petrolMileage, cngMileage]);
 
   const handleDistanceChange = (val) => {
-    const num = Math.max(100, Math.min(25000, Number(val) || 0));
+    if (val === '' || val === null || val === undefined) {
+      setDistance('');
+      return;
+    }
+    const num = Number(val);
+    if (isNaN(num)) return;
     setDistance(num);
   };
 

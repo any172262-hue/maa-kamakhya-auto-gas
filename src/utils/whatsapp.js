@@ -1,6 +1,8 @@
+import { siteConfig } from '../data/siteConfig.js';
+
 /**
  * Formats a clean, professional WhatsApp inquiry message for Maa Kamakhya Auto Gas.
- * Adheres strictly to verified business details and only includes fields that are actually available.
+ * Adheres strictly to verified business details.
  * 
  * Official WhatsApp Number: +91 69139 10337 (916913910337)
  * Click-to-chat format: https://wa.me/916913910337?text=ENCODED_MESSAGE
@@ -10,40 +12,27 @@
 export function buildWhatsAppMessage(formData = {}) {
   if (!formData) return '';
 
-  const lines = [
-    'Hello Maa Kamakhya Auto Gas,',
-    '',
-    'I would like to enquire about your services.',
-    '',
-    'Customer Details:'
-  ];
-
   // 1. Customer Name
-  const name = (formData.fullName || formData.name || '').trim();
-  if (name) {
-    lines.push(`Name: ${name}`);
-  }
+  const name = (formData.fullName || formData.name || '').trim() || 'Not provided';
 
   // 2. Customer Mobile Number
   const rawPhone = (formData.phone || formData.mobileNumber || '').trim();
+  let displayPhone = 'Not provided';
   if (rawPhone) {
     const cleanDigits = rawPhone.replace(/\D/g, '');
-    let displayPhone = rawPhone;
     if (cleanDigits.length === 10) {
       displayPhone = `+91 ${cleanDigits}`;
     } else if (cleanDigits.length === 12 && cleanDigits.startsWith('91')) {
       displayPhone = `+91 ${cleanDigits.slice(2)}`;
+    } else {
+      displayPhone = rawPhone;
     }
-    lines.push(`Mobile: ${displayPhone}`);
   }
 
   // 3. Selected Service
-  const service = (formData.serviceType || formData.service || formData.serviceCategory || '').trim();
-  if (service) {
-    lines.push(`Service: ${service}`);
-  }
+  const service = (formData.serviceType || formData.service || formData.serviceCategory || '').trim() || 'Not provided';
 
-  // 4. Vehicle Model (combine brand + model if both provided, e.g. Maruti Suzuki Swift VXi)
+  // 4. Vehicle Model / Make
   let vehicleModel = (formData.vehicleModel || '').trim();
   if (!vehicleModel) {
     const brand = (formData.carBrand || '').trim();
@@ -54,52 +43,52 @@ export function buildWhatsAppMessage(formData = {}) {
       vehicleModel = model || brand;
     }
   }
-  if (vehicleModel) {
-    lines.push(`Vehicle Model: ${vehicleModel}`);
-  }
+  const vehicleDisplay = vehicleModel || 'Not provided';
 
-  // 5. Vehicle Type (only if available)
-  const vehicleType = (formData.vehicleType || formData.vehicleUse || '').trim();
-  if (vehicleType) {
-    lines.push(`Vehicle Type: ${vehicleType}`);
-  }
-
-  // 6. Additional Requirements & Calculator Estimates
+  // 5. Additional Message & Calculator Estimates
   const additionalParts = [];
-
   const calcEstimate = (formData.calculatorEstimate || formData.estimate || '').trim();
   if (calcEstimate) {
     additionalParts.push(`Calculator Estimate: ${calcEstimate}`);
   }
-
   const message = (formData.message || formData.additionalRequirements || formData.question || '').trim();
   if (message && message !== calcEstimate) {
     additionalParts.push(message);
   }
+  const messageDisplay = additionalParts.length > 0 ? additionalParts.join(' | ') : 'No additional message';
 
-  if (additionalParts.length > 0) {
-    lines.push('');
-    lines.push('Additional Requirements:');
-    additionalParts.forEach((part) => lines.push(part));
-  }
-
-  // Closing
-  lines.push('');
-  lines.push('Please contact me regarding my enquiry.');
-  lines.push('');
-  lines.push('Thank you.');
-  lines.push('Maa Kamakhya Auto Gas Customer Enquiry.');
+  const lines = [
+    'Hello Maa Kamakhya Auto Gas Team,',
+    '',
+    'I would like to make an enquiry.',
+    '',
+    'CUSTOMER DETAILS',
+    '',
+    `Full Name: ${name}`,
+    '',
+    `Mobile Number: ${displayPhone}`,
+    '',
+    `Service Needed: ${service}`,
+    '',
+    `Vehicle Model / Make: ${vehicleDisplay}`,
+    '',
+    `Additional Message: ${messageDisplay}`,
+    '',
+    'I have reviewed my information and agreed to the Terms & Conditions and Privacy Policy.',
+    '',
+    'Thank you.'
+  ];
 
   return lines.join('\n');
 }
 
 /**
- * Builds the official WhatsApp click-to-chat URL with destination +91 69139 10337
+ * Builds the official WhatsApp click-to-chat URL using siteConfig.whatsappNumber
  */
 export function buildWhatsAppUrl(formData = {}) {
   const message = buildWhatsAppMessage(formData);
   const encoded = encodeURIComponent(message);
-  return `https://wa.me/916913910337?text=${encoded}`;
+  return `https://wa.me/91${siteConfig.whatsappNumber}?text=${encoded}`;
 }
 
 /**
@@ -108,5 +97,5 @@ export function buildWhatsAppUrl(formData = {}) {
 export function buildWhatsAppWebUrl(formData = {}) {
   const message = buildWhatsAppMessage(formData);
   const encoded = encodeURIComponent(message);
-  return `https://web.whatsapp.com/send?phone=916913910337&text=${encoded}`;
+  return `https://web.whatsapp.com/send?phone=91${siteConfig.whatsappNumber}&text=${encoded}`;
 }

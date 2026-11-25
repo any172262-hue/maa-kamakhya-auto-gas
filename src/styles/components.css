@@ -2179,8 +2179,10 @@
 .calc-slider-header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .calc-label-caps {
@@ -2198,6 +2200,64 @@
   font-weight: 900;
   color: #1677FF;
   line-height: 1;
+}
+
+.calc-distance-input-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #FFFFFF;
+  border: 1.5px solid #CBD5E1;
+  border-radius: 8px;
+  padding: 4px 10px;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+}
+
+.calc-distance-input-wrap:hover {
+  border-color: #94A3B8;
+}
+
+.calc-distance-input-wrap:focus-within {
+  border-color: #1677FF;
+  box-shadow: 0 0 0 3px rgba(22, 119, 255, 0.15);
+}
+
+.calc-distance-input {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 900;
+  color: #1677FF;
+  width: 85px;
+  text-align: right;
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 0;
+  -moz-appearance: textfield;
+}
+
+.calc-distance-input::-webkit-outer-spin-button,
+.calc-distance-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.calc-distance-suffix {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #1677FF;
+  user-select: none;
+}
+
+.custom-pill {
+  animation: fadeInPill 0.2s ease;
+}
+
+@keyframes fadeInPill {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
 }
 
 .calc-slider-track-wrap {
@@ -3605,6 +3665,93 @@
   line-height: 1.4;
 }
 
+/* Mandatory Terms & Conditions Consent Checkbox */
+.terms-consent-group {
+  background-color: var(--color-soft-white);
+  border: 1.5px solid rgba(20, 86, 160, 0.18);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+  transition: border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.terms-consent-group:hover {
+  border-color: rgba(20, 86, 160, 0.35);
+}
+
+.terms-consent-accepted {
+  background-color: rgba(22, 163, 74, 0.05);
+  border-color: rgba(22, 163, 74, 0.45);
+}
+
+.terms-consent-error {
+  background-color: #FFFDFD;
+  border-color: #EF4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.14);
+}
+
+.terms-checkbox-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-height: 28px;
+}
+
+.terms-checkbox-input {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  margin-top: 1px;
+  accent-color: #16A34A;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1.5px solid rgba(20, 86, 160, 0.4);
+}
+
+.terms-checkbox-input:focus-visible {
+  outline: 3px solid rgba(22, 163, 74, 0.38);
+  outline-offset: 2px;
+}
+
+.terms-checkbox-text {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--color-deep-navy);
+  line-height: 1.5;
+  cursor: pointer;
+  user-select: none;
+}
+
+.terms-legal-link {
+  color: #15803D;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  border-radius: 3px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.terms-legal-link:hover {
+  color: #166534;
+}
+
+.terms-legal-link:focus-visible {
+  outline: 2px solid #16A34A;
+  outline-offset: 2px;
+}
+
+.terms-helper-msg {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0.55rem 0 0;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(20, 86, 160, 0.12);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #B45309;
+  line-height: 1.4;
+}
+
 /* Submit Action Button with Tactile Feedback & Smooth Animation */
 .form-submit-btn {
   position: relative;
@@ -3639,8 +3786,16 @@
   box-shadow: 0 4px 14px rgba(37, 211, 102, 0.25);
 }
 
+.form-submit-btn:focus-visible {
+  outline: 3px solid rgba(37, 211, 102, 0.45);
+  outline-offset: 2px;
+}
+
 .form-submit-btn:disabled {
-  opacity: 0.75;
+  background: #CBD5E1;
+  color: #475569;
+  box-shadow: none;
+  opacity: 0.88;
   cursor: not-allowed;
   transform: none;
 }
@@ -4512,7 +4667,7 @@ textarea:focus-visible {
 
 .confirmation-modal-card {
   width: 100%;
-  max-width: 580px;
+  max-width: 720px;
   max-height: 90vh;
   overflow-y: auto;
   overscroll-behavior: contain;
@@ -4639,6 +4794,11 @@ textarea:focus-visible {
   line-height: 1.45;
 }
 
+.summary-message-empty {
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
 .summary-utm-row {
   padding-top: 4px;
   border-top: 1px dashed rgba(20, 86, 160, 0.18);
@@ -4703,15 +4863,53 @@ textarea:focus-visible {
   justify-content: flex-end;
 }
 
-@media (max-width: 520px) {
+@media (min-width: 641px) {
   .confirm-modal-actions {
-    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .confirm-modal-actions .btn {
+    min-height: 44px;
+    padding: 0.55rem 1rem;
+    font-size: 0.88rem;
+    white-space: nowrap;
+  }
+}
+
+.confirm-whatsapp-action-btn {
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .confirm-modal-actions {
+    flex-direction: column-reverse;
     width: 100%;
   }
-  .confirm-modal-actions > * {
+  .confirm-modal-actions > *,
+  .hold-to-cancel-container,
+  .hold-to-cancel-btn {
     width: 100% !important;
     justify-content: center;
   }
+}
+
+/* Cancelled Review Notification Banner */
+.enquiry-cancelled-banner {
+  margin-top: 0.9rem;
+  padding: 0.85rem 1rem;
+  background-color: #FEF2F2;
+  border: 1.5px solid rgba(220, 38, 38, 0.28);
+  border-radius: var(--radius-sm);
+  color: #7F1D1D;
+  font-size: 0.84rem;
+  font-weight: 600;
+  line-height: 1.45;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.enquiry-cancelled-icon {
+  color: #DC2626;
 }
 
 /* Hold-to-Cancel Button Component */
@@ -4727,12 +4925,13 @@ textarea:focus-visible {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 42px;
-  padding: 0.5rem 1.15rem;
-  background-color: var(--color-soft-white);
-  border: 1.5px solid rgba(20, 86, 160, 0.35);
+  min-height: 44px;
+  min-width: 148px;
+  padding: 0.55rem 1rem;
+  background-color: #FFFFFF;
+  border: 1.5px solid rgba(220, 38, 38, 0.55);
   border-radius: var(--radius-sm);
-  color: var(--color-deep-navy);
+  color: #DC2626;
   font-family: var(--font-body);
   font-size: 0.88rem;
   font-weight: 700;
@@ -4741,30 +4940,31 @@ textarea:focus-visible {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+  transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
   outline: none;
 }
 
 .hold-to-cancel-btn:hover:not(:disabled) {
-  border-color: var(--color-primary-blue);
-  background-color: #FFFFFF;
+  border-color: #DC2626;
+  background-color: #FEF2F2;
 }
 
 .hold-to-cancel-btn:focus-visible {
-  box-shadow: 0 0 0 3px rgba(20, 86, 160, 0.25);
-  border-color: var(--color-primary-blue);
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.25);
+  border-color: #DC2626;
 }
 
 .hold-to-cancel-btn.is-holding {
-  border-color: var(--color-primary-blue);
-  box-shadow: 0 0 0 3px rgba(20, 86, 160, 0.18), 0 4px 12px rgba(20, 86, 160, 0.1);
-  transform: scale(0.985);
+  border-color: #DC2626;
+  background-color: #FFFFFF;
+  color: #991B1B;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.16);
 }
 
 .hold-to-cancel-btn.is-completed {
-  border-color: #10B981;
-  background-color: rgba(16, 185, 129, 0.12);
-  color: #065F46;
+  border-color: #DC2626;
+  background-color: #FEE2E2;
+  color: #991B1B;
 }
 
 .hold-progress-fill {
@@ -4773,8 +4973,8 @@ textarea:focus-visible {
   left: 0;
   bottom: 0;
   height: 100%;
-  background: linear-gradient(90deg, rgba(223, 242, 255, 0.95) 0%, rgba(184, 227, 255, 0.95) 70%, rgba(255, 213, 42, 0.85) 100%);
-  border-right: 2px solid var(--color-primary-blue);
+  background: linear-gradient(90deg, rgba(254, 226, 226, 0.92) 0%, rgba(254, 202, 202, 0.96) 100%);
+  border-right: 2px solid #DC2626;
   pointer-events: none;
   z-index: 1;
 }
@@ -4786,6 +4986,7 @@ textarea:focus-visible {
   align-items: center;
   gap: 6px;
   pointer-events: none;
+  white-space: nowrap;
 }
 
 .hold-btn-icon {
@@ -4795,24 +4996,6 @@ textarea:focus-visible {
 .hold-btn-text {
   font-weight: 700;
   letter-spacing: 0.01em;
-}
-
-.hold-hint-text {
-  display: block;
-  font-size: 0.7rem;
-  color: #64748B;
-  text-align: center;
-  margin-top: 3px;
-  line-height: 1.2;
-}
-
-@media (max-width: 520px) {
-  .hold-to-cancel-container {
-    width: 100%;
-  }
-  .hold-to-cancel-btn {
-    width: 100%;
-  }
 }
 
 /* ==========================================================

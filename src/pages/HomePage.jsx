@@ -45,7 +45,7 @@ export default function HomePage({ onNavigate }) {
       <CustomerReviews />
       <HomepageFaq />
       <WorkshopLocationMap />
-      <Contact prefilledQuestion={inquiryPrefill} />
+      <Contact prefilledQuestion={inquiryPrefill} onNavigate={onNavigate} />
     </>
   );
 }

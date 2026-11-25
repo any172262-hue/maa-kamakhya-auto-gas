@@ -77,15 +77,31 @@ export default function SavingsCalculator({ onApplyEstimate }) {
                 </button>
               </div>
 
-              {/* Monthly Distance Slider */}
+              {/* Monthly Distance Slider & Customizable Input */}
               <div className="calc-slider-group">
                 <div className="calc-slider-header">
-                  <label htmlFor="distance-slider" className="calc-label-caps">
+                  <label htmlFor="custom-distance-input" className="calc-label-caps">
                     {t('calculator.monthlyDistance', {}, 'MONTHLY DISTANCE (KM)')}
                   </label>
-                  <span className="calc-distance-value">
-                    {formatDistance(distance)}
-                  </span>
+                  <div className="calc-distance-input-wrap">
+                    <input
+                      id="custom-distance-input"
+                      type="number"
+                      min="100"
+                      max="50000"
+                      step="100"
+                      value={distance}
+                      onChange={(e) => setDistance(e.target.value === '' ? '' : Number(e.target.value))}
+                      onBlur={() => {
+                        if (!distance || Number(distance) < 100) setDistance(500);
+                        else if (Number(distance) > 50000) setDistance(50000);
+                      }}
+                      className="calc-distance-input"
+                      placeholder="5000"
+                      aria-label={t('calculator.monthlyDistance', {}, 'Monthly Distance in KM')}
+                    />
+                    <span className="calc-distance-suffix">km</span>
+                  </div>
                 </div>
 
                 <div className="calc-slider-track-wrap">
@@ -95,11 +111,11 @@ export default function SavingsCalculator({ onApplyEstimate }) {
                     min="500"
                     max="15000"
                     step="250"
-                    value={distance}
+                    value={Math.min(15000, Math.max(500, Number(distance) || 500))}
                     onChange={(e) => setDistance(Number(e.target.value))}
                     className="custom-slider"
                     style={{
-                      background: `linear-gradient(to right, #1677FF 0%, #1677FF ${((distance - 500) / (15000 - 500)) * 100}%, #E0F2FE ${((distance - 500) / (15000 - 500)) * 100}%, #E0F2FE 100%)`
+                      background: `linear-gradient(to right, #1677FF 0%, #1677FF ${Math.min(100, Math.max(0, ((Number(distance || 500) - 500) / (15000 - 500)) * 100))}%, #E0F2FE ${Math.min(100, Math.max(0, ((Number(distance || 500) - 500) / (15000 - 500)) * 100))}%, #E0F2FE 100%)`
                     }}
                     aria-label="Monthly distance in kilometers"
                   />
@@ -117,6 +133,11 @@ export default function SavingsCalculator({ onApplyEstimate }) {
                       {km.toLocaleString('en-IN')} km
                     </button>
                   ))}
+                  {!quickDistances.includes(Number(distance)) && distance ? (
+                    <span className="distance-pill active custom-pill" title="Custom distance entered">
+                      Custom ({Number(distance).toLocaleString('en-IN')} km)
+                    </span>
+                  ) : null}
                 </div>
               </div>
 

@@ -110,7 +110,7 @@ export default function ContactPage({ onNavigate }) {
       <WorkshopLocationMap />
 
       {/* 4. Full Verified Inquiry Form */}
-      <Contact />
+      <Contact onNavigate={onNavigate} />
     </div>
   );
 }

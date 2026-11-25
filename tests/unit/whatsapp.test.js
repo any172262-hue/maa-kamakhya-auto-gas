@@ -16,35 +16,31 @@ export function runWhatsAppUnitTests() {
 
   const fullMsg = buildWhatsAppMessage(fullLead);
 
-  if (!fullMsg.startsWith('Hello Maa Kamakhya Auto Gas,\n\nI would like to enquire about your services.\n\nCustomer Details:')) {
+  if (!fullMsg.startsWith('Hello Maa Kamakhya Auto Gas Team,\n\nI would like to make an enquiry.\n\nCUSTOMER DETAILS')) {
     throw new Error('Greeting or header format does not match official specification');
   }
 
-  if (!fullMsg.includes('Name: Rahul Sharma')) {
+  if (!fullMsg.includes('Full Name: Rahul Sharma')) {
     throw new Error('Missing or incorrect customer name');
   }
 
-  if (!fullMsg.includes('Mobile: +91 9876543210')) {
+  if (!fullMsg.includes('Mobile Number: +91 9876543210')) {
     throw new Error('Missing or incorrect mobile format');
   }
 
-  if (!fullMsg.includes('Service: CNG Sequential Kit Installation Services')) {
+  if (!fullMsg.includes('Service Needed: CNG Sequential Kit Installation Services')) {
     throw new Error('Missing or incorrect service');
   }
 
-  if (!fullMsg.includes('Vehicle Model: Maruti Suzuki Swift VXi')) {
+  if (!fullMsg.includes('Vehicle Model / Make: Maruti Suzuki Swift VXi')) {
     throw new Error('Missing or incorrect vehicle model');
   }
 
-  if (!fullMsg.includes('Vehicle Type: Private Petrol Hatchback')) {
-    throw new Error('Missing or incorrect vehicle type');
+  if (!fullMsg.includes('Additional Message: Need 12kg cylinder and estimate of installation time.')) {
+    throw new Error('Missing or incorrect additional message');
   }
 
-  if (!fullMsg.includes('Additional Requirements:\nNeed 12kg cylinder and estimate of installation time.')) {
-    throw new Error('Missing or incorrect additional requirements');
-  }
-
-  if (!fullMsg.endsWith('Please contact me regarding my enquiry.\n\nThank you.\nMaa Kamakhya Auto Gas Customer Enquiry.')) {
+  if (!fullMsg.endsWith('I have reviewed my information and agreed to the Terms & Conditions and Privacy Policy.\n\nThank you.')) {
     throw new Error('Missing or incorrect message closing');
   }
 
@@ -57,16 +53,12 @@ export function runWhatsAppUnitTests() {
 
   const minimalMsg = buildWhatsAppMessage(minimalLead);
 
-  if (minimalMsg.includes('Vehicle Model:')) {
-    throw new Error('Unsupplied Vehicle Model should be omitted');
+  if (!minimalMsg.includes('Vehicle Model / Make: Not provided')) {
+    throw new Error('Unsupplied Vehicle Model should show "Not provided"');
   }
 
-  if (minimalMsg.includes('Vehicle Type:')) {
-    throw new Error('Unsupplied Vehicle Type should be omitted');
-  }
-
-  if (minimalMsg.includes('Additional Requirements:')) {
-    throw new Error('Unsupplied Additional Requirements should be omitted');
+  if (!minimalMsg.includes('Additional Message: No additional message')) {
+    throw new Error('Unsupplied Additional Message should show "No additional message"');
   }
 
   // Test 3: Enquiry with Calculator Estimate
@@ -80,8 +72,8 @@ export function runWhatsAppUnitTests() {
 
   const calcMsg = buildWhatsAppMessage(calcLead);
 
-  if (!calcMsg.includes('Additional Requirements:\nCalculator Estimate: Monthly distance 3,000 km, estimated saving ₹11,289/mo (₹135,468/year).')) {
-    throw new Error('Calculator estimate missing from additional requirements');
+  if (!calcMsg.includes('Additional Message: Calculator Estimate: Monthly distance 3,000 km, estimated saving ₹11,289/mo (₹135,468/year).')) {
+    throw new Error('Calculator estimate missing from additional message');
   }
 
   // Test 4: Official WhatsApp Destination URL

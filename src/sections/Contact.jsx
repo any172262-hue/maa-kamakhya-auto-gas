@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, MessageCircle, MapPin, Navigation, CheckCircle, ShieldCheck, RefreshCw, Mail, Copy, Check, Globe } from 'lucide-react';
+import { Phone, MessageCircle, MapPin, Navigation, CheckCircle, ShieldCheck, RefreshCw, Mail, Copy, Check, Globe, AlertCircle, Info } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
 import { servicesData } from '../data/services';
 import { useLanguage } from '../context/LanguageContext';
@@ -9,7 +9,7 @@ import ConfirmationModal from '../components/ConfirmationModal';
 import { buildWhatsAppMessage, buildWhatsAppUrl, buildWhatsAppWebUrl } from '../utils/whatsapp';
 import { getUtmParams } from '../utils/utm';
 
-export default function Contact({ prefilledQuestion = "" }) {
+export default function Contact({ prefilledQuestion = "", onNavigate }) {
   const { t } = useLanguage();
   const [formData, setFormData] = useState({
     fullName: '',
@@ -19,11 +19,14 @@ export default function Contact({ prefilledQuestion = "" }) {
     message: ''
   });
 
+  const [termsAccepted, setTermsAccepted] = useState(false);
   const [errors, setErrors] = useState({});
   const [touched, setTouched] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [handoffState, setHandoffState] = useState(null); // 'prepared' | null
+  const [cancelledNotice, setCancelledNotice] = useState(false);
+  const [whatsappOpenError, setWhatsappOpenError] = useState(false);
   const [utmParams, setUtmParams] = useState({});
   const [lastWhatsAppUrl, setLastWhatsAppUrl] = useState('');
   const [lastWhatsAppWebUrl, setLastWhatsAppWebUrl] = useState('');
@@ -62,7 +65,7 @@ export default function Contact({ prefilledQuestion = "" }) {
         return '';
 
       case 'phone': {
-        const cleanPhone = value.replace(/\D/g, '');
+        const cleanPhone = (value || '').trim().replace(/[\s-]/g, '');
         if (!cleanPhone) {
           return t('contact.errPhoneRequired', {}, 'Please enter your mobile number.');
         }
@@ -79,20 +82,34 @@ export default function Contact({ prefilledQuestion = "" }) {
         }
         return '';
 
+      case 'termsAccepted':
+        if (!value) {
+          return 'Please accept the Terms & Conditions and Privacy Policy to continue.';
+        }
+        return '';
+
       default:
         return '';
     }
   };
+
+  const isFullNameValid = !validateField('fullName', formData.fullName);
+  const isPhoneValid = !validateField('phone', formData.phone);
+  const isServiceValid = !validateField('serviceType', formData.serviceType);
+  const areRequiredFieldsValid = isFullNameValid && isPhoneValid && isServiceValid;
+  const isFormReady = areRequiredFieldsValid && termsAccepted;
 
   const validateAll = () => {
     const newErrors = {};
     const nameErr = validateField('fullName', formData.fullName);
     const phoneErr = validateField('phone', formData.phone);
     const serviceErr = validateField('serviceType', formData.serviceType);
+    const termsErr = validateField('termsAccepted', termsAccepted);
 
     if (nameErr) newErrors.fullName = nameErr;
     if (phoneErr) newErrors.phone = phoneErr;
     if (serviceErr) newErrors.serviceType = serviceErr;
+    if (termsErr) newErrors.termsAccepted = termsErr;
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -100,6 +117,7 @@ export default function Contact({ prefilledQuestion = "" }) {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+    setCancelledNotice(false);
     setFormData((prev) => ({
       ...prev,
       [name]: value
@@ -114,6 +132,17 @@ export default function Contact({ prefilledQuestion = "" }) {
     }
   };
 
+  const handleTermsChange = (e) => {
+    const checked = e.target.checked;
+    setCancelledNotice(false);
+    setTermsAccepted(checked);
+    setTouched((prev) => ({ ...prev, termsAccepted: true }));
+    setErrors((prev) => ({
+      ...prev,
+      termsAccepted: validateField('termsAccepted', checked)
+    }));
+  };
+
   const handleBlur = (e) => {
     const { name, value } = e.target;
     setTouched((prev) => ({ ...prev, [name]: true }));
@@ -124,19 +153,33 @@ export default function Contact({ prefilledQuestion = "" }) {
     }));
   };
 
+  const handleLegalLinkClick = (e, page) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (onNavigate) {
+      onNavigate(page);
+    } else {
+      window.location.hash = page === 'terms' ? '#terms-conditions' : '#privacy-policy';
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (isSubmitting) return;
+
     setTouched({
       fullName: true,
       phone: true,
-      serviceType: true
+      serviceType: true,
+      termsAccepted: true
     });
 
-    if (!validateAll()) {
+    if (!validateAll() || !termsAccepted) {
       return;
     }
 
     setIsSubmitting(true);
+    setCancelledNotice(false);
     // Brief deliberate state to prevent double click, then open confirmation modal
     setTimeout(() => {
       setIsSubmitting(false);
@@ -165,19 +208,34 @@ export default function Contact({ prefilledQuestion = "" }) {
     }
   };
 
-  const handleConfirmHandoff = () => {
+  const handleConfirmHandoff = (e) => {
+    if (!termsAccepted || isSubmitting) {
+      if (e) e.preventDefault();
+      return;
+    }
+
+    const sanitizedData = {
+      ...formData,
+      fullName: formData.fullName.trim(),
+      phone: formData.phone.trim(),
+      vehicleModel: formData.vehicleModel.trim(),
+      message: formData.message.trim()
+    };
+
     try {
-      const messageText = buildWhatsAppMessage(formData);
-      const targetUrl = buildWhatsAppUrl(formData);
-      const webUrl = buildWhatsAppWebUrl(formData);
+      const messageText = buildWhatsAppMessage(sanitizedData);
+      const targetUrl = buildWhatsAppUrl(sanitizedData);
+      const webUrl = buildWhatsAppWebUrl(sanitizedData);
+
       setLastMessageText(messageText);
       setLastWhatsAppUrl(targetUrl);
       setLastWhatsAppWebUrl(webUrl);
+      setWhatsappOpenError(false);
       setIsModalOpen(false);
       setIsSubmitting(false);
       setHandoffState('prepared');
-    } catch (err) {
-      console.error('Error preparing WhatsApp message:', err);
+    } catch {
+      setWhatsappOpenError(true);
       setIsModalOpen(false);
       setIsSubmitting(false);
       setHandoffState('prepared');
@@ -440,38 +498,110 @@ export default function Contact({ prefilledQuestion = "" }) {
                   ></textarea>
                 </div>
 
+                {/* Mandatory Terms & Conditions and Privacy Policy Checkbox */}
+                <div
+                  className={`form-group terms-consent-group ${
+                    (touched.termsAccepted && !termsAccepted) || errors.termsAccepted ? 'terms-consent-error' : ''
+                  } ${termsAccepted ? 'terms-consent-accepted' : ''}`}
+                >
+                  <div className="terms-checkbox-row">
+                    <input
+                      id="terms-checkbox"
+                      type="checkbox"
+                      name="termsAccepted"
+                      checked={termsAccepted}
+                      onChange={handleTermsChange}
+                      className="terms-checkbox-input"
+                      aria-required="true"
+                      aria-invalid={!termsAccepted && (touched.termsAccepted || !!errors.termsAccepted) ? 'true' : 'false'}
+                      aria-describedby={areRequiredFieldsValid && !termsAccepted ? 'terms-helper-msg' : undefined}
+                    />
+                    <label htmlFor="terms-checkbox" className="terms-checkbox-text">
+                      I have read and agree to the{' '}
+                      <a
+                        href="#terms-conditions"
+                        className="terms-legal-link"
+                        onClick={(e) => handleLegalLinkClick(e, 'terms')}
+                      >
+                        Terms &amp; Conditions
+                      </a>{' '}
+                      and{' '}
+                      <a
+                        href="#privacy-policy"
+                        className="terms-legal-link"
+                        onClick={(e) => handleLegalLinkClick(e, 'privacy')}
+                      >
+                        Privacy Policy
+                      </a>
+                      .
+                    </label>
+                  </div>
+
+                  {areRequiredFieldsValid && !termsAccepted && (
+                    <p id="terms-helper-msg" className="terms-helper-msg" role="status">
+                      <AlertCircle size={14} className="flex-shrink-0" />
+                      <span>Please accept the Terms &amp; Conditions and Privacy Policy to continue.</span>
+                    </p>
+                  )}
+
+                  {!areRequiredFieldsValid && errors.termsAccepted && (
+                    <span className="field-error-msg" role="alert">
+                      <AlertCircle size={13} />
+                      <span>{errors.termsAccepted}</span>
+                    </span>
+                  )}
+                </div>
+
                 {/* Submit Action */}
                 <button
                   type="submit"
-                  disabled={isSubmitting}
+                  disabled={!isFormReady || isSubmitting}
                   className="form-submit-btn"
+                  aria-disabled={!isFormReady || isSubmitting ? 'true' : 'false'}
                 >
                   <MessageCircle size={20} />
-                  <span>{isSubmitting ? t('common.loading', {}, 'Validating Details...') : t('contact.submitButton', {}, 'Review & Continue to WhatsApp')}</span>
+                  <span>{isSubmitting ? t('common.loading', {}, 'Validating Details...') : t('contact.submitButton', {}, 'Review & Send via WhatsApp')}</span>
                 </button>
 
                 <p className="form-caption-note">
                   {t('contact.privacyNote', {}, 'Before continuing, you will review your details in a confirmation step. You will then be able to send your message directly inside WhatsApp.')}
                 </p>
 
+                {/* Enquiry Review Cancelled Notification */}
+                {cancelledNotice && (
+                  <div className="enquiry-cancelled-banner animate-fade-in" role="status">
+                    <Info size={18} className="enquiry-cancelled-icon flex-shrink-0" />
+                    <span>Enquiry review cancelled. Your information is still available in the form.</span>
+                  </div>
+                )}
+
                 {/* WhatsApp Handoff State Banner */}
                 {handoffState === 'prepared' && (
                   <div className="handoff-status-banner animate-fade-in" role="status">
                     <div className="handoff-header-row">
-                      <CheckCircle size={20} className="text-yellow flex-shrink-0" />
-                      <h4 className="handoff-title">Enquiry Prepared in WhatsApp</h4>
+                      {whatsappOpenError ? (
+                        <AlertCircle size={20} className="text-danger flex-shrink-0" />
+                      ) : (
+                        <CheckCircle size={20} className="text-yellow flex-shrink-0" />
+                      )}
+                      <h4 className="handoff-title">
+                        {whatsappOpenError ? 'Unable to Open WhatsApp Automatically' : 'Enquiry Prepared for WhatsApp'}
+                      </h4>
                     </div>
                     <p className="handoff-body">
-                      Your enquiry message has been formatted. Please tap <strong>Send</strong> in your WhatsApp chat window to complete sending your message to <strong>Maa Kamakhya Auto Gas</strong>.
+                      {whatsappOpenError
+                        ? 'Your browser blocked or could not launch WhatsApp automatically. Please use the direct WhatsApp buttons below or copy your enquiry message.'
+                        : <>Your enquiry message has been formatted. Please tap <strong>Send</strong> inside your WhatsApp chat window to message <strong>Maa Kamakhya Auto Gas</strong>.</>
+                      }
                     </p>
                     <p className="handoff-disclaimer text-xs text-muted">
-                      Note: Your enquiry is only received by our team once you press Send inside WhatsApp.
+                      Note: Your enquiry is not sent by this website and is only delivered once you manually press Send inside WhatsApp.
                     </p>
 
                     {/* Direct Fallback Link for Mobile and Popup-blocked Browsers */}
                     <div className="handoff-trouble-card">
                       <a
-                        href={lastWhatsAppUrl || 'https://wa.me/916913910337'}
+                        href={lastWhatsAppUrl || siteConfig.whatsappUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="handoff-trouble-link"
@@ -538,8 +668,16 @@ export default function Contact({ prefilledQuestion = "" }) {
         utmData={utmParams}
         isSubmitting={isSubmitting}
         onConfirm={handleConfirmHandoff}
-        onEdit={() => setIsModalOpen(false)}
+        onEdit={() => {
+          setCancelledNotice(false);
+          setIsModalOpen(false);
+        }}
         onCancel={() => setIsModalOpen(false)}
+        onHoldCancel={() => {
+          setIsModalOpen(false);
+          setHandoffState(null);
+          setCancelledNotice(true);
+        }}
       />
     </section>
   );
