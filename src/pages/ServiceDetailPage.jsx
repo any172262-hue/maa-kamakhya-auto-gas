@@ -5,18 +5,8 @@ import {
   ChevronRight, 
   ArrowLeft, 
   ArrowRight, 
-  HelpCircle, 
-  CheckCircle2, 
   MapPin, 
-  Clock, 
-  ShieldCheck, 
-  Sparkles,
-  Gauge,
-  Flame,
-  Fuel,
-  Wrench,
-  Car,
-  Cog
+  Clock
 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { usePageMeta } from '../hooks/usePageMeta';
@@ -24,15 +14,6 @@ import { siteConfig } from '../data/siteConfig';
 import Button from '../components/Button';
 import RevealAnimation from '../components/RevealAnimation';
 import { getServicePageData } from '../data/servicePagesData';
-
-const iconMap = {
-  Gauge,
-  Flame,
-  Fuel,
-  Wrench,
-  Car,
-  Cog
-};
 
 export default function ServiceDetailPage({ serviceSlug, onNavigate, onSelectService }) {
   const { language, currentLanguage, t } = useLanguage();
@@ -60,8 +41,6 @@ export default function ServiceDetailPage({ serviceSlug, onNavigate, onSelectSer
       </div>
     );
   }
-
-  const IconComponent = iconMap[serviceData.icon] || Wrench;
 
   const toggleFaq = (index) => {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
@@ -111,11 +90,6 @@ export default function ServiceDetailPage({ serviceSlug, onNavigate, onSelectSer
       <header className="service-hero-header section-dark">
         <div className="container">
           <div className="service-hero-content">
-            <div className="service-hero-badge">
-              <IconComponent size={16} className="text-yellow" />
-              <span>{content.heroBadge}</span>
-            </div>
-
             <h1 className="service-hero-title">{content.h1}</h1>
 
             <p className="service-hero-lead">
@@ -158,10 +132,6 @@ export default function ServiceDetailPage({ serviceSlug, onNavigate, onSelectSer
       <section className="section section-navy service-sections-wrapper">
         <div className="container">
           <div className="service-sections-header">
-            <span className="badge-tag badge-tag-blue">
-              <Sparkles size={14} className="text-yellow mr-1" />
-              <span>{content.h1}</span>
-            </span>
             <h2 className="section-title text-navy mt-2">
               What This Service Includes
             </h2>
@@ -188,10 +158,6 @@ export default function ServiceDetailPage({ serviceSlug, onNavigate, onSelectSer
         <section className="section section-dark service-faq-section">
           <div className="container container-narrow">
             <div className="text-center mb-8">
-              <div className="inline-flex items-center gap-2 mb-2">
-                <HelpCircle size={18} className="text-yellow" />
-                <span className="badge-tag badge-tag-gold">Common Questions</span>
-              </div>
               <h2 className="section-title text-navy">
                 Questions About {content.h1}
               </h2>
@@ -271,7 +237,6 @@ export default function ServiceDetailPage({ serviceSlug, onNavigate, onSelectSer
             <div className="service-contact-grid">
               <div className="service-contact-info">
                 <div className="service-contact-badge">
-                  <ShieldCheck size={16} className="text-yellow" />
                   <span>Visit Our Workshop</span>
                 </div>
                 <h3 className="service-contact-heading">Have Questions About {content.h1}?</h3>
