@@ -1,8 +1,7 @@
 import React from 'react';
 import { 
   Navigation, 
-  Phone, 
-  CheckCircle2 
+  Phone 
 } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
 import { useLanguage } from '../context/LanguageContext';
@@ -147,7 +146,6 @@ export default function WorkshopLocationMap() {
                 <div className="showcase-amenities-list">
                   {workshopFeatures.map((feat) => (
                     <div key={feat} className="showcase-amenity-item">
-                      <CheckCircle2 size={14} className="text-yellow flex-shrink-0" />
                       <span>{feat}</span>
                     </div>
                   ))}
