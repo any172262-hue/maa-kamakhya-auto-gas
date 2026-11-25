@@ -23,10 +23,10 @@ export default function CTA() {
           <div className="cta-banner-box">
             <div className="cta-content">
               <h2 className="cta-title">
-                {t('cta.title', {}, 'Ready to explore auto gas for your vehicle?')}
+                {t('cta.title', {}, 'Have questions about CNG or LPG for your vehicle?')}
               </h2>
               <p className="cta-desc">
-                {t('cta.description', {}, 'Contact our workshop on NH 37 in Garchuk, Guwahati to enquire about gas kit suitability, auto gas filling, or maintenance support for your vehicle.')}
+                {t('cta.description', {}, 'Contact Maa Kamakhya Auto Gas on NH 37 in Garchuk, Guwahati to ask about kit suitability, CNG filling, or maintenance.')}
               </p>
 
               <div className="cta-buttons-row">
@@ -38,7 +38,7 @@ export default function CTA() {
                   icon={ArrowRight}
                   iconPosition="right"
                 >
-                  {t('hero.ctaQuote', {}, 'Request Your Free Quote')}
+                  {t('hero.ctaQuote', {}, 'Contact Us')}
                 </Button>
 
                 <Button
@@ -47,7 +47,7 @@ export default function CTA() {
                   href={siteConfig.phoneTel}
                   icon={Phone}
                 >
-                  {t('common.call', {}, 'Call')} {siteConfig.phone}
+                  {t('common.callWorkshop', {}, 'Call Us')}: {siteConfig.phoneFormatted}
                 </Button>
 
                 <Button
@@ -58,7 +58,7 @@ export default function CTA() {
                   rel="noopener noreferrer"
                   icon={MessageCircle}
                 >
-                  {t('cta.ctaWhatsApp', {}, 'Chat on WhatsApp')}
+                  {t('cta.ctaWhatsApp', {}, 'WhatsApp Us')}
                 </Button>
               </div>
             </div>

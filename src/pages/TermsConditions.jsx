@@ -9,7 +9,7 @@ export default function TermsConditions({ onBackToHome }) {
 
   usePageMeta({
     title: "Terms & Conditions | Maa Kamakhya Auto Gas, Guwahati",
-    description: "Official Terms & Conditions for Maa Kamakhya Auto Gas website in Guwahati, Assam. Details service terms, fuel savings estimate disclaimers, and warranty policies.",
+    description: "Read the Terms & Conditions for using the Maa Kamakhya Auto Gas website, including enquiry guidelines, calculator disclaimers, and warranty notices.",
     canonical: "https://any172262-hue.github.io/maa-kamakhya-auto-gas/terms-conditions/"
   });
 
@@ -26,18 +26,18 @@ export default function TermsConditions({ onBackToHome }) {
           className="btn btn-secondary btn-sm"
         >
           <ArrowLeft size={16} />
-          <span>{t('legal.backToHome', {}, 'Back to Home')}</span>
+          <span>{t('legal.backToHome', {}, 'Go Back')}</span>
         </a>
       </div>
 
       <header className="legal-header">
         <div className="legal-badge">
           <FileText size={16} className="text-yellow" />
-          <span>Website Terms of Use</span>
+          <span>Terms &amp; Conditions</span>
         </div>
         <h1 className="legal-title">{t('legal.termsTitle', {}, 'Terms & Conditions')}</h1>
         <p className="legal-meta">
-          Entity: <strong>{siteConfig.legalName}</strong> | {t('legal.lastUpdated', {}, 'Last Updated: November 2026')} | Status: Draft flagged for owner review
+          Business: <strong>{siteConfig.legalName}</strong> | {t('legal.lastUpdated', {}, 'Last Updated: November 2026')} | Status: Draft for owner review
         </p>
       </header>
 
@@ -45,83 +45,83 @@ export default function TermsConditions({ onBackToHome }) {
         <section className="legal-section">
           <h2>1. Acceptance of Terms</h2>
           <p>
-            By accessing or using the website of Maa Kamakhya Auto Gas, you acknowledge and agree to comply with these terms of use. If you do not agree with any portion of these terms, please discontinue using this website.
+            By visiting or using the website of Maa Kamakhya Auto Gas, you agree to these Terms &amp; Conditions. If you do not agree with these terms, please stop using this website.
           </p>
         </section>
 
         <section className="legal-section">
-          <h2>2. Description of Website Services</h2>
+          <h2>2. About Website Information</h2>
           <p>
-            This website provides digital informational resources regarding automotive CNG retrofitment, sequential kit distribution, cylinder hydrostatic testing, spare parts, and automobile mechanical services offered by Maa Kamakhya Auto Gas in Guwahati, Assam.
+            This website shares general information about CNG and LPG services, kit installation, vehicle gas conversion, servicing, and CNG filling offered by Maa Kamakhya Auto Gas in Guwahati, Assam.
           </p>
           <p>
-            Website content is published for informational, educational, and customer enquiry purposes. Browsing the website does not create a binding commercial contract or installation agreement.
+            The content on this website is for information and enquiry purposes only. Viewing the website or sending an enquiry does not create a binding service contract or confirmed booking.
           </p>
         </section>
 
         <section className="legal-section">
           <h2>3. Fuel Savings Calculator Disclaimer</h2>
           <p>
-            The Petrol vs. CNG Savings Calculator provided on this website produces illustrative comparisons based entirely on the travel distances, fuel tariffs, and vehicle mileage values entered by the user.
+            The Petrol vs. CNG Savings Calculator on this website provides approximate estimates based solely on the daily distance, fuel prices, and mileage values you enter.
           </p>
           <ul>
             <li>
-              Actual fuel economy varies significantly based on vehicle condition, driving habits, traffic congestion, terrain, air conditioner usage, and engine tuning.
+              Real-world fuel mileage depends on vehicle condition, driving style, traffic, road conditions, AC use, and engine tuning.
             </li>
             <li>
-              Calculator estimates exclude the initial capital cost of kit installation, routine periodic servicing, cylinder hydrostatic testing fees, and vehicle insurance adjustments.
+              The calculator does not include kit installation cost, routine maintenance, cylinder testing fees, or insurance changes.
             </li>
             <li>
-              Results from the calculator must not be interpreted as a legal performance guarantee or financial warranty.
+              Calculator figures are estimates only and should not be treated as a guarantee of fuel savings.
             </li>
           </ul>
         </section>
 
         <section className="legal-section">
-          <h2>4. Enquiries and Communication Guidelines</h2>
+          <h2>4. Enquiries and Workshop Inspection</h2>
           <p>
-            When you submit vehicle details via our quote request form or send a message to our WhatsApp hotline (+91 {siteConfig.whatsappNumber}):
+            When you share vehicle details through our enquiry form or message us on WhatsApp (+91 {siteConfig.whatsappNumber}):
           </p>
           <ul>
             <li>
-              You agree to provide truthful and accurate information regarding your vehicle model, year, and registration type.
+              Please provide accurate details about your vehicle model, fuel type, and requirements.
             </li>
             <li>
-              Quotations, kit availability, and installation appointments provided through messaging channels are subject to physical pre-inspection of the vehicle at our Garchuk, Guwahati workshop.
+              Any guidance, kit options, or estimates discussed over phone or WhatsApp remain subject to an in-person vehicle inspection at our Garchuk, Guwahati workshop.
             </li>
             <li>
-              Maa Kamakhya Auto Gas reserves the right to decline retrofitment if an inspection reveals engine compression defects, severe cylinder head wear, or structural incompatibility.
+              Maa Kamakhya Auto Gas may advise against or decline a gas kit installation if an inspection shows mechanical or engine condition issues that make conversion unsuitable.
             </li>
           </ul>
         </section>
 
         <section className="legal-section">
-          <h2>5. Warranty and Compliance Limitations</h2>
+          <h2>5. Warranties and Service Terms</h2>
           <p>
-            Any component warranties or installation guarantees apply solely to work executed physically at our authorized workshop on NH 37, Garchuk, Guwahati, and are governed by individual written job cards and manufacturer warranty booklets issued upon delivery.
+            Any product warranties apply only to work completed at Maa Kamakhya Auto Gas on NH 37, Garchuk, Guwahati, and follow the written job card and manufacturer terms provided at the time of service.
           </p>
           <p>
-            Specific terms regarding formal warranty periods, claims processes, and exclusions for wear-and-tear items are marked as: <em>TBD (Subject to final owner approval and manufacturer terms)</em>.
-          </p>
-        </section>
-
-        <section className="legal-section">
-          <h2>6. Intellectual Property and Brand Rights</h2>
-          <p>
-            The official name, logo, graphic presentations, text, layout, and software code on this website are the property of Maa Kamakhya Auto Gas. Unauthorized copying, reproduction, or distribution without prior written consent is prohibited.
+            Specific warranty periods, coverage terms, and exclusions are marked as: <em>TBD (Subject to final owner confirmation and kit manufacturer terms)</em>.
           </p>
         </section>
 
         <section className="legal-section">
-          <h2>7. Governing Jurisdiction</h2>
+          <h2>6. Website Content and Trademarks</h2>
           <p>
-            Any disputes arising from the use of this website shall be governed by the laws of India and subject to the exclusive jurisdiction of the competent courts in Kamrup Metropolitan District, Guwahati, Assam.
+            The business name, logo, text, layout, and code on this website belong to Maa Kamakhya Auto Gas. Please do not copy or reuse website materials without permission.
+          </p>
+        </section>
+
+        <section className="legal-section">
+          <h2>7. Governing Law</h2>
+          <p>
+            These terms are governed by the laws of India, and any disputes relating to the use of this website fall under the jurisdiction of the courts in Kamrup Metropolitan District, Guwahati, Assam.
           </p>
         </section>
 
         <section className="legal-section legal-review-notice">
           <p>
-            <strong>Owner Notice:</strong> This document is a preliminary terms draft formulated for website launch. It does not constitute formal legal counsel and is submitted for inspection and modification by the owner of Maa Kamakhya Auto Gas.
+            <strong>Note for Business Owner Confirmation:</strong> These Terms &amp; Conditions are an initial draft prepared for the website. Formal warranty terms and legal review remain flagged for final confirmation by the owner of Maa Kamakhya Auto Gas.
           </p>
         </section>
       </div>
@@ -133,7 +133,7 @@ export default function TermsConditions({ onBackToHome }) {
           className="btn btn-primary"
         >
           <ArrowLeft size={16} />
-          <span>Return to Homepage</span>
+          <span>{t('legal.backToHome', {}, 'Go Back')}</span>
         </a>
       </div>
     </div>

@@ -23,27 +23,27 @@ export default function AboutPage({ onNavigate }) {
   const { t } = useLanguage();
 
   usePageMeta({
-    title: "About Us | Maa Kamakhya Auto Gas: Guwahati, Assam",
-    description: "Learn about Maa Kamakhya Auto Gas, a trusted local workshop on NH 37 in Garchuk, Guwahati providing CNG retrofitment, maintenance, and cylinder hydro-testing.",
+    title: "About Us | Maa Kamakhya Auto Gas - Guwahati, Assam",
+    description: "Learn about Maa Kamakhya Auto Gas on NH 37 in Garchuk, Guwahati, offering sequential CNG and LPG kit installations, maintenance, vehicle conversions, and CNG filling.",
     canonical: "https://any172262-hue.github.io/maa-kamakhya-auto-gas/about/"
   });
 
   const coreValues = [
     {
-      title: "Sequential Gas Equipment",
-      desc: "We install sequential gas injection systems matched to your vehicle model and engine configuration."
+      title: "Sequential Gas Systems",
+      desc: "We match and install sequential gas injection kits based on your vehicle model and engine setup."
     },
     {
-      title: "Transparent Advice & Estimates",
-      desc: "Clear upfront quotes, practical fuel estimates based on your vehicle, and straightforward guidance."
+      title: "Clear Guidance & Estimates",
+      desc: "We walk you through practical requirements, expected work, and estimated costs before you decide."
     },
     {
-      title: "Safe Installation Practices",
-      desc: "High-pressure steel fuel lines routed securely, solid chassis-mounted cylinder cradles, and electronic leak tests."
+      title: "Careful Installation & Testing",
+      desc: "High-pressure steel fuel lines, sturdy cylinder mounts, and thorough leak checks on every vehicle."
     },
     {
-      title: "Genuine Parts & Maintenance",
-      desc: "Authentic replacement reducers, high-speed injector rails, vapor filters, and routine system inspections."
+      title: "Maintenance & Part Replacement",
+      desc: "Routine servicing, filter changes, tuning, and replacement of worn gas kit components."
     }
   ];
 
@@ -72,7 +72,7 @@ export default function AboutPage({ onNavigate }) {
           <div className="service-hero-content">
             <div className="service-hero-badge">
               <Building2 size={16} className="text-yellow" />
-              <span>AUTO GAS WORKSHOP • GUWAHATI, ASSAM</span>
+              <span>Guwahati, Assam</span>
             </div>
 
             <h1 className="service-hero-title">
@@ -80,7 +80,7 @@ export default function AboutPage({ onNavigate }) {
             </h1>
 
             <p className="service-hero-lead">
-              A local automotive gas service workshop on NH 37 in Garchuk, Guwahati providing CNG and LPG services, auto gas filling (CNG only), gas kit installation, vehicle conversion, and maintenance support.
+              We are a local automotive gas workshop on NH 37 in Garchuk, Guwahati, providing CNG and LPG services, kit installation, vehicle gas conversion, repair and maintenance, and CNG filling.
             </p>
 
             <div className="service-hero-actions">
@@ -92,7 +92,7 @@ export default function AboutPage({ onNavigate }) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Chat on WhatsApp
+                Contact on WhatsApp
               </Button>
 
               <Button
@@ -101,7 +101,7 @@ export default function AboutPage({ onNavigate }) {
                 href={siteConfig.phoneTel}
                 icon={Phone}
               >
-                Call: {siteConfig.phone}
+                Call Us: {siteConfig.phoneFormatted}
               </Button>
 
               <Button
@@ -110,37 +110,37 @@ export default function AboutPage({ onNavigate }) {
                 icon={ArrowLeft}
                 onClick={() => onNavigate && onNavigate('home')}
               >
-                Return to Home
+                Go Back
               </Button>
             </div>
           </div>
         </div>
       </header>
 
-      {/* 3. Story & Credential Overview */}
+      {/* 3. Story & Business Overview */}
       <section className="section section-navy">
         <div className="container">
           <div className="about-overview-grid">
             <RevealAnimation delay={1}>
               <div className="card-navy card-hover-effect p-8">
-                <span className="badge-tag badge-tag-gold mb-4 inline-block">OUR WORKSHOP PROFILE</span>
+                <span className="badge-tag badge-tag-gold mb-4 inline-block">Who We Are</span>
                 <h2 className="text-2xl font-bold text-navy mb-4">
                   Automotive Gas Services in Guwahati
                 </h2>
                 <p className="text-muted text-sm leading-relaxed mb-4">
-                  <strong>Maa Kamakhya Auto Gas</strong> offers car owners and commercial drivers in Guwahati dedicated automotive gas services. Located on NH 37 at Pachim Boragaon in Garchuk, our facility is easily accessible from ISBT, Jalukbari, and Lokhra.
+                  <strong>Maa Kamakhya Auto Gas</strong> serves private car owners and commercial drivers across Guwahati and nearby areas. Located on NH 37 at Pachim Boragaon in Garchuk, our workshop is easy to reach from ISBT, Jalukbari, and Lokhra.
                 </p>
                 <p className="text-muted text-sm leading-relaxed mb-4">
-                  We provide CNG and LPG services, gas kit installation, vehicle gas conversion, repair and maintenance, and operate an auto gas filling station (CNG only) at our Guwahati location.
+                  Whether you are looking to install a new sequential CNG or LPG kit, service an existing gas system, or fill CNG for your vehicle, our team is available to help.
                 </p>
                 <div className="about-stats-row">
                   <div className="stat-box">
                     <span className="stat-val font-black text-2xl text-blue">CNG & LPG</span>
-                    <span className="stat-lbl text-xs text-muted block">Fuel Solutions</span>
+                    <span className="stat-lbl text-xs text-muted block">Kit Services</span>
                   </div>
                   <div className="stat-box">
                     <span className="stat-val font-black text-2xl text-yellow">CNG Only</span>
-                    <span className="stat-lbl text-xs text-muted block">Station Fuel</span>
+                    <span className="stat-lbl text-xs text-muted block">Filling Station</span>
                   </div>
                   <div className="stat-box">
                     <span className="stat-val font-black text-2xl text-blue">6</span>
@@ -152,32 +152,32 @@ export default function AboutPage({ onNavigate }) {
 
             <RevealAnimation delay={2}>
               <div className="card-navy p-8">
-                <span className="badge-tag badge-tag-blue mb-4 inline-block">CONFIRMED BUSINESS INFORMATION</span>
-                <h3 className="text-xl font-bold text-navy mb-4">Verified Business Profile</h3>
+                <span className="badge-tag badge-tag-blue mb-4 inline-block">Business Information</span>
+                <h3 className="text-xl font-bold text-navy mb-4">Location & Service Summary</h3>
                 <div className="about-compliance-list">
                   <div className="compliance-row">
-                    <span className="text-muted text-xs">Business Name:</span>
+                    <span className="text-muted text-xs">Business Name</span>
                     <span className="font-semibold text-navy text-sm block">Maa Kamakhya Auto Gas</span>
                   </div>
                   <div className="compliance-row">
-                    <span className="text-muted text-xs">Public Address:</span>
+                    <span className="text-muted text-xs">Address</span>
                     <span className="font-semibold text-navy text-sm block">NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035, Assam, India</span>
                   </div>
                   <div className="compliance-row">
-                    <span className="text-muted text-xs">District & State:</span>
+                    <span className="text-muted text-xs">District & State</span>
                     <span className="font-semibold text-navy text-sm block">Kamrup Metropolitan, Assam</span>
                   </div>
                   <div className="compliance-row">
-                    <span className="text-muted text-xs">Filling Station Fuel:</span>
+                    <span className="text-muted text-xs">Filling Station Fuel</span>
                     <span className="font-semibold text-navy text-sm block">CNG only</span>
                   </div>
                   <div className="compliance-row">
-                    <span className="text-muted text-xs">Operating Hours:</span>
-                    <span className="font-semibold text-navy text-sm block">Not provided (contact workshop)</span>
+                    <span className="text-muted text-xs">Operating Hours</span>
+                    <span className="font-semibold text-navy text-sm block">Please call or message us on WhatsApp to confirm current timings</span>
                   </div>
                   <div className="compliance-row">
-                    <span className="text-muted text-xs">Contact Notice:</span>
-                    <span className="font-semibold text-navy text-sm block">Contact details pending owner verification</span>
+                    <span className="text-muted text-xs">Phone & WhatsApp</span>
+                    <span className="font-semibold text-navy text-sm block">{siteConfig.phoneFormatted} (Confirm directly before visiting)</span>
                   </div>
                 </div>
               </div>
@@ -190,10 +190,10 @@ export default function AboutPage({ onNavigate }) {
       <section className="section section-dark">
         <div className="container">
           <div className="text-center mb-10">
-            <span className="badge-tag badge-tag-gold">WHY CUSTOMERS TRUST US</span>
-            <h2 className="section-title text-navy mt-2">Our Core Operating Standards</h2>
+            <span className="badge-tag badge-tag-gold">How We Work</span>
+            <h2 className="section-title text-navy mt-2">What You Can Expect From Us</h2>
             <p className="text-muted text-sm max-w-xl mx-auto">
-              Every vehicle retrofitment adheres strictly to standardized mechanical, electronic, and safety protocols.
+              Every installation and service check follows clear mechanical, wiring, and leak-testing steps.
             </p>
           </div>
 

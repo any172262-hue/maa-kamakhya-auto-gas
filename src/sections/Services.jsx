@@ -89,7 +89,7 @@ export default function Services({ onSelectService, onNavigate }) {
   const handleTagClick = (tag) => {
     setSelectedTag(tag.name);
     if (onSelectService) {
-      onSelectService(`Inquiry for: ${tag.name}`);
+      onSelectService(`Enquiry for: ${tag.name}`);
     }
   };
 
@@ -106,10 +106,10 @@ export default function Services({ onSelectService, onNavigate }) {
       <div className="container">
         <RevealAnimation>
           <SectionHeading
-            tagline={t('services.tagline', {}, 'CNG & LPG AUTOMOTIVE SERVICES')}
+            tagline={t('services.tagline', {}, 'Our Services')}
             title={t('services.title', {}, 'CNG, LPG and Auto Gas Services at')}
-            highlight={t('services.titleHighlight', {}, 'Maa Kamakhya Auto Gas.')}
-            description={t('services.description', {}, 'Explore our core verified auto gas solutions in Guwahati, including sequential CNG and LPG retrofitment, auto gas filling assistance, certified conversion, genuine spare parts, and computerized maintenance.')}
+            highlight={t('services.titleHighlight', {}, 'Maa Kamakhya Auto Gas')}
+            description={t('services.description', {}, 'Explore our CNG and LPG services in Guwahati, including kit installation, vehicle gas conversion, repair and maintenance, and CNG filling.')}
           />
         </RevealAnimation>
 
@@ -137,19 +137,19 @@ export default function Services({ onSelectService, onNavigate }) {
         {/* Generous Spacing Separation */}
         <div className="services-section-spacer" aria-hidden="true" />
 
-        {/* 24 Verified Service Directory Badge Cloud */}
+        {/* 24 Service & Parts Directory */}
         <RevealAnimation delay={1}>
           <div className="verified-directory-card">
             <div className="verified-directory-header">
               <div className="verified-title-group">
-                <h3 className="verified-heading">Official Business Service Directory</h3>
+                <h3 className="verified-heading">Services &amp; Parts Directory</h3>
                 <p className="verified-subtext">
-                  Direct government & trade business listing categories for Maa Kamakhya Auto Gas. Click any service tag to get an instant WhatsApp quote.
+                  Select any category below to add it to your WhatsApp enquiry form.
                 </p>
               </div>
             </div>
 
-            <div className="service-pills-grid" role="list" aria-label="Verified service directory tags">
+            <div className="service-pills-grid" role="list" aria-label="Service and parts directory">
               {verifiedServiceTags.map((tag) => {
                 const isSelected = selectedTag === tag.name;
                 return (
@@ -158,7 +158,7 @@ export default function Services({ onSelectService, onNavigate }) {
                     type="button"
                     className={`service-pill-item ${isSelected ? 'pill-selected' : ''}`}
                     onClick={() => handleTagClick(tag)}
-                    title={`Click to request quote for ${tag.name}`}
+                    title={`Select ${tag.name} for enquiry`}
                   >
                     <CheckCircle2 size={15} className="pill-check-icon" />
                     <span className="pill-text">{tag.name}</span>
@@ -177,9 +177,9 @@ export default function Services({ onSelectService, onNavigate }) {
                 <a
                   href="#contact"
                   className="btn btn-accent btn-sm"
-                  onClick={() => onSelectService && onSelectService(`Quotation for: ${selectedTag}`)}
+                  onClick={() => onSelectService && onSelectService(`Enquiry for: ${selectedTag}`)}
                 >
-                  Proceed to Quote Form
+                  Go to Enquiry Form
                 </a>
               </div>
             )}

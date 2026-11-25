@@ -17,37 +17,37 @@ export const servicePagesData = [
       sections: [
         {
           title: "Why Guwahati Drivers Switch to CNG",
-          desc: "With petrol prices consistently above ₹100 per liter in Assam, running your car on CNG costs roughly ₹3.30 to ₹3.80 per kilometer compared to ₹7.00 or more on petrol. Natural gas burns cleanly, reduces carbon deposits inside the engine, and helps keep Guwahati's air cleaner."
+          desc: "With high petrol prices in Assam, running on CNG helps reduce daily fuel expenses compared to petrol. Natural gas also burns cleaner inside the engine."
         },
         {
           title: "Vehicles We Can Convert",
-          desc: "We regularly install approved sequential systems on popular petrol cars from Maruti Suzuki, Hyundai, Tata, Honda, and Toyota. Commercial taxis such as the Dzire, Aura, and WagonR see especially rapid fuel cost savings. We inspect your car's engine condition and spark plugs before starting work."
+          desc: "We regularly fit sequential gas kits on popular petrol cars from Maruti Suzuki, Hyundai, Tata, Honda, and Toyota, as well as commercial taxis such as the Dzire, Aura, and WagonR. We check your engine condition and spark plugs before starting work."
         },
         {
           title: "What Happens During Installation",
-          desc: "A standard installation takes about 6 to 8 hours. We mount a heavy-duty steel cradle bolted to the chassis floor in the boot, route seamless high-pressure stainless steel tubing away from the exhaust, fit the pressure reducer and injector rail in the engine bay, and cleanly connect the dedicated gas ECU."
+          desc: "A standard installation usually takes about 6 to 8 hours. We mount a sturdy steel cradle bolted to the boot floor, route shielded steel tubing safely away from the exhaust, fit the pressure reducer and injector rail under the hood, and tune the gas control unit."
         },
         {
-          title: "Cylinder Hydro-Testing & Safety Checks",
-          desc: "Under Indian safety regulations, every automotive CNG cylinder must undergo hydrostatic pressure testing every 3 years. We help arrange certified PESO testing, valve servicing, and compliance plate renewal so your car remains safe and legally compliant."
+          title: "Cylinder Safety & Pressure Checks",
+          desc: "Safety regulations require automotive CNG cylinders to undergo periodic hydrostatic pressure testing every 3 years. We help arrange cylinder pressure testing, valve checks, and compliance plate updates."
         }
       ],
       faqs: [
         {
           question: "Can my petrol car run reliably on CNG?",
-          answer: "Yes. Most fuel-injected petrol cars from major Indian manufacturers run smoothly on sequential CNG. We check your car's engine health and electronics before starting any installation."
+          answer: "Yes. Most fuel-injected petrol cars from major Indian brands run smoothly on sequential CNG. We check your engine health and wiring before starting any work."
         },
         {
-          question: "How much can I realistically save by switching to CNG?",
-          answer: "Most drivers in Guwahati save approximately 45% to 55% on monthly fuel expenses compared to petrol. If you drive 40 km or more per day, the savings add up quickly."
+          question: "How much can I save by switching to CNG?",
+          answer: "Actual monthly savings depend on how many kilometers you drive, local fuel prices, and your vehicle's condition. You can use our website calculator for a rough estimate."
         },
         {
           question: "Can I still drive on petrol whenever I want?",
-          answer: "Yes. Your vehicle becomes dual-fuel. You can switch between petrol and CNG using a button on your dashboard, and if the gas runs out, the car shifts to petrol automatically without stalling."
+          answer: "Yes. Your vehicle runs on both petrol and CNG. You can switch between them using a button on your dashboard, and if gas runs low, the car shifts back to petrol automatically."
         },
         {
-          question: "How do I book a compatibility check or get an upfront quote?",
-          answer: "You can call our workshop directly at +91 69139 10337 or send a message on WhatsApp at +91 69139 10337. You can also visit our workshop on NH 37 in Garchuk, Guwahati."
+          question: "How can I check compatibility or request a quote?",
+          answer: "Call us directly at +91 69139 10337, send a message on WhatsApp at +91 69139 10337, or visit our workshop on NH 37 in Garchuk, Guwahati."
         }
       ],
       internalLinks: [
@@ -336,15 +336,15 @@ export const servicePagesData = [
       faqs: [
         {
           question: "Where is the workshop located in Guwahati?",
-          answer: "We are located at Shop No. 7, Opposite Nezon Steel, Near Kumar Resorts, NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035."
+          answer: "We are located at NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035, Assam, India."
         },
         {
           question: "How can I confirm gas availability before visiting?",
-          answer: "Call us on +91 69139 10337 or send a quick WhatsApp message to +91 69139 10337 to check the latest status."
+          answer: "Call us on +91 69139 10337 or send a message on WhatsApp to +91 69139 10337 to check availability."
         },
         {
-          question: "What are your standard working hours?",
-          answer: "We are open Monday through Saturday from 9:00 AM to 7:30 PM. Sunday visits are arranged by prior appointment."
+          question: "What are your workshop working hours?",
+          answer: "Working hours are not listed online. Please call +91 69139 10337 or message us on WhatsApp before visiting so we can confirm current timings."
         },
         {
           question: "What safety rules apply during gas refilling?",
@@ -392,7 +392,7 @@ export const servicePagesData = [
         },
         {
           question: "নিয়মীয়া কাৰ্য্যকৰী সময় কি?",
-          answer: "সোমবাৰৰ পৰা শনিবাৰলৈ পুৱা ৯:০০ বজাৰ পৰা সন্ধিয়া ৭:৩০ বজালৈ খোলা থাকে। দেওবাৰে আগতীয়া অপইণ্টমেণ্ট অনুসৰি।"
+          answer: "বৰ্তমান অনলাইনত সময়সূচী দিয়া হোৱা নাই। অহাৰ আগতে সময় নিশ্চিত কৰিবলৈ +91 69139 10337-ত ফোন বা হোৱাটছএপ কৰক।"
         },
         {
           question: "গেছ ভৰোৱাৰ সময়ত কি কি সুৰক্ষা মানিব লাগে?",
@@ -440,7 +440,7 @@ export const servicePagesData = [
         },
         {
           question: "सामान्य कार्य समय क्या हैं?",
-          answer: "सोमवार से शनिवार सुबह 9:00 बजे से शाम 7:30 बजे तक। रविवार को अपॉइंटमेंट द्वारा।"
+          answer: "कार्य समय वर्तमान में ऑनलाइन प्रकाशित नहीं हैं। आने से पहले समय की पुष्टि के लिए +91 69139 10337 पर कॉल या व्हाट्सएप करें।"
         },
         {
           question: "रिफिलिंग के दौरान किन सुरक्षा नियमों का पालन करें?",
@@ -463,24 +463,24 @@ export const servicePagesData = [
       title: "Gas Kit Installation in Guwahati | Maa Kamakhya Auto Gas",
       metaDescription: "Enquire about vehicle gas kit installation at Maa Kamakhya Auto Gas, Pachim Boragaon, Garchuk, Guwahati. Contact us for service information.",
       h1: "Vehicle Gas Kit Installation in Guwahati",
-      heroBadge: "CERTIFIED AUTO RETROFITMENT",
+      heroBadge: "GAS KIT INSTALLATION • NH 37 GUWAHATI",
       summary: "Maa Kamakhya Auto Gas provides gas kit installation services in Guwahati, Assam. Located at Pachim Boragaon, Garchuk, we offer vehicle gas kit installation services for customers looking for automotive gas solutions. Vehicle compatibility and installation requirements can vary. Contact us with your vehicle details to discuss suitable service options and availability. Visit or contact Maa Kamakhya Auto Gas at NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035, Assam.",
       sections: [
         {
           title: "How Our Technicians Fit the Kit",
-          desc: "We bolt a dedicated steel cradle to the chassis floor in your boot with rubber vibration dampers, mount the high-pressure cylinder firmly, and route seamless stainless steel piping through protected underbody channels. Under the hood, we install the pressure reducer, gas filter, and high-speed injector rail."
+          desc: "We bolt a sturdy steel frame to the boot floor with rubber vibration pads, mount the cylinder securely, and route shielded steel tubing safely under the car. Under the hood, we fit the pressure reducer, gas filter, and injector rail."
         },
         {
-          title: "Pre-Fitment Engine Check",
-          desc: "Before mounting any hardware, we test your engine compression, spark plugs, ignition coils, and battery voltage. A car must run smoothly on petrol before it can perform properly on gas."
+          title: "Engine & Wiring Check Before Fitting",
+          desc: "Before fitting any parts, we check your spark plugs, ignition coils, and battery health. A car needs to run smoothly on petrol first so it performs reliably on gas."
         },
         {
-          title: "Installation Timeline & Paperwork",
-          desc: "A complete sequential conversion takes about 6 to 8 hours. Once installed and leak-tested, we provide the invoice and kit homologation documentation you need for RTO registration endorsement in Assam."
+          title: "Fitment Time & Registration Papers",
+          desc: "A typical sequential installation takes around 6 to 8 hours. Once fitted and leak-checked, we hand over your kit invoice and fitment documents needed for your RTO registration update in Assam."
         },
         {
-          title: "Complimentary 1,000 km Inspection",
-          desc: "After you complete your first 1,000 km on gas, bring your car back to our workshop. We perform a free post-fitment inspection to re-check pipe clamps, examine fuel trims, and fine-tune your map."
+          title: "1,000 km Check-Up",
+          desc: "After you drive your first 1,000 km on gas, bring your car back to our workshop so we can check connections, inspect fuel trims, and fine-tune performance."
         }
       ],
       faqs: [
@@ -621,26 +621,26 @@ export const servicePagesData = [
           desc: "Your car keeps its complete original petrol fuel system. We add an auxiliary gas tank, dedicated fuel lines, a high-precision reducer, and a separate gas ECU. A dashboard switch lets you shift between fuels seamlessly, even while driving."
         },
         {
-          title: "Assessing Your Driving Savings",
-          desc: "If you drive more than 30 kilometers a day, commute regularly across Guwahati, or operate a commercial taxi, running on gas typically saves you 45% to 55% each month compared to petrol. The conversion pays for itself within months."
+          title: "Checking If Conversion Makes Sense for You",
+          desc: "If you drive regularly around Guwahati or run a commercial taxi, switching to gas can help lower your monthly fuel bill. Actual savings depend on daily distance, local fuel prices, and vehicle condition."
         },
         {
-          title: "Boot Space & Suspension Planning",
-          desc: "We help you select the best cylinder size (such as 60L or 65L water-capacity) for your boot. We inspect your rear suspension coil springs and fit rubber spacers if needed to ensure proper ride height when fully loaded."
+          title: "Boot Space & Rear Suspension Care",
+          desc: "We help you pick a cylinder size that suits your boot space and check rear suspension fitment so your car stays balanced when loaded."
         },
         {
-          title: "Assam RTO Fuel Endorsement Steps",
-          desc: "After installation, your vehicle registration book at the District Transport Office (DTO) should reflect the fuel change. We provide the certified bill, kit approval sheets, and required paperwork to make this process smooth."
+          title: "Assam RTO Fuel Update Steps",
+          desc: "After conversion, your vehicle's registration certificate (RC) should be updated at the District Transport Office (DTO). We provide the kit invoice and fitment documents needed for this step."
         }
       ],
       faqs: [
         {
           question: "What is a dual-fuel gas conversion?",
-          answer: "It is the retrofitting of an auxiliary CNG or LPG system to your existing petrol car. Your vehicle can run on either fuel at the press of a dashboard button."
+          answer: "It means fitting a CNG or LPG system alongside your car's existing petrol setup so you can drive on either fuel using a dashboard switch."
         },
         {
           question: "How long does it take to recover the conversion cost?",
-          answer: "Most drivers commuting 40 to 50 km daily recover the full conversion expense within 6 to 9 months through daily fuel savings."
+          answer: "That depends on how many kilometers you drive each month and current petrol vs. gas prices. Use our savings calculator to see an estimate for your driving routine."
         },
         {
           question: "Does conversion affect boot space significantly?",
@@ -669,8 +669,8 @@ export const servicePagesData = [
           desc: "গাড়ীৰ মূল পেট্ৰ'ল চিষ্টেম অপৰিৱৰ্তিত থাকে। আমি এটা অতিৰিক্ত গেছ টেংক, পাইপ আৰু পৃথক গেছ ইচিইউ সংযোগ কৰোঁ। ডেছব'ৰ্ডৰ এটা বুটাম টিপিয়েই আপুনি পেট্ৰ'ল আৰু গেছৰ মাজত সলনি কৰিব পাৰে।"
         },
         {
-          title: "আপোনাৰ ইন্ধন সঞ্চয়ৰ হিচাপ",
-          desc: "যদি আপুনি দিনে ৩০ কিলোমিটাৰতকৈ বেছি গাড়ী চলায় বা টেক্সি চলায়, তেন্তে গেছ ব্যৱহাৰ কৰিলে মাহে ৪৫% ৰ পৰা ৫৫% খৰচ ৰাহি হয়। কেইবামাহৰ ভিতৰতে কিট লগোৱাৰ খৰচ তুলি ল'ব পাৰি।"
+          title: "আপোনাৰ ইন্ধন খৰচ তুলনা কৰক",
+          desc: "আপোনাৰ দৈনিক যাতায়াত আৰু গাড়ীৰ অৱস্থাৰ ওপৰত ভিত্তি কৰি গেছ ব্যৱহাৰ কৰিলে দৈনিক ইন্ধন খৰচ কম হ'ব পাৰে। আমাৰ কেলকুলেটৰ ব্যৱহাৰ কৰি আনুমানিক হিচাপ চাব পাৰে।"
         },
         {
           title: "ডিকিৰ ঠাই আৰু ছাচপেনশ্বন পৰিকল্পনা",
@@ -717,8 +717,8 @@ export const servicePagesData = [
           desc: "गाड़ी का मूल पेट्रोल सिस्टम पूरी तरह सुरक्षित रहता है। हम एक अतिरिक्त गैस टैंक, पाइपिंग और गैस ईसीयू लगाते हैं। डैशबोर्ड पर लगे बटन से आप गाड़ी चलाते हुए भी कभी भी पेट्रोल और गैस में स्विच कर सकते हैं।"
         },
         {
-          title: "अपनी बचत का आकलन करें",
-          desc: "यदि आप रोजाना 30 किमी से अधिक गाड़ी चलाते हैं या कमर्शियल टैक्सी चलाते हैं, तो गैस पर चलने से मासिक ईंधन खर्च 45% से 55% तक कम हो जाता है। कुछ ही महीनों में फिटिंग का खर्च वसूल हो जाता है।"
+          title: "अपनी ईंधन लागत की तुलना करें",
+          desc: "आपकी दैनिक यात्रा और वाहन की स्थिति के आधार पर, गैस का उपयोग करने से दैनिक ईंधन खर्च कम करने में मदद मिल सकती है। आप हमारे कैलकुलेटर से अनुमानित तुलना देख सकते हैं।"
         },
         {
           title: "बूट स्पेस और सस्पेंशन की योजना",

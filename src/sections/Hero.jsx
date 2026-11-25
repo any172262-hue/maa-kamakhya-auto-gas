@@ -52,7 +52,7 @@ export default function Hero() {
                   icon={ArrowRight}
                   iconPosition="right"
                 >
-                  {t('hero.ctaExplore', {}, 'Explore Our Services')}
+                  {t('hero.ctaExplore', {}, 'Explore Services')}
                 </Button>
 
                 <Button
@@ -72,9 +72,9 @@ export default function Hero() {
                       onNavigate('contact');
                     }
                   }}
-                  ariaLabel="Contact Workshop - Open Enquiry Form"
+                  ariaLabel="Contact Us - Open Enquiry Form"
                 >
-                  {t('hero.ctaContact', {}, 'Contact Workshop')}
+                  {t('hero.ctaContact', {}, 'Contact Us')}
                 </Button>
 
                 <Button
@@ -83,13 +83,13 @@ export default function Hero() {
                   href={siteConfig.phoneTel}
                   icon={Phone}
                 >
-                  {t('common.call', {}, 'Call')}: {siteConfig.phoneFormatted}
+                  {t('common.callWorkshop', {}, 'Call Us')}: {siteConfig.phoneFormatted}
                 </Button>
               </div>
             </RevealAnimation>
           </div>
 
-          {/* Right Column: Official Workshop Credential Card */}
+          {/* Right Column: Business Overview Card */}
           <div className="hero-media-wrapper">
             <RevealAnimation delay={2}>
               <div className="hero-brand-card card-navy">
@@ -98,8 +98,8 @@ export default function Hero() {
                 </div>
 
                 <div className="hero-brand-header">
-                  <h3 className="hero-brand-title">MAA KAMAKHYA AUTO GAS</h3>
-                  <p className="hero-brand-subtitle">{t('hero.officialCenter', {}, 'Auto Gas Workshop & Station • Guwahati, Assam')}</p>
+                  <h3 className="hero-brand-title">Maa Kamakhya Auto Gas</h3>
+                  <p className="hero-brand-subtitle">{t('hero.officialCenter', {}, 'Auto Gas Workshop & CNG Filling Station • Guwahati')}</p>
                 </div>
 
                 <div className="hero-brand-highlights">
@@ -112,14 +112,14 @@ export default function Hero() {
 
                   <div className="hero-highlight-item">
                     <div>
-                      <span className="font-semibold text-white">CNG & LPG Solutions</span>
-                      <span className="text-xs text-muted block">Installation, Conversion & Maintenance</span>
+                      <span className="font-semibold text-white">CNG & LPG Services</span>
+                      <span className="text-xs text-muted block">Kit Installation, Conversion & Maintenance</span>
                     </div>
                   </div>
 
                   <div className="hero-highlight-item">
                     <div>
-                      <span className="font-semibold text-white">{t('hero.hotline', {}, 'Customer Enquiries')}</span>
+                      <span className="font-semibold text-white">{t('hero.hotline', {}, 'Phone & WhatsApp')}</span>
                       <span className="text-xs text-muted block">+91 69139 10337</span>
                     </div>
                   </div>
@@ -136,7 +136,7 @@ export default function Hero() {
                     className="hero-view-map-btn"
                   >
                     <Navigation size={14} className="text-yellow" />
-                    <span>{t('hero.viewMap', {}, 'View NH 37 Interactive Map')}</span>
+                    <span>{t('hero.viewMap', {}, 'Find Our Location')}</span>
                   </a>
                 </div>
               </div>

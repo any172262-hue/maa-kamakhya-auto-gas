@@ -14,10 +14,10 @@ export default function Compatibility() {
         <div id="installation-overview" className="system-overview-wrapper">
           <RevealAnimation>
             <SectionHeading
-              tagline={t('compatibility.overviewTag', {}, 'CNG SYSTEM OVERVIEW')}
-              title={t('compatibility.overviewTitle', {}, 'Complete CNG Installation in a')}
-              highlight={t('compatibility.overviewHighlight', {}, 'Car.')}
-              description={t('compatibility.overviewDesc', {}, 'Explore the main components and typical routing of a certified sequential CNG system from engine bay to cylinder mounting.')}
+              tagline={t('compatibility.overviewTag', {}, 'CNG System Overview')}
+              title={t('compatibility.overviewTitle', {}, 'How a Sequential CNG Kit')}
+              highlight={t('compatibility.overviewHighlight', {}, 'Works')}
+              description={t('compatibility.overviewDesc', {}, 'See the main parts and typical layout of a sequential CNG system from engine bay to cylinder mounting.')}
             />
           </RevealAnimation>
 
@@ -27,7 +27,7 @@ export default function Compatibility() {
               <div className="system-diagram-card card-navy">
                 <img
                   src={`${import.meta.env.BASE_URL}images/cng-installation.webp`}
-                  alt="Complete CNG Installation in a Car Schematic Overview"
+                  alt="Diagram showing main parts of a sequential CNG system installed in a car"
                   className="cng-diagram-image"
                   width="896"
                   height="1200"
@@ -36,7 +36,7 @@ export default function Compatibility() {
                   style={{ aspectRatio: '896 / 1200' }}
                 />
                 <p className="system-diagram-note">
-                  {t('compatibility.diagramNote', {}, 'Illustrative system overview. Component placement and specifications depend on the vehicle make and approved retrofitment kit.')}
+                  {t('compatibility.diagramNote', {}, 'Sample layout for reference. Exact placement depends on your vehicle model and chosen kit.')}
                 </p>
               </div>
             </RevealAnimation>

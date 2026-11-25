@@ -18,9 +18,11 @@ export default function ConfirmationModal({
   const { t } = useLanguage();
   const modalRef = useRef(null);
   const [modalCopied, setModalCopied] = useState(false);
+  const [earlyReleaseNotice, setEarlyReleaseNotice] = useState(false);
 
   useEffect(() => {
     if (isOpen) {
+      setEarlyReleaseNotice(false);
       document.body.style.overflow = 'hidden';
       const handleKeyDown = (e) => {
         if (e.key === 'Escape') {
@@ -52,7 +54,7 @@ export default function ConfirmationModal({
   const fullMessageText = buildWhatsAppMessage(normalizedData);
   const whatsAppUrl = buildWhatsAppUrl(normalizedData);
   const displayVehicle = normalizedData.vehicleModel || t('modal.notProvided', {}, 'Not provided');
-  const displayMessage = normalizedData.message || 'No additional message';
+  const displayMessage = normalizedData.message || 'No additional message provided.';
 
   const handleCopyModalMessage = async () => {
     try {
@@ -109,24 +111,24 @@ export default function ConfirmationModal({
         {/* Review Summary Box */}
         <div className="enquiry-summary-box">
           <div className="summary-field-row">
-            <span className="summary-label">{t('modal.fieldFullName', {}, 'Full Name:')}</span>
+            <span className="summary-label">{t('modal.fieldFullName', {}, 'Full Name')}</span>
             <span className="summary-value text-white font-bold">{normalizedData.fullName}</span>
           </div>
 
           <div className="summary-field-row">
-            <span className="summary-label">{t('modal.fieldMobile', {}, 'Mobile Number:')}</span>
+            <span className="summary-label">{t('modal.fieldMobile', {}, 'Mobile Number')}</span>
             <span className="summary-value text-yellow font-bold">
               {normalizedData.phone ? (normalizedData.phone.startsWith('+') ? normalizedData.phone : `+91 ${normalizedData.phone}`) : ''}
             </span>
           </div>
 
           <div className="summary-field-row">
-            <span className="summary-label">{t('modal.fieldService', {}, 'Service Needed:')}</span>
+            <span className="summary-label">{t('modal.fieldService', {}, 'Service Needed')}</span>
             <span className="summary-value text-white">{normalizedData.serviceType}</span>
           </div>
 
           <div className="summary-field-row">
-            <span className="summary-label">{t('modal.fieldVehicle', {}, 'Vehicle Model / Make:')}</span>
+            <span className="summary-label">{t('modal.fieldVehicle', {}, 'Vehicle Model / Make')}</span>
             <span className={`summary-value ${normalizedData.vehicleModel ? 'text-white' : 'text-muted'}`}>
               {displayVehicle}
             </span>
@@ -134,20 +136,20 @@ export default function ConfirmationModal({
 
           {(formData.vehicleType || formData.vehicleUse) && (
             <div className="summary-field-row">
-              <span className="summary-label">Vehicle Type:</span>
+              <span className="summary-label">Vehicle Type</span>
               <span className="summary-value text-white">{(formData.vehicleType || formData.vehicleUse).trim()}</span>
             </div>
           )}
 
           {(formData.calculatorEstimate || formData.estimate) && (
             <div className="summary-field-row summary-field-column">
-              <span className="summary-label">Calculator Estimate:</span>
+              <span className="summary-label">Calculator Estimate</span>
               <p className="summary-message-block">{(formData.calculatorEstimate || formData.estimate).trim()}</p>
             </div>
           )}
 
           <div className="summary-field-row summary-field-column">
-            <span className="summary-label">{t('modal.fieldMessage', {}, 'Additional Message:')}</span>
+            <span className="summary-label">{t('modal.fieldMessage', {}, 'Additional Message')}</span>
             <p className={`summary-message-block ${!normalizedData.message ? 'summary-message-empty' : ''}`}>
               {displayMessage}
             </p>
@@ -155,7 +157,7 @@ export default function ConfirmationModal({
 
           {utmData && (utmData.utm_source || utmData.utm_campaign) && (
             <div className="summary-field-row summary-utm-row">
-              <span className="summary-label">Attribution:</span>
+              <span className="summary-label">Referred from</span>
               <span className="summary-value text-muted text-xs">
                 {utmData.utm_source ? `Source: ${utmData.utm_source}` : ''}
                 {utmData.utm_campaign ? ` | Campaign: ${utmData.utm_campaign}` : ''}
@@ -164,12 +166,12 @@ export default function ConfirmationModal({
           )}
         </div>
 
-        {/* Verbatim Complete WhatsApp Message Box with Copy Option */}
+        {/* Complete WhatsApp Message Preview with Copy Option */}
         <div className="confirm-full-message-box">
           <div className="confirm-full-message-header">
             <div className="flex items-center gap-2">
               <FileText size={14} className="text-yellow" />
-              <span>Complete Pre-formatted WhatsApp Message:</span>
+              <span>Your WhatsApp Message</span>
             </div>
             <button
               type="button"
@@ -187,7 +189,7 @@ export default function ConfirmationModal({
 
         <div className="confirm-modal-reminder">
           <span>
-            {t('modal.verifiedNote', {}, 'Your message will open directly in chat with Maa Kamakhya Auto Gas (+91 69139 10337). Please press Send inside WhatsApp to deliver your enquiry.')}
+            {t('modal.verifiedNote', {}, 'Your message will open in a WhatsApp chat with Maa Kamakhya Auto Gas. You can review it once more before sending.')}
           </span>
         </div>
 
@@ -195,6 +197,8 @@ export default function ConfirmationModal({
         <div className="confirm-modal-actions">
           <HoldToCancelButton
             onCancel={onHoldCancel || onCancel}
+            onHoldStart={() => setEarlyReleaseNotice(false)}
+            onEarlyRelease={() => setEarlyReleaseNotice(true)}
             disabled={isSubmitting}
           />
 
@@ -222,6 +226,12 @@ export default function ConfirmationModal({
             {isSubmitting ? t('common.loading', {}, 'Preparing WhatsApp...') : t('modal.sendWhatsApp', {}, 'Confirm & Continue to WhatsApp')}
           </Button>
         </div>
+
+        {earlyReleaseNotice && (
+          <p className="hold-early-release-msg" role="status">
+            Cancellation stopped. Your enquiry is still open.
+          </p>
+        )}
       </div>
     </div>
   );

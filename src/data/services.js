@@ -32,14 +32,14 @@ export const servicesData = [
   {
     id: "cng-sequential-installation",
     title: "CNG Sequential Kit Installation Services",
-    shortDesc: "Sequential multi-point gas injection conversion for 4-wheelers and commercial cars with dedicated microprocessors and gas injector rails.",
+    shortDesc: "Sequential gas kit installation for petrol cars and commercial taxis, tuned for smooth daily driving.",
     features: [
-      "Modern sequential OBD-II systems",
-      "Four-wheeler & passenger car conversions",
-      "Dedicated high-speed gas injector rail for smooth pickup",
-      "Smooth automatic fuel switchover with steady idling"
+      "Modern sequential gas systems",
+      "Private cars and commercial four-wheelers",
+      "Dedicated gas injectors for steady pickup",
+      "Smooth automatic switch between petrol and gas"
     ],
-    highlight: "Core Specialization",
+    highlight: "Core Service",
     category: "Installation Services",
     tags: [
       "CNG Sequential Kit Installation Services",
@@ -51,14 +51,14 @@ export const servicesData = [
   {
     id: "cng-kit-distribution",
     title: "CNG Conversion Kit & Sequential Kit Distribution",
-    shortDesc: "Authorized regional wholesale distributor and dealership of sequential autogas conversion systems for automotive workshops, dealers, and fleet owners.",
+    shortDesc: "Regional wholesale supply and dealership of sequential auto gas conversion kits for workshops, dealers, and fleet owners.",
     features: [
-      "Authorized dealership of sequential kits",
-      "Wholesale supply network for regional garages across Assam",
-      "Complete kit packages: ECU, reducer & wiring harness",
-      "Technical calibration and support"
+      "Dealership of sequential auto gas kits",
+      "Wholesale supply for regional workshops across Assam",
+      "Complete kit sets including control unit, reducer, and wiring",
+      "Fitting guidance and technical support"
     ],
-    highlight: "Regional Distributor",
+    highlight: "Regional Supply",
     category: "Dealers & Distribution",
     tags: [
       "CNG Sequential Injection Kit Distributors",
@@ -70,14 +70,14 @@ export const servicesData = [
   {
     id: "cng-cylinder-distribution",
     title: "CNG Gas Cylinder Distribution & Wholesaling",
-    shortDesc: "Regional supply of seamless alloy steel CNG gas cylinders in bulk wholesale and retail.",
+    shortDesc: "Supply of seamless steel CNG gas cylinders for workshops and vehicle conversions.",
     features: [
-      "Standard seamless alloy steel cylinders",
-      "60 Litre (12kg) & 65 Litre (14kg) capacity sizes",
-      "High-pressure tolerance testing specifications",
-      "Heavy-duty mounting cradles & integrated safety valves"
+      "Standard seamless steel cylinders",
+      "60 Litre (12 kg) and 65 Litre (14 kg) sizes",
+      "Built for high-pressure CNG storage",
+      "Sturdy mounting cradles and safety valves"
     ],
-    highlight: "Alloy Steel Cylinders",
+    highlight: "CNG Cylinders",
     category: "Cylinders & Hardware",
     tags: [
       "CNG Gas Cylinder Distributors",
@@ -87,14 +87,14 @@ export const servicesData = [
   {
     id: "cng-repair-maintenance",
     title: "CNG Conversion Kit Repair & Automobile Services",
-    shortDesc: "Automotive troubleshooting, periodic kit servicing, injector cleaning, reducer pressure tuning, and multi-point gas leak audits.",
+    shortDesc: "Troubleshooting, routine gas kit servicing, injector cleaning, pressure tuning, and gas leak checks.",
     features: [
-      "Diagnostic scanning & fuel system tuning",
-      "Cleaning & recalibration of gas injector nozzles",
-      "Pressure reducer diaphragm tension inspection & tuning",
-      "Multi-point electronic gas sniff tests & leak audits"
+      "System checks and fuel tuning",
+      "Cleaning and tuning of gas injectors",
+      "Pressure reducer check and adjustment",
+      "Thorough multi-point gas leak checks"
     ],
-    highlight: "Automotive Care",
+    highlight: "Repair & Service",
     category: "Repair & Maintenance",
     tags: [
       "CNG Conversion Kit Repair & Services",
@@ -104,14 +104,14 @@ export const servicesData = [
   {
     id: "cng-spares-tooling",
     title: "CNG Spare Parts & Automotive Tooling Dealership",
-    shortDesc: "Wholesale and retail dealership of authentic auto-gas replacement spare parts, solenoid valves, pressure reducers, filters, and professional workshop tooling.",
+    shortDesc: "Retail and wholesale supply of auto gas spare parts, valves, pressure reducers, filters, and workshop tools.",
     features: [
       "Genuine replacement parts and components",
-      "Specialized automotive retrofitment & tooling",
-      "Low-pressure vapor & high-pressure gas filter replacements",
-      "Emulator units, temperature sensors & automotive wiring looms"
+      "Auto gas fitting tools and service hardware",
+      "Gas vapor and high-pressure filter replacements",
+      "Switches, sensors, and wiring harnesses"
     ],
-    highlight: "Quality Spares",
+    highlight: "Spare Parts & Tools",
     category: "Spare Parts & Tooling",
     tags: [
       "CNG Conversion Kit Spare Part Dealers",
@@ -123,14 +123,14 @@ export const servicesData = [
   {
     id: "lpg-kit-installation",
     title: "LPG Conversion Kit Installation Services",
-    shortDesc: "Automotive LPG conversion kit installation and multi-valve autogas servicing for compatible four-wheelers and commercial vehicles.",
+    shortDesc: "Automotive LPG kit installation and servicing with safety multi-valves for compatible four-wheelers.",
     features: [
-      "Automotive LPG multi-valve safety systems",
-      "Toroidal (donut) & cylindrical autogas tank options",
-      "Precision vaporizer & gas-phase filtration integration",
-      "Dual-fuel dashboard changeover switchgear with fuel gauge"
+      "Multi-valve safety gas fittings",
+      "Spare-wheel well (donut) and cylindrical tank options",
+      "Vaporizer fitting and gas filter service",
+      "Dashboard switch to change between petrol and LPG"
     ],
-    highlight: "Dual-Fuel Alternative",
+    highlight: "Auto LPG Option",
     category: "Installation Services",
     tags: [
       "LPG Conversion Kit Installation Services",
@@ -140,14 +140,14 @@ export const servicesData = [
   {
     id: "automobile-trade-dealers",
     title: "Automobile Distribution, Trade & Dealership",
-    shortDesc: "Comprehensive automotive dealership, commercial vehicle procurement, regional wholesale supply, import/export facilitation, and vehicle sales support.",
+    shortDesc: "Vehicle trading, dealership support, wholesale supply, and commercial fleet enquiries.",
     features: [
-      "Verified passenger vehicle sales & dealership",
-      "Commercial fleet supply & wholesale vehicle procurement",
-      "Import & export facilitation for automotive components",
-      "Customer enquiry support"
+      "Passenger car sales and dealership support",
+      "Commercial fleet supply enquiries",
+      "Wholesale vehicle and part supply support",
+      "Direct customer enquiry assistance"
     ],
-    highlight: "Automotive Network",
+    highlight: "Automobile Trade",
     category: "Automobile Trade",
     tags: [
       "Automobile Distributors",
@@ -161,14 +161,14 @@ export const servicesData = [
   {
     id: "maruti-alto-specialist",
     title: "Car Dealership: Maruti Suzuki Alto 800 Specialist",
-    shortDesc: "Dedicated vehicle dealership specializing in Maruti Suzuki Alto 800 models with calibrated CNG fitments for lower running costs and good mileage.",
+    shortDesc: "Dedicated Maruti Suzuki Alto 800 vehicle dealership and CNG fitment support for practical city running costs.",
     features: [
-      "Tailored fitment for Maruti Suzuki Alto 800 engines",
-      "Optimized compact cylinder fit preserving usable luggage boot space",
-      "High fuel efficiency on CNG for daily driving",
-      "Assistance with standard vehicle handover procedures"
+      "CNG fitment options suited to Alto 800 engines",
+      "Compact cylinder setup to save usable boot space",
+      "Tuned for everyday city fuel economy",
+      "Clear guidance through handover and paperwork"
     ],
-    highlight: "Alto 800 Fitment",
+    highlight: "Alto 800 Specialist",
     category: "Automobile Trade",
     tags: [
       "Car Dealers-Maruti Suzuki Alto 800",
@@ -222,93 +222,93 @@ export const vehicleCompatibilityData = {
     {
       name: "Maruti Suzuki",
       popularModels: ["Swift", "Dzire", "Baleno", "WagonR", "Ertiga", "Celerio", "Alto K10", "Alto 800", "Ignis", "Brezza (Petrol)"],
-      compatibilityStatus: "100% Compatible (Sequential OBD-II Kit)"
+      compatibilityStatus: "Compatible (Sequential OBD-II Kit)"
     },
     {
       name: "Hyundai",
       popularModels: ["Grand i10 Nios", "i20", "Aura", "Venue (1.2 Kappa)", "Santro", "Exter"],
-      compatibilityStatus: "100% Compatible (Dynamic Sequential Kit)"
+      compatibilityStatus: "Compatible (Dynamic Sequential Kit)"
     },
     {
       name: "Tata Motors",
       popularModels: ["Tiago", "Tigor", "Punch", "Altroz"],
-      compatibilityStatus: "100% Compatible (Dual-ECU Calibrated Kit)"
+      compatibilityStatus: "Compatible (Dual-ECU Calibrated Kit)"
     },
     {
       name: "Honda",
       popularModels: ["Amaze", "City (i-VTEC)", "Jazz", "WR-V"],
-      compatibilityStatus: "100% Compatible (High-Flow Injector Kit)"
+      compatibilityStatus: "Compatible (High-Flow Injector Kit)"
     },
     {
       name: "Toyota",
       popularModels: ["Glanza", "Urban Cruiser", "Etios / Liva", "Rumion"],
-      compatibilityStatus: "100% Compatible (Factory-spec Integration)"
+      compatibilityStatus: "Compatible (Matched Sequential Kit)"
     },
     {
       name: "Renault & Nissan",
       popularModels: ["Kwid (1.0L)", "Triber", "Magnite (NA)", "Kiger (NA)"],
-      compatibilityStatus: "100% Compatible (Custom MAP Tuned Kit)"
+      compatibilityStatus: "Compatible (Custom MAP Tuned Kit)"
     }
   ],
   guidelines: [
-    "Most 3-cylinder and 4-cylinder naturally aspirated MPFI petrol engines are fully compatible.",
-    "Vehicles with BS3, BS4, and select BS6 emission standards can be retrofitted with approved homologated kits.",
-    "Commercial taxis and private registration vehicles both qualify for legal RTO endorsement in Assam."
+    "Most 3-cylinder and 4-cylinder naturally aspirated MPFI petrol engines can be checked for sequential gas kit compatibility.",
+    "Petrol vehicles across BS3, BS4, and compatible BS6 models can be assessed for suitable sequential kits.",
+    "Both private cars and commercial taxis can enquire about installation and documentation support in Assam."
   ]
 };
 
 export const installationSteps = [
   {
     step: "01",
-    title: "Pre-Fitment Engine Inspection",
-    description: "Our experienced automotive technicians inspect your car's engine condition, spark ignition system, throttle body, and sensors to confirm compatibility."
+    title: "Initial Engine & Wiring Check",
+    description: "Our technicians inspect your car's engine, spark plugs, and sensors before recommending a kit."
   },
   {
     step: "02",
-    title: "Sequential Kit Matching",
-    description: "We select the suitable sequential CNG system matched to your engine's horsepower, cylinder displacement, and fuel injection layout."
+    title: "Choosing the Right Kit",
+    description: "We match a sequential CNG kit to your engine size and fuel system so your car runs comfortably."
   },
   {
     step: "03",
-    title: "Mechanical & Electrical Installation",
-    description: "Underbody steel piping with protective rubber grommets, boot cylinder mounting with dedicated cradle brackets, and clean wiring looms."
+    title: "Clean Mechanical & Electrical Fitting",
+    description: "We bolt the cylinder frame securely to the boot floor, run shielded steel tubing under the body, and connect the wiring neatly."
   },
   {
     step: "04",
-    title: "System Tuning & Leak Inspection",
-    description: "Software calibration under driving load conditions in Guwahati followed by multi-point electronic gas sniff tests and soapy bubble leak checks."
+    title: "Road Tuning & Leak Checks",
+    description: "We tune the fuel mapping on the road in Guwahati and test every joint to make sure there are zero gas leaks."
   },
   {
     step: "05",
-    title: "Documentation & Handover",
-    description: "We issue your service documentation, maintenance guidelines, and explain vehicle registration endorsement steps."
+    title: "Paperwork & Handover",
+    description: "We hand over your kit invoice, explain daily care tips, and guide you on the vehicle registration update steps."
   }
 ];
 
 export const systemComponents = [
   {
-    title: "Engine Bay - CNG Components",
-    desc: "Includes the multi-point gas injector rail, high-precision pressure regulator (reducer), and low-pressure inline gas filter with integrated MAP sensor.",
-    tag: "Under Hood"
+    title: "Under the Hood - Gas Parts",
+    desc: "Includes the gas injector rail, pressure regulator (reducer), and inline gas filter in the engine bay.",
+    tag: "Engine Bay"
   },
   {
-    title: "Rear-Mounted CNG Cylinder",
-    desc: "Seamless high-strength steel cylinder secured with high-tensile crash-tested floor mounting brackets and a multi-valve automatic safety burst disc.",
-    tag: "Luggage Trunk"
+    title: "Rear CNG Cylinder",
+    desc: "High-strength steel cylinder mounted securely on the boot floor with a built-in safety multi-valve.",
+    tag: "Boot Area"
   },
   {
-    title: "Underbody High-Pressure Pipe",
-    desc: "Seamless steel fuel line encased in anti-corrosive rubber shielding routed securely along chassis frame channels away from exhaust heat.",
-    tag: "Chassis"
+    title: "Protected Underbody Pipe",
+    desc: "Shielded steel fuel line routed safely along the car's underbody frame, kept well away from exhaust heat.",
+    tag: "Underbody"
   },
   {
-    title: "Micro-Switch Changeover",
-    desc: "Dashboard-integrated push button featuring multi-stage bright LED gas level indicators and automated buzzer alerts for low fuel.",
-    tag: "Cockpit"
+    title: "Dashboard Fuel Switch",
+    desc: "A compact dashboard push button with gas-level lights that lets you switch between petrol and CNG anytime.",
+    tag: "Dashboard"
   },
   {
-    title: "CNG Sequential ECU & Harness",
-    desc: "Automotive-grade 32-bit microprocessor calculating gas pulse widths microsecond-by-microsecond linked with vehicle OEM sensors.",
+    title: "Gas Control Unit (ECU) & Wiring",
+    desc: "A dedicated gas control unit that connects to your car's sensors to adjust fuel flow smoothly while driving.",
     tag: "Electronics"
   }
 ];

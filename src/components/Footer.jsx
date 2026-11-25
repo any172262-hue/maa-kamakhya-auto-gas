@@ -174,7 +174,7 @@ export default function Footer({ onNavigateLegal }) {
 
           {/* Contact Details */}
           <div className="footer-col">
-            <h4 className="footer-heading">{t('nav.contact', {}, 'Contact')} & {t('location.workshopAddress', {}, 'Location')}</h4>
+            <h4 className="footer-heading">{t('nav.contact', {}, 'Contact Us')}</h4>
             <ul className="footer-contact-list">
               <li className="footer-contact-item">
                 <MapPin size={20} className="text-yellow footer-icon" />
@@ -239,7 +239,7 @@ export default function Footer({ onNavigateLegal }) {
               rel="noopener noreferrer" 
               className="footer-directions-btn"
             >
-              {t('location.getDirections', {}, 'Get Directions via Google Maps')}
+              {t('location.getDirections', {}, 'Find Our Location')}
             </a>
           </div>
         </div>
@@ -247,7 +247,7 @@ export default function Footer({ onNavigateLegal }) {
         {/* Legal Disclaimer Box */}
         <div className="footer-disclaimer-box">
           <p>
-            <strong>{t('footer.disclaimerHeading', {}, 'Business Information & Disclaimer:')}</strong> {t('footer.disclaimerText', {}, `Operated by ${siteConfig.name} at ${siteConfig.address}. Fuel cost comparisons and savings figures displayed on this website are illustrative estimates based on user-entered mileage, local fuel retail tariffs, and standard test cycles. Actual vehicle fuel economy varies with traffic conditions, driving style, AC usage, and payload.`)}
+            <strong>{t('footer.disclaimerHeading', {}, 'Business Information & Disclaimer:')}</strong> {t('footer.disclaimerText', {}, `Maa Kamakhya Auto Gas is located at ${siteConfig.address}. Any fuel cost comparisons shown on this website are rough estimates based on the distance, fuel prices, and mileage figures you enter. Actual mileage depends on vehicle condition, driving habits, traffic, and road conditions.`)}
           </p>
         </div>
 

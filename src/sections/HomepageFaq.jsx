@@ -23,11 +23,11 @@ export default function HomepageFaq() {
     },
     {
       q: t('faq.q4', {}, 'Does Maa Kamakhya Auto Gas provide gas kit repair and maintenance?'),
-      a: t('faq.a4', {}, 'Yes. Gas kit repair and maintenance are among the verified services. Contact us with details of your vehicle and the issue.')
+      a: t('faq.a4', {}, 'Yes. We provide gas kit repair, servicing, and maintenance. Contact us with your vehicle details and the issue you are facing.')
     },
     {
       q: t('faq.q5', {}, 'How can I contact Maa Kamakhya Auto Gas?'),
-      a: t('faq.a5', {}, 'Use the contact details published on the website to enquire about services, availability, and other information.')
+      a: t('faq.a5', {}, 'Use the phone number, WhatsApp link, or Contact Us form on this website to ask about services and availability.')
     }
   ];
 
@@ -36,10 +36,10 @@ export default function HomepageFaq() {
       <div className="container container-narrow">
         <RevealAnimation>
           <SectionHeading
-            tagline={t('faq.tagline', {}, 'FREQUENTLY ASKED QUESTIONS')}
-            title={t('faq.title', {}, 'Everything You Need to Know About')}
-            highlight={t('faq.highlight', {}, 'Our Auto Gas Services.')}
-            description={t('faq.description', {}, 'Get transparent, clear answers to common questions about CNG, LPG, vehicle conversion, and our verified capabilities in Guwahati.')}
+            tagline={t('faq.tagline', {}, 'Common Questions')}
+            title={t('faq.title', {}, 'Frequently Asked Questions About')}
+            highlight={t('faq.highlight', {}, 'Our Auto Gas Services')}
+            description={t('faq.description', {}, 'Clear answers to common questions about CNG, LPG, vehicle conversion, and servicing in Guwahati.')}
           />
         </RevealAnimation>
 

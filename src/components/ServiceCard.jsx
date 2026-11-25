@@ -31,7 +31,7 @@ export default function ServiceCard({ service, onSelect }) {
         <div className="service-card-tags">
           <span className="service-tags-label">
             <Tag size={13} className="text-yellow" />
-            <span>Official Capabilities:</span>
+            <span>Key Options:</span>
           </span>
           <div className="service-tags-wrapper">
             {service.tags.map((tag, tIdx) => (
@@ -48,9 +48,9 @@ export default function ServiceCard({ service, onSelect }) {
           href="#contact"
           className="service-link-btn"
           onClick={() => onSelect && onSelect(service.title)}
-          aria-label={`Get quote for ${service.title}`}
+          aria-label={`Enquire about ${service.title}`}
         >
-          <span>{t('services.ctaSpecific', {}, 'Get Specific Estimate')}</span>
+          <span>{t('services.ctaSpecific', {}, 'Enquire Now')}</span>
           <ArrowRight size={16} />
         </a>
       </div>

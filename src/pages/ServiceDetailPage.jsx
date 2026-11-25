@@ -129,7 +129,7 @@ export default function ServiceDetailPage({ serviceSlug, onNavigate, onSelectSer
                 icon={MessageCircle}
                 onClick={handleEnquiry}
               >
-                {t('common.whatsappChat', {}, 'WhatsApp Enquiry')}
+                {t('common.whatsappChat', {}, 'Contact on WhatsApp')}
               </Button>
 
               <Button
@@ -138,7 +138,7 @@ export default function ServiceDetailPage({ serviceSlug, onNavigate, onSelectSer
                 href={siteConfig.phoneTel}
                 icon={Phone}
               >
-                {t('common.call', {}, 'Call')}: {siteConfig.phone}
+                {t('common.callWorkshop', {}, 'Call Us')}: {siteConfig.phoneFormatted}
               </Button>
 
               <Button
@@ -147,7 +147,7 @@ export default function ServiceDetailPage({ serviceSlug, onNavigate, onSelectSer
                 icon={ArrowLeft}
                 onClick={() => onNavigate && onNavigate('home')}
               >
-                {t('common.reset', {}, 'Back to Home')}
+                {t('legal.backToHome', {}, 'Go Back')}
               </Button>
             </div>
           </div>
@@ -160,10 +160,10 @@ export default function ServiceDetailPage({ serviceSlug, onNavigate, onSelectSer
           <div className="service-sections-header">
             <span className="badge-tag badge-tag-blue">
               <Sparkles size={14} className="text-yellow mr-1" />
-              <span>{content.h1} - Detailed Overview</span>
+              <span>{content.h1}</span>
             </span>
             <h2 className="section-title text-navy mt-2">
-              Key Capabilities & Service Standards
+              What This Service Includes
             </h2>
           </div>
 
@@ -190,10 +190,10 @@ export default function ServiceDetailPage({ serviceSlug, onNavigate, onSelectSer
             <div className="text-center mb-8">
               <div className="inline-flex items-center gap-2 mb-2">
                 <HelpCircle size={18} className="text-yellow" />
-                <span className="badge-tag badge-tag-gold">FAQS & EXPERT GUIDANCE</span>
+                <span className="badge-tag badge-tag-gold">Common Questions</span>
               </div>
               <h2 className="section-title text-navy">
-                Frequently Asked Questions about {content.h1}
+                Questions About {content.h1}
               </h2>
             </div>
 
@@ -232,10 +232,10 @@ export default function ServiceDetailPage({ serviceSlug, onNavigate, onSelectSer
         <section className="section section-navy service-internal-links-section">
           <div className="container">
             <div className="internal-links-header text-center mb-6">
-              <span className="badge-tag badge-tag-blue">RELATED AUTOMOTIVE SERVICES</span>
-              <h3 className="section-title text-navy mt-2">Explore Related Services</h3>
+              <span className="badge-tag badge-tag-blue">More Services</span>
+              <h3 className="section-title text-navy mt-2">Explore Services</h3>
               <p className="text-muted text-sm max-w-xl mx-auto">
-                Discover our full range of certified CNG, LPG, and automotive care services at Maa Kamakhya Auto Gas.
+                See our other CNG, LPG, and vehicle gas services at Maa Kamakhya Auto Gas.
               </p>
             </div>
 
@@ -246,7 +246,7 @@ export default function ServiceDetailPage({ serviceSlug, onNavigate, onSelectSer
                   <div key={link.path} className="card-navy card-hover-effect internal-link-card">
                     <h4 className="internal-link-title">{link.name}</h4>
                     <p className="internal-link-desc text-xs text-muted mb-4">
-                      Official verified services and certified solutions in Guwahati, Assam.
+                      Available at Maa Kamakhya Auto Gas in Guwahati, Assam.
                     </p>
                     <button
                       type="button"
@@ -272,20 +272,20 @@ export default function ServiceDetailPage({ serviceSlug, onNavigate, onSelectSer
               <div className="service-contact-info">
                 <div className="service-contact-badge">
                   <ShieldCheck size={16} className="text-yellow" />
-                  <span>VISIT OUR NH 37 WORKSHOP</span>
+                  <span>Visit Our Workshop</span>
                 </div>
-                <h3 className="service-contact-heading">Ready to Enquire About {content.h1}?</h3>
+                <h3 className="service-contact-heading">Have Questions About {content.h1}?</h3>
                 <p className="service-contact-text text-muted text-sm">
-                  Visit our government-approved workshop on NH 37, Pachim Boragaon, Garchuk, Guwahati for a free pre-fitment inspection, live diagnostic scan, and quote.
+                  Visit Maa Kamakhya Auto Gas on NH 37, Pachim Boragaon, Garchuk, Guwahati, or reach out by phone or WhatsApp to discuss your vehicle.
                 </p>
                 <div className="service-contact-meta">
                   <div className="meta-item">
                     <MapPin size={15} className="text-yellow flex-shrink-0" />
-                    <span>Opposite Nezon Steel, Garchuk, Guwahati - 781035</span>
+                    <span>{siteConfig.address}</span>
                   </div>
                   <div className="meta-item">
                     <Clock size={15} className="text-yellow flex-shrink-0" />
-                    <span>Mon - Sat: 9:00 AM to 7:30 PM</span>
+                    <span>{t('common.hours', {}, 'Operating hours: Please call or message us on WhatsApp to confirm timings.')}</span>
                   </div>
                 </div>
               </div>
@@ -306,7 +306,7 @@ export default function ServiceDetailPage({ serviceSlug, onNavigate, onSelectSer
                   href={siteConfig.phoneTel}
                   icon={Phone}
                 >
-                  Call: +91 {siteConfig.phone}
+                  Call Us: {siteConfig.phoneFormatted}
                 </Button>
               </div>
             </div>

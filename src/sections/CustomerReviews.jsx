@@ -333,7 +333,7 @@ export default function CustomerReviews() {
             title="Moderation Console (or press Ctrl+Shift+M)"
           >
             <ShieldCheck size={13} className="mr-1" />
-            <span>Review Moderation Queue ({pendingReviews.length} pending)</span>
+            <span>Manage Pending Reviews ({pendingReviews.length} pending)</span>
           </button>
         </div>
       </div>
@@ -353,10 +353,10 @@ export default function CustomerReviews() {
             <div className="modal-header">
               <div className="modal-title-wrap">
                 <h3 id="write-review-title" className="modal-title">
-                  {t('reviews.modalTitle', {}, 'Share Your Feedback')}
+                  {t('reviews.modalTitle', {}, 'Share Your Review')}
                 </h3>
                 <p className="modal-subtitle">
-                  {t('reviews.modalSubtitle', {}, 'Your genuine review helps car owners in Guwahati make informed auto gas decisions.')}
+                  {t('reviews.modalSubtitle', {}, 'Your feedback helps other drivers in Guwahati learn about our services.')}
                 </p>
               </div>
               <button
@@ -375,13 +375,13 @@ export default function CustomerReviews() {
                   <CheckCircle2 size={48} className="text-green" />
                 </div>
                 <h4 className="success-heading">
-                  {t('reviews.successTitle', {}, 'Review Submitted for Moderation')}
+                  {t('reviews.successTitle', {}, 'Thank You for Your Review')}
                 </h4>
                 <p className="success-message">{submitMessage}</p>
                 <div className="success-note">
                   <Clock size={14} className="mr-1 text-yellow flex-shrink-0" />
                   <span>
-                    {t('reviews.moderationNote', {}, 'To ensure authentic feedback and prevent spam, all customer reviews are approved by our workshop team before appearing on the site.')}
+                    {t('reviews.moderationNote', {}, 'All submitted reviews are checked by our team before they appear on the website.')}
                   </span>
                 </div>
                 <button

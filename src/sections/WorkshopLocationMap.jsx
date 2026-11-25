@@ -18,25 +18,25 @@ export default function WorkshopLocationMap() {
 
   const drivingRoutes = [
     {
-      from: "From ISBT Guwahati (Interstate Bus Terminus)",
+      from: "From ISBT Guwahati",
       distance: "~2.0 km",
-      directions: "Drive west on NH 37 toward Jalukbari / Boragaon. Pass Garchuk Chariali; workshop is situated on NH 37 opposite Nezon Steel, near Kumar Resorts."
+      directions: "Head west along NH 37 toward Jalukbari and Boragaon. After Garchuk Chariali, continue along NH 37 to Pachim Boragaon."
     },
     {
-      from: "From Jalukbari Flyover / Airport Side",
+      from: "From Jalukbari / Airport Road",
       distance: "~5.5 km",
-      directions: "Head east along NH 37 toward Garchuk and Lokhra. Direct highway-frontage access at Pachim Boragaon directly opposite Nezon Steel."
+      directions: "Drive east on NH 37 toward Garchuk and Lokhra. Maa Kamakhya Auto Gas is located along the highway at Pachim Boragaon."
     },
     {
-      from: "From Lokhra Chariali / NH-27 Bypass",
+      from: "From Lokhra / Bypass",
       distance: "~4.5 km",
-      directions: "Take NH 37 heading west past Garchuk intersection. Direct highway access with dedicated parking and vehicle drive-in bay."
+      directions: "Take NH 37 heading west past the Garchuk crossing toward Pachim Boragaon."
     }
   ];
 
   const workshopFeatures = [
-    "Location on NH 37, Pachim Boragaon",
-    "Near Garchuk intersection, Guwahati",
+    "Located on NH 37, Pachim Boragaon",
+    "Near Garchuk crossing, Guwahati",
     "Auto Gas Filling Station (CNG Only)",
     "CNG & LPG Automotive Services",
     "Gas Kit Installation & Conversion",
@@ -48,10 +48,10 @@ export default function WorkshopLocationMap() {
       <div className="container">
         <RevealAnimation>
           <SectionHeading
-            tagline={t('location.tagline', {}, 'VISIT OUR WORKSHOP')}
-            title={t('location.title', {}, 'Prime NH 37 Location in')}
-            highlight={t('location.titleHighlight', {}, 'Guwahati.')}
-            description={t('location.description', {}, 'Conveniently accessible from Jalukbari, Lokhra, Betkuchi and the Guwahati bypass. Drop in for a free pre-fitment inspection.')}
+            tagline={t('location.tagline', {}, 'Find Our Location')}
+            title={t('location.title', {}, 'Visit Us on NH 37 in')}
+            highlight={t('location.titleHighlight', {}, 'Guwahati')}
+            description={t('location.description', {}, 'Easy to reach from ISBT, Jalukbari, and Lokhra. Visit our workshop in Garchuk, Guwahati, or open Google Maps for directions.')}
           />
         </RevealAnimation>
 
@@ -98,7 +98,7 @@ export default function WorkshopLocationMap() {
                     rel="noopener noreferrer"
                     icon={Navigation}
                   >
-                    {t('location.getDirections', {}, 'Open Live GPS Directions')}
+                    {t('location.getDirections', {}, 'Find Our Location')}
                   </Button>
 
                   <Button
@@ -107,7 +107,7 @@ export default function WorkshopLocationMap() {
                     href={siteConfig.phoneTel}
                     icon={Phone}
                   >
-                    {t('common.call', {}, 'Call')}: {siteConfig.phone}
+                    {t('common.callWorkshop', {}, 'Call Us')}: {siteConfig.phoneFormatted}
                   </Button>
                 </div>
               </div>
@@ -121,9 +121,9 @@ export default function WorkshopLocationMap() {
               <div className="location-showcase-card card-navy">
                 <div className="showcase-card-header">
                   <div className="showcase-badge">
-                    <span>{t('location.workshopAddress', {}, 'Official Workshop Location')}</span>
+                    <span>{t('location.workshopAddress', {}, 'Workshop Location')}</span>
                   </div>
-                  <span className="text-xs text-muted">Garchuk Facility</span>
+                  <span className="text-xs text-muted">Garchuk, Guwahati</span>
                 </div>
 
                 <div className="showcase-brand-identity-box">

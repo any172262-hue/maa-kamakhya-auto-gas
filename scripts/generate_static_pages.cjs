@@ -63,8 +63,8 @@ const servicePages = [
       { name: 'Gas Kit Installation', path: 'services/gas-kit-installation/', text: 'Gas kit installation' },
       { name: 'Vehicle Gas Conversion', path: 'services/vehicle-gas-conversion/', text: 'Explore vehicle gas conversion process' },
       { name: 'Gas Kit Repair & Maintenance', path: 'services/gas-kit-repair-maintenance/', text: 'View maintenance & diagnostic services' },
-      { name: 'About Maa Kamakhya Auto Gas', path: 'about/', text: 'Read about our workshop credentials' },
-      { name: 'Contact Us', path: 'contact/', text: 'Get in touch for a workshop appointment' }
+      { name: 'About Maa Kamakhya Auto Gas', path: 'about/', text: 'Learn about Maa Kamakhya Auto Gas' },
+      { name: 'Contact Us', path: 'contact/', text: 'Contact Us for an enquiry' }
     ]
   },
   {
@@ -78,31 +78,31 @@ const servicePages = [
     sections: [
       {
         title: 'Automotive LPG Kit Installation',
-        desc: 'Professional installation of certified sequential auto LPG vapor injection systems designed for smooth power output, lower emissions, and substantial running cost reductions.'
+        desc: 'Installation of sequential auto LPG injection systems suited for smooth day-to-day driving and practical fuel flexibility.'
       },
       {
-        title: 'LPG System Diagnostics & Tuning',
-        desc: 'Computerized calibration of LPG electronic control units (ECU), vaporizer pressure adjustments, and diagnostic fault isolation.'
+        title: 'LPG System Checkups & Tuning',
+        desc: 'Calibration of LPG electronic control units (ECU), vaporizer pressure checks, and fault troubleshooting.'
       },
       {
-        title: 'Safety Valve & Multi-Point Leak Audits',
-        desc: 'Rigorous leak inspection using electronic gas detectors across all high-pressure lines, multivalves, and vapor lines to ensure passenger safety.'
+        title: 'Safety Valve & Leak Inspection',
+        desc: 'Careful leak checks across lines, multivalves, and vapor connections.'
       }
     ],
     faqs: [
       {
         question: 'Do you offer automotive LPG maintenance and repair?',
-        answer: 'Yes, our certified technicians service LPG vaporizers, solenoid valves, injector rails, and perform safety leak audits on compatible vehicles.'
+        answer: 'Yes. Our technicians service LPG vaporizers, solenoid valves, injector rails, and check for gas leaks on compatible vehicles.'
       },
       {
         question: 'How does Auto LPG compare with CNG?',
-        answer: 'Auto LPG operates at lower tank pressure (approx. 10-12 bar vs 200 bar for CNG) and uses lighter cylinders, while CNG offers higher overall fuel cost savings for high-mileage drivers.'
+        answer: 'Auto LPG runs at lower tank pressure and uses lighter tanks, while CNG is available at our Guwahati filling station and is a common choice for regular city driving.'
       }
     ],
     internalLinks: [
-      { name: 'Auto Gas Filling Information', path: 'services/auto-gas-filling/', text: 'Check autogas dispensing information' },
-      { name: 'CNG Services', path: 'services/cng-services/', text: 'Compare with sequential CNG services' },
-      { name: 'Contact Workshop', path: 'contact/', text: 'Schedule an LPG consultation' }
+      { name: 'Auto Gas Filling Information', path: 'services/auto-gas-filling/', text: 'View CNG filling station details' },
+      { name: 'CNG Services', path: 'services/cng-services/', text: 'Explore CNG services' },
+      { name: 'Contact Us', path: 'contact/', text: 'Contact Us about LPG services' }
     ]
   },
   {
@@ -123,18 +123,18 @@ const servicePages = [
         desc: 'Located at NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035, Assam, India. Convenient highway access makes it simple for private cars and commercial vehicles traveling between Jalukbari, ISBT, and Lokhra.'
       },
       {
-        title: 'Cylinder Compliance & Safety Standards',
-        desc: 'Prior to refilling, cylinders must display a valid PESO hydro-test compliance plate within the 3-year certification window and a functioning compliance compliance plate.'
+        title: 'Cylinder Safety & Plate Check',
+        desc: 'Before refilling, cylinders must have a valid hydro-test compliance plate within the 3-year testing window.'
       },
       {
-        title: 'Dispensing Safety Protocol',
-        desc: 'Drivers must switch off ignition, step out of the vehicle, and ensure no electronic devices are in use during the gas dispensing procedure.'
+        title: 'Dispensing Safety Rules',
+        desc: 'Drivers must switch off the engine, step out of the vehicle, and avoid using mobile phones during gas refilling.'
       }
     ],
     faqs: [
       {
-        question: 'What are the workshop and service operating hours?',
-        answer: 'We operate Monday to Saturday from 9:00 AM to 7:30 PM. Sunday appointments are available upon prior booking.'
+        question: 'What are the workshop and station timings?',
+        answer: 'Operating hours are not listed online. Please call +91 69139 10337 or message us on WhatsApp before visiting to confirm timings.'
       },
       {
         question: 'What documents are required for cylinder refilling compliance?',
@@ -156,32 +156,32 @@ const servicePages = [
     summary: 'Maa Kamakhya Auto Gas provides gas kit installation services in Guwahati, Assam. Located at Pachim Boragaon, Garchuk, we offer vehicle gas kit installation services for customers looking for automotive gas solutions. Vehicle compatibility and installation requirements can vary. Contact us with your vehicle details to discuss suitable service options and availability. Visit or contact Maa Kamakhya Auto Gas at NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035, Assam.',
     sections: [
       {
-        title: 'Government-Homologated Sequential Systems',
-        desc: 'We install premium sequential autogas injection systems engineered with high-precision injector rails, advanced microprocessors, and PESO-approved seamless cylinders.'
+        title: 'Sequential Gas Injection Systems',
+        desc: 'We install sequential gas injection kits with dedicated ECUs, gas injector rails, and pressure reducers matched to your vehicle.'
       },
       {
         title: 'Step-by-Step Installation Process',
-        desc: 'From initial intake inspection and cylinder boot mounting to injector manifold tapping, ECU harness integration, and dynamic road testing with gas-flow analysis.'
+        desc: 'From engine inspection and cylinder mounting to injector fitting, ECU wiring setup, and road testing.'
       },
       {
-        title: 'Warranty & Post-Installation Support',
-        desc: 'All installations are backed by manufacturer hardware warranties, complimentary first check-ups, and dedicated post-retrofitment technical support.'
+        title: 'After-Installation Guidance & Servicing',
+        desc: 'Contact our team anytime after fitting for tuning checks, routine filter changes, or maintenance support.'
       }
     ],
     faqs: [
       {
         question: 'How long does a sequential CNG kit installation take?',
-        answer: 'A standard sequential CNG kit installation is typically completed in 6 to 8 hours by our specialized mechanical and electrical team.'
+        answer: 'Installation time depends on the vehicle model and kit setup. Please contact us to confirm expected completion time before bringing in your car.'
       },
       {
-        question: 'Will CNG kit installation damage my vehicle engine?',
-        answer: 'No. Modern sequential injection systems inject gas precisely timed with engine valve openings, preventing backfiring, overheating, and preserving engine life.'
+        question: 'Will CNG kit installation affect my vehicle engine?',
+        answer: 'Sequential kits deliver gas timed to your engine needs. Keeping up with periodic servicing and tuning helps maintain smooth running.'
       }
     ],
     internalLinks: [
       { name: 'Vehicle Gas Conversion', path: 'services/vehicle-gas-conversion/', text: 'Learn about vehicle gas conversion' },
-      { name: 'Repair & Maintenance', path: 'services/gas-kit-repair-maintenance/', text: 'Explore preventive care and diagnostics' },
-      { name: 'Contact for Quote', path: 'contact/', text: 'Request a customized installation quote' }
+      { name: 'Repair & Maintenance', path: 'services/gas-kit-repair-maintenance/', text: 'Explore repair and maintenance' },
+      { name: 'Contact Us', path: 'contact/', text: 'Contact Us for an enquiry' }
     ]
   },
   {
@@ -218,8 +218,8 @@ const servicePages = [
     ],
     internalLinks: [
       { name: 'Gas Kit Installation', path: 'services/gas-kit-installation/', text: 'Gas kit installation' },
-      { name: 'CNG Services Overview', path: 'services/cng-services/', text: 'Explore complete service offerings' },
-      { name: 'Contact Workshop', path: 'contact/', text: 'Speak with an automotive technician' }
+      { name: 'CNG Services Overview', path: 'services/cng-services/', text: 'Explore Services' },
+      { name: 'Contact Us', path: 'contact/', text: 'Contact Us about your vehicle' }
     ]
   },
   {
@@ -271,8 +271,8 @@ const servicePages = [
     summary: "Maa Kamakhya Auto Gas is a local automotive gas service workshop on National Highway 37, Garchuk, Guwahati providing CNG & LPG services, kit installation, conversion, and maintenance.",
     sections: [
       {
-        title: 'Our Mission & Quality Standards',
-        desc: 'We are dedicated to providing motorists in Guwahati and Assam with safe, dependable, and cost-effective alternative fuel conversions. Our workshop prioritizes driver safety, upfront pricing, and dependable performance.'
+        title: 'Our Focus on Careful Work',
+        desc: 'We aim to provide drivers in Guwahati with reliable alternative-fuel installations, clear estimates before work begins, and helpful support.'
       },
       {
         title: 'Confirmed Business Profile',
@@ -312,27 +312,27 @@ const servicePages = [
         desc: 'NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035, Assam, India. Easily accessible from ISBT Guwahati (5 mins), Jalukbari flyover (10 mins), and Lokhra bypass.'
       },
       {
-        title: 'Direct Telephony & WhatsApp Hotline',
-        desc: 'Call us directly at +91 69139 10337 or message our technical advisors on WhatsApp at +91 69139 10337 for assistance and quotation breakdowns.'
+        title: 'Phone & WhatsApp Support',
+        desc: 'Call us at +91 69139 10337 or message us on WhatsApp at +91 69139 10337 for service guidance and enquiries.'
       },
       {
-        title: 'Operating Hours & Service Bookings',
-        desc: 'Operating hours are not provided online. Please contact the workshop directly to confirm current hours and service availability.'
+        title: 'Operating Hours',
+        desc: 'Operating hours are not provided online. Please contact us directly to confirm current hours and service availability.'
       }
     ],
     faqs: [
       {
-        question: 'Can I get a quote over WhatsApp?',
-        answer: 'Yes! Simply message us on WhatsApp at +91 69139 10337 with your vehicle make and model, and our technical team will send you an itemized estimate.'
+        question: 'Can I enquire over WhatsApp?',
+        answer: 'Yes. Message us on WhatsApp at +91 69139 10337 with your vehicle make and model, and our team will share details.'
       },
       {
-        question: 'Do I need an appointment for cylinder hydro-testing?',
-        answer: 'Prior booking is recommended to ensure priority processing and minimal vehicle downtime at the testing center.'
+        question: 'Should I call before visiting?',
+        answer: 'Yes. Contacting us beforehand helps confirm availability and reduces waiting time.'
       }
     ],
     internalLinks: [
-      { name: 'About Us', path: 'about/', text: 'Learn more about our certifications' },
-      { name: 'CNG Services', path: 'services/cng-services/', text: 'Discover our installation services' }
+      { name: 'About Us', path: 'about/', text: 'Learn more about Maa Kamakhya Auto Gas' },
+      { name: 'CNG Services', path: 'services/cng-services/', text: 'Explore our CNG services' }
     ]
   },
   {
@@ -370,17 +370,17 @@ const servicePages = [
     sections: [
       {
         title: '1. Acceptance of Terms',
-        desc: 'By accessing or using the website of Maa Kamakhya Auto Gas, you acknowledge and agree to comply with these terms of use. All retrofitment operations are conducted in accordance with approved automotive industry specifications.'
+        desc: 'By visiting or using the website of Maa Kamakhya Auto Gas, you agree to these Terms & Conditions.'
       },
       {
-        title: '2. Fuel Savings Calculations Disclaimer',
-        desc: 'Fuel cost comparisons and savings figures displayed on this website are illustrative estimates based on user-entered mileage, local fuel retail tariffs, and standard test cycles. Actual vehicle fuel economy varies with traffic conditions, driving style, AC usage, and payload.'
+        title: '2. Fuel Savings Calculator Disclaimer',
+        desc: 'Any fuel cost comparisons on this website are rough estimates based on the distance, fuel prices, and mileage figures you enter. Actual mileage depends on vehicle condition, driving style, traffic, and road conditions.'
       }
     ],
     faqs: [],
     internalLinks: [
-      { name: 'Privacy Policy', path: 'privacy-policy/', text: 'Review our Privacy Policy' },
-      { name: 'About Us', path: 'about/', text: 'Review company statutory credentials' }
+      { name: 'Privacy Policy', path: 'privacy-policy/', text: 'Read our Privacy Policy' },
+      { name: 'About Us', path: 'about/', text: 'Learn more about Maa Kamakhya Auto Gas' }
     ]
   }
 ];

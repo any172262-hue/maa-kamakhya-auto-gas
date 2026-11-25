@@ -9,7 +9,7 @@ export default function PrivacyPolicy({ onBackToHome }) {
 
   usePageMeta({
     title: "Privacy Policy | Maa Kamakhya Auto Gas, Guwahati",
-    description: "Official Privacy Policy for Maa Kamakhya Auto Gas in Guwahati, Assam. Details our data privacy standards, enquiry processing, and user rights.",
+    description: "Read the Privacy Policy for Maa Kamakhya Auto Gas in Guwahati, Assam, explaining how enquiry details, calculator inputs, and WhatsApp communication are handled.",
     canonical: "https://any172262-hue.github.io/maa-kamakhya-auto-gas/privacy-policy/"
   });
 
@@ -26,114 +26,114 @@ export default function PrivacyPolicy({ onBackToHome }) {
           className="btn btn-secondary btn-sm"
         >
           <ArrowLeft size={16} />
-          <span>{t('legal.backToHome', {}, 'Back to Home')}</span>
+          <span>{t('legal.backToHome', {}, 'Go Back')}</span>
         </a>
       </div>
 
       <header className="legal-header">
         <div className="legal-badge">
           <Shield size={16} className="text-yellow" />
-          <span>Website Privacy Policy</span>
+          <span>Privacy Policy</span>
         </div>
         <h1 className="legal-title">{t('legal.privacyTitle', {}, 'Privacy Policy')}</h1>
         <p className="legal-meta">
-          Entity: <strong>{siteConfig.legalName}</strong> | {t('legal.lastUpdated', {}, 'Last Updated: November 2026')} | Status: Draft flagged for owner review
+          Business: <strong>{siteConfig.legalName}</strong> | {t('legal.lastUpdated', {}, 'Last Updated: November 2026')} | Status: Draft for owner review
         </p>
       </header>
 
       <div className="legal-content-card card-navy">
         <section className="legal-section">
-          <h2>1. Overview and Scope</h2>
+          <h2>1. About This Policy</h2>
           <p>
-            Maa Kamakhya Auto Gas operates an automotive CNG retrofitment, kit distribution, cylinder testing, and vehicle maintenance facility located at Shop No. 7, Opposite Nezon Steel, Near Kumar Resorts, NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035, Assam.
+            Maa Kamakhya Auto Gas provides CNG and LPG services, sequential kit installation, vehicle gas conversion, maintenance, and CNG filling at {siteConfig.address}.
           </p>
           <p>
-            This Privacy Policy explains how our website handles user data when you browse our services, calculate fuel estimates, or send conversion enquiries to our workshop team.
+            This Privacy Policy explains what information is collected when you visit our website, use our fuel savings calculator, or prepare a WhatsApp enquiry to send to our team.
           </p>
         </section>
 
         <section className="legal-section">
-          <h2>2. Information We Collect</h2>
+          <h2>2. Information We Handle</h2>
           <p>
-            Our website is designed to be lightweight, static, and privacy-respecting. We collect minimal personal information:
+            This website only uses the details you choose to enter while browsing or preparing an enquiry:
           </p>
           <ul>
             <li>
-              <strong>Enquiry Form Details:</strong> When you use our enquiry form, you voluntarily provide your Full Name, 10-digit Mobile Number, preferred Service or Enquiry Type, and optional Vehicle Details or message notes.
+              <strong>Enquiry Form Details:</strong> When you fill out the Contact Us form, you enter your Full Name, Mobile Number, Service Needed, and any optional Vehicle Model or Additional Message you wish to share.
             </li>
             <li>
-              <strong>Campaign Attribution (UTM Parameters):</strong> If you arrive at our website via a marketing link or advertisement containing campaign parameters (such as utm_source, utm_medium, utm_campaign, utm_term, or utm_content), these parameters are captured client-side and saved temporarily in your browser session storage. They are included in your pre-formatted WhatsApp enquiry so our workshop team knows which advertisement helped you find us. No third-party ad tracker or surveillance cookies are used.
+              <strong>Referral Link Information (UTM Parameters):</strong> If you visit the website from a link that includes referral tags (such as utm_source or utm_campaign), those details may be kept in your browser session temporarily and included in your prepared WhatsApp message so our team knows how you found us.
             </li>
             <li>
-              <strong>Fuel Savings Calculator Inputs:</strong> The monthly distance and fuel price inputs you adjust on our savings calculator are processed locally inside your web browser. This data is never stored on a server or transmitted to any third party.
+              <strong>Fuel Savings Calculator Inputs:</strong> Numbers you enter in the fuel savings calculator stay in your browser to show rough estimates and are not saved on a server.
             </li>
             <li>
-              <strong>Technical Logs:</strong> Standard server logs (e.g. browser type, operating system) may be generated by the web hosting provider for security purposes. Detailed third-party analytics tracking is currently marked as: <em>TBD (Subject to final deployment configuration)</em>.
+              <strong>Standard Hosting Logs:</strong> Like most websites, the hosting provider may keep basic technical logs (such as browser type and request timing) for security and availability. Any third-party analytics setup is currently marked as <em>TBD (Pending owner confirmation)</em>.
             </li>
           </ul>
         </section>
 
         <section className="legal-section">
-          <h2>3. How We Process Contact Enquiries</h2>
+          <h2>3. How Enquiries Work With WhatsApp</h2>
           <p>
-            Our website does not maintain an online database storing customer enquiry records. When you submit the quotation form:
+            This website does not store your enquiry details in an online database. When you fill out the form:
           </p>
           <ul>
             <li>
-              <strong>Pre-Submission Review:</strong> A confirmation modal displays your entered details (Full Name, Mobile Number, Service, Vehicle, and campaign attribution) so you can review or edit them before proceeding.
+              <strong>Review Before Sending:</strong> Clicking "Review &amp; Send via WhatsApp" opens a review box where you can check or edit your details before continuing.
             </li>
             <li>
-              <strong>WhatsApp Handoff:</strong> Upon confirmation, your details are formatted into a clean text message and opened via the official WhatsApp Click-to-Chat protocol to our verified workshop number at <strong>+91 {siteConfig.whatsappNumber}</strong>.
+              <strong>Opening WhatsApp:</strong> Once you confirm, your details are placed into a WhatsApp message addressed to Maa Kamakhya Auto Gas at <strong>+91 {siteConfig.whatsappNumber}</strong>.
             </li>
             <li>
-              <strong>Customer Control:</strong> Your message is sent only when you review and press Send inside your WhatsApp application.
+              <strong>Your Choice to Send:</strong> Nothing is sent automatically by the website. Your enquiry is only sent if you press Send inside WhatsApp.
             </li>
           </ul>
         </section>
 
         <section className="legal-section">
-          <h2>4. Cookies and Third-Party Services</h2>
+          <h2>4. Third-Party Services &amp; Cookies</h2>
           <p>
-            We keep third-party dependencies strictly limited:
+            This website loads certain external services so pages display properly:
           </p>
           <ul>
             <li>
-              <strong>Google Fonts:</strong> Web typography is delivered via Google Fonts servers.
+              <strong>Google Fonts:</strong> Used to display website fonts cleanly.
             </li>
             <li>
-              <strong>Google Maps:</strong> Our location map is embedded using Google Maps to help customers navigate to our physical workshop on NH 37, Garchuk, Guwahati.
+              <strong>Google Maps:</strong> Embedded on the site so you can view our location and get directions to our workshop in Garchuk, Guwahati.
             </li>
             <li>
-              <strong>Cookies:</strong> The website does not use tracking cookies or advertising pixels. Any future cookie consent mechanisms are marked as: <em>TBD</em>.
+              <strong>Cookies:</strong> This website does not intentionally set advertising cookies or tracking pixels. Any future cookie notice requirements are marked as <em>TBD (Pending owner confirmation)</em>.
             </li>
           </ul>
         </section>
 
         <section className="legal-section">
-          <h2>5. Data Retention and User Privacy Rights</h2>
+          <h2>5. Your Choices and Data Retention</h2>
           <p>
-            Because we do not store customer profiles or enquiry records on this website, there is no web database holding your personal information. When you communicate with us via WhatsApp or phone call, your conversation history is retained within standard commercial messaging applications for the duration necessary to answer your vehicle enquiries.
+            Since no customer accounts or enquiry databases are stored on this website, your enquiry history only exists in your own WhatsApp or phone call records with us when you choose to message or call.
           </p>
           <p>
-            Under applicable Indian information technology guidelines, you may request the deletion or correction of your communications at any time by contacting our workshop directly.
+            If you have contacted Maa Kamakhya Auto Gas and would like us to remove or update details from past messages, please call or message us directly.
           </p>
         </section>
 
         <section className="legal-section">
-          <h2>6. Business Contact Details</h2>
+          <h2>6. Contact Details</h2>
           <div className="legal-contact-box">
             <p><strong>Business Name:</strong> {siteConfig.legalName}</p>
-            <p><strong>Physical Address:</strong> {siteConfig.address}</p>
-            <p><strong>Phone Hotline:</strong> +91 {siteConfig.phone}</p>
-            <p><strong>WhatsApp Support:</strong> +91 {siteConfig.whatsappNumber}</p>
+            <p><strong>Address:</strong> {siteConfig.address}</p>
+            <p><strong>Phone:</strong> {siteConfig.phoneFormatted}</p>
+            <p><strong>WhatsApp:</strong> +91 {siteConfig.whatsappNumber}</p>
             <p><strong>Operating Hours:</strong> {siteConfig.hours}</p>
-            <p><strong>Official Legal Counsel:</strong> <em>TBD (To be designated by owner)</em></p>
+            <p><strong>Legal Contact / Officer:</strong> <em>TBD (To be confirmed by the business owner)</em></p>
           </div>
         </section>
 
         <section className="legal-section legal-review-notice">
           <p>
-            <strong>Owner Notice:</strong> This privacy document is a foundational operational policy drafted to describe current website workflows. It is flagged for final review and formal legal sign-off by the owner of Maa Kamakhya Auto Gas prior to public deployment.
+            <strong>Note for Business Owner Confirmation:</strong> This Privacy Policy describes how the current website works. Operating hours, legal contact details, analytics preferences, and cookie policy details are flagged for final review and approval by the owner of Maa Kamakhya Auto Gas.
           </p>
         </section>
       </div>
@@ -145,7 +145,7 @@ export default function PrivacyPolicy({ onBackToHome }) {
           className="btn btn-primary"
         >
           <ArrowLeft size={16} />
-          <span>Return to Homepage</span>
+          <span>{t('legal.backToHome', {}, 'Go Back')}</span>
         </a>
       </div>
     </div>

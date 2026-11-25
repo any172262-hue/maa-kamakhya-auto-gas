@@ -20,8 +20,8 @@ export default function ContactPage({ onNavigate }) {
   const { t } = useLanguage();
 
   usePageMeta({
-    title: "Contact Us | Maa Kamakhya Auto Gas: NH 37 Guwahati",
-    description: "Contact Maa Kamakhya Auto Gas on NH 37, Pachim Boragaon, Garchuk, Guwahati for CNG and LPG services, gas kit installation, conversion, and repair inquiries.",
+    title: "Contact Us | Maa Kamakhya Auto Gas - NH 37 Guwahati",
+    description: "Contact Maa Kamakhya Auto Gas on NH 37, Pachim Boragaon, Garchuk, Guwahati for CNG and LPG services, gas kit installation, vehicle conversion, and maintenance.",
     canonical: "https://any172262-hue.github.io/maa-kamakhya-auto-gas/contact/"
   });
 
@@ -50,7 +50,7 @@ export default function ContactPage({ onNavigate }) {
           <div className="service-hero-content">
             <div className="service-hero-badge">
               <MapPin size={16} className="text-yellow" />
-              <span>NH 37 GARCHUK • GUWAHATI, ASSAM</span>
+              <span>NH 37, Garchuk, Guwahati</span>
             </div>
 
             <h1 className="service-hero-title">
@@ -58,7 +58,7 @@ export default function ContactPage({ onNavigate }) {
             </h1>
 
             <p className="service-hero-lead">
-              Contact Maa Kamakhya Auto Gas for enquiries regarding CNG and LPG services, auto gas filling (CNG only), gas kit installation, vehicle gas conversion, and maintenance support in Guwahati.
+              Have a question or need help choosing a service? Reach out to our team for CNG and LPG kit installations, vehicle conversions, servicing, or CNG filling in Guwahati.
             </p>
 
             <div className="service-hero-actions">
@@ -70,7 +70,7 @@ export default function ContactPage({ onNavigate }) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Chat on WhatsApp (+91 {siteConfig.whatsappNumber})
+                WhatsApp: +91 {siteConfig.whatsappNumber}
               </Button>
 
               <Button
@@ -79,7 +79,7 @@ export default function ContactPage({ onNavigate }) {
                 href={siteConfig.phoneTel}
                 icon={Phone}
               >
-                Call: +91 {siteConfig.phone}
+                Call Us: {siteConfig.phoneFormatted}
               </Button>
 
               {siteConfig.email && (
@@ -99,7 +99,7 @@ export default function ContactPage({ onNavigate }) {
                 icon={ArrowLeft}
                 onClick={() => onNavigate && onNavigate('home')}
               >
-                Return to Home
+                Go Back
               </Button>
             </div>
           </div>

@@ -56,10 +56,10 @@ export default function Process() {
       <div className="container">
         <RevealAnimation>
           <SectionHeading
-            tagline={t('process.tagline', {}, 'HOW IT WORKS')}
-            title={t('process.title', {}, 'Our 5-Step Precision')}
-            highlight={t('process.titleHighlight', {}, 'Installation Process.')}
-            description={t('process.description', {}, 'Every car retrofitted at Maa Kamakhya Auto Gas follows a standardized engineering protocol to guarantee zero power loss, maximum fuel economy, and absolute safety.')}
+            tagline={t('process.tagline', {}, 'How It Works')}
+            title={t('process.title', {}, 'Our 5-Step')}
+            highlight={t('process.titleHighlight', {}, 'Installation Process')}
+            description={t('process.description', {}, 'Every vehicle kit installation follows clear inspection, neat fitting, tuning, and leak-testing steps.')}
           />
         </RevealAnimation>
 

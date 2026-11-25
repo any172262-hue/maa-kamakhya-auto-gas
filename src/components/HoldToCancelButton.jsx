@@ -5,6 +5,8 @@ const HOLD_DURATION_MS = 2000;
 
 export default function HoldToCancelButton({
   onCancel,
+  onEarlyRelease,
+  onHoldStart,
   disabled = false,
   className = ''
 }) {
@@ -17,11 +19,15 @@ export default function HoldToCancelButton({
   const isCompletedRef = useRef(false);
   const isMountedRef = useRef(true);
   const onCancelRef = useRef(onCancel);
+  const onEarlyReleaseRef = useRef(onEarlyRelease);
+  const onHoldStartRef = useRef(onHoldStart);
 
-  // Keep latest onCancel callback reference
+  // Keep latest callback references
   useEffect(() => {
     onCancelRef.current = onCancel;
-  }, [onCancel]);
+    onEarlyReleaseRef.current = onEarlyRelease;
+    onHoldStartRef.current = onHoldStart;
+  }, [onCancel, onEarlyRelease, onHoldStart]);
 
   // Clean up animation frame and listeners on unmount
   useEffect(() => {
@@ -39,6 +45,9 @@ export default function HoldToCancelButton({
   const resetHold = useCallback(() => {
     if (isCompletedRef.current) return;
 
+    const wasHolding = isHoldingRef.current;
+    const heldMs = wasHolding ? performance.now() - startTimeRef.current : 0;
+
     if (animationFrameRef.current) {
       cancelAnimationFrame(animationFrameRef.current);
       animationFrameRef.current = null;
@@ -47,6 +56,9 @@ export default function HoldToCancelButton({
     if (isMountedRef.current) {
       setProgress(0);
       setStatus('idle');
+      if (wasHolding && heldMs >= 120 && onEarlyReleaseRef.current) {
+        onEarlyReleaseRef.current();
+      }
     }
   }, []);
 
@@ -75,6 +87,9 @@ export default function HoldToCancelButton({
   const startHold = useCallback(() => {
     if (disabled || isCompletedRef.current || isHoldingRef.current) return;
 
+    if (onHoldStartRef.current) {
+      onHoldStartRef.current();
+    }
     isHoldingRef.current = true;
     startTimeRef.current = performance.now();
     setProgress(0);
@@ -138,7 +153,7 @@ export default function HoldToCancelButton({
 
   const getButtonText = () => {
     if (status === 'completed') return 'Cancelled';
-    if (status === 'holding') return 'Hold to cancel...';
+    if (status === 'holding') return 'Keep holding to cancel...';
     return 'Cancel';
   };
 

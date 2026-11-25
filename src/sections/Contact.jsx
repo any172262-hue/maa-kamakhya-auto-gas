@@ -26,6 +26,7 @@ export default function Contact({ prefilledQuestion = "", onNavigate }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [handoffState, setHandoffState] = useState(null); // 'prepared' | null
   const [cancelledNotice, setCancelledNotice] = useState(false);
+  const [formSubmitError, setFormSubmitError] = useState(false);
   const [whatsappOpenError, setWhatsappOpenError] = useState(false);
   const [utmParams, setUtmParams] = useState({});
   const [lastWhatsAppUrl, setLastWhatsAppUrl] = useState('');
@@ -54,31 +55,31 @@ export default function Contact({ prefilledQuestion = "", onNavigate }) {
     switch (name) {
       case 'fullName':
         if (!value || !value.trim()) {
-          return t('contact.errNameRequired', {}, 'Please enter your full name.');
+          return t('contact.errNameRequired', {}, 'Please enter your name.');
         }
         if (value.trim().length < 2) {
-          return t('contact.errNameMin', {}, 'Name must be at least 2 characters.');
+          return t('contact.errNameMin', {}, 'Please enter at least 2 characters for your name.');
         }
         if (value.trim().length > 80) {
-          return 'Name must be 80 characters or fewer.';
+          return 'Please keep your name under 80 characters.';
         }
         return '';
 
       case 'phone': {
         const cleanPhone = (value || '').trim().replace(/[\s-]/g, '');
         if (!cleanPhone) {
-          return t('contact.errPhoneRequired', {}, 'Please enter your mobile number.');
+          return t('contact.errPhoneRequired', {}, 'Please enter a valid mobile number.');
         }
         // Indian mobile validation: 10 digits starting with 6, 7, 8, or 9
         if (!/^[6-9]\d{9}$/.test(cleanPhone)) {
-          return t('contact.errPhoneInvalid', {}, 'Please enter a valid 10-digit Indian mobile number (starting with 6, 7, 8, or 9).');
+          return t('contact.errPhoneInvalid', {}, 'Please enter a valid mobile number.');
         }
         return '';
       }
 
       case 'serviceType':
         if (!value || !value.trim()) {
-          return t('contact.errServiceRequired', {}, 'Please select a service or enquiry type.');
+          return t('contact.errServiceRequired', {}, 'Please select a service.');
         }
         return '';
 
@@ -118,6 +119,7 @@ export default function Contact({ prefilledQuestion = "", onNavigate }) {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setCancelledNotice(false);
+    setFormSubmitError(false);
     setFormData((prev) => ({
       ...prev,
       [name]: value
@@ -135,6 +137,7 @@ export default function Contact({ prefilledQuestion = "", onNavigate }) {
   const handleTermsChange = (e) => {
     const checked = e.target.checked;
     setCancelledNotice(false);
+    setFormSubmitError(false);
     setTermsAccepted(checked);
     setTouched((prev) => ({ ...prev, termsAccepted: true }));
     setErrors((prev) => ({
@@ -175,9 +178,11 @@ export default function Contact({ prefilledQuestion = "", onNavigate }) {
     });
 
     if (!validateAll() || !termsAccepted) {
+      setFormSubmitError(true);
       return;
     }
 
+    setFormSubmitError(false);
     setIsSubmitting(true);
     setCancelledNotice(false);
     // Brief deliberate state to prevent double click, then open confirmation modal
@@ -247,10 +252,10 @@ export default function Contact({ prefilledQuestion = "", onNavigate }) {
       <div className="container">
         <RevealAnimation>
           <SectionHeading
-            tagline={t('contact.tagline', {}, 'GET IN TOUCH')}
-            title={t('contact.title', {}, 'Request your CNG')}
-            highlight={t('contact.titleHighlight', {}, 'conversion estimate.')}
-            description={t('contact.description', {}, 'Share your requirements and review your details before continuing to chat with Maa Kamakhya Auto Gas on WhatsApp.')}
+            tagline={t('contact.tagline', {}, 'Contact Us')}
+            title={t('contact.title', {}, 'Contact Us')}
+            highlight={t('contact.titleHighlight', {}, 'for Your Enquiry')}
+            description={t('contact.description', {}, 'Have a question or need help choosing a service? Send us a message or contact our team directly on WhatsApp.')}
           />
         </RevealAnimation>
 
@@ -263,11 +268,11 @@ export default function Contact({ prefilledQuestion = "", onNavigate }) {
                   <Phone size={22} className="text-yellow" />
                 </div>
                 <div>
-                  <div className="contact-label-small">{t('common.callWorkshop', {}, 'Call our workshop')}</div>
+                  <div className="contact-label-small">{t('common.callWorkshop', {}, 'Call Us')}</div>
                   <a href={siteConfig.phoneTel} className="contact-value-main">
                     {siteConfig.phoneFormatted}
                   </a>
-                  <p className="contact-meta-desc">{t('common.hours', {}, 'Mon - Sat: 9:00 AM - 7:30 PM | Sun: On Appointment')}</p>
+                  <p className="contact-meta-desc">{t('common.hours', {}, 'Operating hours: Please call or message us on WhatsApp to confirm timings.')}</p>
                 </div>
               </div>
 
@@ -276,7 +281,7 @@ export default function Contact({ prefilledQuestion = "", onNavigate }) {
                   <MessageCircle size={22} className="text-yellow" />
                 </div>
                 <div>
-                  <div className="contact-label-small">{t('common.whatsappChat', {}, 'WhatsApp enquiries')}</div>
+                  <div className="contact-label-small">{t('common.whatsappChat', {}, 'WhatsApp')}</div>
                   <a 
                     href={siteConfig.whatsappUrl} 
                     target="_blank" 
@@ -285,7 +290,7 @@ export default function Contact({ prefilledQuestion = "", onNavigate }) {
                   >
                     +91 {siteConfig.whatsappNumber}
                   </a>
-                  <p className="contact-meta-desc">{t('contact.fastResponse', {}, 'Fast response on WhatsApp')}</p>
+                  <p className="contact-meta-desc">{t('contact.fastResponse', {}, 'Message us directly on WhatsApp')}</p>
                 </div>
               </div>
 
@@ -320,7 +325,7 @@ export default function Contact({ prefilledQuestion = "", onNavigate }) {
                     className="directions-link-btn"
                   >
                     <Navigation size={14} />
-                    <span>{t('location.getDirections', {}, 'Get Directions via Google Maps')}</span>
+                    <span>{t('location.getDirections', {}, 'Find Our Location')}</span>
                   </a>
                 </div>
               </div>
@@ -331,14 +336,14 @@ export default function Contact({ prefilledQuestion = "", onNavigate }) {
                   <span className="lang-badge">{t('location.multilingualSupport', {}, 'Multilingual Support')}</span>
                 </div>
                 <p className="lang-desc">
-                  {t('location.multilingualDesc', {}, 'Our service advisors assist you in English, Hindi, and Assamese.')}
+                  {t('location.multilingualDesc', {}, 'Our team can help you in English, Hindi, and Assamese.')}
                 </p>
               </div>
 
               {/* Business Location & Service Note */}
               <div className="statutory-assurance-card">
                 <p className="text-xs text-muted">
-                  Operated by <strong>{siteConfig.name}</strong> on NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035, Assam.
+                  <strong>{siteConfig.name}</strong> is located on NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035, Assam.
                 </p>
               </div>
             </div>
@@ -351,11 +356,11 @@ export default function Contact({ prefilledQuestion = "", onNavigate }) {
                 <div className="form-card-title-row">
                   <div className="form-card-badge">
                     <MessageCircle size={18} className="text-whatsapp flex-shrink-0" />
-                    <span>{t('contact.tagline', {}, 'Direct WhatsApp Enquiry')}</span>
+                    <span>{t('contact.tagline', {}, 'Contact Us')}</span>
                   </div>
                 </div>
                 <p className="form-card-subtitle">
-                  {t('contact.description', {}, 'Share your details for an instant quotation and CNG compatibility assessment.')}
+                  {t('contact.description', {}, 'Have a question or need help choosing a service? Send us a message or contact our team directly on WhatsApp.')}
                 </p>
               </div>
 
@@ -403,7 +408,7 @@ export default function Contact({ prefilledQuestion = "", onNavigate }) {
                         name="phone"
                         required
                         maxLength={10}
-                        placeholder={t('contact.mobilePlaceholder', {}, '10-digit number (e.g. 9876543210)')}
+                        placeholder={t('contact.mobilePlaceholder', {}, 'Enter your mobile number')}
                         value={formData.phone}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -421,10 +426,10 @@ export default function Contact({ prefilledQuestion = "", onNavigate }) {
                     )}
                   </div>
 
-                  {/* Service / Enquiry Type */}
+                  {/* Service Needed */}
                   <div className="form-group">
                     <label htmlFor="serviceType-select" className="form-label">
-                      <span>{t('contact.serviceType', {}, 'Service / Enquiry Type')} <span className="text-yellow">*</span></span>
+                      <span>{t('contact.serviceType', {}, 'Service Needed')} <span className="text-yellow">*</span></span>
                     </label>
                     <select
                       id="serviceType-select"
@@ -438,15 +443,15 @@ export default function Contact({ prefilledQuestion = "", onNavigate }) {
                       aria-invalid={errors.serviceType ? 'true' : 'false'}
                       aria-describedby={errors.serviceType ? 'serviceType-error' : undefined}
                     >
-                      <option value="">{t('contact.selectService', {}, 'Select a service category...')}</option>
+                      <option value="">{t('contact.selectService', {}, "Select the service you're interested in")}</option>
                       {servicesData.map((svc) => (
                         <option key={svc.id} value={svc.title}>
                           {svc.title}
                         </option>
                       ))}
                       <option value="Vehicle Compatibility Check">Vehicle Compatibility Check</option>
-                      <option value="Trade Dealership & Wholesale Supply">Trade Dealership & Wholesale Supply</option>
-                      <option value="General Workshop Enquiry">General Workshop Enquiry</option>
+                      <option value="Wholesale & Dealership Supply">Wholesale &amp; Dealership Supply</option>
+                      <option value="General Enquiry">General Enquiry</option>
                       <option value="Others">{t('contact.optionOthers', {}, 'Others')}</option>
                     </select>
                     {errors.serviceType && (
@@ -469,20 +474,20 @@ export default function Contact({ prefilledQuestion = "", onNavigate }) {
                     type="text"
                     name="vehicleModel"
                     maxLength={80}
-                    placeholder={t('contact.vehiclePlaceholder', {}, 'e.g. Maruti Suzuki Swift, Hyundai Grand i10, Dzire Taxi')}
+                    placeholder={t('contact.vehiclePlaceholder', {}, 'Enter your vehicle model or make')}
                     value={formData.vehicleModel}
                     onChange={handleChange}
                     className="form-input"
                   />
                   <span className="field-hint-text">
-                    {t('contact.vehicleHint', {}, 'Helping us know your car helps us provide instant kit compatibility guidance.')}
+                    {t('contact.vehicleHint', {}, 'Sharing your vehicle model helps us understand your requirements.')}
                   </span>
                 </div>
 
                 {/* Optional Message / Notes */}
                 <div className="form-group">
                   <label htmlFor="message-input" className="form-label">
-                    <span>{t('contact.additionalMessage', {}, 'Additional Message or Questions')}</span>
+                    <span>{t('contact.additionalMessage', {}, 'Additional Message')}</span>
                     <span className="text-muted text-xs font-normal"> (Optional)</span>
                   </label>
                   <textarea
@@ -490,7 +495,7 @@ export default function Contact({ prefilledQuestion = "", onNavigate }) {
                     name="message"
                     rows="3"
                     maxLength={500}
-                    placeholder={t('contact.messagePlaceholder', {}, 'Enter any questions regarding running costs, kit warranty, hydro-testing, or booking timing...')}
+                    placeholder={t('contact.messagePlaceholder', {}, 'Tell us a little more about what you need...')}
                     value={formData.message}
                     onChange={handleChange}
                     className="form-textarea"
@@ -563,14 +568,21 @@ export default function Contact({ prefilledQuestion = "", onNavigate }) {
                 </button>
 
                 <p className="form-caption-note">
-                  {t('contact.privacyNote', {}, 'Before continuing, you will review your details in a confirmation step. You will then be able to send your message directly inside WhatsApp.')}
+                  {t('contact.privacyNote', {}, "You'll be able to review your details before continuing to WhatsApp.")}
                 </p>
+
+                {formSubmitError && !isFormReady && (
+                  <div className="enquiry-cancelled-banner animate-fade-in" role="alert">
+                    <AlertCircle size={18} className="enquiry-cancelled-icon flex-shrink-0" />
+                    <span>Please check the highlighted fields and try again.</span>
+                  </div>
+                )}
 
                 {/* Enquiry Review Cancelled Notification */}
                 {cancelledNotice && (
                   <div className="enquiry-cancelled-banner animate-fade-in" role="status">
                     <Info size={18} className="enquiry-cancelled-icon flex-shrink-0" />
-                    <span>Enquiry review cancelled. Your information is still available in the form.</span>
+                    <span>Your review has been cancelled. Your information is still saved in the form.</span>
                   </div>
                 )}
 
@@ -584,17 +596,17 @@ export default function Contact({ prefilledQuestion = "", onNavigate }) {
                         <CheckCircle size={20} className="text-yellow flex-shrink-0" />
                       )}
                       <h4 className="handoff-title">
-                        {whatsappOpenError ? 'Unable to Open WhatsApp Automatically' : 'Enquiry Prepared for WhatsApp'}
+                        {whatsappOpenError ? "WhatsApp couldn't be opened" : 'Your WhatsApp Message Is Ready'}
                       </h4>
                     </div>
                     <p className="handoff-body">
                       {whatsappOpenError
-                        ? 'Your browser blocked or could not launch WhatsApp automatically. Please use the direct WhatsApp buttons below or copy your enquiry message.'
-                        : <>Your enquiry message has been formatted. Please tap <strong>Send</strong> inside your WhatsApp chat window to message <strong>Maa Kamakhya Auto Gas</strong>.</>
+                        ? "WhatsApp couldn't be opened. Please try again or contact us directly."
+                        : <>Your enquiry details have been prepared. Please tap <strong>Send</strong> in WhatsApp to message <strong>Maa Kamakhya Auto Gas</strong>.</>
                       }
                     </p>
                     <p className="handoff-disclaimer text-xs text-muted">
-                      Note: Your enquiry is not sent by this website and is only delivered once you manually press Send inside WhatsApp.
+                      Note: Your message is not sent automatically by this website. You can review it once more in WhatsApp before sending.
                     </p>
 
                     {/* Direct Fallback Link for Mobile and Popup-blocked Browsers */}
@@ -605,7 +617,7 @@ export default function Contact({ prefilledQuestion = "", onNavigate }) {
                         rel="noopener noreferrer"
                         className="handoff-trouble-link"
                       >
-                        Having trouble opening WhatsApp? Tap here to continue.
+                        Having trouble opening WhatsApp? Tap here to try again.
                       </a>
                     </div>
 
@@ -618,7 +630,7 @@ export default function Contact({ prefilledQuestion = "", onNavigate }) {
                           className="btn btn-whatsapp btn-sm"
                         >
                           <RefreshCw size={14} />
-                          <span>Reopen WhatsApp Chat</span>
+                          <span>Open WhatsApp Again</span>
                         </a>
                       )}
 
@@ -631,7 +643,7 @@ export default function Contact({ prefilledQuestion = "", onNavigate }) {
                           title="Open WhatsApp Web in desktop browser"
                         >
                           <Globe size={14} />
-                          <span>WhatsApp Web</span>
+                          <span>Open WhatsApp Web</span>
                         </a>
                       )}
 
@@ -640,16 +652,16 @@ export default function Contact({ prefilledQuestion = "", onNavigate }) {
                           type="button"
                           onClick={() => handleCopyMessage(lastMessageText)}
                           className="btn btn-secondary btn-sm"
-                          title="Copy formatted enquiry message to clipboard"
+                          title="Copy message to clipboard"
                         >
                           {copiedMessage ? <Check size={14} className="text-success" /> : <Copy size={14} />}
-                          <span>{copiedMessage ? 'Copied to Clipboard!' : 'Copy Message'}</span>
+                          <span>{copiedMessage ? 'Copied!' : 'Copy Message'}</span>
                         </button>
                       )}
 
                       <a href={siteConfig.phoneTel} className="btn btn-secondary btn-sm">
                         <Phone size={14} />
-                        <span>{t('common.call', {}, 'Call')}: {siteConfig.phoneFormatted}</span>
+                        <span>{t('common.callWorkshop', {}, 'Call Us')}: {siteConfig.phoneFormatted}</span>
                       </a>
                     </div>
                   </div>

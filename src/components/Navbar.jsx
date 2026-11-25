@@ -255,20 +255,6 @@ export default function Navbar({ onNavigateLegal, onOpenSearch }) {
           >
             {t('common.call', {}, 'Call')}
           </Button>
-
-          {/* WhatsApp Direct Button */}
-          <Button
-            variant="whatsapp"
-            size="md"
-            href={siteConfig.whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            icon={MessageCircle}
-            ariaLabel="Open WhatsApp Chat"
-            className="nav-btn-whatsapp"
-          >
-            {t('common.whatsapp', {}, 'WhatsApp')}
-          </Button>
         </div>
 
         {/* Mobile Header Buttons */}
