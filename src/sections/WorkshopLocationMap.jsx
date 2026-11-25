@@ -2,9 +2,7 @@ import React from 'react';
 import { 
   Navigation, 
   Phone, 
-  CheckCircle2, 
-  Building2, 
-  Route 
+  CheckCircle2 
 } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
 import { useLanguage } from '../context/LanguageContext';
@@ -124,7 +122,6 @@ export default function WorkshopLocationMap() {
               <div className="location-showcase-card card-navy">
                 <div className="showcase-card-header">
                   <div className="showcase-badge">
-                    <Building2 size={16} className="text-yellow" />
                     <span>{t('location.workshopAddress', {}, 'Official Workshop Location')}</span>
                   </div>
                   <span className="text-xs text-muted">Garchuk Facility</span>
@@ -162,7 +159,6 @@ export default function WorkshopLocationMap() {
             <RevealAnimation delay={3}>
               <div className="location-routes-card card-navy">
                 <div className="routes-card-header">
-                  <Route size={18} className="text-yellow" />
                   <h4 className="routes-title">Guwahati Highway Route Landmarks</h4>
                 </div>
 

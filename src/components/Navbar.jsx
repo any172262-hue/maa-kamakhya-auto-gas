@@ -196,7 +196,6 @@ export default function Navbar({ onNavigateLegal, onOpenSearch }) {
               <span className="brand-name-gold">AUTO GAS</span>
             </div>
             <div className="brand-meta-row">
-              <span className="brand-pulse-dot" />
               <span className="brand-meta-text">{t('hero.badge', {}, 'CNG & Auto Gas Workshop • Guwahati')}</span>
             </div>
           </div>

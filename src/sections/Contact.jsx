@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, MessageCircle, MapPin, Navigation, CheckCircle, ShieldCheck, RefreshCw, Mail, Copy, Check, Globe, AlertCircle, Info } from 'lucide-react';
+import { Phone, MessageCircle, MapPin, Navigation, CheckCircle, RefreshCw, Mail, Copy, Check, Globe, AlertCircle, Info } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
 import { servicesData } from '../data/services';
 import { useLanguage } from '../context/LanguageContext';
@@ -337,7 +337,6 @@ export default function Contact({ prefilledQuestion = "", onNavigate }) {
 
               {/* Business Location & Service Note */}
               <div className="statutory-assurance-card">
-                <ShieldCheck size={20} className="text-yellow flex-shrink-0" />
                 <p className="text-xs text-muted">
                   Operated by <strong>{siteConfig.name}</strong> on NH 37, Pachim Boragaon, Garchuk, Guwahati - 781035, Assam.
                 </p>
