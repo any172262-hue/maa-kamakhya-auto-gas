@@ -1,4 +1,5 @@
 export const navLinks = [
+  { name: "Home", href: "#hero" },
   { name: "Benefits", href: "#benefits" },
   { name: "Services", href: "#services" },
   { name: "Savings Calculator", shortName: "Calculator", href: "#calculator" },

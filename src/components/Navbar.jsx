@@ -25,6 +25,8 @@ export default function Navbar({ onNavigateLegal, onOpenSearch }) {
   // Helper to get translated nav title
   const getNavLinkName = (link, isShort = false) => {
     switch (link.href) {
+      case '#hero':
+        return t('nav.home', {}, link.name);
       case '#benefits':
         return t('nav.benefits', {}, link.name);
       case '#services':

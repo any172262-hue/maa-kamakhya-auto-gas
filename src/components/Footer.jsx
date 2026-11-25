@@ -22,6 +22,8 @@ export default function Footer({ onNavigateLegal }) {
 
   const getNavLinkName = (link) => {
     switch (link.href) {
+      case '#hero':
+        return t('nav.home', {}, link.name);
       case '#benefits':
         return t('nav.benefits', {}, link.name);
       case '#services':
